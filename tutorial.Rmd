@@ -2,7 +2,7 @@
 title: "Hierarchical ridge regression"
 header-includes:
    - \usepackage{bm}
-output: html_document
+output: rmarkdown::github_document
 bibliography: tutorial.bib
 nocite: | 
   @friedman2009glmnet, @nloptr, @Offer-Westort:2019aa
