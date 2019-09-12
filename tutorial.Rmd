@@ -2,7 +2,9 @@
 title: "Hierarchical ridge regression"
 header-includes:
    - \usepackage{bm}
-output: rmarkdown::github_document
+output: 
+  github_document:
+    pandoc_args: --webtex
 bibliography: tutorial.bib
 nocite: | 
   @friedman2009glmnet, @nloptr, @Offer-Westort:2019aa
@@ -38,11 +40,11 @@ the baseline level, and $\omega_2$ is the total number of two-way interactions.
 Let $X$ be the matrix of factors and all interactions up to order $K$,  $\beta$ 
 be the vector of coefficients excluding the intercept term, and $\lambda$ be the 
 penalty vector. Thus, the estimator solves,
-\begin{align*}
+$$
 \text{argmin}_{ \beta_0, \beta  }
 \bigg\{\sum^{n}_{i=1}\left(y_i - \beta_0
 - \beta^T \text{x}_{i}\right)^2+  \beta^T \text{diag}(\lambda)\beta \bigg\}.
-\end{align*}
+$$
 
 For the hierarchical ridge, we will set the penalties so that each order of 
 interactions has a separate penalty, $\lambda_k$, constrained so 

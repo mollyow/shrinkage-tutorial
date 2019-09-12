@@ -23,20 +23,49 @@ extended to account for non-linearities in dose-type treatments as well.
 For our purposes, we’ll also consider only factors where there is a
 natural baseline, or control, level.
 
-We’ll consider interactions up to order \(K\), and \(\omega_k\) will
-tell us how many effects there are at each degree of complexity; i.e.,
-for main effects, \(\omega_1\) is equivalent to the total number of
-factor treatment levels above the baseline level, and \(\omega_2\) is
-the total number of two-way interactions.
+We’ll consider interactions up to order
+![K](https://latex.codecogs.com/png.latex?K "K"), and
+![\\omega\_k](https://latex.codecogs.com/png.latex?%5Comega_k
+"\\omega_k") will tell us how many effects there are at each degree of
+complexity; i.e., for main effects,
+![\\omega\_1](https://latex.codecogs.com/png.latex?%5Comega_1
+"\\omega_1") is equivalent to the total number of factor treatment
+levels above the baseline level, and
+![\\omega\_2](https://latex.codecogs.com/png.latex?%5Comega_2
+"\\omega_2") is the total number of two-way interactions.
 
-Let \(X\) be the matrix of factors and all interactions up to order
-\(K\), \(\beta\) be the vector of coefficients excluding the intercept
-term, and \(\lambda\) be the penalty vector. Thus, the estimator solves,
+Let ![X](https://latex.codecogs.com/png.latex?X "X") be the matrix of
+factors and all interactions up to order
+![K](https://latex.codecogs.com/png.latex?K "K"),
+![\\beta](https://latex.codecogs.com/png.latex?%5Cbeta "\\beta") be the
+vector of coefficients excluding the intercept term, and
+![\\lambda](https://latex.codecogs.com/png.latex?%5Clambda "\\lambda")
+be the penalty vector. Thus, the estimator solves,   
+![
+\\text{argmin}\_{ \\beta\_0, \\beta }
+\\bigg\\{\\sum^{n}\_{i=1}\\left(y\_i - \\beta\_0
+\- \\beta^T \\text{x}\_{i}\\right)^2+ \\beta^T
+\\text{diag}(\\lambda)\\beta \\bigg\\}.
+](https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bargmin%7D_%7B%20%5Cbeta_0%2C%20%5Cbeta%20%20%7D%0A%5Cbigg%5C%7B%5Csum%5E%7Bn%7D_%7Bi%3D1%7D%5Cleft%28y_i%20-%20%5Cbeta_0%0A-%20%5Cbeta%5ET%20%5Ctext%7Bx%7D_%7Bi%7D%5Cright%29%5E2%2B%20%20%5Cbeta%5ET%20%5Ctext%7Bdiag%7D%28%5Clambda%29%5Cbeta%20%5Cbigg%5C%7D.%0A
+"
+\\text{argmin}_{ \\beta_0, \\beta  }
+\\bigg\\{\\sum^{n}_{i=1}\\left(y_i - \\beta_0
+- \\beta^T \\text{x}_{i}\\right)^2+  \\beta^T \\text{diag}(\\lambda)\\beta \\bigg\\}.
+")  
 
 For the hierarchical ridge, we will set the penalties so that each order
-of interactions has a separate penalty, \(\lambda_k\), constrained so
-\(\lambda_1\le \lambda_2 \le \dots \le \lambda_K\). To make up the full
-\(\lambda\) vector, each \(\lambda_k\) is repeated \(\omega_k\) times.
+of interactions has a separate penalty,
+![\\lambda\_k](https://latex.codecogs.com/png.latex?%5Clambda_k
+"\\lambda_k"), constrained so ![\\lambda\_1\\le \\lambda\_2 \\le \\dots
+\\le
+\\lambda\_K](https://latex.codecogs.com/png.latex?%5Clambda_1%5Cle%20%5Clambda_2%20%5Cle%20%5Cdots%20%5Cle%20%5Clambda_K
+"\\lambda_1\\le \\lambda_2 \\le \\dots \\le \\lambda_K"). To make up the
+full ![\\lambda](https://latex.codecogs.com/png.latex?%5Clambda
+"\\lambda") vector, each
+![\\lambda\_k](https://latex.codecogs.com/png.latex?%5Clambda_k
+"\\lambda_k") is repeated
+![\\omega\_k](https://latex.codecogs.com/png.latex?%5Comega_k
+"\\omega_k") times.
 
 ### Implementation
 
@@ -48,13 +77,19 @@ while setting the penalty factor to 1 for all variables reduces to
 standard lasso or ridge regression.
 
 To find these values, the parameters optimized over represent the vector
-\((\lambda_2/\lambda_1, \dots, \lambda_K/\lambda_1)\), i.e., the size of
-each penalty factor relative to penalties on main effects, and,
-equivalent to above, constraints are implemented to ensure
-\((1 \le \lambda_2/\lambda_1\le \dots\le \lambda_K/\lambda_1)\). Once
-we’ve found these values, we’ll set \(\lambda_1\) per usual in ridge
-regression, as the the most regularized model within one standard error
-of the value with minimum mean cross-validated error.
+![(\\lambda\_2/\\lambda\_1, \\dots,
+\\lambda\_K/\\lambda\_1)](https://latex.codecogs.com/png.latex?%28%5Clambda_2%2F%5Clambda_1%2C%20%5Cdots%2C%20%5Clambda_K%2F%5Clambda_1%29
+"(\\lambda_2/\\lambda_1, \\dots, \\lambda_K/\\lambda_1)"), i.e., the
+size of each penalty factor relative to penalties on main effects, and,
+equivalent to above, constraints are implemented to ensure ![(1 \\le
+\\lambda\_2/\\lambda\_1\\le \\dots\\le
+\\lambda\_K/\\lambda\_1)](https://latex.codecogs.com/png.latex?%281%20%5Cle%20%5Clambda_2%2F%5Clambda_1%5Cle%20%5Cdots%5Cle%20%5Clambda_K%2F%5Clambda_1%29
+"(1 \\le \\lambda_2/\\lambda_1\\le \\dots\\le \\lambda_K/\\lambda_1)").
+Once we’ve found these values, we’ll set
+![\\lambda\_1](https://latex.codecogs.com/png.latex?%5Clambda_1
+"\\lambda_1") per usual in ridge regression, as the the most regularized
+model within one standard error of the value with minimum mean
+cross-validated error.
 
 This optimization is implemented with the `nloptr` package, combining an
 augmented Lagrangian method to impose inequality constraints on a
@@ -69,12 +104,14 @@ set.seed(94305)
 ```
 
 The minimizing function reports mean cross-validated error reported by
-`cv.glmnet` from the \`glmnet package, with 10 fixed folds,
-\(\alpha = 0\), and \(\lambda\) selected as that producing minimum
-cross-validated error with the parameters serving as relevant penalty
-factors. The first penalty factor is always 1, since we’re setting
-penalty factors as relative to the penalty on main effects. The
-intercept remains unpenalized.
+`cv.glmnet` from the \`glmnet package, with 10 fixed folds, ![\\alpha
+= 0](https://latex.codecogs.com/png.latex?%5Calpha%20%3D%200
+"\\alpha = 0"), and
+![\\lambda](https://latex.codecogs.com/png.latex?%5Clambda "\\lambda")
+selected as that producing minimum cross-validated error with the
+parameters serving as relevant penalty factors. The first penalty factor
+is always 1, since we’re setting penalty factors as relative to the
+penalty on main effects. The intercept remains unpenalized.
 
 (Alternative versions, with, for example, continuous variables, might
 set the first penalty factor equal to zero for no penalty on main
