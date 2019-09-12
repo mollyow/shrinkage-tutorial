@@ -40,11 +40,11 @@ the baseline level, and $\omega_2$ is the total number of two-way interactions.
 Let $X$ be the matrix of factors and all interactions up to order $K$,  $\beta$ 
 be the vector of coefficients excluding the intercept term, and $\lambda$ be the 
 penalty vector. Thus, the estimator solves,
+
 $$
-\text{argmin}_{ \beta_0, \beta  }
-\bigg\{\sum^{n}_{i=1}\left(y_i - \beta_0
-- \beta^T \text{x}_{i}\right)^2+  \beta^T \text{diag}(\lambda)\beta \bigg\}.
+\text{argmin}_{ \beta_0, \beta  } \bigg\{\sum^{n}_{i=1}\left(y_i - \beta_0 - \beta^T \text{x}_{i}\right)^2+  \beta^T \text{diag}(\lambda)\beta \bigg\}.
 $$
+
 
 For the hierarchical ridge, we will set the penalties so that each order of 
 interactions has a separate penalty, $\lambda_k$, constrained so 

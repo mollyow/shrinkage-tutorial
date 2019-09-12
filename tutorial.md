@@ -40,17 +40,17 @@ factors and all interactions up to order
 ![\\beta](https://latex.codecogs.com/png.latex?%5Cbeta "\\beta") be the
 vector of coefficients excluding the intercept term, and
 ![\\lambda](https://latex.codecogs.com/png.latex?%5Clambda "\\lambda")
-be the penalty vector. Thus, the estimator solves,   
+be the penalty vector. Thus, the estimator solves,
+
+  
 ![
 \\text{argmin}\_{ \\beta\_0, \\beta }
-\\bigg\\{\\sum^{n}\_{i=1}\\left(y\_i - \\beta\_0
-\- \\beta^T \\text{x}\_{i}\\right)^2+ \\beta^T
-\\text{diag}(\\lambda)\\beta \\bigg\\}.
-](https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bargmin%7D_%7B%20%5Cbeta_0%2C%20%5Cbeta%20%20%7D%0A%5Cbigg%5C%7B%5Csum%5E%7Bn%7D_%7Bi%3D1%7D%5Cleft%28y_i%20-%20%5Cbeta_0%0A-%20%5Cbeta%5ET%20%5Ctext%7Bx%7D_%7Bi%7D%5Cright%29%5E2%2B%20%20%5Cbeta%5ET%20%5Ctext%7Bdiag%7D%28%5Clambda%29%5Cbeta%20%5Cbigg%5C%7D.%0A
+\\bigg\\{\\sum^{n}\_{i=1}\\left(y\_i - \\beta\_0 - \\beta^T
+\\text{x}\_{i}\\right)^2+ \\beta^T \\text{diag}(\\lambda)\\beta
+\\bigg\\}.
+](https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bargmin%7D_%7B%20%5Cbeta_0%2C%20%5Cbeta%20%20%7D%20%5Cbigg%5C%7B%5Csum%5E%7Bn%7D_%7Bi%3D1%7D%5Cleft%28y_i%20-%20%5Cbeta_0%20-%20%5Cbeta%5ET%20%5Ctext%7Bx%7D_%7Bi%7D%5Cright%29%5E2%2B%20%20%5Cbeta%5ET%20%5Ctext%7Bdiag%7D%28%5Clambda%29%5Cbeta%20%5Cbigg%5C%7D.%0A
 "
-\\text{argmin}_{ \\beta_0, \\beta  }
-\\bigg\\{\\sum^{n}_{i=1}\\left(y_i - \\beta_0
-- \\beta^T \\text{x}_{i}\\right)^2+  \\beta^T \\text{diag}(\\lambda)\\beta \\bigg\\}.
+\\text{argmin}_{ \\beta_0, \\beta  } \\bigg\\{\\sum^{n}_{i=1}\\left(y_i - \\beta_0 - \\beta^T \\text{x}_{i}\\right)^2+  \\beta^T \\text{diag}(\\lambda)\\beta \\bigg\\}.
 ")  
 
 For the hierarchical ridge, we will set the penalties so that each order
