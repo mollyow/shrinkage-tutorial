@@ -104,7 +104,7 @@ set.seed(94305)
 ```
 
 The minimizing function reports mean cross-validated error reported by
-`cv.glmnet` from the `glmnet package`, with 10 fixed folds, ![\\alpha
+`cv.glmnet` from the `glmnet` package, with 10 fixed folds, ![\\alpha
 = 0](https://latex.codecogs.com/png.latex?%5Calpha%20%3D%200
 "\\alpha = 0"), and
 ![\\lambda](https://latex.codecogs.com/png.latex?%5Clambda "\\lambda")
