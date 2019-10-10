@@ -132,7 +132,7 @@ ridge.search <- function( pf ){
 ### Simulation
 
 In our simulations here, we’ll consider an experiment with four factors,
-each with three treatment levels above a baseline control baseline
+each with three treatment levels above a control baseline
 level. We’ll conduct estimation up to third order interactions.
 
 ``` r
