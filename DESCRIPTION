@@ -1,0 +1,31 @@
+Package: orderridge
+Title: Order-Adaptive Ridge Estimation for Factorial Response Surfaces
+Version: 0.0.0.9000
+Authors@R: person("Molly", "Offer-Westort", role = c("aut", "cre"),
+    email = "mollyow@gmail.com")
+Description: Constructs target-distribution-weighted factorial function spaces,
+    estimates dense response surfaces with order-specific ridge penalties, and
+    provides cross-fitted randomization-based inference for prespecified linear
+    factorial estimands. The implementation penalizes functions rather than
+    reference-coded coefficients and supports monotone or unrestricted penalties.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: R (>= 4.1.0)
+Imports:
+    nloptr,
+    stats,
+    utils
+Suggests:
+    glmnet,
+    testthat (>= 3.0.0),
+    yaml,
+    jsonlite,
+    ranger,
+    readr,
+    targets,
+    ggplot2,
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3

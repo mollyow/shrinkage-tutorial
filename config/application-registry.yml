@@ -1,0 +1,470 @@
+schema_version: 1
+registry_version: 4
+registry_date: "2026-09-01"
+status: four_fresh_studies_have_eligible_locked_analyses_portfolio_gate_b_passed
+
+selection_policy:
+  outcome_blind_scope: "No new outcome values, learner comparisons, effect estimates, or interaction results may be used for enrollment or locking."
+  developmental_studies_count_toward_gate_b: false
+  required_fresh_study_families: 4
+  minimum_respondent_clusters: 1000
+  minimum_respondent_tasks: 5000
+  required_portfolio_properties:
+    minimum_substantive_domains: 3
+    multinational_study: true
+    rating_outcome: true
+    paired_choice_outcome: true
+    product_assignment: true
+    restricted_or_nonproduct_assignment: true
+    minimum_rich_covariate_studies: 3
+  independent_unit: study_family
+  nested_units_not_counted_separately:
+    - country
+    - wave
+    - outcome
+    - experimental_arm
+  primary_attention_check_filter_allowed: false
+
+eligibility_requirements:
+  - original_or_author_endorsed_public_archive
+  - persistent_identifier_and_explicit_reuse_license
+  - immutable_file_checksum
+  - respondent_task_and_profile_position_identifiers_or_deterministic_reconstruction
+  - reconstructible_assignment_probabilities_and_support
+  - documented_covariate_timing
+  - supported_prespecified_whole_interaction_family
+  - respondent_clustered_outer_and_inner_folds
+  - outcome_blind_design_contract
+
+studies:
+  - id: candidate_recruitment
+    role: developmental_exhibit
+    status: developmental_not_gate_b_contract_terminology_corrected_rebuild_required_before_reuse
+    title: "Opportunities to govern: how to increase the supply of moderate and qualified candidates"
+    article_doi: "https://doi.org/10.1017/psrm.2025.10076"
+    data_doi: "https://doi.org/10.7910/DVN/BQAHGZ"
+    license: CC0-1.0
+    counts:
+      respondents: 3000
+      tasks_per_respondent: 8
+      profiles_per_task: 1
+      profile_rows: 24000
+    outcomes: [rating]
+    attributes: 7
+    nominal_profiles: 1440
+    assignment:
+      within_profile: independent_uniform_attributes
+      marginal_profile_probability: "1/1440"
+      across_tasks: unknown_non_iid_no_repeated_complete_profiles
+    covariate_tier: limited_pre_conjoint
+    provisional_families:
+      - [authority, legislative_threshold]
+      - [authority, staff_support]
+      - [fundraising_burden, probability_of_winning]
+      - [fundraising_burden, salary]
+    blockers:
+      - rebuild_candidate_preparation_and_analysis_manifests_under_estimands_v4_before_reuse
+    counts_toward_gate_b: false
+
+  - id: asylum_seekers_2016_2022
+    role: confirmatory_anchor
+    status: gate_b_green_outcomes_still_prohibited
+    title: "Europeans' support for refugees of varying background is stable over time"
+    article_doi: "https://doi.org/10.1038/s41586-023-06417-6"
+    data_doi: "https://doi.org/10.7910/DVN/FTL1MM"
+    archive_version: 2.0
+    license: CC0-1.0
+    design_contract: "config/datasets/asylum-seekers.yml"
+    design_audit: "analysis/asylum/audit_design.R"
+    counts:
+      archive_respondents_2016: 18030
+      archive_respondents_2022: 14976
+      design_complete_respondents_2016: 18021
+      design_complete_respondents_2022: 14966
+      primary_weight_eligible_respondents_2016: 17874
+      primary_weight_eligible_respondents_2022: 14846
+      tasks_per_respondent: 5
+      profiles_per_task: 2
+      design_complete_profile_rows_2016: 180210
+      design_complete_profile_rows_2022: 149660
+      countries: 15
+      waves: [2016, 2022]
+    outcomes: [paired_choice, rating_1_to_7]
+    attributes: 9
+    assignment:
+      profile_mechanism: prospectively_documented_nonrestricted_uniform_product
+      wave_specific_support: true
+      profile_support_2016: 136080
+      profile_support_2022: 170100
+      within_pair_profile_law: q_wave_times_q_wave
+      across_tasks_inference: allow_arbitrary_within_respondent_dependence
+      frame_2022: uniform_one_quarter_randomized_preconjoint_context
+      note: "The 2022 wave adds a War migration-reason level; forced-choice common-support comparisons condition both focal and opponent profiles to non-War."
+    target:
+      countries: equal_one_fifteenth_mixture_with_author_weights_normalized_within_country
+      profiles: wave_specific_uniform_product
+      waves: separate_2016_primary_2022_nested_replication
+    covariate_tier: rich_locked_eight_primary_features
+    families:
+      - attributes: [migration_reason, vulnerability]
+        dimension_2016: 12
+        dimension_2022: 16
+        status: identified_locked
+      - attributes: [religion, origin]
+        dimension_2016: 12
+        dimension_2022: 12
+        status: identified_locked
+      - attributes: [occupation, language]
+        dimension_2016: 10
+        dimension_2022: 10
+        status: identified_locked
+    disclosed_limitations:
+      - no_survey_platform_generator_export_but_prospective_law_is_explicit
+      - original_2016_questionnaire_not_released_use_demographic_only_timing_sensitivity
+      - respondent_ids_do_not_link_waves
+    blockers: []
+    counts_toward_gate_b: true
+
+  - id: immigrant_admission
+    role: confirmatory_restricted_support
+    status: gate_b_amber_assignment_certification
+    title: "The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants"
+    article_doi: "https://doi.org/10.1111/ajps.12138"
+    data_doi: "https://doi.org/10.7910/DVN/25505"
+    archive_version_to_lock: 2.1
+    license: CC0-1.0
+    design_contract: "config/datasets/immigrant-admission.yml"
+    design_audit: "analysis/immigrant/audit_design.R"
+    counts:
+      archive_respondents: 1714
+      design_complete_respondents: 1407
+      tasks_per_respondent: 5
+      profiles_per_task: 2
+      design_complete_tasks: 7035
+      design_complete_profile_rows: 14070
+      all_profile_missing_respondents: 307
+    outcomes: [paired_choice, rating]
+    attributes: 9
+    assignment:
+      profile_mechanism: restricted_factorial
+      structural_restrictions:
+        - [education, profession]
+        - [origin, application_reason]
+      reconstruction: conditional_uniform_strongly_supported_not_generator_certified
+      released_support_profiles: 936960
+      article_implied_support_profiles: 897920
+      primary_target: released_row_marginal_assignment_q
+      within_pair_profile_law: prospective_q_times_q_assumption_not_generator_certified
+      across_tasks_joint_law: unknown_allow_arbitrary_dependence
+    covariate_tier: rich_locked_wave_1_and_stable_demographics
+    families:
+      - attributes: [education, profession]
+        supported_dimension: 44
+        status: conditional_pass
+      - attributes: [origin, application_reason]
+        supported_dimension: 12
+        status: hold_article_archive_support_conflict
+      - attributes: [language, education]
+        supported_dimension: 18
+        status: conditional_pass
+    blockers:
+      - resolve_article_three_origin_versus_released_four_origin_persecution_rule
+      - certify_generator_or_prospectively_declare_released_data_and_code_authoritative
+      - certify_or_prospectively_assume_q_times_q_within_pair_opponent_law
+      - implement_supported_subspace_contrast_constructor_before_outcome_fitting
+      - lock_outcome_specific_missing_pair_rule_after_design_gate_passes
+    counts_toward_gate_b: pending_assignment_resolution
+
+  - id: climate_agreements
+    role: confirmatory_product_design
+    status: gate_b_split_rating_green_paired_choice_amber_outcomes_still_prohibited
+    title: "Mass support for global climate agreements depends on institutional design"
+    article_doi: "https://doi.org/10.1073/pnas.1306374110"
+    data_doi: "https://doi.org/10.7910/DVN/UGZ2BY"
+    archive_version: 1.0
+    license: CC0-1.0
+    design_contract: "config/datasets/climate-agreements.yml"
+    design_audit: "analysis/climate/audit_design.R"
+    counts:
+      respondents: 8500
+      tasks: 34000
+      tasks_per_respondent: 4
+      profiles_per_task: 2
+      profile_rows: 68000
+      countries: 4
+    outcomes: [paired_choice, rating]
+    eligible_outcomes: [rating]
+    held_outcomes: [paired_choice]
+    attributes: 6
+    nominal_profiles: 2880
+    assignment:
+      within_profile: fully_randomized_uniform_product_reconstruction
+      row_marginal: prospectively_locked_uniform_product_not_generator_certified
+      marginal_profile_probability: "1/2880"
+      within_pair_profile_law: undocumented_and_uncertified_global_iid_task_pairs_strongly_disfavored
+      observed_identical_pairs: 0
+      iid_expected_identical_pairs: 11.8055556
+      iid_probability_zero_identical_pairs: 0.0000074477
+      respondent_cluster_upper_probability_zero_with_arbitrary_four_task_dependence: 0.0522403
+      across_tasks: unknown_allow_arbitrary_within_respondent_dependence
+    rating_identification:
+      restrictions: [conditional_mean_no_opponent, conditional_mean_no_carryover]
+      status: prospectively_declared
+    target:
+      profiles: uniform_product
+      countries: equal_one_quarter_mixture_with_released_weights_normalized_within_country
+    covariate_tier: rich_locked_six_primary_features
+    primary_covariates:
+      - country
+      - age
+      - female
+      - country_specific_education
+      - country_specific_income
+      - preconjoint_climate_cooperation_support
+    families:
+      - attributes: [household_cost, burden_distribution]
+        dimension: 12
+        status: identified_locked
+      - attributes: [sanctions, monitoring]
+        dimension: 9
+        status: identified_locked
+      - attributes: [participating_countries, emissions_coverage]
+        dimension: 4
+        status: identified_locked
+    blockers:
+      - paired_choice_only_recover_generator_or_author_confirmation_of_exact_within_pair_opponent_law
+    counts_toward_gate_b: rating_only
+
+  - id: income_tax_plans
+    role: confirmatory_high_task
+    status: gate_b_green_six_rate_total_schedule_effects_outcomes_still_prohibited
+    title: "The Structure of American Income Tax Policy Preferences"
+    article_doi: "https://doi.org/10.1086/687324"
+    data_doi: "https://doi.org/10.7910/DVN/NGRGS5"
+    archive_version: "1.0"
+    license: CC0-1.0
+    design_contract: "config/datasets/income-tax-plans.yml"
+    design_audit: "analysis/tax/audit_design.R"
+    counts:
+      archive_respondents: 2250
+      archive_tasks: 18000
+      archive_profile_rows: 36000
+      main_respondents: 2000
+      main_tasks: 16000
+      main_tasks_per_respondent: 8
+      profiles_per_task: 2
+      main_profile_rows: 32000
+      no_revenue_respondents: 250
+      no_revenue_profile_rows: 4000
+      rating_pilot_respondents_reported_but_not_archived: 500
+    outcomes: [paired_choice]
+    eligible_outcomes: [paired_choice]
+    held_outcomes: [unarchived_pilot_rating]
+    attributes:
+      randomized_bracket_rates: 6
+      schedule_support: 7680
+      displayed_revenue_role: stochastic_downstream_mediator
+    assignment:
+      profile_mechanism: source_supported_uniform_product_reconstruction_generator_not_released
+      q_schedule: "1/7680"
+      within_task_ordered_pair_law: q_times_q
+      ordered_pair_probability: "1/58982400"
+      across_tasks: unknown_allow_arbitrary_within_respondent_dependence
+      identifying_restriction: conditional_mean_no_carryover
+      note: "Revenue is derived from the randomized rate schedule, perturbed, and binned. The eligible total schedule response averages this natural mechanism rather than treating revenue as a seventh factor."
+    target:
+      respondents: released_weights_normalized_within_2000_person_displayed_revenue_arm
+      schedules: uniform_product_over_7680
+      opponents: independent_uniform_product_over_7680
+      task_and_side: equal_average
+      revenue: natural_schedule_induced_noisy_display_mechanism
+    covariate_tier: rich_locked_seven_baseline_matching_features
+    primary_covariates:
+      - age
+      - female
+      - race
+      - education
+      - party_identification
+      - ideology
+      - political_interest
+    families:
+      - attributes: [lowest_bracket_rate, highest_bracket_rate]
+        dimension: 15
+        status: identified_locked
+      - attributes: [upper_middle_bracket_rate, highest_bracket_rate]
+        dimension: 15
+        status: identified_locked
+      - attributes: [second_highest_bracket_rate, highest_bracket_rate]
+        dimension: 20
+        status: identified_locked
+    held_estimands:
+      - seven_factor_rate_plus_revenue_surface
+      - controlled_or_direct_revenue_effects
+      - revenue_mediation_effects
+      - no_revenue_arm_headline_analysis
+    disclosed_limitations:
+      - original_generator_not_released
+      - exact_revenue_given_schedule_mechanism_not_reconstructible
+      - analysis_code_starts_from_processed_long_file
+      - separate_rating_pilot_not_archived
+    blockers: []
+    counts_toward_gate_b: true
+
+  - id: european_defense_union
+    role: thin_covariate_calibration
+    status: provisional_secondary
+    title: "Citizen Support for a European Defense Union: An International Conjoint Experiment on Security Cooperation in Europe"
+    article_doi: "https://doi.org/10.1093/isq/sqaf044"
+    data_doi: "https://doi.org/10.7910/DVN/HTAPIS"
+    archive_version_to_lock: 1.0
+    license: CC0-1.0
+    counts:
+      all_arms_respondents: 7678
+      defense_arm_archive_respondents: 3839
+      defense_arm_profile_rows: 23034
+      tasks_per_respondent: 3
+      profiles_per_task: 2
+      countries: 5
+    outcomes: [paired_choice, support_or_rating_to_lock]
+    attributes: 6
+    nominal_profiles: 192
+    assignment:
+      profile_mechanism: independent_randomization_across_attributes
+      framing_arm: to_lock
+    covariate_tier: thin
+    provisional_families:
+      - [governance, opt_outs]
+      - [program_scope, joint_procurement]
+      - [financing, force_size]
+    blockers:
+      - reconcile_nominal_3750_with_archive_3839_defense_respondents
+      - lock_full_randomized_arm_without_primary_attention_filter
+      - lock_outcome_scale
+      - document_covariate_timing
+    counts_toward_gate_b: secondary_only_unless_portfolio_rich_x_requirement_already_met
+
+  - id: democracy_candidate_choice
+    role: confirmatory_nonproduct_design
+    status: gate_b_green_narrow_democracy_contest_outcomes_still_prohibited
+    title: "Democracy in America? Partisanship, Polarization, and the Robustness of Support for Democracy in the United States"
+    article_doi: "https://doi.org/10.1017/S0003055420000052"
+    data_doi: "https://doi.org/10.7910/DVN/EEARKA"
+    archive_version: 1.1
+    license: CC-BY-4.0
+    design_contract: "config/datasets/graham-svolik.yml"
+    design_audit: "analysis/graham_svolik/audit_design.R"
+    counts:
+      appendix_wave_2_completers: 1692
+      article_respondents: 1691
+      released_design_respondents: 1682
+      released_main_tasks_per_respondent: 13
+      released_main_tasks: 21866
+      released_main_mirrored_profile_rows: 43732
+      nonvalence_core_tasks_per_respondent: 11
+      nonvalence_core_tasks: 18502
+      nonvalence_core_mirrored_profile_rows: 37004
+    outcomes: [paired_choice]
+    eligible_outcomes: [paired_choice_candidate_preference]
+    assignment:
+      profile_mechanism: block_and_task_specific_nonproduct
+      eligible_scope: coarsened_nonvalence_democracy_contest_components
+      focal_orientation: released_candidate_1_undemocratic_in_treatment_source_designated_in_generic_control
+      democracy_law: "q(G)=4/11 and q(U_j)=1/11 for each of seven violations"
+      ordered_party_law: "q(DD)=q(RR)=3/13 and q(DR)=q(RD)=7/26"
+      party_factorization: "q(focal party)=1/2; q(same)=6/13; q(cross)=7/13"
+      focal_gender_law: "q(male)=5/8; q(female)=3/8"
+      component_independence: source_certified_across_attribute_blocks
+      opponent_democracy: always_generic_in_nonvalence_core
+      across_tasks: blocked_without_replacement_allow_arbitrary_within_respondent_dependence
+      identifying_restriction: conditional_mean_no_carryover
+    target:
+      respondents: released_weights_normalized_over_all_1682_design_complete_ids
+      coarsened_components: uniform_over_democracy_8_x_focal_party_2_x_relation_2_x_focal_gender_2
+      remaining_profile_context: outcome_blind_empirical_standardization
+      tasks: equal_average_over_the_11_nonvalence_task_occurrences
+    covariate_tier: rich_locked_28_prechoice_raw_features
+    primary_covariates:
+      - age
+      - respondent_gender
+      - race
+      - education
+      - household_income
+      - state_tax_wording_block
+      - party_identification
+      - ideology
+      - trump_approval
+      - sixteen_policy_position_ratings
+      - political_knowledge_total
+      - authoritarianism_total
+      - voting_duty_orientation
+    families:
+      - attributes: [democracy_behavior, focal_party]
+        dimension: 7
+        status: identified_locked
+      - attributes: [democracy_behavior, same_cross_party_contest]
+        dimension: 7
+        status: identified_locked
+      - attributes: [democracy_behavior, focal_candidate_gender]
+        dimension: 7
+        status: identified_locked
+    held_estimands:
+      - complete_candidate_profile_surface
+      - age_x_experience_factorial_effects
+      - profession_factorial_effects
+      - sequence_or_carryover_effects
+      - negative_valence_tasks
+    disclosed_limitations:
+      - original_generator_and_actual_display_sequence_not_released
+      - published_profession_probabilities_omit_police_officer_and_sum_to_point_90
+      - published_experience_generator_conflicts_with_released_support
+      - appendix_article_and_release_sample_counts_differ
+      - mean_no_carryover_declared
+      - one_raw_row_response_displayed_inadvertently_and_quarantined_without_use
+    blockers: []
+    counts_toward_gate_b: true
+
+reserve_or_excluded:
+  - id: saha_weeks_candidate_ambition
+    status: software_reserve_below_task_threshold
+    article_doi: "https://doi.org/10.1007/s11109-020-09636-z"
+    data_doi: "https://doi.org/10.7910/DVN/KVTPVX"
+    license: CC0-1.0
+    note: "Approximately 1,191 respondents and three paired tasks; original archive is public, but the task threshold and inconsistent transformed moderator schemas preclude headline use."
+  - id: teele_kalla_rosenbluth_candidate_gender
+    status: reserve_pending_terms_and_design_contract
+    article_doi: "https://doi.org/10.1017/S0003055418000217"
+    data_doi: "https://doi.org/10.7910/DVN/FVCGHC"
+  - id: hainmueller_hopkins_yamamoto_candidate
+    status: software_smoke_test_only
+    article_doi: "https://doi.org/10.1093/pan/mpt024"
+    data_doi: "https://doi.org/10.7910/DVN/ARHZU4"
+    note: "Only 311 respondents and little respondent-covariate headroom."
+  - id: local_campaign_finance
+    status: excluded_missing_public_provenance
+
+gate_b:
+  passed: true
+  eligible_fresh_study_families: 4
+  required_fresh_study_families: 4
+  green_studies: [asylum_seekers_2016_2022, climate_agreements, income_tax_plans, democracy_candidate_choice]
+  eligible_outcome_scope:
+    asylum_seekers_2016_2022: [paired_choice, rating_1_to_7]
+    climate_agreements: [rating]
+    income_tax_plans: [paired_choice_six_rate_total_schedule_effects]
+    democracy_candidate_choice: [paired_choice_narrow_nonvalence_democracy_contest]
+  amber_outcome_scope:
+    climate_agreements: [paired_choice]
+  held_estimand_scope:
+    income_tax_plans: [seven_factor_revenue_surface, controlled_revenue_effects, pilot_rating]
+  reason: "Asylum is green for both outcomes, climate is green for rating, tax is green for the narrow six-rate total-effect choice analysis, and Graham-Svolik is green for the narrow coarsened nonvalence democracy-contest analysis. The last study supplies the required restricted/nonproduct design. Immigrant admission remains amber and is not needed for the four-study gate."
+  next_action: implement_and_hash_shared_gate_c_engine_readers_tests_and_report_schemas_on_synthetic_and_design_only_inputs
+
+comparison_protocol:
+  protocol_id: factorial_ml_comparison_v1
+  scientific_lock_date: "2026-09-03"
+  scientific_contract: config/comparison-v1.yml
+  simulation_contract: config/comparison-simulations-v1.yml
+  narrative_contract: docs/cross-study-comparison-contract.md
+  status: scientific_choices_frozen_gate_c_implementation_pending_outcomes_prohibited
+  outcomes_authorized: false
+  reason: "The common endpoints, hierarchy, targets, estimands, folds, learners, tuning budgets, integration rule, metrics, equivalence margins, positive-control rule, and reporting requirements are fixed. Strict readers, shared implementation, synthetic tests, output schemas, dependency lock, and implementation hashes do not yet exist."

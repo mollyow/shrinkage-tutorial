@@ -1,0 +1,27 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+*.Rcheck/
+*.tar.gz
+_targets/
+renv/library/
+renv/staging/
+
+# Historical/private source archives are intentionally outside the new package.
+shrinkage/
+Candidate recruitment/
+
+# Generated outputs (tidy production results are archived separately on release).
+results/
+analysis/candidate/derived/
+analysis/candidate/results/
+analysis/immigrant/derived/
+analysis/asylum/derived/
+analysis/climate/derived/
+analysis/tax/derived/
+analysis/graham_svolik/derived/
+paper/_freeze/
+paper/*_files/
+paper/*.html
+paper/*.pdf

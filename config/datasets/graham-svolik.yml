@@ -1,0 +1,374 @@
+schema_version: 1
+contract_version: 1
+contract_date: "2026-09-01"
+study_id: graham_svolik_candidate_choice
+status: gate_b_green_narrow_coarsened_democracy_outcomes_prohibited
+
+decision:
+  gate: B
+  narrow_result: green_under_mean_no_carryover
+  complete_profile_result: failed_assignment_law_not_certified
+  portfolio_role: fourth_fresh_application_and_restricted_nonproduct_design
+  outcome_blind_audit: true
+  eligible_scope: "Paired-choice contrasts for the three locked coarsened democracy interaction families."
+  prohibited_scope:
+    - complete_candidate_profile_surface
+    - causal_effects_of_age_experience_or_profession
+    - data_selected_interactions
+    - response_or_learner_inspection_before_the_cross_study_protocol_is_frozen
+
+protocol:
+  endpoint_lock: "The paired-choice endpoint remains unopened until folds, learners, equivalence margins, and cross-study reporting code are frozen."
+  prospective_endpoint_rule:
+    primary: c_win
+    row: "The selected candNum == 1 nonvalence core row."
+    missingness: "Only after the common benchmark is frozen, retain a task for the primary endpoint when c_win is observed. Report the number and proportion missing overall and by all four treatment components before fitting any learner."
+    held_endpoint: c_vote
+    prohibition: "The design audit must not read either endpoint; c_vote remains outside the primary benchmark unless separately promoted before any endpoint values are opened."
+  pre_audit_deviation:
+    occurred: true
+    description: "During initial archive inspection, a shell head command inadvertently displayed one complete experiment row, including four binary response values."
+    quarantine: "The row was not summarized, used for enrollment or estimand selection, supplied to a learner, or used in an effect calculation. No further response row may be opened during this gate."
+    reporting_rule: "Retain this disclosure in every manifest and in the eventual paper. Do not describe the full project history as having zero response values viewed."
+
+provenance:
+  article:
+    title: "Democracy in America? Partisanship, Polarization, and the Robustness of Support for Democracy in the United States"
+    authors: [Matthew H. Graham, Milan W. Svolik]
+    doi: "https://doi.org/10.1017/S0003055420000052"
+  archive:
+    doi: "https://doi.org/10.7910/DVN/EEARKA"
+    dataset_id: 3653938
+    version: "1.1"
+    release_time: "2024-02-01T21:12:32Z"
+    license: CC-BY-4.0
+    original_format_rule: "Use Dataverse's ?format=original response. The default API response for ingested tabular files is a different .tab byte stream and does not satisfy these locks."
+    generator_available: false
+  files:
+    experiment:
+      path: "Candidate recruitment/data/graham_svolik/data_experiment.csv"
+      bytes: 75655739
+      md5: "90f79baea84d1334c7c2da073ceacd67"
+      dataverse_file_id: 3654067
+    covariates:
+      path: "Candidate recruitment/data/graham_svolik/data_covariates.csv"
+      bytes: 618033
+      md5: "77c08ca5fa0782cc87ea87a4da232e71"
+      dataverse_file_id: 3653987
+    weights:
+      path: "Candidate recruitment/data/graham_svolik/weights.csv"
+      bytes: 92369
+      md5: "044e136b1ca52e08122e9edf409d2930"
+      dataverse_file_id: 3654046
+    appendix:
+      path: "Candidate recruitment/data/graham_svolik/final_appendix.pdf"
+      bytes: 6306444
+      md5: "4353be8391c771fba1a9518aba09fa62"
+    codebook:
+      path: "Candidate recruitment/data/graham_svolik/codebook.xlsx"
+      bytes: 32468
+      md5: "cad34a0d60d54d537f40fadf3c098f45"
+    article_pdf:
+      path: "Candidate recruitment/data/graham_svolik/final_manuscript.pdf"
+      bytes: 575764
+      md5: "0dea71a88a5d9411d1b3e4a292930f15"
+    dataverse_metadata:
+      path: "Candidate recruitment/data/graham_svolik/dataverse_v1.1_metadata.json"
+      bytes: 107651
+      md5: "69317a485718241cacd42e7748556d19"
+
+read_barrier:
+  experiment_allowed_columns:
+    - id
+    - weight
+    - matchNum
+    - candNum
+    - c_party
+    - c_Party
+    - c_p1_code
+    - c_p1_area
+    - c_p1_num
+    - c_p2_code
+    - c_p2_area
+    - c_p2_num
+    - c_dem_code
+    - c_dem_type
+    - c_sex
+    - c_race
+    - c_pro
+    - c_age
+    - c_exper
+    - c_onLeft
+    - c_respParty
+    - o_party
+    - o_Party
+    - o_p1_code
+    - o_p1_area
+    - o_p1_num
+    - o_p2_code
+    - o_p2_area
+    - o_p2_num
+    - o_dem_code
+    - o_dem_type
+    - o_sex
+    - o_race
+    - o_pro
+    - o_age
+    - o_exper
+    - o_onLeft
+    - o_respParty
+  covariate_allowed_columns:
+    - id
+    - rid
+    - age
+    - gender
+    - race
+    - educ
+    - hhi_cut
+    - tax
+    - pid7
+    - ideo
+    - trump
+    - E1
+    - E2
+    - E3
+    - E4
+    - I1
+    - I2
+    - I3
+    - I4
+    - M1
+    - M2
+    - M3
+    - M4
+    - T1
+    - T2
+    - T3
+    - T4
+    - knowl_anes_total
+    - auth_total
+    - voteduty
+  weights_allowed_columns: [rid, weight]
+  forbidden_experiment_outcomes: [c_win, c_vote, o_win, o_vote, R_win, moreD_win]
+  forbidden_derived_or_post_choice:
+    - c_prox
+    - c_proxSq
+    - c_distance
+    - c_pRate
+    - c_pRank
+    - o_prox
+    - o_proxSq
+    - o_distance
+    - o_pRate
+    - o_pRank
+    - diff_prox
+    - diff_distance
+    - m_platformDist
+    - Type
+  rule: "The executable audit may read the experiment schema with nrows=0, then must pass the exact experiment allowlist to data.table::fread(select=...). It must separately strict-select the covariate and weight columns. No response value is loaded and no broad experiment table is trimmed after reading."
+
+sample:
+  respondent_id: id
+  task_id: matchNum
+  orientation: "Use candNum == 1, which designates the undemocratic candidate in U/G tasks and the source focal candidate in G/G tasks."
+  enrollment_rule: "Retain every respondent in the released randomized experiment. Remove the two negative-valence tasks using only c_dem_type/o_dem_type; do not filter on choices, attention, speed, or post-choice fields."
+  expected:
+    released_respondents: 1682
+    released_task_rows: 43732
+    released_tasks: 21866
+    released_tasks_per_respondent: 13
+    mirrored_rows_per_task: 2
+    primary_respondents: 1682
+    primary_tasks: 18502
+    primary_tasks_per_respondent: 11
+    omitted_valence_tasks: 3364
+    covariate_rows: 1691
+    linked_covariate_ids: 1682
+    covariate_rows_with_missing_experiment_id: 9
+  source_count_discrepancy:
+    supplement_wave2_completers: 1692
+    article_respondents: 1691
+    article_choices: 21604
+    released_complete_experiment_ids: 1682
+    resolution: "The cohort is all 1,682 complete IDs in the released randomized experiment; the nine covariate rows without experiment IDs are not repaired or enrolled."
+
+factors:
+  democracy_behavior:
+    derived_column: democracy_behavior
+    source_columns: [c_dem_code, c_dem_type]
+    codes:
+      - generic
+      - u_journalists
+      - u_banProtest
+      - u_execRule
+      - u_court
+      - u_limitVote
+      - u_gerry2
+      - u_gerry10
+    labels:
+      - Pooled generic conduct
+      - Threaten journalists
+      - Ban protest
+      - Rule by executive order
+      - Ignore unfavorable court rulings
+      - Limit polling places
+      - Gerrymander for two extra seats
+      - Gerrymander for ten extra seats
+  focal_party:
+    column: c_party
+    codes: [D, R]
+    labels: [Democrat, Republican]
+  contest_relation:
+    derived_column: contest_relation
+    source_columns: [c_party, o_party]
+    codes: [same, cross]
+    labels: [Same-party contest, Cross-party contest]
+  focal_gender:
+    column: c_sex
+    codes: [Female, Male]
+    labels: [Female, Male]
+
+assignment:
+  reconstruction_status: exact_current_task_coarsened_law_from_source_randomization_blocks
+  democracy_behavior:
+    generic: "4/11"
+    each_undemocratic_behavior: "1/11"
+  focal_party:
+    D: "1/2"
+    R: "1/2"
+  contest_relation:
+    same: "6/13"
+    cross: "7/13"
+  ordered_party_pair:
+    DD: "3/13"
+    RR: "3/13"
+    DR: "7/26"
+    RD: "7/26"
+  focal_gender:
+    Female: "3/8"
+    Male: "5/8"
+  factorization: "q(D,P,R,S)=q_D(D)q_P(P)q_R(R)q_S(S), supported by the source's independently randomized attribute blocks."
+  opponent_democracy: "Generic in every retained candNum==1 task."
+  across_tasks: blocked_without_replacement_with_arbitrary_within_respondent_dependence
+  actual_display_sequence: not_released
+  mean_no_carryover: "Conditional on baseline variables, the current focal and opponent profiles, and current task context, the mean current paired-choice response is unaffected by profiles assigned in earlier displays."
+
+target:
+  respondents: "Released experimental population, using the supplied survey weight normalized over the 1,682 enrolled respondents."
+  causal_factors: uniform_over_8_by_2_by_2_by_2_supported_cells
+  target_cell_probability: "1/64"
+  remaining_randomized_context: "Outcome-blind empirical standardization over policy fields, opponent generic behavior, opponent demographics, randomized left/right placement, match number, and other released current-task fields."
+  causal_interpretation: "Effects of supported coarsened contest configurations, not freely set arbitrary candidate profiles."
+
+excluded_complete_profile_factors:
+  fields: [c_age, o_age, c_exper, o_exper, c_pro, o_pro]
+  role: audit_and_empirical_standardization_only
+  reasons:
+    profession: "The source probability list sums to 0.90 and omits Police officer, which appears at about ten percent in the release."
+    experience: "The supplement states age minus a uniform integer from 20 to 30; released age-minus-experience values are 23 through 33 with an undocumented endpoint pattern."
+    age: "Kept out of the causal target with its dependent experience field because the joint generator is not released and the experience rule conflicts with the data."
+
+covariates:
+  timing_rule: "All primary X variables were measured before the candidate choices: demographics and attitudes in Wave 1; knowledge, voting-duty, and authoritarianism items at the start of Wave 2."
+  primary_features:
+    - age
+    - gender
+    - race
+    - educ
+    - hhi_cut
+    - tax
+    - pid7
+    - ideo
+    - trump
+    - E1
+    - E2
+    - E3
+    - E4
+    - I1
+    - I2
+    - I3
+    - I4
+    - M1
+    - M2
+    - M3
+    - M4
+    - T1
+    - T2
+    - T3
+    - T4
+    - knowl_anes_total
+    - auth_total
+    - voteduty
+  numeric_features:
+    - age
+    - E1
+    - E2
+    - E3
+    - E4
+    - I1
+    - I2
+    - I3
+    - I4
+    - M1
+    - M2
+    - M3
+    - M4
+    - T1
+    - T2
+    - T3
+    - T4
+    - knowl_anes_total
+    - auth_total
+    - voteduty
+  categorical_features: [gender, race, educ, hhi_cut, tax, pid7, ideo, trump]
+  preprocessing: "Learn imputation, missing indicators, numeric scaling, and categorical encoding inside each outer training fold. An outcome-blind global category universe may align columns but may not supply foldwise distributional estimates."
+  never_features:
+    - id
+    - rid
+    - weight
+    - any_choice_or_win_field
+    - profile_proximity_rank_or_distance
+    - respondent_party_congruence_derived_from_the_candidate
+    - final_choice_debrief
+
+estimands:
+  name: target_weighted_coarsened_democracy_interaction_families
+  fixed_before_outcomes: true
+  families:
+    - id: democracy_x_focal_party
+      attributes: [democracy_behavior, focal_party]
+      cells: 16
+      interaction_rank: 7
+      expected_minimum_cell_count: 830
+    - id: democracy_x_contest_relation
+      attributes: [democracy_behavior, contest_relation]
+      cells: 16
+      interaction_rank: 7
+      expected_minimum_cell_count: 750
+    - id: democracy_x_focal_gender
+      attributes: [democracy_behavior, focal_gender]
+      cells: 16
+      interaction_rank: 7
+      expected_minimum_cell_count: 606
+  total_dimension: 21
+  inference_scope: fixed_finite_family_coordinates_and_joint_tests_only
+
+folds:
+  cluster: id
+  outer_folds: 5
+  deterministic_seed: 20260901
+  rule: "Hash and balance complete respondent IDs only. Every task for one respondent stays in exactly one fold. Any inner tuning split is created inside an outer training set from respondent IDs only."
+
+gate:
+  result: green_for_narrow_coarsened_democracy_families
+  complete_profile_result: fail
+  passed_conditions:
+    - original_archive_inputs_checksum_locked
+    - strict_selected_column_outcome_barrier
+    - complete_released_design_and_mirrored_pair_keys
+    - exact_coarsened_current_task_assignment_law
+    - all_64_primary_target_cells_observed
+    - all_three_family_ranks_equal_seven
+    - coding_invariant_uniform_target_projectors
+    - all_rows_isolated_by_respondent_fold
+  next_step: "Freeze the cross-study outcome/learner/equivalence protocol and reporting code before opening this endpoint."

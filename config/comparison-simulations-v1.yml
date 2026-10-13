@@ -1,0 +1,223 @@
+schema_version: 1
+simulation_protocol_id: factorial_ml_comparison_simulations_v1
+protocol_date: "2026-09-03"
+status: scenario_rules_frozen_implementation_and_positive_control_calibration_pending
+parent_protocol: config/comparison-v1.yml
+
+common:
+  outcome_range: [0, 1]
+  outer_folds: 5
+  inner_folds: 5
+  common_datasets_folds_and_target_draws_across_methods: true
+  learner_library: parent_protocol_primary_order_plus_oracle
+  master_seed: 260903000
+  seed_rule: "master_seed + phase_offset + 100000*cell_id + replication + purpose_offset"
+  phase_offsets:
+    calibration: 0
+    smoke: 10000000
+    production: 20000000
+  purpose_offsets:
+    data: 0
+    folds: 10000
+    target_integration: 20000
+    learner: 30000
+    oracle: 40000
+    bootstrap: 50000
+  calibration_grid_uses_common_random_numbers_across_multipliers: true
+  seed_collision_check_required_before_calibration: true
+  production_seeds_disjoint_from_calibration_and_smoke: true
+
+replication_schedule:
+  calibration:
+    replications_per_positive_control_candidate: 100
+    purpose: choose_only_the_prespecified_positive_control_strength_and_measure_runtime
+    substantive_reporting: prohibited
+  smoke:
+    replications_per_cell: 100
+    purpose: numerics_runtime_and_failure_checks_only
+    substantive_reporting: prohibited
+  production:
+    replications_per_all_cells: 500
+    headline_cells_total_replications: 2000
+    headline_cells:
+      - rating_additive_no_x
+      - rating_high_headroom_control
+      - choice_additive
+      - choice_high_headroom_control
+    total_production_datasets: 11000
+
+rating_geometry:
+  source: developmental_candidate_recruitment_geometry
+  role: realistic_developmental_geometry_not_independent_application_evidence
+  respondents: 600
+  tasks_per_respondent: 8
+  profiles: 1440
+  attributes: [fundraising, winning, pay, media, majority, authority, staff]
+  profile_sampling: uniform_without_replacement_within_respondent
+  target_profile_law: uniform_product
+  context_distribution: empirical_joint_six_binary_candidate_covariates_with_survey_weights
+  context_variables: [woman, poc, young, dem, rep, workingclass]
+  context_artifact:
+    status: pending_gate_c_design_only_rebuild
+    output: analysis/candidate/derived/comparison_v1_context_distribution.rds
+    allowed_source: "Candidate recruitment/replication/PSRM_replication/data/CleanedData.csv"
+    selected_columns: [id, weight, woman, poc, young, dem, rep, workingclass]
+    forbidden_columns: [interest]
+    construction: >-
+      Keep one row per respondent after verifying that weight and all six
+      context variables are invariant within respondent. Require finite positive
+      weights and binary nonmissing context variables, normalize respondent
+      weights to sum to one, and sample complete six-variable rows from that
+      locked empirical distribution.
+    must_be_hashed_before_calibration: true
+    stale_estimands_v3_artifacts_may_not_be_used: true
+  outcome_generator:
+    family: correlated_beta_binomial_rating
+    intervals: 9
+    target_mean: 0.329
+    beta_precision: 1.3
+    respondent_gaussian_copula_rho: 0.92
+    signal_scale: 0.45
+    conditional_mean_must_remain_strictly_inside_unit_interval: true
+  target_shift:
+    attribute: media
+    mu_over_q_by_locked_level_order: [0.5, 1, 1.5]
+    maximum_mu_over_q: 1.5
+  fixed_components:
+    main_coefficients:
+      fundraising: -0.035
+      winning: 0.055
+      pay: 0.035
+      media: 0.025
+      majority: -0.020
+      authority: 0.030
+      staff: 0.025
+    task_slope_centered_at_4_5: -0.004
+    linear_context_coefficients:
+      woman: 0.070
+      poc: -0.055
+      young: 0.050
+      dem: 0.060
+      rep: -0.045
+      workingclass: 0.045
+    fixed_profile_interactions:
+      authority_x_majority: 0.025
+      authority_x_staff: 0.020
+      fundraising_x_winning: 0.018
+      fundraising_curvature_x_pay: 0.015
+    linear_profile_context_interactions:
+      fundraising_x_woman: 0.055
+      winning_x_poc: 0.045
+      authority_x_dem: -0.045
+      staff_x_workingclass: 0.035
+    nonlinear_context_features:
+      - xor_woman_young
+      - poc_times_workingclass
+      - dem_times_young
+      - nonrep_times_poc_times_young
+    nonlinear_context_coefficients: [0.120, -0.100, 0.080, 0.060]
+    nonlinear_profile_context_coefficients:
+      fundraising_x_xor_woman_young: 0.085
+      winning_curvature_x_poc_workingclass: 0.070
+      authority_x_dem_young: 0.065
+      media_x_nonrep_poc_young: 0.050
+  factor_score_rule: equally_spaced_locked_level_scores_centered_and_unit_rms
+  curvature_rule: squared_factor_score_centered_and_unit_rms_or_zero_for_binary_factor
+  intercept_rule: calibrate_exact_target_weighted_conditional_mean_to_0_329
+
+choice_geometry:
+  source: synthetic_compact_asylum_product_geometry
+  role: paired_choice_positive_and_negative_controls
+  respondents: 1000
+  tasks_per_respondent: 5
+  profiles_per_task: 2
+  profile_sampling: independent_uniform_q_by_q_with_arbitrary_within_respondent_outcome_dependence
+  factors:
+    migration_reason: 4
+    vulnerability: 5
+    religion: 3
+    origin: 7
+  profiles: 420
+  target_profile_law: uniform_product
+  target_opponent_law: independent_uniform_product
+  target_families:
+    migration_reason_x_vulnerability: 12
+    religion_x_origin: 12
+  baseline_covariates:
+    normal_independent: 4
+    bernoulli_half_independent: 4
+  coefficient_generation:
+    seed: 260903011
+    basis: deterministic_uniform_target_orthonormal_factor_basis
+    main_coefficients: independent_normal_then_scaled_to_profile_utility_rms_0_35
+    pair_coefficients: independent_normal_then_scaled_to_pair_component_rms_0_15
+    nonlinear_heterogeneity_coefficients: independent_normal_then_scaled_to_component_rms_one_before_multiplier
+  conditional_choice_probability: "plogis(u(profile_1,x)-u(profile_2,x))"
+  within_respondent_outcome_generator:
+    method: gaussian_copula_bernoulli_with_locked_conditional_margins
+    latent_correlation: 0.50
+  additive_truth:
+    utility_components: [profile_main_effects]
+    nonlinear_heterogeneity_multiplier: 0
+  low_headroom_truth:
+    utility_components: [profile_main_effects, pair_effects, nonlinear_profile_by_x]
+    nonlinear_heterogeneity_multiplier: 0.25
+  high_headroom_truth:
+    utility_components: [profile_main_effects, pair_effects, nonlinear_profile_by_x]
+    nonlinear_heterogeneity_multiplier: selected_by_positive_control_rule
+
+cells:
+  - {id: 1, name: rating_additive_no_x, geometry: rating, profile_surface: additive, prognostic_x: none, treatment_heterogeneity: none, target: assignment}
+  - {id: 2, name: rating_linear_prognostic, geometry: rating, profile_surface: additive, prognostic_x: linear, treatment_heterogeneity: none, target: assignment}
+  - {id: 3, name: rating_linear_heterogeneity, geometry: rating, profile_surface: additive_plus_fixed_pairs, prognostic_x: linear, treatment_heterogeneity: linear, target: assignment}
+  - {id: 4, name: rating_nonlinear_prognostic, geometry: rating, profile_surface: additive_plus_fixed_pairs, prognostic_x: nonlinear, treatment_heterogeneity: none, target: assignment}
+  - {id: 5, name: rating_nonlinear_heterogeneity, geometry: rating, profile_surface: additive_plus_fixed_pairs, prognostic_x: linear, treatment_heterogeneity: nonlinear, target: assignment}
+  - {id: 6, name: rating_nonlinear_target_shift, geometry: rating, profile_surface: additive_plus_fixed_pairs, prognostic_x: linear, treatment_heterogeneity: nonlinear, target: shifted_max_ratio_1_5}
+  - {id: 7, name: rating_high_headroom_control, geometry: rating, profile_surface: additive_plus_fixed_pairs, prognostic_x: linear, treatment_heterogeneity: nonlinear_calibrated_multiplier, target: assignment}
+  - {id: 8, name: choice_additive, geometry: choice, profile_surface: additive_random_utility, prognostic_x: none, treatment_heterogeneity: none, target: assignment}
+  - {id: 9, name: choice_low_headroom_nonlinear, geometry: choice, profile_surface: additive_plus_pair, prognostic_x: none, treatment_heterogeneity: nonlinear_multiplier_0_25, target: assignment}
+  - {id: 10, name: choice_high_headroom_control, geometry: choice, profile_surface: additive_plus_pair, prognostic_x: none, treatment_heterogeneity: nonlinear_calibrated_multiplier, target: assignment}
+
+positive_control_calibration:
+  statistic: oracle_over_additive_family_balanced_mse
+  target_ratio: 0.70
+  passing_ratio_at_most: 0.75
+  multiplier_grid: [0.5, 0.75, 1, 1.5, 2, 3, 4]
+  selection: >-
+    Among multipliers with the 100-replication ratio at most 0.75, choose the
+    multiplier whose ratio is closest to 0.70; break ties toward the smaller
+    multiplier. If none passes, Gate D fails and the grid is not extended.
+  separate_selection_for_rating_and_choice: true
+  calibration_results_hashed_before_smoke: true
+  production_uses_fresh_seed_stream: true
+  feasible_recovery_gate:
+    eligible_learners: [elastic_net, ranger, xgboost]
+    minimum_fraction_oracle_gain_recovered: 0.50
+
+metrics:
+  truth_evaluation: exact_target_contrast_where_enumerable_otherwise_independent_high_precision_truth_enumeration
+  primary_family_risk: family_dimension_normalized_contrast_mse
+  risk_ratio_denominator: additive
+  oracle_headroom: oracle_over_additive
+  gain_recovered: "(risk_additive-risk_method)/(risk_additive-risk_oracle)"
+  compute_gain_recovered_only_if_oracle_gain_at_least: 0.05
+  coverage: [pointwise_95, simultaneous_family_95]
+  also_report: [bias_in_mc_sd_units, interval_width, family_test_size_power, prediction_loss, runtime, peak_memory, failures, tuning_stability, split_sensitivity]
+
+gates:
+  sensitivity_gate:
+    oracle_over_additive_at_most: 0.75
+    feasible_gain_recovered_at_least: 0.50
+  inference_gate:
+    coverage_range: [0.93, 0.97]
+    maximum_absolute_standardized_bias: 0.10
+    maximum_headline_risk_ratio_ci_width: 0.06
+    maximum_failure_rate: 0.01
+    additive_no_headroom_aggregate_excess_risk_at_most: 0.05
+    additive_no_headroom_any_cell_excess_risk_at_most: 0.10
+
+authorized_next_action:
+  action: implement_and_test_against_synthetic_fixtures_only
+  run_calibration: false
+  run_smoke: false
+  run_production: false

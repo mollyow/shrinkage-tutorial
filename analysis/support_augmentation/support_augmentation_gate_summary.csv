@@ -1,0 +1,16 @@
+"metric","value"
+"validation_checks",7
+"maximum_validation_residual",5.06419585567859e-15
+"parity_cases",4
+"minimum_parity_added_profiles",2
+"maximum_parity_added_profiles",4
+"hamming_layer_cases",120
+"infeasible_hamming_layer_cases",9
+"greedy_layer_matches_exhaustive_cases",120
+"robust_greedy_comparisons",16
+"maximum_robust_greedy_risk_ratio",1.48863636363635
+"supermodularity_violation",0.0104166666666666
+"special_case_rows",7
+"hamming_one_point_optimal_profiles",5
+"forbidden_q3_minimum_added_profiles",2
+"forbidden_q4_minimum_added_profiles",4

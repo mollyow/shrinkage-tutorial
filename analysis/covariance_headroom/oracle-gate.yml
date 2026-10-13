@@ -1,0 +1,79 @@
+version: 1
+status: frozen_for_theory_gate_c
+frozen_on: "2026-08-27"
+scope: constant_residual_covariance_oracle_headroom
+
+data:
+  prepared_bundle: analysis/candidate/derived/candidate_prepared.rds
+  respondents: 3000
+  tasks_per_respondent: 8
+  profile_support: 1440
+  target: uniform_complete_factorial
+  coordinate_set: locked_22_candidate_interaction_coordinates
+
+mean_restriction:
+  primary: "E(Y_it | A_i1,...,A_i8) = m_t(A_it)"
+  label: task_specific_mean_no_carryover
+  respondent_fixed_effects: false
+  baseline_demographics: false
+
+residualization:
+  folds: locked_candidate_respondent_folds
+  primary: task_specific_additive_wls
+  primary_formula: "interest ~ 0 + task * (fundraising + winning + pay + media + majority + authority + staff)"
+  sensitivities:
+    - task_only_wls
+    - common_two_way_wls
+  attributes_treated_as: nominal
+  fit_weights: survey_weights
+
+covariance:
+  primary: unstructured_8_by_8
+  sensitivity: compound_symmetry
+  moment: uncentered_crossfitted_residual_second_moment
+  moment_weights: squared_respondent_survey_weights
+  eigenvalue_relative_floor: 0.00000001
+  tuned_on_outcomes: false
+
+assignment_scenarios:
+  primary: documented_product_uniform
+  required_sensitivity: ordered_uniform_without_replacement
+  without_replacement_off_diagonal_contrast_moment: -0.0006949270326615705
+  limitation: "All observed respondents have eight distinct profiles, while the original platform transition law is unavailable. Neither scenario is treated as re-verified platform truth."
+
+metric:
+  name: efficient_to_ordinary_oracle_residual_variance_ratio
+  family_balance: equal_weight_over_four_locked_families
+  note: "Under the constant-covariance model the ratio is common to all centered coordinates; realized family trace ratios are reported as a geometry diagnostic."
+
+bootstrap:
+  unit: respondent
+  draws: 5000
+  seed: 2026082701
+  interval: percentile_95_two_sided
+  gate_uses: upper_97_5_percentile
+  nuisance_refit: false
+  interpretation: conditional_on_crossfitted_residuals
+
+pass_rules:
+  primary_point_ratio_max: 0.75
+  primary_upper_bound_max: 0.85
+  require_both_assignment_scenarios: true
+  require_both_covariance_classes: true
+  maximum_calibration_residual: 0.0000000001
+  minimum_covariance_eigenvalue: positive_after_fixed_floor
+
+non_gating_diagnostics:
+  - realized_family_trace_ratios
+  - centered_covariance_moment
+  - alternative_residualizers
+  - raw_outcome_correlation
+
+interpretation:
+  passing_establishes: "Enough covariance headroom exists to justify building and testing a feasible learned-weight estimator."
+  passing_does_not_establish:
+    - valid_feasible_estimator
+    - interval_coverage
+    - mean_no_carryover
+    - verified_joint_assignment_law
+    - standalone_paper_novelty

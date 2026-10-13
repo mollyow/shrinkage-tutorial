@@ -1,0 +1,26 @@
+^renv\.lock$
+^\.git$
+^\.gitignore$
+^\.github$
+^\.DS_Store$
+^\.Rproj\.user$
+^shrinkage$
+^Candidate recruitment$
+^tutorial\.Rmd$
+^tutorial\.md$
+^tutorial\.bib$
+^tutorial_files$
+^plotting\.R$
+^min_.*\.rda$
+^analysis$
+^config$
+^simulation$
+^paper$
+^docs$
+^_targets\.R$
+^_targets$
+^renv$
+^renv\.lock$
+^results$
+^orderridge_.*\.tar\.gz$
+^orderridge\.Rcheck$

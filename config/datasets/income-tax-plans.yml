@@ -1,0 +1,318 @@
+schema_version: 1
+dataset_id: income_tax_plans
+status: gate_b_green_for_six_rate_total_schedule_effects_outcomes_prohibited
+lock_date: "2026-09-01"
+
+provenance:
+  title: "The Structure of American Income Tax Policy Preferences"
+  authors: [Cameron Ballard-Rosa, Lucy Martin, Kenneth Scheve]
+  article_doi: "https://doi.org/10.1086/687324"
+  data_doi: "https://doi.org/10.7910/DVN/NGRGS5"
+  archive_version: "1.0"
+  archive_version_id: 80781
+  archive_release_time: "2016-04-05T13:48:41Z"
+  license: CC0-1.0
+  files:
+    data:
+      path: "Candidate recruitment/data/income_tax_plans/us_fullsurvey_taxplan_level.dta"
+      bytes: 80809564
+      md5: "bf4527ea92e7da5acfacbdd3c9848e43"
+    author_code:
+      path: "Candidate recruitment/data/income_tax_plans/Replication BRMS.do"
+      bytes: 13728
+      md5: "bb13e21ef08379c1cd1e0acf0fbfc1a5"
+    article:
+      path: "Candidate recruitment/data/income_tax_plans/article.pdf"
+      bytes: 626720
+      md5: "ff7ed1c04908f165ff059f7471b4c53f"
+    online_appendix:
+      path: "Candidate recruitment/data/income_tax_plans/online_appendix.pdf"
+      bytes: 343782
+      md5: "ddbc72233d2c76ede9a232b79510030c"
+    dataverse_v1_metadata:
+      path: "Candidate recruitment/data/income_tax_plans/dataverse_v1.0_metadata.json"
+      bytes: 4523
+      md5: "c93761631cce4e3f61cf6a5a9e7ea9dc"
+
+read_barrier:
+  allowed_columns:
+    - ID
+    - table
+    - plan
+    - weight
+    - saw_revenue
+    - taxrate1
+    - taxrate2
+    - taxrate3
+    - taxrate4
+    - taxrate5
+    - taxrate6
+    - taxrev
+    - age
+    - female
+    - race
+    - educ
+    - pid7
+    - conservative_ideology
+    - newsint
+  forbidden_outcomes:
+    - pref_plan_1
+    - pref_plan_2
+    - pref_plan_3
+    - pref_plan_4
+    - pref_plan_5
+    - pref_plan_6
+    - pref_plan_7
+    - pref_plan_8
+    - pref_plan
+    - chose_plan
+    - ideal_rate_lt375
+    - ideal_rate_gt375
+    - ideal_rate_num_lt375
+    - ideal_rate_num_lt10
+    - ideal_rate_num_10_35
+    - ideal_rate_num_35_85
+    - ideal_rate_num_85_175
+    - ideal_rate_num_175_375
+    - ideal_rate_num_gt375
+    - prog_up_self
+    - prog_up_hh
+    - prog_down_self
+    - prog_down_hh
+    - prog_scale
+    - inc_prog_self
+    - inc_prog_hh
+    - tax_costs
+  forbidden_post_choice_or_outcome_adjacent:
+    - why_chose_plan
+    - consid_plan_rich
+    - consid_plan_poor
+    - consid_plan_negecon
+    - consid_plan_personal
+    - consid_plan_revenue
+    - page_conjoint1_page_timing
+    - page_conjoint2_page_timing
+    - page_conjoint3_page_timing
+    - page_conjoint4_page_timing
+    - page_conjoint5_page_timing
+    - page_conjoint6_page_timing
+    - page_conjoint7_page_timing
+    - page_conjoint8_page_timing
+    - page_conjoint8_follow_page_timin
+    - conj_length
+    - conj_minutes
+    - conj_fast
+    - conj_medium
+    - conj_slow
+    - qualitycontrol_overall_scale
+  rule: "The executable audit must pass exactly this allowlist to haven::read_dta(col_select=...). It may not broad-read the 443-column file and delete outcomes afterward."
+
+sample:
+  respondent_id: ID
+  task_id: table
+  profile_side: plan
+  weight: weight
+  primary_arm_rule: "saw_revenue == 1"
+  primary_arm_interpretation: "The published main experiment in which the derived revenue category was displayed."
+  expected:
+    archive_respondents: 2250
+    archive_tasks: 18000
+    archive_profile_rows: 36000
+    primary_respondents: 2000
+    primary_tasks: 16000
+    primary_profile_rows: 32000
+    held_no_revenue_respondents: 250
+    held_no_revenue_tasks: 2000
+    held_no_revenue_profile_rows: 4000
+    tasks_per_respondent: 8
+    profiles_per_task: 2
+  enrollment_rule: "Retain all 2,000 IDs assigned to the published displayed-revenue version. Do not filter on choices, attention, completion speed, or any post-conjoint field."
+  archive_note: "The separate N=500 rating pilot mentioned in article footnote 15 is absent. The archived N=250 group is the no-revenue version, not that pilot."
+
+attributes:
+  lowest_bracket_rate:
+    column: taxrate1
+    bracket: "Less than $10,000"
+    codes: [1, 2, 3, 4]
+    labels: ["0%", "5%", "15%", "25%"]
+  lower_middle_bracket_rate:
+    column: taxrate2
+    bracket: "$10,000-$35,000"
+    codes: [1, 2, 3, 4]
+    labels: ["5%", "15%", "25%", "35%"]
+  middle_bracket_rate:
+    column: taxrate3
+    bracket: "$35,000-$85,000"
+    codes: [1, 2, 3, 4]
+    labels: ["5%", "15%", "25%", "35%"]
+  upper_middle_bracket_rate:
+    column: taxrate4
+    bracket: "$85,000-$175,000"
+    codes: [1, 2, 3, 4]
+    labels: ["5%", "15%", "25%", "35%"]
+  second_highest_bracket_rate:
+    column: taxrate5
+    bracket: "$175,000-$375,000"
+    codes: [1, 2, 3, 4, 5]
+    labels: ["5%", "15%", "25%", "35%", "45%"]
+  highest_bracket_rate:
+    column: taxrate6
+    bracket: "More than $375,000"
+    codes: [1, 2, 3, 4, 5, 6]
+    labels: ["5%", "15%", "25%", "35%", "45%", "55%"]
+
+revenue_display:
+  column: taxrev
+  codes: [1, 2, 3, 4, 5]
+  labels:
+    - "Much more revenue (>125%)"
+    - "More revenue (105-125%)"
+    - "About the same revenue (95-105%)"
+    - "Less revenue (75-95%)"
+    - "Much less revenue (<75%)"
+  causal_role: randomized_downstream_mediator_not_seventh_factor
+  mechanism: "Authors calculate revenue from all six rates and IRS inputs, add epsilon distributed N(0, 0.07), then bin the result."
+  unreleased_components: [IRS_calculator_code, calculator_inputs, random_noise_draws, random_seed]
+  consequence: "Do not condition on taxrev in the primary nuisance model. The primary total schedule response averages the natural revenue mechanism."
+  coding_warning: "Use labelled taxrate5, whose code 5 is valid 45%. Do not use the released convenience column rate_175_375, which maps taxrate5 code 5 back to numeric 5."
+
+support:
+  type: unrestricted_cartesian_product_of_six_rate_factors
+  schedule_profiles: 7680
+  factor_levels: [4, 4, 4, 4, 5, 6]
+  structural_zeros: none
+  all_15_factor_pairs_complete_in_primary_arm: true
+  observed_distinct_schedules_primary: 7554
+  full_schedule_coverage_required: false
+
+assignment:
+  reconstruction_status: source_supported_prospective_uniform_product_and_q_times_q_generator_not_released
+  source_basis: "The article says respondents saw pairs of randomly generated plans, each bracket rate was randomly assigned for each pair, and the six rates were independently varied. It invokes conditional independent randomization but does not print the level probabilities or release the generator."
+  focal_schedule_law: "q(r)=1/7680 over the unrestricted six-rate product."
+  q_schedule: "1/7680"
+  within_task_ordered_pair_law: "q(r_A)q(r_B)=1/58,982,400."
+  ordered_pair_probability: "1/58982400"
+  within_task_status: source_supported_reconstruction_not_generator_certified
+  across_tasks_joint_law: unknown_allow_arbitrary_within_respondent_dependence
+  diagnostics_note: "Uniform one-way counts, occupancy, all factor-pair cells, cross-side tables, identical-pair counts, and across-task repeats are diagnostics, not substitutes for the prospective source-supported lock."
+  mean_no_carryover: "Conditional on current task, side, current focal and opponent schedules, and baseline respondent variables, the expected current choice does not depend on schedules shown in earlier tasks. This is prospectively declared and matches the article's stated conjoint assumption."
+
+estimand:
+  name: target_weighted_total_schedule_response_interaction_families
+  surface: "For each six-rate schedule r, average the profile-choice response over the target respondent population, task and side, an opponent drawn from q, and the natural noisy revenue-display mechanism induced by r and its opponent."
+  eligible_scope: six_randomized_rate_total_effects_only
+  held_scope:
+    - seven_factor_rate_plus_revenue_surface
+    - controlled_or_direct_effects_holding_revenue_fixed
+    - revenue_mediation_effects
+    - no_revenue_arm_headline_analysis
+    - unarchived_pilot_rating_analysis
+
+target:
+  respondents: "The published N=2,000 displayed-revenue study population, using released survey weights normalized to sum to one within that arm."
+  schedules: uniform_q_over_7680_rate_schedules
+  opponent: independent_uniform_q_over_7680_rate_schedules
+  tasks: equal_average_over_eight_task_positions
+  sides: equal_average_over_plan_A_and_plan_B
+  revenue: average_over_natural_schedule_induced_noisy_display_mechanism
+
+covariates:
+  timing_rule: "Primary features are the seven variables the online appendix says YouGov used to construct the matched sample before the experiment: age, gender, race, education, party identification, ideology, and political interest."
+  primary_features: [age, female, race, educ, pid7, conservative_ideology, newsint]
+  preprocessing: "Lock category universes without outcomes. Learn any numeric scaling and missing-value imputation inside each outer training fold. Use explicit missing levels for categorical variables."
+  feature_semantics:
+    age:
+      semantic_type: continuous
+      missing_value_rule: fold_training_median_plus_indicator
+      scaling_rule: fold_training_robust_center_and_scale
+    female:
+      semantic_type: binary_categorical
+      missing_value_rule: explicit_missing_level
+      encoding: full_one_hot_no_reference_drop
+    race:
+      semantic_type: unordered_categorical
+      missing_value_rule: explicit_missing_level
+      encoding: full_one_hot_no_reference_drop
+    educ:
+      semantic_type: ordered_category_treated_as_categorical
+      missing_value_rule: explicit_missing_level
+      encoding: full_one_hot_no_reference_drop
+    pid7:
+      semantic_type: unordered_categorical
+      missing_value_rule: explicit_missing_level
+      encoding: full_one_hot_no_reference_drop
+    conservative_ideology:
+      semantic_type: ordered_category_treated_as_categorical
+      missing_value_rule: explicit_missing_level
+      encoding: full_one_hot_no_reference_drop
+    newsint:
+      semantic_type: ordered_category_treated_as_categorical
+      missing_value_rule: explicit_missing_level
+      encoding: full_one_hot_no_reference_drop
+  expected_missing_primary:
+    age: 0
+    female: 0
+    race: 0
+    educ: 0
+    pid7: 0
+    conservative_ideology: 182
+    newsint: 46
+  excluded_primary:
+    - altru_howmuch
+    - trust
+    - recip_if0
+    - recip_if25
+    - recip_if50
+    - recip_if75
+    - recip_if100
+    - risk_averse
+    - own_income
+    - hh_income
+    - work_vs_luck
+    - taxes_harm
+    - ineq_averse
+    - racial_resentment_items
+    - economic_knowledge
+    - numeracy
+    - attention_check
+  exclusion_note: "The article states that subgroup-analysis covariates were collected in a post-experimental survey. Even where archive ordering appears earlier, these fields are excluded from the primary learner under the conservative source-based timing rule."
+  never_features: [ID, weight, table, plan, saw_revenue, taxrev]
+
+interaction_families:
+  lowest_x_highest:
+    attributes: [lowest_bracket_rate, highest_bracket_rate]
+    cells: 24
+    dimension: 15
+    substantive_lock: "Does support for taxing the lowest bracket depend on the rate imposed on the highest bracket?"
+  upper_middle_x_highest:
+    attributes: [upper_middle_bracket_rate, highest_bracket_rate]
+    cells: 24
+    dimension: 15
+    substantive_lock: "Does the top rate complement or substitute for taxation of the $85,000-$175,000 bracket?"
+  top_adjacent_brackets:
+    attributes: [second_highest_bracket_rate, highest_bracket_rate]
+    cells: 30
+    dimension: 20
+    substantive_lock: "Do the two highest bracket rates enter support as a jointly shaped upper-income schedule?"
+  rule: "Retain every coordinate in each whole target-weighted family. Do not select or drop coordinates after response inspection."
+
+folds:
+  outer: 5
+  inner_labels: 5
+  cluster: ID
+  deterministic_seed: 20260901
+  balance: "Deterministically balance respondent count and released-weight decile. All 16 rows for an ID remain together."
+
+gate:
+  result: green_for_narrow_total_schedule_effects
+  counts_toward_portfolio_gate_b: true
+  outcome_access: prohibited_until_the_cross_study_benchmark_contract_is_frozen
+  limitations:
+    - original_randomizer_and_generator_not_released
+    - exact_revenue_given_schedule_mechanism_not_reconstructible
+    - mean_no_carryover_declared
+    - analysis_recode_starts_from_processed_long_DTA
+    - separate_rating_pilot_not_archived
+  unblockers_for_held_estimands:
+    - recover_IRS_revenue_calculator_inputs_code_and_noise_seed_for_revenue_controlled_estimands
+    - recover_rating_pilot_for_any_rating_analysis

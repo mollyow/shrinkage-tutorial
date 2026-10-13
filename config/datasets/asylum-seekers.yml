@@ -1,0 +1,372 @@
+schema_version: 1
+contract_version: 1
+contract_date: "2026-09-01"
+study_id: asylum_seekers_2016_2022
+status: design_lock_outcomes_prohibited
+
+decision:
+  gate: B
+  result: green
+  meaning: "Both waves have reconstructible product-randomized profile support, explicit profile-side identifiers, adequate respondent clusters, a conservative eight-variable pre-outcome covariate tier, and three identified whole interaction families."
+  outcome_blind: true
+  permitted_next_actions:
+    - freeze_contract_and_hashes
+    - implement_shared_supported_contrast_constructor
+    - define_outcome_specific_pair_retention_without_inspecting_values
+  prohibited_actions:
+    - read_outcome_values
+    - fit_outcome_models
+    - inspect_effects_or_learner_performance
+
+provenance:
+  article:
+    title: "Europeans' support for refugees of varying background is stable over time"
+    doi: "https://doi.org/10.1038/s41586-023-06417-6"
+  prospective_plan:
+    registration: "https://osf.io/jd8n3/"
+    frozen_file: "https://osf.io/zbhca"
+    note: "The plan explicitly calls the attribute assignment non-restricted uniform randomization and assigns each 2022 frame with probability 1/4."
+  archive:
+    doi: "https://doi.org/10.7910/DVN/FTL1MM"
+    version: "2.0"
+    dataset_id: 7174640
+    license: CC0-1.0
+    limitation: "The archive documents full randomization and releases realized assignments, but it does not contain the survey-platform randomizer."
+  files:
+    zip:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials.zip"
+      bytes: 5976121
+      md5: "ef7caf89f889a38f3f976d55a2caec19"
+    conjoint_2016:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials/data/conjoint_data_2016.csv"
+      bytes: 27946329
+      md5: "3fec26e866a549868beaff8065a2ad6f"
+    conjoint_2022:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials/data/conjoint_data_2022.csv"
+      bytes: 22687755
+      md5: "c120c19040e46fcc59696dfed5e23b45"
+    respondents_2016:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials/data/respondent_data_2016.csv"
+      bytes: 1938809
+      md5: "1cd9d9fa1ceb67ab21626cb2ffee8d9c"
+    respondents_2022:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials/data/respondent_data_2022.csv"
+      bytes: 2806912
+      md5: "bc5055a946881e184b84d18e80ba1f60"
+    conjoint_codebook:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials/data/conjoint_data_codebook.txt"
+      bytes: 1491
+      md5: "d10f344d588623850ee50e68bbdf70d7"
+    respondent_codebook:
+      path: "Candidate recruitment/data/asylum_seekers/replication_materials/data/respondent_data_codebook.txt"
+      bytes: 9099
+      md5: "847fe4bfccc45751df9e40d3e7ce2cee"
+    supplementary_information:
+      path: "Candidate recruitment/data/asylum_seekers/supplementary_information.pdf"
+      bytes: 1050321
+      md5: "073806a3af628c75796237524a84f06f"
+    preanalysis_plan_and_questionnaire:
+      path: "Candidate recruitment/data/asylum_seekers/2022_preanalysis_plan_and_questionnaire.pdf"
+      bytes: 384489
+      md5: "325593d1674cabe7a90f72f969665f5e"
+
+read_barrier:
+  conjoint_allowed_columns:
+    - ResponseId
+    - task
+    - prof
+    - cconsist
+    - cgender
+    - corigin
+    - cage
+    - cjob
+    - cvulner
+    - creason
+    - creligion
+    - clang
+  respondent_allowed_columns:
+    common:
+      - ResponseId
+      - asy_change_home
+      - asy_change_europe
+      - immig_change_home
+      - cty
+      - gender
+      - age
+      - home_born
+      - educ_EISCED
+      - emp_status
+      - inc_decile
+      - ideo
+      - weight
+      - alt_weight
+    wave_2022:
+      - frame
+  forbidden_outcomes:
+    - pref
+    - rate
+    - ratebin
+  rule: "The design audit must use data.table::fread(select=...) on each source file. It must never load a complete conjoint file and remove the outcomes afterward."
+
+sample:
+  respondent_id: ResponseId
+  task_id: task
+  profile_side: prof
+  primary_weight: weight
+  sensitivity_weight: alt_weight
+  tasks_per_design_complete_respondent: 5
+  profiles_per_task: 2
+  waves:
+    wave_2016:
+      archive_respondents: 18030
+      archive_tasks: 90150
+      archive_profile_rows: 180300
+      design_complete_respondents: 18021
+      design_complete_tasks: 90105
+      design_complete_profile_rows: 180210
+      all_profile_missing_respondents: 9
+      primary_weight_eligible_respondents: 17874
+      primary_weight_eligible_tasks: 89370
+      primary_weight_eligible_profile_rows: 178740
+      missing_primary_weight_among_design_complete: 147
+    wave_2022:
+      archive_respondents: 14976
+      archive_tasks: 74880
+      archive_profile_rows: 149760
+      design_complete_respondents: 14966
+      design_complete_tasks: 74830
+      design_complete_profile_rows: 149660
+      all_profile_missing_respondents: 10
+      primary_weight_eligible_respondents: 14846
+      primary_weight_eligible_tasks: 74230
+      primary_weight_eligible_profile_rows: 148460
+      missing_primary_weight_among_design_complete: 120
+  country_count_lock:
+    wave_2016:
+      Austria: [1206, 1206, 1202]
+      Czech Republic: [1202, 1201, 1199]
+      Denmark: [1201, 1201, 1192]
+      France: [1203, 1201, 1197]
+      Germany: [1200, 1198, 1128]
+      Greece: [1200, 1200, 1200]
+      Hungary: [1200, 1200, 1195]
+      Italy: [1200, 1200, 1196]
+      Netherlands: [1200, 1199, 1194]
+      Norway: [1202, 1200, 1188]
+      Poland: [1201, 1201, 1196]
+      Spain: [1203, 1203, 1203]
+      Sweden: [1203, 1202, 1182]
+      Switzerland: [1208, 1208, 1201]
+      United Kingdom: [1201, 1201, 1201]
+    wave_2022:
+      Austria: [1001, 1001, 996]
+      Czech Republic: [1001, 1000, 987]
+      Denmark: [995, 994, 988]
+      France: [997, 997, 996]
+      Germany: [993, 993, 957]
+      Greece: [1002, 1002, 996]
+      Hungary: [1001, 1001, 994]
+      Italy: [996, 996, 993]
+      Netherlands: [993, 991, 987]
+      Norway: [1001, 997, 983]
+      Poland: [999, 999, 995]
+      Spain: [999, 999, 997]
+      Sweden: [1000, 1000, 989]
+      Switzerland: [997, 996, 990]
+      United Kingdom: [1001, 1000, 998]
+    column_order: [archive_respondents, design_complete_respondents, primary_weight_eligible_respondents]
+  design_enrollment_rule: "Within each wave, retain respondents whose ten rows have complete values for all nine randomized profile attributes. The archive contains only all-complete or all-missing ten-row profile blocks."
+  primary_population_analysis_rule: "Within the design-complete universe, retain respondents with a finite positive primary survey weight."
+  sensitivity_rule: "Repeat without survey weights in the full design-complete universe and with alt_weight where available."
+  outcome_missingness_rule: "After Gate B, prospectively retain a paired task for an outcome only when both profiles have that outcome observed; do not revise the design enrollment universe."
+
+attributes:
+  testimony_consistency:
+    column: cconsist
+    levels: ["No inconsistencies", "Minor inconsistencies", "Major inconsistencies"]
+  applicant_gender:
+    column: cgender
+    levels: ["Female", "Male"]
+  origin:
+    column: corigin
+    levels: ["Syria", "Afghanistan", "Kosovo", "Eritrea", "Pakistan", "Ukraine", "Iraq"]
+  applicant_age:
+    column: cage
+    levels: ["21 Years", "38 Years", "62 Years"]
+  occupation:
+    column: cjob
+    levels: ["Unemployed", "Cleaner", "Farmer", "Accountant", "Teacher", "Doctor"]
+  vulnerability:
+    column: cvulner
+    levels: ["None", "PTSD", "Victim of torture", "No surviving family", "Handicapped"]
+  migration_reason:
+    column: creason
+    levels_by_wave:
+      wave_2016: ["Political persecution", "Religious persecution", "Ethnic persecution", "Economic opportunities"]
+      wave_2022: ["Political persecution", "Religious persecution", "Ethnic persecution", "Economic opportunities", "War"]
+  religion:
+    column: creligion
+    levels: ["Christian", "Agnostic", "Muslim"]
+  language:
+    column: clang
+    levels: ["Fluent", "Broken", "None"]
+
+support:
+  type: complete_cartesian_product_within_wave
+  structural_zeros: none
+  all_36_attribute_pairs_complete: true
+  profiles:
+    wave_2016: 136080
+    wave_2022: 170100
+  common_wave_support:
+    rule: "For direct 2016-versus-2022 rating comparisons, remove War from the focal-profile target. For forced choice, condition both focal and opponent profiles to non-War; removing only focal War leaves the 2022 opponent environment different from 2016."
+    profiles: 136080
+
+assignment:
+  reconstruction_status: prospectively_documented_nonrestricted_uniform_randomization_and_realized_support_verified_no_platform_generator_released
+  row_marginal_law:
+    wave_2016: "Independent uniform draws over the nine wave-2016 attribute level sets; q_2016(a)=1/136080."
+    wave_2022: "Independent uniform draws over the nine wave-2022 attribute level sets; q_2022(a)=1/170100."
+  within_pair_profile_law: "Independent fully randomized profiles, q_w x q_w, as documented by the study; no source or realized-assignment discrepancy was found."
+  across_tasks_joint_law: "The source says values were randomized across respondents and profiles; inference nevertheless allows arbitrary within-respondent dependence and uses respondent-level folds."
+  profile_side_source: "prof explicitly records sides 1 and 2 within tasks A through E."
+  frame_2022:
+    mechanism: randomized_at_beginning_of_survey_before_conjoint
+    levels: [general, mediterranean, afghanistan, ukraine]
+    assignment_probability: "1/4 for each frame"
+    realized_counts:
+      archive: {general: 3709, mediterranean: 3809, afghanistan: 3730, ukraine: 3728}
+      design_complete: {general: 3706, mediterranean: 3807, afghanistan: 3728, ukraine: 3725}
+
+target:
+  primary:
+    respondent_population: "Equal-weight mixture of the 15 countries; within country, use the released age-gender-education entropy-balancing weight, trimmed by the authors at 6."
+    profiles: wave_specific_uniform_product_assignment_q
+    frames_2022: uniform_one_quarter_mixture
+    waves: "Estimate each wave separately; treat 2016 as the primary wave and 2022 as a nested temporal replication, not as two independent studies."
+  cross_wave:
+    profiles: uniform_product_on_common_support_without_war
+    countries: equal_weight_over_same_15_countries
+  sensitivities:
+    - observed_country_sample_mixture
+    - unweighted_design_complete_respondents
+    - author_alt_weight
+    - frame_specific_2022_results
+
+covariates:
+  timing_rule: "Primary learners use immutable demographics and the three attitudes documented before the conjoint. Employment, income, ideology, and all feeling-thermometer, cosmopolitanism, nationalism, alliance, and threat measures were elicited later and are excluded from primary learners. The 2016 order is strongly supported by the preregistration's questionnaire-reuse statement but its original instrument is not released."
+  preprocessing: "Within each outer training fold, learn numerical scaling and imputation. Use the globally locked, outcome-blind category universe only to keep columns aligned across folds."
+  primary_raw: [cty, gender, age, home_born, educ_EISCED, asy_change_home, asy_change_europe, immig_change_home]
+  feature_semantics:
+    cty:
+      semantic_type: unordered_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    gender:
+      semantic_type: unordered_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    age:
+      semantic_type: continuous
+      primary_encoding: numeric
+      missing_value_rule: fold_training_median_plus_indicator
+      scaling_rule: fold_training_median_and_iqr
+    home_born:
+      semantic_type: binary_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    educ_EISCED:
+      semantic_type: ordered_category_treated_as_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    asy_change_home:
+      semantic_type: ordered_category_treated_as_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    asy_change_europe:
+      semantic_type: ordered_category_treated_as_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    immig_change_home:
+      semantic_type: ordered_category_treated_as_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+  randomized_context:
+    frame: "For 2022, include frame as an unpenalized context input or fit frame-specific nuisances and integrate with weight 1/4; do not treat it as a background covariate."
+  post_conjoint_sensitivity_only: [emp_status, inc_decile]
+  exclude_post_conjoint:
+    - feel_therm_*
+    - ideo
+    - cosmo_*
+    - nat_*
+    - eu_view
+    - nato_view
+    - rus_*
+    - nato_intervene
+  never_features: [ResponseId, weight, alt_weight]
+  age_rule: "Keep ages 16 and 17 because voting eligibility differs across countries. Treat age above 110 as implausible and missing, add an indicator, and impute/scale inside each outer fold; retain the respondent and report a raw-age sensitivity."
+
+estimands:
+  definition: "For each factor pair, use the saturated pair-cell space under the wave-specific uniform target, orthogonally projected away from the intercept and both main-effect spaces."
+  coordinate_basis: deterministic_target_weighted_orthonormal
+  families:
+    - id: reason_x_vulnerability
+      attributes: [migration_reason, vulnerability]
+      dimension_by_wave:
+        wave_2016: 12
+        wave_2022: 16
+        common_support: 12
+      status: identified_locked
+    - id: religion_x_origin
+      attributes: [religion, origin]
+      dimension_by_wave:
+        wave_2016: 12
+        wave_2022: 12
+        common_support: 12
+      status: identified_locked
+    - id: occupation_x_language
+      attributes: [occupation, language]
+      dimension_by_wave:
+        wave_2016: 10
+        wave_2022: 10
+        common_support: 10
+      status: identified_locked
+  primary_family_dimensions:
+    wave_2016: 34
+    wave_2022: 38
+    common_support: 34
+  rule: "Keep every coordinate in each registered family; do not select favorable coordinates after outcomes are opened."
+
+folds:
+  cluster: ResponseId
+  outer: respondent_level_5_fold
+  inner: respondent_level_5_fold_within_each_outer_training_sample
+  outer_folds: 5
+  inner_folds: 5
+  deterministic_seed: 20260901
+  stratification: wave_x_country
+  frame_2022: balance_across_folds_where_feasible
+  no_row_leakage: required
+
+gate_tests:
+  - all_locked_file_checksums_match
+  - forbidden_outcomes_never_loaded
+  - exact_wave_sample_counts_reproduced
+  - exact_country_counts_reproduced
+  - complete_or_all_missing_profile_blocks_only
+  - five_tasks_and_two_explicit_profile_sides_per_design_complete_respondent
+  - exact_wave_specific_level_sets_match
+  - every_attribute_pair_has_full_cartesian_support
+  - assignment_frequency_diagnostics_are_compatible_with_uniform_levels
+  - survey_weights_are_positive_finite_and_respondent_level
+  - frame_is_complete_and_has_four_locked_levels_in_2022
+  - whole_family_projector_ranks_equal_locked_dimensions
+  - deterministic_bases_are_target_orthonormal_and_remove_main_effects
+  - no_outcome_model_is_fit

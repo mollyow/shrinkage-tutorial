@@ -1,0 +1,298 @@
+schema_version: 1
+contract_version: 1
+contract_date: "2026-09-01"
+study_id: climate_agreements
+status: conditional_design_lock_outcomes_prohibited
+
+decision:
+  gate: B
+  result: amber
+  profile_marginal_result: green_under_prospectively_locked_uniform_product_reconstruction
+  rating_result: conditional_green_under_mean_no_opponent_and_no_carryover_restrictions
+  paired_choice_result: amber_exact_opponent_law_not_certified
+  meaning: "The archive, prospectively reconstructed rowwise uniform product assignment, support, covariates, and three whole interaction families are locked. Paired-choice analysis remains blocked because the global iid task-pair model is strongly disfavored and the archive contains no generator for the exact opponent law. A rating-only analysis is eligible only under the locked row-law reconstruction plus the prospectively declared mean-no-opponent and mean-no-carryover restrictions."
+  outcome_blind: true
+  permitted_next_actions:
+    - freeze_contract_and_hashes
+    - seek_author_or_randomizer_confirmation
+    - implement_rating_only_pipeline_with_mean_no_opponent_and_no_carryover_restrictions
+    - sensitivity_check_uniform_ordered_distinct_pair_law_without_outcomes
+  prohibited_actions:
+    - read_outcome_values
+    - fit_outcome_models
+    - inspect_effects_or_learner_performance
+    - encode_q_times_q_as_the_known_pair_law
+
+provenance:
+  article:
+    title: "Mass support for global climate agreements depends on institutional design"
+    doi: "https://doi.org/10.1073/pnas.1306374110"
+  archive:
+    doi: "https://doi.org/10.7910/DVN/UGZ2BY"
+    dataset_id: 60092
+    version: "1.0"
+    release_date: "2013-08-16"
+    license: CC0-1.0
+    limitation: "The archive contains the article, supplement, data, README, and analysis code, but no full questionnaire, survey-platform generator, assignment-probability file, or profile-side field."
+  files:
+    data:
+      path: "Candidate recruitment/data/climate_agreements/bechtel_scheve_pnas.dta"
+      bytes: 3001271
+      md5: "85dc26aeda5a99e881ad777f03d8410c"
+      dataverse_file_id: 2443613
+      persistent_id: "doi:10.7910/DVN/UGZ2BY/STSQVH"
+      note: "This is the original Stata binary. Dataverse separately reports a 6,188,201-byte ingested tabular representation with the same source record."
+    article_pdf:
+      path: "Candidate recruitment/data/climate_agreements/PNAS-2013-Bechtel-Scheve.pdf"
+      bytes: 766852
+      md5: "3ed5b8b6f88eb8426af4ef3b8619ab4b"
+    supplementary_information:
+      path: "Candidate recruitment/data/climate_agreements/PNAS-2013-Bechtel-Scheve_SI.pdf"
+      bytes: 532729
+      md5: "ee886ed5974d23224231b0586965a811"
+    readme:
+      path: "Candidate recruitment/data/climate_agreements/Readme.doc"
+      bytes: 69120
+      md5: "5f0a17da34f95fe7252b6fe56227fed2"
+    author_code:
+      path: "Candidate recruitment/data/climate_agreements/Replicate Results_Bechtel Scheve_PNAS.do"
+      bytes: 17916
+      md5: "8025c025fc28f816b09722b21ed513dd"
+    dataverse_metadata:
+      path: "Candidate recruitment/data/climate_agreements/dataverse_metadata.json"
+      bytes: 10006
+      md5: "b7d7fd9222a49004f76395c1a04e6e19"
+
+read_barrier:
+  allowed_columns:
+    - ID
+    - weight
+    - conjoint
+    - cj_order
+    - cost_cj
+    - distrib_cj
+    - ctries_cj
+    - emissions_cj
+    - sanctions_cj
+    - monitoring_cj
+    - age
+    - support_iec_high_group
+    - female
+    - income
+    - educgr_fr
+    - educgr_ge
+    - educgr_uk
+    - educgr_us
+    - country
+  forbidden_outcomes:
+    - choice_cj
+    - rating_cj
+    - incon
+  rule: "The audit must call haven::read_dta() with only the locked allowlist. The derived inconsistency flag incon is treated as outcome leakage along with the two response columns. Ambiguously timed and outcome-adjacent variables are excluded from the read allowlist, not merely omitted after loading."
+
+sample:
+  respondent_id: ID
+  task_id: conjoint
+  weight: weight
+  display_order_code: cj_order
+  profile_side:
+    source_column: null
+    derivation: "Stable archive-row order within ID x conjoint, coded profile_index 1 and 2."
+    interpretation: "Neutral technical row index only; do not label it left/right or Agreement 1/2."
+  expected:
+    respondents: 8500
+    tasks: 34000
+    profile_rows: 68000
+    tasks_per_respondent: 4
+    profiles_per_task: 2
+    countries: 4
+    country_respondents:
+      France: 2000
+      Germany: 2000
+      United_Kingdom: 2000
+      United_States: 2500
+  enrollment_rule: "Retain all 8,500 respondents: identifiers, weights, task index, country, and all six randomized profile attributes are complete on all rows. Do not filter on responses or the attention check."
+  outcome_missingness_rule: "If an endpoint becomes eligible after Gate B, lock endpoint-specific retention prospectively and retain a paired task only when all response values required by that endpoint are observed. Never revise the design universe."
+
+attributes:
+  household_cost:
+    column: cost_cj
+    codes: [1, 2, 3, 4, 5]
+    labels: ["0.5% of GDP", "1.0% of GDP", "1.5% of GDP", "2.0% of GDP", "2.5% of GDP"]
+    note: "The survey displayed country-specific monthly household amounts; the archived DTA label retains only the French display amounts. The invariant policy tiers are used here."
+  burden_distribution:
+    column: distrib_cj
+    codes: [1, 2, 3, 4]
+    labels: ["Only rich countries pay", "Proportional to current emissions", "Proportional to historical emissions", "Rich countries pay more than poor countries"]
+  participating_countries:
+    column: ctries_cj
+    codes: [1, 2, 3]
+    labels: ["20 of 192", "80 of 192", "160 of 192"]
+  emissions_coverage:
+    column: emissions_cj
+    codes: [1, 2, 3]
+    labels: ["40% of current global emissions", "60% of current global emissions", "80% of current global emissions"]
+  sanctions:
+    column: sanctions_cj
+    codes: [1, 2, 3, 4]
+    labels: [none, low, medium, high]
+    note: "Low, medium, and high equal 5%, 15%, and 20% of the monthly household cost at the 2%-of-GDP tier and were displayed in local currency."
+  monitoring:
+    column: monitoring_cj
+    codes: [1, 2, 3, 4]
+    labels: ["Own government", "Independent commission", "United Nations", Greenpeace]
+
+support:
+  type: complete_cartesian_product
+  profiles: 2880
+  structural_zeros: none_at_profile_level
+  all_15_attribute_pairs_complete: true
+  all_profiles_observed: true
+  display_order: "The six dimension rows were randomly ordered once per respondent and held fixed across the four tasks. cj_order contains 696 opaque realized codes, but the archive does not map them to permutations. Average over this randomized context rather than fit 696 sparse fixed effects."
+
+assignment:
+  reconstruction_status: row_marginal_prospectively_locked_uniform_product_pair_law_not_certified
+  row_marginal_law: "The source describes fully randomized values but releases no generator or explicit probability table. This contract prospectively reconstructs each of the six attributes as uniform and independent within a profile, q(a)=1/2880 over the full product support. One-way diagnostics by country, task, and neutral profile index plus the pooled 2,880-cell chi-square are compatible with, but do not prove, that reconstruction."
+  q_profile: "1/2880"
+  within_pair_documented_law: "The article and supplement describe independently randomized agreement values but do not document a whole-profile duplicate rule."
+  within_pair_realized_discrepancy:
+    observed_identical_pairs: 0
+    tasks: 34000
+    expected_identical_pairs_under_q_times_q: 11.8055555556
+    probability_zero_under_iid_task_pairs: 0.0000074477
+    respondent_cluster_upper_probability_zero_with_arbitrary_four_task_dependence: 0.0522403
+    probability_note: "The 7.45e-6 zero-count probability assumes independent task-pair draws. The expectation 11.8056 follows from the within-task q x q claim even when tasks within a respondent are dependent. With arbitrary dependence among four tasks but independent respondents, a conservative upper probability is about 0.0522, so zero duplicates do not logically reject a per-task q x q marginal by themselves."
+    interpretation: "Strong evidence of an undocumented within-pair prohibition or repair rule."
+  within_pair_primary_status: unknown_do_not_encode_q_times_q_as_known
+  candidate_sensitivity_law: "Uniform ordered distinct profiles: g(a,b)=1/(2880*2879) for a != b and zero otherwise. This is a reconstruction assumption, not a source-certified fact."
+  across_tasks_joint_law: unknown_allow_arbitrary_within_respondent_dependence
+  rating_identification_restrictions:
+    mean_no_opponent: "Conditional on the focal profile, task, and pre-treatment respondent variables, the expected profile rating does not depend on the paired opponent."
+    mean_no_carryover: "Conditional on the current focal profile, task, and pre-treatment respondent variables, the expected profile rating does not depend on profiles shown in earlier tasks."
+    consequence: "Under both declared restrictions, the prospectively locked current-row marginal reconstruction q is sufficient even though the within-pair and across-task joint laws are not certified."
+
+target:
+  primary:
+    respondent_population: "Equal one-quarter mixture of France, Germany, the United Kingdom, and the United States; within country use the released survey weight normalized to sum to one."
+    profiles: uniform_product_q_over_2880_profiles
+    tasks: equal_average_over_the_four_randomized_tasks_and_display_order_context
+  sensitivities:
+    - author_pooled_sample_mixture_4_17_4_17_4_17_5_17
+    - unweighted_equal_country_mixture
+    - unweighted_observed_sample_mixture
+
+covariates:
+  timing_rule: "Primary features are immutable demographics plus the climate-cooperation support item explicitly documented as preceding the conjoint. Other attitudes, knowledge items, willingness to pay, environmentalism, ideology, and the attention check have unresolved or outcome-adjacent timing and are excluded."
+  preprocessing: "Within each outer training fold, learn numerical scaling and any imputation. Use globally locked outcome-blind category universes solely to align columns."
+  primary_features: [country, age, female, education_category, income_category, support_iec_high_group]
+  feature_semantics:
+    country:
+      semantic_type: unordered_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: none
+      scaling_rule: none
+    age:
+      semantic_type: continuous
+      primary_encoding: numeric
+      missing_value_rule: fold_training_median_plus_indicator
+      scaling_rule: fold_training_robust_center_and_scale
+    female:
+      semantic_type: binary_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    education_category:
+      semantic_type: country_specific_unordered_categorical
+      primary_encoding: country_code_colon_source_level_full_one_hot
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    income_category:
+      semantic_type: country_specific_ordered_category_treated_as_categorical
+      primary_encoding: country_code_colon_source_level_full_one_hot
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+    support_iec_high_group:
+      semantic_type: binary_categorical
+      primary_encoding: full_one_hot_all_locked_levels_no_reference_drop
+      missing_value_rule: explicit_missing_level
+      scaling_rule: none
+  education_source_by_country:
+    France: educgr_fr
+    Germany: educgr_ge
+    United_Kingdom: educgr_uk
+    United_States: educgr_us
+  excluded_primary:
+    - gender
+    - ideology
+    - right
+    - recip_s_high_group
+    - ewill_pay_high
+    - reductions_important
+    - gknow1
+    - gknow3
+    - attentioncheck_pass
+    - inc_high_group
+    - educ_high
+  exclusion_notes:
+    gender: "Redundant 1/2 coding; use the labeled 0/1 female variable."
+    inc_high_group: "Complete only because all 301 respondents missing raw income are coded low."
+    educ_high: "Coarsened derivative; a missing country-specific education value is coded low."
+  never_features: [ID, weight, conjoint, cj_order]
+
+estimands:
+  definition: "For each registered factor pair, use the complete pair-cell space under its uniform marginal target and orthogonally remove the intercept and both main-effect spaces."
+  coordinate_basis: deterministic_target_weighted_orthonormal
+  families:
+    - id: cost_x_burden_distribution
+      attributes: [household_cost, burden_distribution]
+      cells: 20
+      interaction_rank: 12
+      status: identified_locked
+    - id: sanctions_x_monitoring
+      attributes: [sanctions, monitoring]
+      cells: 16
+      interaction_rank: 9
+      status: identified_locked
+    - id: participation_x_emissions_coverage
+      attributes: [participating_countries, emissions_coverage]
+      cells: 9
+      interaction_rank: 4
+      status: identified_locked
+  total_dimension: 25
+  rule: "Retain every coordinate in each registered whole family. Do not select coordinates after outcomes are opened."
+
+folds:
+  cluster: ID
+  outer: respondent_level_5_fold
+  inner: respondent_level_5_fold_within_each_outer_training_sample
+  outer_folds: 5
+  inner_folds: 5
+  deterministic_seed: 20260901
+  stratification: country
+  no_row_leakage: required
+
+gate_resolution:
+  paired_choice_pass_if_either:
+    - "Recover the generator or obtain author confirmation of the exact within-pair profile law and side semantics."
+    - "Prospectively adopt uniform ordered-distinct profiles as an explicit identifying assumption and show conclusions are insensitive to plausible alternative repair laws."
+  rating_route: "May proceed only if the mean-no-opponent and mean-no-carryover restrictions are declared before outcomes are opened; otherwise retain the overall amber status."
+  fail_if:
+    - "The exact pair law cannot be reconciled with the released assignments."
+    - "A locked family, target, restriction, or covariate rule is changed after outcome inspection."
+
+gate_tests:
+  - all_locked_file_checksums_match
+  - forbidden_outcomes_and_incon_never_loaded
+  - exact_sample_country_task_and_profile_counts_reproduced
+  - two_adjacent_source_rows_per_task_and_neutral_profile_index_reproduced
+  - exact_attribute_level_sets_and_full_profile_support_match
+  - all_15_two_factor_supports_complete_globally_and_by_country
+  - row_marginal_assignment_diagnostics_by_country_task_and_profile_index_are_compatible_with_uniform_levels
+  - pooled_2880_cell_profile_chi_square_is_compatible_with_uniform_product_reconstruction
+  - global_iid_task_pair_model_is_flagged_and_exact_pair_law_remains_uncertified
+  - survey_weights_positive_finite_and_respondent_invariant
+  - primary_covariates_respondent_invariant_and_timing_locked
+  - registered_family_ranks_equal_12_9_4_in_every_country
+  - deterministic_bases_target_orthonormal_and_coding_invariant
+  - respondent_folds_have_no_row_leakage
+  - no_outcome_model_is_fit

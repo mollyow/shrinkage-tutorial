@@ -1,0 +1,29 @@
+mode: fast
+seed: 240826
+replications: 2
+folds: 3
+tuning:
+  common_grid_size: 7
+  maxit: 12
+  log_lambda_lower: -8
+  log_lambda_upper: 5
+oracle_maxit: 12
+designs:
+  - name: binary8_order3
+    factors: 8
+    levels: 2
+    max_order: 3
+  - name: ternary6_order3
+    factors: 6
+    levels: 3
+    max_order: 3
+n_over_p: [0.5, 1, 4]
+snr: [0.5, 2]
+order_scales:
+  steep: [1, 0.5, 0.15]
+  mild: [1, 0.8, 0.6]
+  flat: [1, 1, 1]
+  mild_reversal: [1, 0.4, 0.8]
+  interaction_dominant: [0.4, 1, 0.6]
+within_order: [dense]
+

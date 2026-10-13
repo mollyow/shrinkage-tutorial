@@ -1,0 +1,796 @@
+schema_version: 1
+protocol_id: factorial_ml_comparison_v1
+protocol_date: "2026-09-03"
+status: scientific_protocol_frozen_implementation_gate_c_pending_outcomes_prohibited
+working_title: "Before Machine Learning: A Prospective Benchmark for Causal Conjoint Inference"
+
+purpose:
+  question: "When does flexible outcome learning materially improve inference for prespecified target-weighted factorial contrasts beyond strong additive adjustment?"
+  primary_comparison: incremental_precision_for_fixed_factorial_contrast_families
+  primary_denominator: additive
+  no_new_estimator_claim: true
+  no_general_claim_that_ml_is_useless: true
+
+freeze:
+  protected_choices:
+    - eligible_studies_and_endpoints
+    - samples_and_outcome_validation
+    - target_distributions_and_estimands
+    - covariates_and_preprocessing
+    - folds_and_random_seeds
+    - learner_library_and_tuning_budgets
+    - target_integration
+    - score_covariance_and_inference
+    - aggregation_and_equivalence_margins
+    - simulation_cells_and_positive_control_rule
+    - failure_and_reporting_rules
+  outcome_access_barrier: >-
+    No fresh endpoint value may be read until the shared comparison code,
+    endpoint-specific strict readers, synthetic Gate-C tests, report templates,
+    dependency lock, and implementation manifest have been completed and hashed.
+  before_outcome_amendment: >-
+    A scientific change requires a new protocol version, a dated changelog, and
+    a new lock manifest. The superseded version remains in the repository.
+  after_outcome_amendment: >-
+    The v1 primary analysis is immutable. A necessary bug fix must be disclosed,
+    applied to every method and dataset it affects, versioned, and reported beside
+    the original result. Any other change is exploratory.
+  implementation_freeze_still_required: true
+  this_file_does_not_unlock_outcomes: true
+
+source_contracts:
+  registry: config/application-registry.yml
+  asylum: config/datasets/asylum-seekers.yml
+  climate: config/datasets/climate-agreements.yml
+  tax: config/datasets/income-tax-plans.yml
+  graham_svolik: config/datasets/graham-svolik.yml
+  candidate_developmental: analysis/candidate/estimands.yml
+  simulation_contract: config/comparison-simulations-v1.yml
+  narrative_protocol: docs/cross-study-comparison-contract.md
+  lock_manifest: config/comparison-v1-lock.yml
+
+contract_precedence:
+  rule: >-
+    This common comparison contract supersedes the earlier Gate-B study
+    contracts only for endpoint hierarchy, the stricter fail-closed endpoint
+    completeness gate, design-context features, the common learner library,
+    tuning, target integration, aggregation, reporting, and the outcome-access
+    barrier. The study contracts remain authoritative for source provenance,
+    design reconstruction, populations, assignment laws, support, causal
+    targets, baseline-covariate eligibility, and registered interaction families.
+  endpoint_missingness_override: >-
+    Earlier instructions to retain outcome-complete tasks were provisional.
+    Under v1, any missing or malformed expected endpoint task stops fitting and
+    requires a separately versioned missing-outcome protocol.
+  design_context_override: >-
+    Earlier never-feature lists continue to exclude identifiers, weights,
+    outcomes, mediators, opaque order codes, and post-treatment fields. This
+    contract explicitly promotes only the named task-position and neutral
+    profile-position variables below to categorical design context. They are
+    unpenalized in penalized linear fits and ordinary included predictors in
+    tree learners.
+  outcome_access_override: >-
+    Any earlier source-contract statement that conditioned outcome access only
+    on freezing the comparison protocol is superseded. Gate C and its
+    implementation checksum manifest must pass first.
+
+portfolio:
+  confirmatory_studies:
+    - asylum_seekers_2016
+    - climate_agreements
+    - income_tax_plans
+    - graham_svolik_candidate_choice
+  developmental_studies:
+    - candidate_recruitment
+  reserves:
+    - immigrant_admission
+    - european_defense_union
+  cross_study_weighting: equal_weight_over_four_confirmatory_study_families
+  candidate_in_confirmatory_aggregate: false
+  countries_waves_outcomes_and_arms_count_as_separate_studies: false
+
+headline_hierarchy:
+  asylum_seekers_2016:
+    endpoint: pref
+    label: 2016_forced_choice
+    weight_within_portfolio: 0.25
+  climate_agreements:
+    endpoint: rating_cj
+    label: profile_rating
+    weight_within_portfolio: 0.25
+  income_tax_plans:
+    endpoint: chose_plan
+    label: paired_choice_six_rate_total_effect
+    weight_within_portfolio: 0.25
+  graham_svolik_candidate_choice:
+    endpoint: c_win
+    label: paired_choice_coarsened_democracy_contest
+    weight_within_portfolio: 0.25
+  asylum_nonheadline_prespecified:
+    - 2016_rating
+    - 2022_forced_choice
+    - 2022_rating
+    - common_support_wave_comparisons
+  rationale: >-
+    Only 2016 forced choice enters the cross-study headline for asylum. Its
+    rating and 2022 wave are prespecified internal replications, preventing one
+    study family from receiving multiple headline votes.
+
+outcome_scale:
+  learning_scale: closed_unit_interval
+  primary_loss: survey_target_weighted_squared_error
+  binary_secondary_loss: clipped_log_loss
+  binary_log_loss_epsilon: 0.000001
+  prediction_projection_before_loss_integration_and_scoring: "pmin(1,pmax(0,prediction))"
+  report_original_scale_effects: true
+  report_fraction_predictions_projected: true
+
+endpoints:
+  asylum_2016_choice:
+    study_id: asylum_seekers_2016_2022
+    wave: 2016
+    role: headline
+    column: pref
+    unit: oriented_profile_row
+    original_values: [0, 1]
+    transform: identity
+    favorable_direction: 1_profile_chosen
+    required_task_check: both_rows_finite_binary_and_sum_to_one
+    outcome_imputation: prohibited
+    target: wave_2016_uniform_q_by_q
+  asylum_2016_rating:
+    study_id: asylum_seekers_2016_2022
+    wave: 2016
+    role: prespecified_internal_replication
+    column: rate
+    unit: profile_row
+    original_values: [1, 2, 3, 4, 5, 6, 7]
+    transform: "(rate-1)/6"
+    favorable_direction: higher_acceptance
+    required_task_check: both_rows_finite_integer_one_through_seven
+    outcome_imputation: prohibited
+    target: wave_2016_uniform_q_by_q
+  asylum_2022_choice:
+    study_id: asylum_seekers_2016_2022
+    wave: 2022
+    role: prespecified_temporal_replication
+    column: pref
+    unit: oriented_profile_row
+    original_values: [0, 1]
+    transform: identity
+    favorable_direction: 1_profile_chosen
+    required_task_check: both_rows_finite_binary_and_sum_to_one
+    outcome_imputation: prohibited
+    target: wave_2022_uniform_q_by_q_and_uniform_frame
+  asylum_2022_rating:
+    study_id: asylum_seekers_2016_2022
+    wave: 2022
+    role: prespecified_temporal_replication
+    column: rate
+    unit: profile_row
+    original_values: [1, 2, 3, 4, 5, 6, 7]
+    transform: "(rate-1)/6"
+    favorable_direction: higher_acceptance
+    required_task_check: both_rows_finite_integer_one_through_seven
+    outcome_imputation: prohibited
+    target: wave_2022_uniform_q_by_q_and_uniform_frame
+  climate_rating:
+    study_id: climate_agreements
+    role: headline
+    column: rating_cj
+    unit: profile_row
+    original_values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    transform: "(rating_cj-1)/9"
+    favorable_direction: higher_agreement_support
+    required_task_check: both_rows_finite_integer_one_through_ten
+    outcome_imputation: prohibited
+    target: uniform_profile_q
+    identifying_restrictions:
+      - conditional_mean_no_opponent
+      - conditional_mean_no_carryover
+    forbidden_columns: [choice_cj, incon]
+  tax_choice:
+    study_id: income_tax_plans
+    role: headline
+    column: chose_plan
+    unit: oriented_profile_row
+    original_values: [0, 1]
+    transform: identity
+    favorable_direction: 1_focal_row_plan_selected
+    required_task_check: both_rows_finite_binary_and_sum_to_one
+    outcome_imputation: prohibited
+    target: uniform_schedule_q_by_q_natural_revenue_total_effect
+    forbidden_columns: [pref_plan, pref_plan_1, pref_plan_2, pref_plan_3, pref_plan_4, pref_plan_5, pref_plan_6, pref_plan_7, pref_plan_8]
+  graham_svolik_choice:
+    study_id: graham_svolik_candidate_choice
+    role: headline
+    column: c_win
+    unit: selected_candNum_1_task_row
+    original_values: [0, 1]
+    transform: identity
+    favorable_direction: 1_focal_candidate_selected
+    required_task_check: focal_row_finite_binary
+    outcome_imputation: prohibited
+    target: uniform_64_cell_coarsened_target
+    forbidden_columns: [c_vote, o_win, o_vote, R_win, moreD_win]
+
+outcome_completeness_gate:
+  first_endpoint_access_action: write_missingness_and_coding_manifest_only
+  learner_fit_during_first_access: prohibited
+  headline_requirement: every_expected_task_has_a_valid_locked_endpoint
+  nonheadline_requirement: every_expected_task_has_a_valid_locked_endpoint
+  on_any_missing_or_malformed_task: >-
+    Stop before fitting. The endpoint does not enter v1 unless a separately
+    versioned missing-outcome protocol is written using only missingness
+    indicators, design fields, and baseline covariates. No alternative endpoint
+    may be promoted after this check.
+  never_silently_average_over_available_tasks: true
+  never_replace_from_another_endpoint: true
+  minimum_if_a_later_missingness_protocol_is_needed:
+    assumption_must_be_explicit: true
+    response_probability_must_be_positive: true
+    treatment_and_family_cell_missingness_must_be_reported: true
+    primary_v1_result_remains_labeled_amended: true
+
+samples_and_targets:
+  asylum_seekers_2016_2022:
+    respondent_id: ResponseId
+    task_id: task
+    side: prof
+    outer_fold_file: analysis/asylum/derived/respondent_folds.csv
+    primary_population: finite_positive_author_weight
+    population_weight: equal_country_then_author_weight_within_country
+    task_weighting: equal_over_five_positions
+    side_weighting: equal_over_two_profiles
+    profile_law: wave_specific_uniform_product
+    opponent_law: independent_same_wave_q
+    frame_2022: condition_in_nuisance_and_integrate_uniform_one_quarter
+    waves_fit_separately: true
+    common_support:
+      rating: remove_war_from_focal_target
+      choice: remove_war_from_both_focal_and_opponent_targets
+  climate_agreements:
+    respondent_id: ID
+    task_id: conjoint
+    side: neutral_source_row_index_1_or_2
+    outer_fold_file: analysis/climate/derived/respondent_folds.csv
+    primary_population: all_8500_design_complete_respondents
+    population_weight: equal_country_then_author_weight_within_country
+    task_weighting: equal_over_four_positions
+    side_weighting: equal_over_two_neutral_profile_indices
+    profile_law: uniform_product_over_2880
+    opponent_in_primary_nuisance: false
+    opaque_display_order_in_primary_nuisance: false
+  income_tax_plans:
+    respondent_id: ID
+    task_id: table
+    side: plan_A_or_B
+    outer_fold_file: analysis/tax/derived/respondent_folds.csv
+    primary_population: all_2000_saw_revenue_1_respondents
+    population_weight: author_weight_normalized_in_arm
+    task_weighting: equal_over_eight_positions
+    side_weighting: equal_over_A_and_B
+    focal_schedule_law: uniform_product_over_7680
+    opponent_schedule_law: independent_uniform_product_over_7680
+    taxrev_role: downstream_mediator_integrated_naturally_and_never_a_predictor
+    identifying_restriction: conditional_mean_no_carryover
+  graham_svolik_candidate_choice:
+    respondent_id: id
+    task_id: matchNum
+    side: candNum_1_only
+    outer_fold_file: analysis/graham_svolik/derived/respondent_folds.csv
+    primary_population: all_1682_released_experimental_respondents
+    population_weight: author_weight_normalized_over_1682
+    task_weighting: equal_over_eleven_retained_nonvalence_occurrences
+    assignment_law: exact_coarsened_nonproduct_q
+    causal_target: uniform_over_64_supported_cells
+    other_current_task_context: empirical_within_respondent_standardization
+    identifying_restriction: conditional_mean_no_carryover
+
+estimands:
+  definition: target_weighted_functional_anova_two_factor_interaction_surface
+  family_space: saturated_pair_cell_space_projected_off_intercept_and_both_main_effect_spaces
+  coordinate_basis: deterministic_target_weighted_orthonormal
+  keep_every_coordinate: true
+  coordinate_selection: prohibited
+  primary_family_loss: mean_squared_euclidean_error_over_orthonormal_coordinates
+  family_dimension_normalization: divide_by_complete_family_rank
+  families:
+    asylum_seekers:
+      reason_x_vulnerability: {dimension_2016: 12, dimension_2022: 16, common_support: 12}
+      religion_x_origin: {dimension_2016: 12, dimension_2022: 12, common_support: 12}
+      occupation_x_language: {dimension_2016: 10, dimension_2022: 10, common_support: 10}
+    climate_agreements:
+      cost_x_burden_distribution: 12
+      sanctions_x_monitoring: 9
+      participation_x_emissions_coverage: 4
+    income_tax_plans:
+      lowest_x_highest: 15
+      upper_middle_x_highest: 15
+      top_adjacent_brackets: 20
+    graham_svolik:
+      democracy_x_focal_party: 7
+      democracy_x_contest_relation: 7
+      democracy_x_focal_gender: 7
+
+folds:
+  unit: respondent
+  outer_folds: 5
+  inner_folds: 5
+  primary_design_seed: 20260901
+  outer_labels: existing_outcome_blind_labels_for_all_four_studies
+  inner_labels:
+    asylum_climate_and_tax: existing_outcome_blind_labels
+    graham_svolik: prescribed_below_and_emitted_only_during_gate_c
+  common_across_endpoints_and_methods: true
+  no_row_task_or_side_leakage: true
+  graham_svolik_inner_labels:
+    status: prescribed_not_yet_emitted
+    seed: 20260901_plus_104729
+    algorithm: same_balanced_hash_algorithm_as_other_three_studies
+    multiplier: 257
+    reverse_codes: true
+    required_check: all_five_inner_labels_in_every_outer_training_sample
+  repeated_split_diagnostic:
+    total_partitions_including_primary: 5
+    alternate_seed_salts: [20260911, 20260912, 20260913, 20260914]
+    all_primary_learners_refit: true
+    primary_partition_never_replaced: true
+    summaries: [median, interquartile_range, minimum, maximum]
+    inferential_intervals_use_primary_partition_only: true
+
+preprocessing:
+  fit_inside_each_outer_training_fold: true
+  inner_preprocessing_refit_inside_each_inner_training_fold: true
+  treatment_and_context_imputation: prohibited
+  numeric:
+    imputation: training_median
+    add_missing_indicator: true
+    center: training_median
+    scale: training_iqr
+    zero_or_nonfinite_iqr_fallback: 1
+  categorical:
+    level_universe: locked_from_outcome_blind_design_contract
+    missing: explicit_missing_level
+    unseen_prediction_level: hard_failure
+    outcome_based_pooling: prohibited
+    target_encoding: prohibited
+  weights_never_predictors: true
+  outcomes_never_predictors: true
+  post_treatment_variables_never_predictors: true
+
+feature_blocks:
+  focal: all_locked_causal_factor_main_effects
+  opponent: all_opponent_factor_main_effects_only_when_opponent_law_is_certified
+  resolved_by_study:
+    asylum:
+      design_context: [task, prof]
+      mandatory_target_strata: [cty]
+      baseline_x: [gender, age, home_born, educ_EISCED, asy_change_home, asy_change_europe, immig_change_home]
+      special_context_2016: []
+      special_context_2022: [frame]
+      explicit_common_contract_overrides: [task_and_prof_are_unpenalized_categorical_design_context]
+    climate:
+      design_context: [conjoint, neutral_source_row_index_1_or_2]
+      mandatory_target_strata: [country]
+      baseline_x: [age, female, education_category, income_category, support_iec_high_group]
+      special_context: []
+      explicit_common_contract_overrides: [conjoint_and_neutral_source_row_index_are_unpenalized_categorical_design_context]
+      excluded_context: [cj_order, opponent_profile]
+    tax:
+      design_context: [table, plan]
+      mandatory_target_strata: []
+      baseline_x: [age, female, race, educ, pid7, conservative_ideology, newsint]
+      special_context: []
+      explicit_common_contract_overrides: [table_and_plan_are_unpenalized_categorical_design_context]
+      excluded_context: [saw_revenue, taxrev]
+    graham_svolik:
+      design_context: [matchNum]
+      mandatory_target_strata: []
+      baseline_x: [age, gender, race, educ, hhi_cut, tax, pid7, ideo, trump, E1, E2, E3, E4, I1, I2, I3, I4, M1, M2, M3, M4, T1, T2, T3, T4, knowl_anes_total, auth_total, voteduty]
+      special_context:
+      - c_onLeft
+      - c_p1_code
+      - c_p1_area
+      - c_p1_num
+      - c_p2_code
+      - c_p2_area
+      - c_p2_num
+      - c_race
+      - c_pro
+      - c_age
+      - c_exper
+      - o_p1_code
+      - o_p1_area
+      - o_p1_num
+      - o_p2_code
+      - o_p2_area
+      - o_p2_num
+      - o_sex
+      - o_race
+      - o_pro
+      - o_age
+      - o_exper
+      excluded_context:
+      - c_respParty
+      - o_respParty
+      - duplicate_party_labels
+      - profile_proximity_rank_or_distance
+
+model_matrix:
+  treatment_encoding: deterministic_target_orthonormal_contrasts
+  x_categorical_encoding: full_one_hot_locked_levels
+  resolved_feature_map: feature_blocks.resolved_by_study
+  additive_blocks: [design_context, mandatory_target_strata, special_context, focal_main, eligible_opponent_main, baseline_x_main]
+  two_way_added_blocks:
+    - all_cross_factor_focal_by_focal_terms
+    - all_cross_factor_opponent_by_opponent_terms_when_opponent_is_used
+    - all_focal_by_opponent_factor_terms_when_opponent_is_used
+    - all_focal_factor_by_baseline_x_terms
+    - all_opponent_factor_by_baseline_x_terms_when_opponent_is_used
+  excluded_two_way_blocks:
+    - baseline_x_by_baseline_x
+    - context_by_context
+    - outcome_selected_terms
+  sparse_construction_required: true
+  ranger_input: raw_columns_from_the_same_resolved_feature_map_with_locked_factor_levels
+  elastic_net_penalty_factor:
+    zero: [intercept, design_context, mandatory_target_strata, special_context]
+    one: [focal_main, eligible_opponent_main, baseline_x_main, all_two_way_added_blocks]
+
+invariance:
+  exact_tolerance: 0.0000000001
+  exact_refit_scope:
+    - estimand_and_target_projectors
+    - coordinate_transformations
+    - scores_conditional_on_identical_fixed_nuisance_predictions
+    - family_rotation_invariant_metrics
+    - additive_and_two_way_least_squares_fitted_functions
+    - common_unrestricted_and_monotone_order_ridge_fitted_functions
+  transformations:
+    - baseline_level_swaps
+    - factor_level_permutations
+    - orthogonal_rotations_within_registered_family_spaces
+    - orthogonal_rotations_within_factorial_order_spaces_for_order_ridge
+  representation_sensitive_learners: [elastic_net, ranger, xgboost]
+  representation_sensitive_rule: >-
+    These learners are not claimed to be invariant to arbitrary feature
+    rotations or column permutations. They use the single frozen coding and
+    must reproduce predictions, tuning choices, and scores when refit with the
+    same data, coding, seeds, versions, and one-thread setting.
+
+learners:
+  primary_order:
+    - unadjusted
+    - task_only
+    - additive
+    - two_way
+    - unrestricted_order_ridge
+    - elastic_net
+    - ranger
+    - xgboost
+  simulation_only:
+    - oracle
+  secondary_ablations:
+    - common_order_ridge
+    - monotone_order_ridge
+  definitions:
+    unadjusted:
+      nuisance_prediction: 0
+      tuning: none
+    task_only:
+      engine: weighted_minimum_norm_least_squares
+      terms: [design_context, mandatory_target_strata, special_context]
+      tuning: none
+    additive:
+      role: primary_denominator
+      engine: weighted_minimum_norm_least_squares
+      terms: model_matrix.additive_blocks
+      tuning: none
+    two_way:
+      engine: weighted_minimum_norm_least_squares
+      terms: model_matrix.additive_blocks_plus_two_way_added_blocks
+      tuning: none
+      solver: sparse_qr_or_svd_minimum_norm
+      extrapolation_outside_training_column_space: hard_failure
+    unrestricted_order_ridge:
+      engine: orderridge_fit_order_ridge
+      focal_basis_max_order: 3
+      penalized_block: focal_profile_factorial_basis_only
+      unpenalized_blocks: [design_context, mandatory_target_strata, special_context, eligible_opponent_main, baseline_x_main]
+      structure: unrestricted
+      selection_loss: weighted_inner_fold_mse
+      common_grid_size: 15
+      optimizer_max_iterations: 80
+      optimizer_relative_tolerance: 0.00001
+      log_lambda_bounds: [-10, 8]
+      selection_rule: minimum_cv_error
+    elastic_net:
+      engine: glmnet
+      locked_version: 4.1-8
+      matrix: exact_two_way_sparse_matrix
+      family: gaussian
+      alpha_grid: [0, 0.25, 0.5, 0.75, 1]
+      nlambda: 60
+      lambda_min_ratio: 0.0001
+      standardize: true
+      penalty_factor: model_matrix.elastic_net_penalty_factor
+      selection_loss: weighted_inner_fold_mse
+      selection_rule: exact_minimum_then_larger_lambda_then_larger_alpha
+    ranger:
+      engine: ranger
+      locked_version: 0.18.0
+      input: model_matrix.ranger_input
+      mode: regression_for_all_endpoints
+      splitrule: variance
+      unordered_factors: partition
+      replace: false
+      tuning_trees: 300
+      final_trees: 1000
+      mtry_fraction_grid: [0.25, 0.5, 1]
+      min_node_size_grid: [5, 20, 50]
+      sample_fraction_grid: [0.632, 0.8]
+      selection_loss: weighted_inner_fold_mse
+      selection_rule: exact_minimum_then_larger_node_then_smaller_mtry_then_smaller_sample_fraction
+      threads_per_fit: 1
+    xgboost:
+      engine: xgboost
+      locked_version_to_install_and_record_before_gate_c: 3.2.1.1
+      objective: "reg:squarederror"
+      tree_method: hist
+      matrix: exact_two_way_sparse_matrix
+      eta_grid: [0.03, 0.1]
+      max_depth_grid: [2, 4]
+      min_child_weight_grid: [5, 20]
+      subsample: 0.8
+      colsample_bytree: 0.8
+      reg_alpha: 0
+      reg_lambda: 1
+      gamma: 0
+      max_rounds: 1000
+      early_stopping_rounds: 30
+      selection_loss: weighted_inner_fold_mse
+      selection_rule: minimum_mean_inner_mse_then_fewer_rounds_then_shallower_tree_then_larger_min_child_weight
+      threads_per_fit: 1
+    oracle:
+      nuisance_prediction: true_conditional_mean
+      applications: prohibited
+
+tuning:
+  folds: locked_inner_respondent_labels_within_outer_training_sample
+  common_inner_folds_across_tuned_methods: true
+  loss: survey_target_weighted_mse_on_projected_predictions
+  normalize_training_weights_to_mean_one: true
+  normalize_validation_weights_to_mean_one: true
+  one_standard_error_rule: false
+  outcome_based_feature_screening: false
+  time_based_early_stopping: false
+  compute_budget_changes_after_outcomes: prohibited
+
+target_integration:
+  score: cross_fitted_known_randomization_augmented_score
+  propensity: known_from_locked_assignment_contract_never_learned
+  common_target_draws_across_methods: true
+  draws_independent_of_outcomes_and_training_data: true
+  respondent_specific_draws: true
+  task_side_and_frame_drawn_from_declared_target: true
+  large_product_designs:
+    method: unbiased_family_cell_stratified_monte_carlo
+    initial_nuisance_draws_per_family_cell_per_respondent: 16
+    synthetic_gate_c_grid: [16, 32, 64, 128]
+    gate_c_rule: >-
+      Using known synthetic nuisance functions and no response data, choose the
+      smallest grid value whose RMS integration error is below one percent of
+      the exact respondent-score standard deviation for every registered family.
+    fail_if_128_does_not_pass: true
+    application_draw_count_locked_in_implementation_manifest_before_outcome_access: true
+    monte_carlo_variation_included_in_respondent_score: true
+  asylum:
+    choice: sample_remaining_focal_attributes_opponent_task_side_and_frame_from_locked_target_conditional_on_each_focal_family_cell
+    rating: same_as_choice_and_allow_opponent_in_nuisance_because_q_by_q_is_certified
+  climate:
+    rating: sample_remaining_focal_attributes_task_and_neutral_side_only_opponent_excluded
+  tax:
+    choice: sample_remaining_focal_rates_full_opponent_schedule_task_and_side_taxrev_not_generated_or_conditioned_on
+  graham_svolik:
+    method: exact_64_cell_expansion_for_each_observed_respondent_task_context
+    required_consistency: update_focal_party_opponent_party_relation_democracy_and_gender_fields_together
+  exact_small_design_parity_tolerance: 0.0000000001
+
+cross_fitted_score:
+  plugin: target_integral_of_held_out_nuisance_for_each_respondent_and_coordinate
+  correction: known_riesz_weight_times_observed_residual
+  paired_choice_orientation:
+    asylum_and_tax: both_profiles_oriented_as_focal_and_averaged_one_half_each
+    graham_svolik: selected_candNum_1_orientation_only
+  cluster_aggregation: equal_average_over_declared_task_and_side_target_within_respondent
+  population_aggregation: locked_target_population_weights
+  covariance: respondent_cluster_sandwich
+  finite_cluster_correction: G_over_G_minus_one
+  save_respondent_by_coordinate_scores: true
+  numerical_calibration_tolerance: 0.0000000001
+
+primary_metrics:
+  simulation_family_risk: "mean(||theta_hat_f-theta_f||^2)/d_f"
+  application_family_variance: "trace(Omega_hat_f)/d_f"
+  primary_ratio: method_over_additive
+  interval_width_ratio: square_root_of_variance_ratio
+  prediction: survey_target_weighted_outer_fold_mse_on_unit_interval
+  family_aggregation: equal_weight_over_registered_families_after_dimension_normalization
+  study_aggregation: geometric_mean_via_equal_average_log_ratios
+  portfolio_aggregation: geometric_mean_via_equal_average_of_four_headline_study_log_ratios
+  coordinate_win_counts_headline: false
+  report_raw_numerators_and_denominators: true
+  diagnostics:
+    - held_out_log_loss_for_binary_endpoints
+    - influence_score_variance
+    - confidence_interval_width
+    - point_estimate_stability
+    - family_test_stability
+    - target_weight_leverage
+    - effective_sample_size
+    - maximum_mu_over_q
+    - runtime
+    - peak_memory
+    - tuning_selection
+    - numerical_failures
+
+uncertainty:
+  effect_intervals:
+    pointwise: normal_95_percent_cluster_sandwich
+    simultaneous: gaussian_max_abs_t_within_each_fixed_family
+    simultaneous_draws: 50000
+    whole_surface_bands: prohibited
+    family_test: cluster_wald_chi_square_with_full_locked_rank
+  application_comparison:
+    method: paired_respondent_cluster_bootstrap_from_saved_scores_and_losses_without_refitting
+    draws: 4000
+    resampling: within_locked_country_wave_or_arm_strata_with_replacement
+    common_resample_across_methods: true
+    interval: percentile_on_log_ratio_then_exponentiate
+    nuisance_training_variability_note: asymptotic_fixed_cross_fitted_score_comparison
+  simulation_comparison:
+    method: paired_replication_bootstrap
+    draws: 4000
+    interval: percentile_on_log_ratio_then_exponentiate
+  portfolio:
+    combine_four_fixed_study_log_ratios_each_draw: true
+    resample_studies: false
+    interpretation: uncertainty_for_these_four_studies_not_a_study_superpopulation
+
+interpretation:
+  material_benefit:
+    estimate_at_most: 0.90
+    upper_95_below: 0.95
+  small_benefit:
+    estimate_open_interval: [0.90, 0.95]
+    condition: material_benefit_rule_not_met
+  practical_equivalence:
+    full_95_interval_inside: [0.95, 1.05]
+  material_harm:
+    estimate_at_least: 1.10
+    lower_95_above: 1.05
+  otherwise: unresolved
+  failure_to_reject_equality_is_not_equivalence: true
+
+application_sensitivities:
+  common:
+    - unweighted_equal_respondent_target
+    - four_alternate_respondent_fold_partitions
+  asylum:
+    - 2016_rating
+    - 2022_choice_and_rating
+    - common_profile_support_without_war
+    - observed_country_sample_mixture
+    - author_alt_weight
+    - demographics_only_2016_nuisance
+    - frame_specific_2022
+  climate:
+    - author_observed_country_mixture
+    - unweighted_equal_country_mixture
+    - task_one_only_removes_carryover_restriction
+  tax:
+    - first_task_only_if_table_is_confirmed_as_display_order
+    - side_specific_diagnostic
+    - task_position_diagnostic
+  graham_svolik:
+    - natural_q_target
+    - context_reduced_nuisance
+    - matchNum_and_left_right_stability_diagnostics
+  prohibited_sensitivity_promotion: true
+
+failures:
+  job_unit: method_by_outer_fold_by_endpoint
+  log:
+    - warnings
+    - convergence
+    - rank
+    - elapsed_time
+    - peak_memory
+    - selected_hyperparameters
+    - nonfinite_predictions
+    - retries
+    - fallbacks
+  deterministic_retry: same_statistical_settings_only
+  partial_tuning_failure: choose_among_valid_candidates_and_report_every_failed_candidate
+  all_candidates_fail: mark_method_failure_and_emit_schema_complete_na_result
+  additive_prediction_may_not_be_used_as_silent_substitute: true
+  any_fallback_counts_toward_failure_rate: true
+  never_drop_family_coordinate_respondent_or_method_silently: true
+  hard_fail_conditions:
+    - outcome_read_before_implementation_lock
+    - input_or_contract_checksum_drift
+    - respondent_fold_leakage
+    - target_positive_where_assignment_probability_zero
+    - target_integration_gate_failure
+    - score_calibration_error_above_tolerance
+    - unsupported_locked_family
+    - incomplete_expected_result_keys
+
+reporting:
+  report_every_eligible_study_and_prespecified_method: true
+  confirmatory_tables_exclude_candidate_recruitment: true
+  candidate_label: developmental_application_not_independent_confirmation
+  graham_svolik_deviation_disclosure_required: true
+  required_tables:
+    - protocol_and_sample_flow
+    - endpoint_validation_and_missingness
+    - support_overlap_leverage_and_effective_sample_size
+    - simulation_headroom_recovery_risk_and_coverage
+    - application_family_variance_ratios
+    - application_prediction_loss_ratios
+    - split_stability
+    - runtime_memory_failures_and_tuning
+    - all_prespecified_effect_estimates_intervals_and_family_tests
+  required_figures:
+    - simulation_headroom_and_gain_recovered
+    - study_by_learner_family_variance_ratios
+    - prediction_gain_versus_precision_gain
+    - repeated_split_stability
+  machine_readable_required_outputs:
+    - job_ledger.csv
+    - endpoint_manifest.yml
+    - respondent_scores.parquet
+    - fold_predictions.parquet
+    - family_metrics.csv
+    - effect_estimates.csv
+    - tuning_history.parquet
+    - failures.csv
+    - session_manifest.yml
+  result_schema_and_reporting_code_must_be_hashed_before_outcome_access: true
+
+gates:
+  gate_c:
+    status: pending
+    invariance_tolerance: 0.0000000001
+    requires:
+      - exact_small_design_score_and_target_integration_agreement
+      - scoped_invariance_tests_defined_in_invariance_exact_refit_scope
+      - fixed_coding_deterministic_reproducibility_for_representation_sensitive_learners
+      - no_outer_or_inner_respondent_leakage
+      - complete_expected_jobs_and_estimands
+      - contract_and_code_hash_enforcement
+      - synthetic_only_report_render
+  gate_d:
+    status: pending
+    positive_control_oracle_over_additive_at_most: 0.75
+    minimum_feasible_gain_recovered: 0.50
+  gate_e:
+    status: pending
+    coverage_interval: [0.93, 0.97]
+    maximum_absolute_standardized_bias: 0.10
+    maximum_headline_ratio_interval_width: 0.06
+    maximum_numerical_failure_rate: 0.01
+    additive_no_headroom_aggregate_excess_risk_at_most: 0.05
+    additive_no_headroom_any_cell_excess_risk_at_most: 0.10
+  gate_f:
+    status: pending
+    full_paper_if_either:
+      - precise_cross_study_result_rules_out_five_percent_incremental_gain
+      - prespecified_diagnostic_separates_settings_with_and_without_recovered_headroom
+
+next_authorized_step_after_this_contract:
+  action: implement_shared_comparison_engine_and_gate_c_on_synthetic_and_design_only_inputs
+  outcomes_authorized: false
+  applications_authorized: false
+  simulations_authorized: false

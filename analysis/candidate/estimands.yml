@@ -1,0 +1,210 @@
+version: 4
+status: developmental_contract_corrected_rebuild_required_before_reuse
+locked_on: "2026-08-26"
+terminology_corrected_on: "2026-09-03"
+comparison_role: developmental_application_not_confirmatory_evidence
+
+analysis:
+  seed: 20260826
+
+assignment:
+  assumption_acknowledged: true
+  mechanism: independent_uniform_within_profile_attributes_rowwise_uniform_profile_marginal_across_tasks_unknown
+  verification_status: within_profile_documented_by_article_preregistration_and_replication_code_across_tasks_not_verified_and_non_iid_repeat_pattern_observed
+  row_marginal_profile_probability: 0.0006944444444444444
+  across_tasks: unknown_non_iid_no_repeated_complete_profiles
+  design_source:
+    study_citation: "Eggers, Andrew C., Anthony Fowler, William Howell, and Molly Offer-Westort. 2025. Opportunities to govern: how to increase the supply of moderate and qualified candidates. Political Science Research and Methods: 1-20. https://doi.org/10.1017/psrm.2025.10076."
+    article_doi: "https://doi.org/10.1017/psrm.2025.10076"
+    replication_doi: "https://doi.org/10.7910/DVN/BQAHGZ"
+    replication_archive_md5: "0fb95eb8c2f57bb363c956a7eff8feb6"
+    local_randomization_evidence: "Published article/proof section 3 (PDF pp. 6-7), PSRM Revision 2025_12_08.pdf p. 15, and Preregistration_v2_Candidacy.pdf pp. 3 and 10 state equal-probability independent randomization; PSRM_replication/inference.do lines 56-64 independently redraw the seven supports."
+    download_instructions: "Download unrestricted PSRM.zip, version 1 (published 2025-11-30), from Harvard Dataverse DOI 10.7910/DVN/BQAHGZ; verify 65,168,930 bytes and MD5 0fb95eb8c2f57bb363c956a7eff8feb6. The archive extracts as PSRM and contains UCHI0012_OUTPUT.sav plus cleaning.do, not CleanedData.csv. Run the authors' Stata cleaning step (master.do invokes cleaning.do; cleaning.do line 432 exports CleanedData.csv), then place the generated replication directory at Candidate recruitment/replication/PSRM_replication so the locked CSV path and MD5 resolve. Never point this application at Candidate recruitment/YouGov data."
+    license_status: "Harvard Dataverse metadata declares CC0-1.0 for version 1 of the unrestricted replication archive."
+    limitation: "The repository does not include an original survey-platform randomizer export. Independent uniform attribute assignment within a profile and the rowwise uniform profile marginal are supported by the published design statement, preregistration, and replication code. No respondent received a duplicate complete profile across eight tasks, so independence across tasks is not established and the joint task mechanism remains unknown."
+
+data:
+  allowed_input: "Candidate recruitment/replication/PSRM_replication/data/CleanedData.csv"
+  md5: "02069b7dac945e6ace2a7d236768bb4f"
+  forbidden_input_pattern: "Candidate recruitment/YouGov data"
+  expected:
+    rows: 24000
+    respondents: 3000
+    tasks_per_respondent: 8
+    profiles: 1440
+    complete_profiles: true
+    no_missing_core_values: true
+
+roles:
+  respondent:
+    canonical: id
+    aliases: [id, respondent_id, respondentid, caseid]
+  task:
+    canonical: task
+    aliases: [iteration, task, task_position, taskposition, round]
+  weight:
+    canonical: weight
+    aliases: [weight, survey_weight, surveyweight, weights]
+  outcome:
+    canonical: interest
+    aliases: [interest, candidate_interest, candidateinterest]
+
+attributes:
+  fundraising:
+    aliases: [fundraising, fundraising_burden, fundraisingburden]
+    ordered: true
+    values: [0, 0.25, 0.5, 0.75, 1]
+    labels: ["$10,000", "$20,000", "$30,000", "$40,000", "$50,000"]
+  winning:
+    aliases: [winning, probability_of_winning, probabilityofwinning, win_probability, winprobability]
+    ordered: true
+    values: [0, 0.33333334, 0.66666669, 1]
+    labels: [slim, good, high, "all but guaranteed"]
+  pay:
+    aliases: [pay, salary, compensation]
+    ordered: true
+    values: [0, 0.5, 1]
+    labels: ["$50,000", "$70,000", "$90,000"]
+  media:
+    aliases: [media, media_attention, mediaattention]
+    ordered: true
+    values: [0, 0.5, 1]
+    labels: ["once per month", "five times per month", "ten times per month"]
+  majority:
+    aliases: [majority, legislative_threshold, legislativethreshold, vote_threshold, votethreshold]
+    ordered: true
+    values: [0, 1]
+    labels: ["one-half", "two-thirds"]
+  authority:
+    aliases: [authority, council_authority, councilauthority]
+    ordered: true
+    values: [0, 1]
+    labels:
+      - "city manager has substantial powers; council makes very few decisions"
+      - "city manager has few powers; council makes almost all decisions"
+  staff:
+    aliases: [staff, staff_support, staffsupport]
+    ordered: true
+    values: [0, 1]
+    labels:
+      - "one assistant; two pieces of legislation"
+      - "five assistants; ten pieces of legislation"
+
+preparation:
+  numeric_tolerance: 0.000001
+  fold_seed: 20260826
+  outer_folds: 5
+  assignment: respondent_level
+  require_respondent_invariant_weights: true
+  weight_invariance_tolerance: 0.000000000001
+
+target:
+  population: complete_factorial_profile_grid
+  weighting: uniform
+  profiles: 1440
+  max_interaction_order: 7
+
+evaluation:
+  fold_unit: respondent_cluster
+  row_level: survey_weighted
+  profile_level: uniform_over_complete_target_grid
+  require_complete_profile_target: true
+  incomplete_target_action: primary_metrics_na_report_common_support
+  metrics:
+    - rmse
+    - mae
+    - r_squared
+    - calibration_intercept
+    - calibration_slope
+    - prediction_coverage
+    - prediction_weight_coverage
+
+models:
+  - additive_wls
+  - two_way_wls
+  - saturated_wls
+  - common_ridge
+  - unrestricted_order_ridge
+  - monotone_order_ridge
+
+comparison_tuning:
+  inner_folds: 5
+  assignment: respondent_level
+  shared_within_outer_fold: true
+  selection_rule: minimum_cv
+  loss: survey_weighted_mean_squared_error
+  task_position: unpenalized
+  control:
+    common_grid_size: 15
+    maxit: 80
+    reltol: 0.00001
+    log_lambda_lower: -10
+    log_lambda_upper: 8
+
+saturated_wls:
+  specification: profile_fixed_effects_plus_task_position_fixed_effects
+  unseen_outer_training_profile_prediction: "NA"
+
+ranking:
+  model: monotone_order_ridge
+  other_model_rankings: false
+  task_position_target: uniform_average_over_eight_tasks
+
+inference:
+  alpha: 0.05
+  simultaneous_method: gaussian_max_t
+  simultaneous_draws: 50000
+  simultaneous_seed: 20260827
+  crossfit_seed: 20260828
+  family_simulation_seed_offset: 1000
+  cell_simulation_seed_offset: 2000
+  coordinate_basis: full_rank_orthonormal
+  assignment_probability: locked_row_marginal_profile_probability
+  global_interval_scope: all_prespecified_coordinates
+
+estimand_definition:
+  name: uniform_target_functional_anova_interaction
+  formula: "E_other[m(a,b,other)] - E_{B,other}[m(a,B,other)] - E_{A,other}[m(A,b,other)] + E_all[m]"
+  direct_cell_weights: true
+  no_implicit_rescaling: true
+  redundant_cells_retained_for_interpretation: true
+  inference_on_full_rank_coordinates: true
+
+families:
+  - id: authority_x_majority
+    label: "Authority x legislative threshold"
+    attributes: [authority, majority]
+    estimand: weighted_functional_anova_two_way_interaction_surface
+    coordinate_reduction: orthonormal_full_rank
+    prespecified: true
+    report_classic_did: true
+    classic_did_scale: "mu11 - mu10 - mu01 + mu00, averaged over all other attributes"
+  - id: authority_x_staff
+    label: "Authority x staff support"
+    attributes: [authority, staff]
+    estimand: weighted_functional_anova_two_way_interaction_surface
+    coordinate_reduction: orthonormal_full_rank
+    prespecified: true
+    report_classic_did: true
+    classic_did_scale: "mu11 - mu10 - mu01 + mu00, averaged over all other attributes"
+  - id: fundraising_x_winning
+    label: "Fundraising burden x probability of winning"
+    attributes: [fundraising, winning]
+    estimand: weighted_functional_anova_two_way_interaction_surface
+    coordinate_reduction: orthonormal_full_rank
+    prespecified: true
+    report_classic_did: false
+  - id: fundraising_x_pay
+    label: "Fundraising burden x salary"
+    attributes: [fundraising, pay]
+    estimand: weighted_functional_anova_two_way_interaction_surface
+    coordinate_reduction: orthonormal_full_rank
+    prespecified: true
+    report_classic_did: false
+
+selection_rule: "No interaction family, cell, coordinate, sign, or contrast may be added, removed, or selected after inspecting the outcome."
+
+execution:
+  require_local_package_source: true
+  resume_outer_folds: true
+  checkpoint_subdirectory: checkpoints

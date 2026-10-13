@@ -1,0 +1,8 @@
+"case_id","family","J","q","target","base_profiles","candidate_profiles","budget","selected_profile_ids_zero_based","selected_layers","estimable","minimum_budget","estimable_sets_at_minimum","optimal_sets","variance_factor","alias_radius","information_quadratic","comparison_variance_factor","structural_result"
+"parity_j4_q1_base","parity",4,1,"intercept",8,8,0,"","",TRUE,0,1,1,1,1,0.125,NA,"Base parity half-fraction."
+"parity_j4_q1_single","parity",4,1,"intercept",8,8,1,"1","1",TRUE,0,1,8,1.03846153846154,0.9198662110078,0.115384615384615,1,"One candidate; its antipode has larger conditional marginal value."
+"parity_j4_q1_antipodal_pair","parity",4,1,"intercept",8,8,2,"1:14","1:3",TRUE,0,1,4,1,0.774596669241483,0.1,1.03846153846154,"Antipodal balance restores variance factor one."
+"hamming_j6_k1_q1_optimal_single","hamming_slice",6,1,"factor_1_main_effect",6,58,1,"31","5",TRUE,1,58,5,1.53125,3.60555127546399,0.21875,1.54,"Five layer-5 profiles with A1=+1 tie for the one-profile optimum."
+"hamming_j6_k1_q1_farthest_single","hamming_slice",6,1,"factor_1_main_effect",6,58,1,"63","6",TRUE,1,58,1,1.54,3.61662826400502,0.22,1.53125,"The unique layer-6 profile is slightly worse than the layer-5 optimum."
+"forbidden_pair_j4_q3_antipodal","forbidden_pair",4,3,"factor_1_by_factor_2",12,4,2,"3:15","2:4",TRUE,2,2,2,1.75,0.999999999999998,0.125,NA,"No singleton works; exactly the two outer-coordinate antipodal pairs work."
+"forbidden_pair_j5_q4_hadamard","forbidden_pair",5,4,"factor_1_by_factor_2",24,8,4,"3:15:23:27","2:4:4:4",TRUE,4,2,2,1.75,1,0.0625,NA,"No set below four works; exactly two four-profile Hadamard sets work."

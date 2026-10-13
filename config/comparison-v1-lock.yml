@@ -1,0 +1,180 @@
+schema_version: 1
+lock_id: factorial_ml_comparison_v1_scientific_lock
+created_utc: "2026-09-03T21:35:27Z"
+last_verified_utc: "2026-09-03T21:48:36Z"
+git_head_at_lock: "bb8483ba00d14ec1e0120b1b80205ce8fac0ee97"
+worktree_dirty_at_lock: true
+hashes_are_authoritative_despite_dirty_worktree: true
+hash_algorithms: [md5, sha256]
+
+status:
+  scientific_protocol_complete: true
+  implementation_lock_complete: false
+  gate_c_passed: false
+  outcome_access_authorized: false
+  reason: "This manifest freezes the scientific contracts and audited design artifacts. The shared engine, strict endpoint readers, tests, report schemas, xgboost installation, final renv lock, and implementation manifest remain to be created and must be separately hashed before endpoint access."
+
+pre_outcome_audit_corrections:
+  - added_disjoint_calibration_smoke_and_production_seed_offsets
+  - corrected_xgboost_squared_error_objective_name
+  - resolved_study_specific_context_and_baseline_feature_blocks
+  - scoped_exact_invariance_to_geometric_and_invariant_estimators
+  - fixed_zero_penalty_context_columns_for_elastic_net
+  - clarified_graham_svolik_inner_fold_status
+  - made_common_contract_precedence_over_provisional_missingness_and_access_language_explicit
+  - required_outcome_free_candidate_v4_context_artifact_before_calibration
+
+files:
+  - path: config/comparison-v1.yml
+    bytes: 31680
+    md5: "974ad252e092bc0460413dfd4e5d5a68"
+    sha256: "2b27c389062670be883341252646c92eec8068e3a9dfb768ca31a8196c0184e9"
+  - path: config/comparison-simulations-v1.yml
+    bytes: 10121
+    md5: "b07543599bd1d965f13cd22511cad5ce"
+    sha256: "58b229bc11cd1603250b4cca97839a7af40cc236c700b291993405348620989d"
+  - path: docs/cross-study-comparison-contract.md
+    bytes: 14548
+    md5: "e0cd9e6f96bb3682e0bc58d96bdf9cf1"
+    sha256: "5ec6484f5e072b2bc6e5bc398a8711f9a4cd60dbe5792e9e358c8ef93a9d9664"
+  - path: config/application-registry.yml
+    bytes: 20604
+    md5: "93b918e722caeabb142ec0580c1bccc7"
+    sha256: "13bc6ac2a363e1272a9b9caf9b34429cd65045ad72e4014efa4e9b56e0c20bf7"
+  - path: docs/application-dataset-registry.md
+    bytes: 27556
+    md5: "4ee92a5c68594f5fe91d2ade6a5aab43"
+    sha256: "bc56b79f27537c4d70be25faa53cc33eaf77cb30f3396f797b7d9f4a72716e79"
+  - path: docs/negative-comparative-paper-software-plan.md
+    bytes: 28450
+    md5: "372c9fa7e25bd9d23eba95f16882feef"
+    sha256: "fa1e1149f03631d2450d5490bc05ed084246ec20b0cbdf8c2d29b317824b3e0e"
+  - path: config/datasets/asylum-seekers.yml
+    bytes: 15790
+    md5: "11768a0d41c7e17600d391b675cd2149"
+    sha256: "b0be99dd6338d92424179a5b67d12f2d47706033e38197c880898927066cf0d7"
+  - path: config/datasets/climate-agreements.yml
+    bytes: 15067
+    md5: "f26bd6090e4d0c1b41467ae1747d3283"
+    sha256: "4d4d87282604d1e724950b2ef1f396e4252682b2819f8ad4d834b65aefc68376"
+  - path: config/datasets/income-tax-plans.yml
+    bytes: 12492
+    md5: "60f69ac4c082030e92ac1523678b219f"
+    sha256: "36108af0e7c967016f7616338572ad20bfa828880c0db1348190e8f9a0e14086"
+  - path: config/datasets/graham-svolik.yml
+    bytes: 12642
+    md5: "b47aff6f75dbb691529fa79cabb8632a"
+    sha256: "8c9c4bea42934dd2c189918beb68b57a2111367ada696b917384d64f3434e343"
+  - path: analysis/candidate/estimands.yml
+    bytes: 8555
+    md5: "8f93e2229aa64f5ec840a94d38d9292b"
+    sha256: "95c932a912dbad67e1615608e69a329f93765c17f8b0bb5c30da029c4a5f82cc"
+
+  - path: analysis/asylum/derived/design_audit_manifest.yml
+    bytes: 1787
+    md5: "ed3a34b7733f3d4efcba72d520ff68b3"
+    sha256: "db3c1c27bbd54f2c2d1d9064550284991f14882d3e0fadc46259fe037037b703"
+  - path: analysis/asylum/derived/respondent_folds.csv
+    bytes: 1974157
+    md5: "d9144c8eee6a381c082b9146a13f9314"
+    sha256: "b37a24f480bae65f9a64542367bf926047ed80debd35e7efbcb130dd9af272e5"
+  - path: analysis/asylum/derived/contrast_coordinates.csv
+    bytes: 138101
+    md5: "2abfd172e6e25e54875e8ee9778ce57c"
+    sha256: "547f9bbbdd8f4aac5b5d3cc2f59d00efaebfd4cad24bca379757cf143a843f6e"
+  - path: analysis/asylum/derived/family_projectors.csv
+    bytes: 119398
+    md5: "69ca679e574054fc8cfe55b24067b0ec"
+    sha256: "f2970dc8b76025c49b0314c61b2ec2c3b8e8c308fca24b9f9973983f4ce481c0"
+  - path: analysis/asylum/derived/target_weight_diagnostics.csv
+    bytes: 2601
+    md5: "243fd453c1bc39d979cdf36e32752449"
+    sha256: "1bfd9fb0f966f806de71cfd7572fd9c15a54e6ea24557ce6ce2d7c7f1067494b"
+
+  - path: analysis/climate/derived/design_audit_manifest.yml
+    bytes: 2323
+    md5: "726ad18ca95bc2bfeef683adfa919cc6"
+    sha256: "1c47fd381e7bd338cebca28f8b8ad6bdb55bef71e3f4a141a83dbf3c8825b55a"
+  - path: analysis/climate/derived/respondent_folds.csv
+    bytes: 425913
+    md5: "7742540cf450d01ae44ef92f7d4f74e4"
+    sha256: "c7ff4bb3d1356fc476b2b484166ab68b28be140d8140d59c5d3b85a97c3a2134"
+  - path: analysis/climate/derived/contrast_coordinates.csv
+    bytes: 31481
+    md5: "69b063b7291c61ae2f19429262443eab"
+    sha256: "d486488ee7d2a61c8886bf2aef4945a56ae4ed2e6ae8d2adf13132c66b00e057"
+  - path: analysis/climate/derived/family_projectors.csv
+    bytes: 30153
+    md5: "2851d391b8ca4a29cb659e48291e6bfc"
+    sha256: "73704ce86149804c45b68e194c2d9b1ee3c494e6e2d8f22bdfa31d357ac23e7d"
+  - path: analysis/climate/derived/target_weight_diagnostics.csv
+    bytes: 551
+    md5: "3526620057475c265c1052edd589587d"
+    sha256: "b1335c36a3d077f8eaa6973d8514d890497c54e52f75e905f52311cd43a27908"
+
+  - path: analysis/tax/derived/design_audit_manifest.yml
+    bytes: 2637
+    md5: "dca11258b33783066270cc3469052bbe"
+    sha256: "23b0e03bf259425e0265369782c16d316eb8556517403b037bad70463736927f"
+  - path: analysis/tax/derived/respondent_folds.csv
+    bytes: 109018
+    md5: "124cd3ecca304d9c6b9b39c6f0671e7f"
+    sha256: "556f1c49337875f271583bd2eb843009d407b46f21ee6862568650399e27bfe0"
+  - path: analysis/tax/derived/contrast_coordinates.csv
+    bytes: 105609
+    md5: "7aa17f9120776a1822e11f1729396dbb"
+    sha256: "a014423a6090808304d9174f6756e21fad28111b5f3758b32d08fd53f33b2698"
+  - path: analysis/tax/derived/family_projectors.csv
+    bytes: 93360
+    md5: "6743ed3c6469c53adc066dfe062501cb"
+    sha256: "51db6f194d0fa7b525a691af0f37c269d6ede348598c5b68adfc77d9f8715753"
+  - path: analysis/tax/derived/target_weight_diagnostics.csv
+    bytes: 1071
+    md5: "5c36bf79fabd42b04ac59fbaea7a7d0d"
+    sha256: "8becba9324232014dfd4d05bdc29f42b0a956aef5c33bfe88fa0f6cd6bba8437"
+
+  - path: analysis/graham_svolik/derived/design_audit_manifest.yml
+    bytes: 2813
+    md5: "b6b92be5855582b0658cb35614561670"
+    sha256: "6c70ea4f62c18a7a5f1b21bf0c1525cd7e8304288d10f665a1f92872157d9679"
+  - path: analysis/graham_svolik/derived/respondent_folds.csv
+    bytes: 73404
+    md5: "4028b93d35d1b60b9939d8dc36f2b6dd"
+    sha256: "0d2ae4db52fc30b3ce6fea4fe3acd8eb000b704d7d341bb4d1bb8d9c26dc691c"
+  - path: analysis/graham_svolik/derived/contrast_coordinates.csv
+    bytes: 31168
+    md5: "f110cd6c1a3c38e3531b8cffedff6b72"
+    sha256: "f7b3879d8a253505e0acfdd121905c471bab5a5f94b16e372e4e6ccc90fe6ae8"
+  - path: analysis/graham_svolik/derived/family_projectors.csv
+    bytes: 31062
+    md5: "08f29aa76b3f1969856ca64413161f7a"
+    sha256: "dc56d539389b552bd16adc643b2b91dd66703dfe58931f1b73e49bbe28cd664c"
+  - path: analysis/graham_svolik/derived/target_weight_diagnostics.csv
+    bytes: 556
+    md5: "62cbcff97d145d9d77f483a18ac0fba0"
+    sha256: "11a692303a5737ca398249db7e3608eeb0ca44d443acacd145817d42eaea2d35"
+  - path: analysis/graham_svolik/derived/nuisance_context_audit.csv
+    bytes: 2470
+    md5: "d07c972bef3e6666c235a77e253cdd70"
+    sha256: "5b35e0d4a0b7146398e0cc86b4d81d243552eb144e078fb95587b11df3724bac"
+
+  - path: renv.lock
+    bytes: 294821
+    md5: "1dd8284c8065baab3e366b7c177da57c"
+    sha256: "aea895b2c997e93ac394fa10e1cb08c6cde68b344babfed5ecef84ecec5517f1"
+    status: current_environment_only_must_change_to_add_xgboost_and_be_rehashed_before_gate_c
+
+implementation_lock_requirements:
+  - analysis_comparison_source_files
+  - strict_endpoint_readers
+  - endpoint_missingness_only_first_access_mode
+  - synthetic_and_design_only_gate_c_tests
+  - result_schemas_and_report_templates
+  - emitted_graham_svolik_inner_folds
+  - rebuilt_outcome_free_candidate_v4_context_distribution
+  - selected_target_integration_draw_count
+  - xgboost_3_2_1_1_in_renv_lock
+  - complete_source_and_dependency_hashes
+  - passing_gate_c_decision
+
+authorized_next_action: implement_gate_c_without_reading_outcomes_or_running_simulation_calibration

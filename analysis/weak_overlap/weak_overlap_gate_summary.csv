@@ -1,0 +1,9 @@
+"metric","value"
+"design_cells",240
+"method_rows",1872
+"weak_overlap_cells",84
+"weak_10pct_better_than_full_and_best_truncation",77
+"weak_shorter_than_trivial_interval",84
+"weak_wins_with_profiles_greater_than_n",33
+"minimum_ratio_to_best_truncation",0.00695506709996025
+"median_weak_ratio_to_best_truncation",0.546362709656769
