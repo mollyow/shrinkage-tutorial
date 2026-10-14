@@ -1,0 +1,117 @@
+schema_version: 1
+protocol_id: factorial_ml_comparison_v1
+amendment_id: factorial_ml_comparison_v1_amendment_1
+amendment_date: "2026-10-13"
+approved_date: "2026-10-14"
+status: in_force_gate_c1_implementation_authorized_outcomes_prohibited
+narrative: docs/comparison-v1-amendment-1-staged-gate-c.md
+parent_lock_manifest: config/comparison-v1-lock.yml
+gate_namespace: comparison_benchmark_plan_section_5_not_earlier_covariance_adaptive_gates
+
+classification:
+  type: procedural_sequence_only
+  protected_choices_changed: none
+  outcome_access_barrier_changed: false
+  follows_before_outcome_amendment_procedure: true
+  superseded_files_edited: false
+  lock_manifest: config/comparison-v1-amendment-1-lock.yml
+
+gate_c_stages:
+  c1_simulation_and_shared_engine:
+    requires:
+      - shared_score_learner_tuning_fold_metric_aggregation_and_bootstrap_engine
+      - simulation_data_generators_and_simulation_target_integration
+      - rebuilt_outcome_free_candidate_v4_context_distribution
+      - exact_small_design_score_and_integration_agreement_including_paired_choice_enumeration
+      - scoped_invariance_tests_defined_in_invariance_exact_refit_scope
+      - fixed_coding_deterministic_reproducibility_for_representation_sensitive_learners
+      - no_outer_or_inner_respondent_leakage
+      - seed_collision_check
+      - simulation_draw_count_selected_by_v1_rule
+      - job_prediction_respondent_score_tuning_and_failure_schemas
+      - renv_lock_with_xgboost_3_2_1_1_glmnet_4_1_8_ranger_0_18_0
+      - complete_expected_simulation_jobs_and_estimands
+      - contract_and_code_hash_enforcement
+      - synthetic_simulation_report_render
+      - c1_implementation_manifest
+      - passing_c1_decision
+  c2_application:
+    requires:
+      - strict_one_endpoint_at_a_time_readers
+      - endpoint_missingness_only_first_access_mode
+      - study_specific_target_integration
+      - graham_svolik_nonproduct_enumeration_fixture
+      - application_draw_count_selected_by_v1_rule
+      - emitted_graham_svolik_inner_folds
+      - synthetic_endpoint_fixtures
+      - endpoint_manifest_schema_application_report_templates_and_synthetic_render
+      - complete_expected_application_jobs_and_estimands
+      - contract_and_code_hash_enforcement
+      - c2_manifest_extends_c1_and_confirms_c1_files_unchanged_or_deviation_recorded
+      - passing_c2_decision
+  full_gate_c_passed_when: [c1_passed, c2_passed]
+
+sequence:
+  - {step: 1, action: build_and_pass_gate_c1}
+  - {step: 2, action: run_positive_control_calibration_and_evaluate_gate_d, requires: [c1_passed], seed_phase_offset: 0}
+  - {step: 3, action: if_gate_d_fails_stop_and_take_software_tutorial_route, grid_extension: prohibited}
+  - {step: 4, action: hash_calibration_results_then_run_smoke, requires: [gate_d_passed], seed_phase_offset: 10000000, substantive_reporting: prohibited}
+  - {step: 5, action: build_and_pass_gate_c2}
+  - {step: 6, action: run_production_simulations_and_evaluate_gate_e, requires: [c1_passed, c2_passed, gate_d_passed], seed_phase_offset: 20000000}
+  - {step: 7, action: run_applications_starting_with_missingness_only_first_access, requires: [c1_passed, c2_passed]}
+  - {step: 8, action: evaluate_gates_a_to_f_and_choose_route_mechanically}
+
+safeguards:
+  c1_files_frozen_after_c1_passes: true
+  c1_bug_fix_rule: >-
+    Record a dated deviation, reissue the C1 manifest, and rerun every
+    simulation phase already run on the old files with the same seeds before
+    production. If a rerun calibration selects a different multiplier, report
+    both and let the rerun govern.
+  c2_written_after_calibration_results_known: true
+  c2_may_implement_only_choices_fixed_by_v1_and_study_contracts: true
+  c2_unfixed_implementation_details_listed_in_c2_decision: true
+  learner_fits_before_full_gate_c: simulated_data_only
+  fresh_endpoint_access_before_full_gate_c: prohibited
+
+gate_d_clarifications:
+  draw_counts:
+    simulation: selected_in_c1_on_simulation_families
+    application: selected_in_c2_on_application_families
+    grid: [16, 32, 64, 128]
+    rule_unchanged: true
+  recovery_measurement:
+    fit_at_all_seven_multipliers: [additive, oracle]
+    fit_only_at_selected_multiplier: [elastic_net, ranger, xgboost]
+    datasets: same_100_calibration_datasets_as_selection
+    gain_recovered_uses: replication_mean_family_balanced_risk
+  pass_rule:
+    applies_separately_to: [rating_high_headroom_control, choice_high_headroom_control]
+    both_must_pass: true
+    oracle_over_additive_at_most: 0.75
+    at_least_one_learner_gain_recovered_at_least: 0.50
+    eligible_learners: [elastic_net, ranger, xgboost]
+    recovering_learner_may_differ_between_geometries: true
+
+supersedes_authorization_clauses:
+  - file: config/comparison-v1.yml
+    clause: next_authorized_step_after_this_contract.simulations_authorized
+    amended: calibration_after_c1_smoke_after_gate_d_production_after_full_gate_c
+  - file: config/comparison-simulations-v1.yml
+    clause: authorized_next_action.run_calibration_and_run_smoke
+    amended: calibration_after_c1_smoke_after_gate_d_run_production_unchanged_until_full_gate_c
+  - file: config/comparison-v1-lock.yml
+    clause: authorized_next_action
+    amended: implement_gate_c1_without_reading_outcomes
+  - file: docs/cross-study-comparison-contract.md
+    clause: no_calibration_or_smoke_authorized_by_this_contract
+    amended: authorized_by_amendment_1_on_its_conditions
+  - file: docs/negative-comparative-paper-software-plan.md
+    clause: sections_9_and_10_sequence_and_no_learner_fit_before_gate_c
+    amended: amendment_1_sequence_and_learner_restriction_scoped_to_fresh_endpoints
+
+authorized_next_action:
+  action: implement_gate_c1_on_synthetic_and_design_only_inputs
+  outcomes_authorized: false
+  applications_authorized: false
+  calibration_authorized_after: c1_passed

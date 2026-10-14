@@ -172,6 +172,10 @@ The common scientific choices are now frozen in the
 [`cross-study comparison contract`](docs/cross-study-comparison-contract.md).
 Fresh endpoints remain closed while the shared Gate-C implementation and its
 hash manifest are built and tested on synthetic and design-only inputs.
+[`Amendment 1`](docs/comparison-v1-amendment-1-staged-gate-c.md) stages that
+work: Gate C1 builds the shared engine and simulations, so the positive-control
+Gate D can be evaluated before Gate C2 builds the endpoint readers. It changes
+the order of work only, not any frozen scientific choice.
 
 ## What is implemented
 
