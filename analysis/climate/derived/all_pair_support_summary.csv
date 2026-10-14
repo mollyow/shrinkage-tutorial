@@ -1,0 +1,76 @@
+"stratum","attribute_a","attribute_b","expected_cartesian_cells","observed_cells","complete_cartesian"
+"pooled","household_cost","burden_distribution",20,20,TRUE
+"France","household_cost","burden_distribution",20,20,TRUE
+"Germany","household_cost","burden_distribution",20,20,TRUE
+"United Kingdom","household_cost","burden_distribution",20,20,TRUE
+"United States","household_cost","burden_distribution",20,20,TRUE
+"pooled","household_cost","participating_countries",15,15,TRUE
+"France","household_cost","participating_countries",15,15,TRUE
+"Germany","household_cost","participating_countries",15,15,TRUE
+"United Kingdom","household_cost","participating_countries",15,15,TRUE
+"United States","household_cost","participating_countries",15,15,TRUE
+"pooled","household_cost","emissions_coverage",15,15,TRUE
+"France","household_cost","emissions_coverage",15,15,TRUE
+"Germany","household_cost","emissions_coverage",15,15,TRUE
+"United Kingdom","household_cost","emissions_coverage",15,15,TRUE
+"United States","household_cost","emissions_coverage",15,15,TRUE
+"pooled","household_cost","sanctions",20,20,TRUE
+"France","household_cost","sanctions",20,20,TRUE
+"Germany","household_cost","sanctions",20,20,TRUE
+"United Kingdom","household_cost","sanctions",20,20,TRUE
+"United States","household_cost","sanctions",20,20,TRUE
+"pooled","household_cost","monitoring",20,20,TRUE
+"France","household_cost","monitoring",20,20,TRUE
+"Germany","household_cost","monitoring",20,20,TRUE
+"United Kingdom","household_cost","monitoring",20,20,TRUE
+"United States","household_cost","monitoring",20,20,TRUE
+"pooled","burden_distribution","participating_countries",12,12,TRUE
+"France","burden_distribution","participating_countries",12,12,TRUE
+"Germany","burden_distribution","participating_countries",12,12,TRUE
+"United Kingdom","burden_distribution","participating_countries",12,12,TRUE
+"United States","burden_distribution","participating_countries",12,12,TRUE
+"pooled","burden_distribution","emissions_coverage",12,12,TRUE
+"France","burden_distribution","emissions_coverage",12,12,TRUE
+"Germany","burden_distribution","emissions_coverage",12,12,TRUE
+"United Kingdom","burden_distribution","emissions_coverage",12,12,TRUE
+"United States","burden_distribution","emissions_coverage",12,12,TRUE
+"pooled","burden_distribution","sanctions",16,16,TRUE
+"France","burden_distribution","sanctions",16,16,TRUE
+"Germany","burden_distribution","sanctions",16,16,TRUE
+"United Kingdom","burden_distribution","sanctions",16,16,TRUE
+"United States","burden_distribution","sanctions",16,16,TRUE
+"pooled","burden_distribution","monitoring",16,16,TRUE
+"France","burden_distribution","monitoring",16,16,TRUE
+"Germany","burden_distribution","monitoring",16,16,TRUE
+"United Kingdom","burden_distribution","monitoring",16,16,TRUE
+"United States","burden_distribution","monitoring",16,16,TRUE
+"pooled","participating_countries","emissions_coverage",9,9,TRUE
+"France","participating_countries","emissions_coverage",9,9,TRUE
+"Germany","participating_countries","emissions_coverage",9,9,TRUE
+"United Kingdom","participating_countries","emissions_coverage",9,9,TRUE
+"United States","participating_countries","emissions_coverage",9,9,TRUE
+"pooled","participating_countries","sanctions",12,12,TRUE
+"France","participating_countries","sanctions",12,12,TRUE
+"Germany","participating_countries","sanctions",12,12,TRUE
+"United Kingdom","participating_countries","sanctions",12,12,TRUE
+"United States","participating_countries","sanctions",12,12,TRUE
+"pooled","participating_countries","monitoring",12,12,TRUE
+"France","participating_countries","monitoring",12,12,TRUE
+"Germany","participating_countries","monitoring",12,12,TRUE
+"United Kingdom","participating_countries","monitoring",12,12,TRUE
+"United States","participating_countries","monitoring",12,12,TRUE
+"pooled","emissions_coverage","sanctions",12,12,TRUE
+"France","emissions_coverage","sanctions",12,12,TRUE
+"Germany","emissions_coverage","sanctions",12,12,TRUE
+"United Kingdom","emissions_coverage","sanctions",12,12,TRUE
+"United States","emissions_coverage","sanctions",12,12,TRUE
+"pooled","emissions_coverage","monitoring",12,12,TRUE
+"France","emissions_coverage","monitoring",12,12,TRUE
+"Germany","emissions_coverage","monitoring",12,12,TRUE
+"United Kingdom","emissions_coverage","monitoring",12,12,TRUE
+"United States","emissions_coverage","monitoring",12,12,TRUE
+"pooled","sanctions","monitoring",16,16,TRUE
+"France","sanctions","monitoring",16,16,TRUE
+"Germany","sanctions","monitoring",16,16,TRUE
+"United Kingdom","sanctions","monitoring",16,16,TRUE
+"United States","sanctions","monitoring",16,16,TRUE

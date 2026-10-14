@@ -1,0 +1,21 @@
+gate: D_feasible_covariance_adaptive_estimator
+mode: smoke
+production_gate_evaluated: no
+passed: no
+decision: smoke_only_no_gate_decision
+weak_aggregate_variance_ratio: 0.9970378
+weak_aggregate_upper_97_5: 1.0016866
+worst_strong_point_ratio: 0.7328969
+worst_strong_upper_97_5: 0.9279819
+minimum_strong_oracle_gain_recovered: 0.939105
+maximum_safety_point_ratio: 1.0
+minimum_pooled_coverage: 0.88125
+maximum_pooled_coverage: 0.975
+maximum_rms_standardized_bias: 0.2692868
+minimum_variance_calibration: 0.5836458
+maximum_variance_calibration: 1.6350071
+maximum_calibration_residual: 9.7144515e-17
+numerical_failure_rate: 0.0
+correctness_tests_passed: yes
+config_md5: 0e1d6b57f0b4b5c0e529bd45fd4a87fc
+generated_at_utc: 2026-08-27 18:32:28 UTC

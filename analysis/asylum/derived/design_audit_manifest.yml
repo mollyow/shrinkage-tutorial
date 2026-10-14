@@ -1,0 +1,43 @@
+schema_version: 1.0
+study_id: asylum_seekers_2016_2022
+contract_version: 1
+contract_md5: 11768a0d41c7e17600d391b675cd2149
+completed_utc: 2026-09-01 23:31:45 UTC
+status: passed
+gate: B
+gate_result: green
+outcome_blind: yes
+outcomes_loaded: no
+outcome_models_fit: no
+read_method: data.table::fread(select=locked_allowlist)
+waves:
+  wave_2016:
+    design_complete_respondents: 18021.0
+    primary_weight_eligible_respondents: 17874.0
+  wave_2022:
+    design_complete_respondents: 14966.0
+    primary_weight_eligible_respondents: 14846.0
+registered_family_dimensions:
+  wave_2016: 34.0
+  wave_2022: 38.0
+  common_support: 34.0
+generated_files_md5:
+  all_pair_support_summary.csv: c852c174b3fbe63388f8266165c9258c
+  archive_checksums.csv: d9c8b1b9b02c0794f29bf064f405093c
+  assignment_diagnostics.csv: d73c6ddf4d5a44a3f64245ba1e597ae2
+  contrast_coordinates.csv: 2abfd172e6e25e54875e8ee9778ce57c
+  country_counts.csv: 06bbccc85f39efb77b784746a739da4e
+  covariate_audit.csv: 5ff995aab59323f63bb42ee0c3021e1c
+  covariate_category_levels.csv: 8b560923018b2851e90fdcd5e91f9fe1
+  covariate_feature_lock.csv: e9d2d2a1f2ecf3b3764a423860c8cdac
+  design_validation.csv: a47673599b071d13e9b50e69433115d4
+  family_identification.csv: d5d62e8beee14b02a537a766addcf05c
+  family_projectors.csv: 69ca679e574054fc8cfe55b24067b0ec
+  frame_counts.csv: a8ae0a8ea56e456142a6fd08f39f31e9
+  level_lock.csv: 7f348e2905c41e15c5039454d5ea88b8
+  loaded_columns.csv: dafe0d697d6fbc28e5d3574978159d79
+  profile_probability_strata.csv: 431cc51588a7457212b4f366229b05ff
+  respondent_folds.csv: d9144c8eee6a381c082b9146a13f9314
+  sample_summary.csv: 6e50fe225a0315c10e8a6de72a708eec
+  target_weight_diagnostics.csv: 243fd453c1bc39d979cdf36e32752449
+note: No pref, rate, or ratebin value was loaded, summarized, or modeled.

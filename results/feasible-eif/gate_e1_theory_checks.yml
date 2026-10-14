@@ -1,0 +1,13 @@
+gate: E1_carryover_sensitivity_theory
+internal_theory_feasibility_passed: yes
+standalone_publication_novelty_passed: no
+unrestricted_inference_remains_primary: yes
+finite_support_checks_passed: yes
+check_count: 49
+maximum_numerical_error: 1.7208457e-15
+arbitrary_departure_ellipsoid_ratio: 0.8078572
+blind_departure_per_task_norm: 0.4097671
+lag_to_unrestricted_max_eigenvalue_ratio: 0.7407407
+variance_gap_minimum_eigenvalue: 0.147
+decision: proceed_to_gate_E2_computational_sensitivity
+generated_at_utc: 2026-08-27 19:56:45 UTC

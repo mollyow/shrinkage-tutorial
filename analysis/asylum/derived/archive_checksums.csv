@@ -1,0 +1,10 @@
+"file_id","relative_path","expected_bytes","observed_bytes","expected_md5","observed_md5","pass"
+"zip","Candidate recruitment/data/asylum_seekers/replication_materials.zip",5976121,5976121,"ef7caf89f889a38f3f976d55a2caec19","ef7caf89f889a38f3f976d55a2caec19",TRUE
+"conjoint_2016","Candidate recruitment/data/asylum_seekers/replication_materials/data/conjoint_data_2016.csv",27946329,27946329,"3fec26e866a549868beaff8065a2ad6f","3fec26e866a549868beaff8065a2ad6f",TRUE
+"conjoint_2022","Candidate recruitment/data/asylum_seekers/replication_materials/data/conjoint_data_2022.csv",22687755,22687755,"c120c19040e46fcc59696dfed5e23b45","c120c19040e46fcc59696dfed5e23b45",TRUE
+"respondents_2016","Candidate recruitment/data/asylum_seekers/replication_materials/data/respondent_data_2016.csv",1938809,1938809,"1cd9d9fa1ceb67ab21626cb2ffee8d9c","1cd9d9fa1ceb67ab21626cb2ffee8d9c",TRUE
+"respondents_2022","Candidate recruitment/data/asylum_seekers/replication_materials/data/respondent_data_2022.csv",2806912,2806912,"bc5055a946881e184b84d18e80ba1f60","bc5055a946881e184b84d18e80ba1f60",TRUE
+"conjoint_codebook","Candidate recruitment/data/asylum_seekers/replication_materials/data/conjoint_data_codebook.txt",1491,1491,"d10f344d588623850ee50e68bbdf70d7","d10f344d588623850ee50e68bbdf70d7",TRUE
+"respondent_codebook","Candidate recruitment/data/asylum_seekers/replication_materials/data/respondent_data_codebook.txt",9099,9099,"847fe4bfccc45751df9e40d3e7ce2cee","847fe4bfccc45751df9e40d3e7ce2cee",TRUE
+"supplementary_information","Candidate recruitment/data/asylum_seekers/supplementary_information.pdf",1050321,1050321,"073806a3af628c75796237524a84f06f","073806a3af628c75796237524a84f06f",TRUE
+"preanalysis_plan_and_questionnaire","Candidate recruitment/data/asylum_seekers/2022_preanalysis_plan_and_questionnaire.pdf",384489,384489,"325593d1674cabe7a90f72f969665f5e","325593d1674cabe7a90f72f969665f5e",TRUE

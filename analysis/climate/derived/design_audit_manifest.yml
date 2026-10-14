@@ -1,0 +1,50 @@
+schema_version: 1.0
+study_id: climate_agreements
+contract_version: 1
+contract_md5: f26bd6090e4d0c1b41467ae1747d3283
+completed_utc: 2026-09-02 00:02:30 UTC
+status: passed
+gate: B
+gate_result: split_rating_green_paired_choice_amber
+portfolio_eligible_scope: rating_only_under_mean_no_opponent_and_no_carryover_restrictions
+outcome_blind: yes
+outcomes_loaded: no
+outcome_models_fit: no
+read_method: haven::read_dta(col_select=locked_allowlist)
+respondents: 8500
+profile_rows: 68000
+profile_support: 2880
+registered_family_dimensions:
+  cost_x_burden_distribution: 12
+  sanctions_x_monitoring: 9
+  participation_x_emissions_coverage: 4
+pair_law:
+  q_times_q_certified: no
+  observed_identical_pairs: 0
+  expected_under_q_times_q: 11.8055556
+  probability_zero_under_iid_task_pairs: 7.4476977e-06
+  upper_probability_zero_with_arbitrary_four_task_dependence: 0.0522403
+  next_unblocker: Obtain the original randomizer/generator or author confirmation
+    of the no-identical-profile rule and exact conditional opponent probabilities;
+    otherwise paired choice stays out.
+generated_files_md5:
+  all_pair_support_summary.csv: d8145e786432ec5f63024649c8709271
+  archive_checksums.csv: d53972785816730a24384fcb74f95cdf
+  assignment_diagnostics.csv: 74e3c16d8694959450f0012dc3038b4f
+  contrast_coordinates.csv: 69b063b7291c61ae2f19429262443eab
+  country_counts.csv: fad278c036d17f7689defc82e610e1a1
+  covariate_audit.csv: 2b057ad22c10a931e984b1864b24bb98
+  covariate_category_levels.csv: a68dcd2dd9b3185caf4f0d74641bdae7
+  covariate_feature_lock.csv: 850ba0ea9ea62b3688f544f22af05ced
+  design_validation.csv: ba5756e0e6caf6154ea82b69d44b8a12
+  family_identification.csv: 443ef1f33d407d1559d25a6cc51a573f
+  family_projectors.csv: 2851d391b8ca4a29cb659e48291e6bfc
+  level_lock.csv: 5a232d958db4071cf0054fb2daae39b2
+  loaded_columns.csv: 4a847b71e79e5a60bc22a590730ef3c9
+  opponent_law_diagnostics.csv: 674c7e00d4d32c3baf25e350a6e8ffd3
+  profile_uniformity_diagnostics.csv: 85cb19522bf6ef18cd0a88d1fd028bb1
+  profile_probability_strata.csv: 67f33aaf3240dc8605a1d9a746e06cf5
+  respondent_folds.csv: 7742540cf450d01ae44ef92f7d4f74e4
+  sample_summary.csv: 9789f3836b826fd69c9e2a0c09519695
+  target_weight_diagnostics.csv: 3526620057475c265c1052edd589587d
+note: No choice_cj, rating_cj, or incon value was loaded, summarized, or modeled.

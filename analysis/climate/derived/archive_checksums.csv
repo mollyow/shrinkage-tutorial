@@ -1,0 +1,7 @@
+"file_id","relative_path","expected_bytes","observed_bytes","expected_md5","observed_md5","pass"
+"data","Candidate recruitment/data/climate_agreements/bechtel_scheve_pnas.dta",3001271,3001271,"85dc26aeda5a99e881ad777f03d8410c","85dc26aeda5a99e881ad777f03d8410c",TRUE
+"article_pdf","Candidate recruitment/data/climate_agreements/PNAS-2013-Bechtel-Scheve.pdf",766852,766852,"3ed5b8b6f88eb8426af4ef3b8619ab4b","3ed5b8b6f88eb8426af4ef3b8619ab4b",TRUE
+"supplementary_information","Candidate recruitment/data/climate_agreements/PNAS-2013-Bechtel-Scheve_SI.pdf",532729,532729,"ee886ed5974d23224231b0586965a811","ee886ed5974d23224231b0586965a811",TRUE
+"readme","Candidate recruitment/data/climate_agreements/Readme.doc",69120,69120,"5f0a17da34f95fe7252b6fe56227fed2","5f0a17da34f95fe7252b6fe56227fed2",TRUE
+"author_code","Candidate recruitment/data/climate_agreements/Replicate Results_Bechtel Scheve_PNAS.do",17916,17916,"8025c025fc28f816b09722b21ed513dd","8025c025fc28f816b09722b21ed513dd",TRUE
+"dataverse_metadata","Candidate recruitment/data/climate_agreements/dataverse_metadata.json",10006,10006,"b7d7fd9222a49004f76395c1a04e6e19","b7d7fd9222a49004f76395c1a04e6e19",TRUE

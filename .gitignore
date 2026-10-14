@@ -12,15 +12,22 @@ renv/staging/
 shrinkage/
 Candidate recruitment/
 
-# Generated outputs (tidy production results are archived separately on release).
-results/
+# Local scratch.
+tmp/
+
+# Bulk generated results are archived separately; the small gate decision and
+# status summaries cited by docs/ are versioned.
+results/**
+!results/**/
+!results/**/*.yml
+!results/**/*.json
+!results/**/*.md
+
+# Candidate derived files can carry outcomes and are rebuilt from the cleaned
+# replication file. The fresh-study design audits are outcome-blind and are
+# versioned because config/comparison-v1-lock.yml hashes them.
 analysis/candidate/derived/
 analysis/candidate/results/
-analysis/immigrant/derived/
-analysis/asylum/derived/
-analysis/climate/derived/
-analysis/tax/derived/
-analysis/graham_svolik/derived/
 paper/_freeze/
 paper/*_files/
 paper/*.html

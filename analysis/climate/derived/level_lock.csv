@@ -1,0 +1,24 @@
+"attribute","column","code","contract_label","source_label","observed_count"
+"household_cost","cost_cj",1,"0.5% of GDP","<U+00DB>28 per month",13527
+"household_cost","cost_cj",2,"1.0% of GDP","<U+00DB>56 per month",13773
+"household_cost","cost_cj",3,"1.5% of GDP","<U+00DB>84 per month",13555
+"household_cost","cost_cj",4,"2.0% of GDP","<U+00DB>113 per month",13540
+"household_cost","cost_cj",5,"2.5% of GDP","<U+00DB>141 per month",13605
+"burden_distribution","distrib_cj",1,"Only rich countries pay","Only rich",17011
+"burden_distribution","distrib_cj",2,"Proportional to current emissions","Prop. to current emissions",16956
+"burden_distribution","distrib_cj",3,"Proportional to historical emissions","Prop. to history of emissions",17055
+"burden_distribution","distrib_cj",4,"Rich countries pay more than poor countries","Rich pay more than poor countries",16978
+"participating_countries","ctries_cj",1,"20 of 192","20 of 192",22830
+"participating_countries","ctries_cj",2,"80 of 192","80 of 192",22656
+"participating_countries","ctries_cj",3,"160 of 192","160 of 192",22514
+"emissions_coverage","emissions_cj",1,"40% of current global emissions","40% of current emissions",22872
+"emissions_coverage","emissions_cj",2,"60% of current global emissions","60% of current emissions",22555
+"emissions_coverage","emissions_cj",3,"80% of current global emissions","80% of current emissions",22573
+"sanctions","sanctions_cj",1,"none","None",16917
+"sanctions","sanctions_cj",2,"low","<U+00DB>6 per hh and month",16980
+"sanctions","sanctions_cj",3,"medium","<U+00DB>17 per hh and month",17156
+"sanctions","sanctions_cj",4,"high","<U+00DB>23 per hh and month",16947
+"monitoring","monitoring_cj",1,"Own government","Your government",17073
+"monitoring","monitoring_cj",2,"Independent commission","Indep. commission",17078
+"monitoring","monitoring_cj",3,"United Nations","United Nations",16854
+"monitoring","monitoring_cj",4,"Greenpeace","Greenpeace",16995

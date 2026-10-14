@@ -1,0 +1,40 @@
+"variable","level_order","source_code","source_label","enrolled_count","is_missing_level"
+"female",1,"0","0",867,FALSE
+"female",2,"1","1",1133,FALSE
+"female",3,"__MISSING__","__MISSING__",0,TRUE
+"race",1,"1","White",1555,FALSE
+"race",2,"2","Black",173,FALSE
+"race",3,"3","Hispanic",150,FALSE
+"race",4,"4","Asian",34,FALSE
+"race",5,"5","Native American",15,FALSE
+"race",6,"6","Mixed",40,FALSE
+"race",7,"7","Other",31,FALSE
+"race",8,"8","Middle Eastern",2,FALSE
+"race",9,"__MISSING__","__MISSING__",0,TRUE
+"educ",1,"1","No HS",75,FALSE
+"educ",2,"2","High school graduate",683,FALSE
+"educ",3,"3","Some college",463,FALSE
+"educ",4,"4","2-year",173,FALSE
+"educ",5,"5","4-year",384,FALSE
+"educ",6,"6","Post-grad",222,FALSE
+"educ",7,"__MISSING__","__MISSING__",0,TRUE
+"pid7",1,"1","Strong Democrat",478,FALSE
+"pid7",2,"2","Not very strong Democrat",214,FALSE
+"pid7",3,"3","Lean Democrat",193,FALSE
+"pid7",4,"4","Independent",393,FALSE
+"pid7",5,"5","Lean Republican",221,FALSE
+"pid7",6,"6","Not very strong Republican",185,FALSE
+"pid7",7,"7","Strong Republican",241,FALSE
+"pid7",8,"8","Not sure",75,FALSE
+"pid7",9,"__MISSING__","__MISSING__",0,TRUE
+"conservative_ideology",1,"1","Very liberal",206,FALSE
+"conservative_ideology",2,"2","Liberal",325,FALSE
+"conservative_ideology",3,"3","Moderate",618,FALSE
+"conservative_ideology",4,"4","Conservative",448,FALSE
+"conservative_ideology",5,"5","Very Conservative",221,FALSE
+"conservative_ideology",6,"__MISSING__","__MISSING__",182,TRUE
+"newsint",1,"1","Most of the time",997,FALSE
+"newsint",2,"2","Some of the time",564,FALSE
+"newsint",3,"3","Only now and then",270,FALSE
+"newsint",4,"4","Hardly at all",123,FALSE
+"newsint",5,"__MISSING__","__MISSING__",46,TRUE

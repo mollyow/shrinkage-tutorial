@@ -1,0 +1,74 @@
+"wave","attribute","column","level_index","level","observed_count","expected_probability"
+2016,"testimony_consistency","cconsist",1,"No inconsistencies",60086,0.333333333333333
+2016,"testimony_consistency","cconsist",2,"Minor inconsistencies",60117,0.333333333333333
+2016,"testimony_consistency","cconsist",3,"Major inconsistencies",60007,0.333333333333333
+2016,"applicant_gender","cgender",1,"Female",90251,0.5
+2016,"applicant_gender","cgender",2,"Male",89959,0.5
+2016,"origin","corigin",1,"Syria",25711,0.142857142857143
+2016,"origin","corigin",2,"Afghanistan",26168,0.142857142857143
+2016,"origin","corigin",3,"Kosovo",25635,0.142857142857143
+2016,"origin","corigin",4,"Eritrea",25517,0.142857142857143
+2016,"origin","corigin",5,"Pakistan",25529,0.142857142857143
+2016,"origin","corigin",6,"Ukraine",25660,0.142857142857143
+2016,"origin","corigin",7,"Iraq",25990,0.142857142857143
+2016,"applicant_age","cage",1,"21 Years",60053,0.333333333333333
+2016,"applicant_age","cage",2,"38 Years",60385,0.333333333333333
+2016,"applicant_age","cage",3,"62 Years",59772,0.333333333333333
+2016,"occupation","cjob",1,"Unemployed",29911,0.166666666666667
+2016,"occupation","cjob",2,"Cleaner",29811,0.166666666666667
+2016,"occupation","cjob",3,"Farmer",30185,0.166666666666667
+2016,"occupation","cjob",4,"Accountant",29863,0.166666666666667
+2016,"occupation","cjob",5,"Teacher",30255,0.166666666666667
+2016,"occupation","cjob",6,"Doctor",30185,0.166666666666667
+2016,"vulnerability","cvulner",1,"None",35813,0.2
+2016,"vulnerability","cvulner",2,"PTSD",35880,0.2
+2016,"vulnerability","cvulner",3,"Victim of torture",36238,0.2
+2016,"vulnerability","cvulner",4,"No surviving family",35919,0.2
+2016,"vulnerability","cvulner",5,"Handicapped",36360,0.2
+2016,"migration_reason","creason",1,"Political persecution",44958,0.25
+2016,"migration_reason","creason",2,"Religious persecution",44917,0.25
+2016,"migration_reason","creason",3,"Ethnic persecution",44919,0.25
+2016,"migration_reason","creason",4,"Economic opportunities",45416,0.25
+2016,"religion","creligion",1,"Christian",59872,0.333333333333333
+2016,"religion","creligion",2,"Agnostic",60349,0.333333333333333
+2016,"religion","creligion",3,"Muslim",59989,0.333333333333333
+2016,"language","clang",1,"Fluent",60208,0.333333333333333
+2016,"language","clang",2,"Broken",59957,0.333333333333333
+2016,"language","clang",3,"None",60045,0.333333333333333
+2022,"testimony_consistency","cconsist",1,"No inconsistencies",49990,0.333333333333333
+2022,"testimony_consistency","cconsist",2,"Minor inconsistencies",49801,0.333333333333333
+2022,"testimony_consistency","cconsist",3,"Major inconsistencies",49869,0.333333333333333
+2022,"applicant_gender","cgender",1,"Female",74912,0.5
+2022,"applicant_gender","cgender",2,"Male",74748,0.5
+2022,"origin","corigin",1,"Syria",21256,0.142857142857143
+2022,"origin","corigin",2,"Afghanistan",21513,0.142857142857143
+2022,"origin","corigin",3,"Kosovo",21273,0.142857142857143
+2022,"origin","corigin",4,"Eritrea",21199,0.142857142857143
+2022,"origin","corigin",5,"Pakistan",21376,0.142857142857143
+2022,"origin","corigin",6,"Ukraine",21458,0.142857142857143
+2022,"origin","corigin",7,"Iraq",21585,0.142857142857143
+2022,"applicant_age","cage",1,"21 Years",49764,0.333333333333333
+2022,"applicant_age","cage",2,"38 Years",50078,0.333333333333333
+2022,"applicant_age","cage",3,"62 Years",49818,0.333333333333333
+2022,"occupation","cjob",1,"Unemployed",25049,0.166666666666667
+2022,"occupation","cjob",2,"Cleaner",24939,0.166666666666667
+2022,"occupation","cjob",3,"Farmer",24996,0.166666666666667
+2022,"occupation","cjob",4,"Accountant",24980,0.166666666666667
+2022,"occupation","cjob",5,"Teacher",24637,0.166666666666667
+2022,"occupation","cjob",6,"Doctor",25059,0.166666666666667
+2022,"vulnerability","cvulner",1,"None",29796,0.2
+2022,"vulnerability","cvulner",2,"PTSD",29809,0.2
+2022,"vulnerability","cvulner",3,"Victim of torture",30049,0.2
+2022,"vulnerability","cvulner",4,"No surviving family",29883,0.2
+2022,"vulnerability","cvulner",5,"Handicapped",30123,0.2
+2022,"migration_reason","creason",1,"Political persecution",29879,0.2
+2022,"migration_reason","creason",2,"Religious persecution",29955,0.2
+2022,"migration_reason","creason",3,"Ethnic persecution",29732,0.2
+2022,"migration_reason","creason",4,"Economic opportunities",30204,0.2
+2022,"migration_reason","creason",5,"War",29890,0.2
+2022,"religion","creligion",1,"Christian",50163,0.333333333333333
+2022,"religion","creligion",2,"Agnostic",49650,0.333333333333333
+2022,"religion","creligion",3,"Muslim",49847,0.333333333333333
+2022,"language","clang",1,"Fluent",49909,0.333333333333333
+2022,"language","clang",2,"Broken",49753,0.333333333333333
+2022,"language","clang",3,"None",49998,0.333333333333333

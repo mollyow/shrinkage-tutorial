@@ -1,0 +1,15 @@
+"factor","source_or_derived_column","code","label","observed_count","assignment_probability","target_probability"
+"democracy_behavior","democracy_behavior","generic","Pooled generic conduct",6728,0.363636363636364,0.125
+"democracy_behavior","democracy_behavior","u_journalists","Threaten journalists",1682,0.0909090909090909,0.125
+"democracy_behavior","democracy_behavior","u_banProtest","Ban protest",1682,0.0909090909090909,0.125
+"democracy_behavior","democracy_behavior","u_execRule","Rule by executive order",1682,0.0909090909090909,0.125
+"democracy_behavior","democracy_behavior","u_court","Ignore unfavorable court rulings",1682,0.0909090909090909,0.125
+"democracy_behavior","democracy_behavior","u_limitVote","Limit polling places",1682,0.0909090909090909,0.125
+"democracy_behavior","democracy_behavior","u_gerry2","Gerrymander for two extra seats",1682,0.0909090909090909,0.125
+"democracy_behavior","democracy_behavior","u_gerry10","Gerrymander for ten extra seats",1682,0.0909090909090909,0.125
+"focal_party","c_party","D","Democrat",9257,0.5,0.5
+"focal_party","c_party","R","Republican",9245,0.5,0.5
+"contest_relation","contest_relation","same","Same-party contest",8543,0.461538461538462,0.5
+"contest_relation","contest_relation","cross","Cross-party contest",9959,0.538461538461538,0.5
+"focal_gender","focal_gender","Female","Female",6944,0.375,0.5
+"focal_gender","focal_gender","Male","Male",11558,0.625,0.5

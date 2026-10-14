@@ -1,0 +1,7 @@
+"wave","family","attribute_a","attribute_b","levels_a","levels_b","cells","observed_cells","minimum_cell_count","minimum_country_cell_count","additive_rank","expected_interaction_rank","observed_interaction_rank","weighted_mean_error","main_effect_orthogonality_error","orthonormality_error","projector_idempotence_error","identified"
+2016,"reason_x_vulnerability","migration_reason","vulnerability",4,5,20,20,8819,535,8,12,12,1.82686890545003e-17,1.03768259389895e-16,4.44089209850063e-16,5.55111512312578e-16,TRUE
+2016,"religion_x_origin","religion","origin",3,7,21,21,8431,513,9,12,12,1.81184397880069e-17,1.52891490935133e-16,3.33066907387547e-16,6.66133814775094e-16,TRUE
+2016,"occupation_x_language","occupation","language",6,3,18,18,9787,598,8,10,10,2.03481559113221e-17,8.80288307595847e-17,4.44089209850063e-16,3.33066907387547e-16,TRUE
+2022,"reason_x_vulnerability","migration_reason","vulnerability",5,5,25,25,5879,334,9,16,16,1.86656246015104e-17,1.23967152425086e-16,4.44089209850063e-16,5.55111512312578e-16,TRUE
+2022,"religion_x_origin","religion","origin",3,7,21,21,6978,405,9,12,12,1.81184397880069e-17,1.52891490935133e-16,3.33066907387547e-16,6.66133814775094e-16,TRUE
+2022,"occupation_x_language","occupation","language",6,3,18,18,8163,481,8,10,10,2.03481559113221e-17,8.80288307595847e-17,4.44089209850063e-16,3.33066907387547e-16,TRUE

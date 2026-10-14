@@ -1,0 +1,13 @@
+gate: G_finite_sample_nuisance_remainder
+mode: proof_of_concept
+started_from_frozen_config: yes
+completed_at_utc: 2026-08-28 04:40:05 UTC
+planned_replications_per_scenario: 1000
+effective_replications_per_scenario: 1000
+replication_override: no
+scenario_count: 5
+cores: 6
+theory_checks_passed: yes
+output_directory: /Users/moffer/Documents/Git/shrinkage-tutorial/results/feasible-eif/gate-g-screen
+r_version: R version 4.4.2 (2024-10-31)
+platform: aarch64-apple-darwin20

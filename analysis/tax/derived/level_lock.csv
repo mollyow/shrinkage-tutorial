@@ -1,0 +1,33 @@
+"component_type","component","column","code","contract_label","source_label","observed_count_primary","target_probability"
+"randomized_rate_factor","lowest_bracket_rate","taxrate1",1,"0%","0%",7917,0.25
+"randomized_rate_factor","lowest_bracket_rate","taxrate1",2,"5%","5%",8013,0.25
+"randomized_rate_factor","lowest_bracket_rate","taxrate1",3,"15%","15%",8045,0.25
+"randomized_rate_factor","lowest_bracket_rate","taxrate1",4,"25%","25%",8025,0.25
+"randomized_rate_factor","lower_middle_bracket_rate","taxrate2",1,"5%","5%",8024,0.25
+"randomized_rate_factor","lower_middle_bracket_rate","taxrate2",2,"15%","15%",8102,0.25
+"randomized_rate_factor","lower_middle_bracket_rate","taxrate2",3,"25%","25%",7894,0.25
+"randomized_rate_factor","lower_middle_bracket_rate","taxrate2",4,"35%","35%",7980,0.25
+"randomized_rate_factor","middle_bracket_rate","taxrate3",1,"5%","5%",8042,0.25
+"randomized_rate_factor","middle_bracket_rate","taxrate3",2,"15%","15%",8043,0.25
+"randomized_rate_factor","middle_bracket_rate","taxrate3",3,"25%","25%",8013,0.25
+"randomized_rate_factor","middle_bracket_rate","taxrate3",4,"35%","35%",7902,0.25
+"randomized_rate_factor","upper_middle_bracket_rate","taxrate4",1,"5%","5%",8062,0.25
+"randomized_rate_factor","upper_middle_bracket_rate","taxrate4",2,"15%","15%",7988,0.25
+"randomized_rate_factor","upper_middle_bracket_rate","taxrate4",3,"25%","25%",7929,0.25
+"randomized_rate_factor","upper_middle_bracket_rate","taxrate4",4,"35%","35%",8021,0.25
+"randomized_rate_factor","second_highest_bracket_rate","taxrate5",1,"5%","5%",6434,0.2
+"randomized_rate_factor","second_highest_bracket_rate","taxrate5",2,"15%","15%",6328,0.2
+"randomized_rate_factor","second_highest_bracket_rate","taxrate5",3,"25%","25%",6458,0.2
+"randomized_rate_factor","second_highest_bracket_rate","taxrate5",4,"35%","35%",6422,0.2
+"randomized_rate_factor","second_highest_bracket_rate","taxrate5",5,"45%","45%",6358,0.2
+"randomized_rate_factor","highest_bracket_rate","taxrate6",1,"5%","5%",5279,0.166666666666667
+"randomized_rate_factor","highest_bracket_rate","taxrate6",2,"15%","15%",5403,0.166666666666667
+"randomized_rate_factor","highest_bracket_rate","taxrate6",3,"25%","25%",5382,0.166666666666667
+"randomized_rate_factor","highest_bracket_rate","taxrate6",4,"35%","35%",5352,0.166666666666667
+"randomized_rate_factor","highest_bracket_rate","taxrate6",5,"45%","45%",5300,0.166666666666667
+"randomized_rate_factor","highest_bracket_rate","taxrate6",6,"55%","55%",5284,0.166666666666667
+"randomized_downstream_mediator","revenue_display","taxrev",1,"Much more revenue (>125%)","Much more revenue (>125%)",6645,
+"randomized_downstream_mediator","revenue_display","taxrev",2,"More revenue (105-125%)","More revenue (105-125%)",7246,
+"randomized_downstream_mediator","revenue_display","taxrev",3,"About the same revenue (95-105%)","About the same revenue (95-105%)",3919,
+"randomized_downstream_mediator","revenue_display","taxrev",4,"Less revenue (75-95%)","Less revenue (75-95%)",7163,
+"randomized_downstream_mediator","revenue_display","taxrev",5,"Much less revenue (<75%)","Much less revenue (<75%)",7027,

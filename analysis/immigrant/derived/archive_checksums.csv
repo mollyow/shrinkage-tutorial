@@ -1,0 +1,5 @@
+"file_id","relative_path","expected_bytes","observed_bytes","expected_md5","observed_md5","pass"
+"zip","Candidate recruitment/data/hainmueller_hopkins.zip",208760,208760,"63405f4ae7aac0b4b738081cf8b708dc","63405f4ae7aac0b4b738081cf8b708dc",TRUE
+"data","Candidate recruitment/data/hainmueller_hopkins/repdata.dta",2845890,2845890,"2848ba036c769c5a5816b6d13608b0dd","2848ba036c769c5a5816b6d13608b0dd",TRUE
+"estimates_code","Candidate recruitment/data/hainmueller_hopkins/rep_estimates.do",27274,27274,"047dd6ec356069cdb2b4c6abc771eb2d","047dd6ec356069cdb2b4c6abc771eb2d",TRUE
+"plots_code","Candidate recruitment/data/hainmueller_hopkins/rep_plots.r",18471,18471,"4118b8c881225fe319b4430f22ac73eb","4118b8c881225fe319b4430f22ac73eb",TRUE

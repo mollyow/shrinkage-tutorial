@@ -1,0 +1,51 @@
+"attribute","column","code","contract_label","source_label","label_match","observed_count"
+"education","FeatEd",1,"No formal education","No formal education",TRUE,1982
+"education","FeatEd",2,"Equivalent to completing fourth grade in the US","Equivalent to completing fourth grade in the US",TRUE,2030
+"education","FeatEd",3,"Equivalent to completing eighth grade in the US","Equivalent to completing eighth grade in the US",TRUE,2007
+"education","FeatEd",4,"Equivalent to completing high school in the US","Equivalent to completing high school in the US",TRUE,2015
+"education","FeatEd",5,"Equivalent to completing two years of college in the US","Equivalent to completing two years of college in the US",TRUE,2023
+"education","FeatEd",6,"Equivalent to completing a college degree in the US","Equivalent to completing a college degree in the US",TRUE,1975
+"education","FeatEd",7,"Equivalent to completing a graduate degree in the US","Equivalent to completing a graduate degree in the US",TRUE,2038
+"gender","FeatGender",1,"female","female",TRUE,7184
+"gender","FeatGender",2,"male","male",TRUE,6886
+"origin","FeatCountry",1,"Germany","Germany",TRUE,1431
+"origin","FeatCountry",2,"France","France",TRUE,1454
+"origin","FeatCountry",3,"Mexico","Mexico",TRUE,1374
+"origin","FeatCountry",4,"Philippines","Philippines",TRUE,1406
+"origin","FeatCountry",5,"Poland","Poland",TRUE,1410
+"origin","FeatCountry",6,"India","India",TRUE,1406
+"origin","FeatCountry",7,"China","China",TRUE,1432
+"origin","FeatCountry",8,"Sudan","Sudan",TRUE,1406
+"origin","FeatCountry",9,"Somalia","Somalia",TRUE,1415
+"origin","FeatCountry",10,"Iraq","Iraq",TRUE,1336
+"application_reason","FeatReason",1,"Reunite with family members already in the U.S.","Reunite with family members already in the U.S.",TRUE,6025
+"application_reason","FeatReason",2,"Seek better job in U.S.","Seek better job in U.S.",TRUE,6127
+"application_reason","FeatReason",3,"Escape political/religious persecution","Escape political/religious persecution",TRUE,1918
+"profession","FeatJob",1,"Janitor","Janitor",TRUE,1645
+"profession","FeatJob",2,"Waiter","Waiter",TRUE,1738
+"profession","FeatJob",3,"Child care provider","Child care provider",TRUE,1768
+"profession","FeatJob",4,"Gardener","Gardener",TRUE,1667
+"profession","FeatJob",5,"Financial analyst","Financial analyst",TRUE,489
+"profession","FeatJob",6,"Construction worker","Construction worker",TRUE,1668
+"profession","FeatJob",7,"Teacher","Teacher",TRUE,1704
+"profession","FeatJob",8,"Computer programmer","Computer programmer",TRUE,546
+"profession","FeatJob",9,"Nurse","Nurse",TRUE,1744
+"profession","FeatJob",10,"Research scientist","Research scientist",TRUE,545
+"profession","FeatJob",11,"Doctor","Doctor",TRUE,556
+"experience","FeatExp",1,"No job training or prior experience","No job training or prior experience",TRUE,3461
+"experience","FeatExp",2,"One or two years of job training and experience","One or two years of job training and experience",TRUE,3623
+"experience","FeatExp",3,"Three to five years of job training and experience","Three to five years of job training and experience",TRUE,3490
+"experience","FeatExp",4,"More than five years of job training and experience","More than five years of job training and experience",TRUE,3496
+"employment_plans","FeatPlans",1,"Has a contract with a U.S. employer","Has a contract with a U.S. employer",TRUE,3533
+"employment_plans","FeatPlans",2,"Does not have a contract with a U.S. employer but has done job interviews","Does not have a contract with a U.S. employer but has done job interviews",TRUE,3421
+"employment_plans","FeatPlans",3,"Will look for work after arriving in the U.S.","Will look for work after arriving in the U.S.",TRUE,3494
+"employment_plans","FeatPlans",4,"Has no plans to look for work at this time","Has no plans to look for work at this time",TRUE,3622
+"prior_trips","FeatTrips",1,"Never been to the U.S.","Never been to the U.S.",TRUE,2790
+"prior_trips","FeatTrips",2,"Entered U.S. once before on a tourist visa","Entered U.S. once before on a tourist visa",TRUE,2801
+"prior_trips","FeatTrips",3,"Has visited the U.S. many times before on tourist visas","Has visited the U.S. many times before on tourist visas",TRUE,2766
+"prior_trips","FeatTrips",4,"Spent six months with family members in the U.S","Spent six months with family members in the U.S",TRUE,2856
+"prior_trips","FeatTrips",5,"Entered the U.S. once before without legal authorization","Entered the U.S. once before without legal authorization",TRUE,2857
+"language","FeatLang",1,"During the admission interview, this applicant spoke fluent English","During the admission interview, this applicant spoke fluent English",TRUE,3599
+"language","FeatLang",2,"During admission interview, this applicant spoke broken English","During admission interview, this applicant spoke broken English",TRUE,3465
+"language","FeatLang",3,"During admission interview, this applicant tried to speak English but was unable","During admission interview, this applicant tried to speak English but was unable",TRUE,3536
+"language","FeatLang",4,"During admission interview, this applicant spoke [language] and used an interpreter","During admission interview, this applicant spoke [language] and used an interpreter",TRUE,3470

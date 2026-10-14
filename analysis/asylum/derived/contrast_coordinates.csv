@@ -1,0 +1,1505 @@
+"wave","family","coordinate","cell_index","a_level","b_level","target_probability","basis_value"
+2016,"reason_x_vulnerability","h01_x_h01",1,"Political persecution","None",0.05,2.23606797749979
+2016,"reason_x_vulnerability","h01_x_h01",2,"Religious persecution","None",0.05,-2.23606797749979
+2016,"reason_x_vulnerability","h01_x_h01",3,"Ethnic persecution","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",5,"Political persecution","PTSD",0.05,-2.23606797749979
+2016,"reason_x_vulnerability","h01_x_h01",6,"Religious persecution","PTSD",0.05,2.23606797749979
+2016,"reason_x_vulnerability","h01_x_h01",7,"Ethnic persecution","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",9,"Political persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",10,"Religious persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",11,"Ethnic persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",13,"Political persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",14,"Religious persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h01",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",1,"Political persecution","None",0.05,1.29099444873581
+2016,"reason_x_vulnerability","h02_x_h01",2,"Religious persecution","None",0.05,1.29099444873581
+2016,"reason_x_vulnerability","h02_x_h01",3,"Ethnic persecution","None",0.05,-2.58198889747161
+2016,"reason_x_vulnerability","h02_x_h01",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",5,"Political persecution","PTSD",0.05,-1.29099444873581
+2016,"reason_x_vulnerability","h02_x_h01",6,"Religious persecution","PTSD",0.05,-1.29099444873581
+2016,"reason_x_vulnerability","h02_x_h01",7,"Ethnic persecution","PTSD",0.05,2.58198889747161
+2016,"reason_x_vulnerability","h02_x_h01",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",9,"Political persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",10,"Religious persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",11,"Ethnic persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",13,"Political persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",14,"Religious persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h01",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",1,"Political persecution","None",0.05,0.912870929175277
+2016,"reason_x_vulnerability","h03_x_h01",2,"Religious persecution","None",0.05,0.912870929175277
+2016,"reason_x_vulnerability","h03_x_h01",3,"Ethnic persecution","None",0.05,0.912870929175277
+2016,"reason_x_vulnerability","h03_x_h01",4,"Economic opportunities","None",0.05,-2.73861278752583
+2016,"reason_x_vulnerability","h03_x_h01",5,"Political persecution","PTSD",0.05,-0.912870929175277
+2016,"reason_x_vulnerability","h03_x_h01",6,"Religious persecution","PTSD",0.05,-0.912870929175277
+2016,"reason_x_vulnerability","h03_x_h01",7,"Ethnic persecution","PTSD",0.05,-0.912870929175277
+2016,"reason_x_vulnerability","h03_x_h01",8,"Economic opportunities","PTSD",0.05,2.73861278752583
+2016,"reason_x_vulnerability","h03_x_h01",9,"Political persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",10,"Religious persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",11,"Ethnic persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",13,"Political persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",14,"Religious persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h01",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",1,"Political persecution","None",0.05,1.29099444873581
+2016,"reason_x_vulnerability","h01_x_h02",2,"Religious persecution","None",0.05,-1.29099444873581
+2016,"reason_x_vulnerability","h01_x_h02",3,"Ethnic persecution","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",5,"Political persecution","PTSD",0.05,1.29099444873581
+2016,"reason_x_vulnerability","h01_x_h02",6,"Religious persecution","PTSD",0.05,-1.29099444873581
+2016,"reason_x_vulnerability","h01_x_h02",7,"Ethnic persecution","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",9,"Political persecution","Victim of torture",0.05,-2.58198889747161
+2016,"reason_x_vulnerability","h01_x_h02",10,"Religious persecution","Victim of torture",0.05,2.58198889747161
+2016,"reason_x_vulnerability","h01_x_h02",11,"Ethnic persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",13,"Political persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",14,"Religious persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h02",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",1,"Political persecution","None",0.05,0.74535599249993
+2016,"reason_x_vulnerability","h02_x_h02",2,"Religious persecution","None",0.05,0.74535599249993
+2016,"reason_x_vulnerability","h02_x_h02",3,"Ethnic persecution","None",0.05,-1.49071198499986
+2016,"reason_x_vulnerability","h02_x_h02",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",5,"Political persecution","PTSD",0.05,0.74535599249993
+2016,"reason_x_vulnerability","h02_x_h02",6,"Religious persecution","PTSD",0.05,0.74535599249993
+2016,"reason_x_vulnerability","h02_x_h02",7,"Ethnic persecution","PTSD",0.05,-1.49071198499986
+2016,"reason_x_vulnerability","h02_x_h02",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",9,"Political persecution","Victim of torture",0.05,-1.49071198499986
+2016,"reason_x_vulnerability","h02_x_h02",10,"Religious persecution","Victim of torture",0.05,-1.49071198499986
+2016,"reason_x_vulnerability","h02_x_h02",11,"Ethnic persecution","Victim of torture",0.05,2.98142396999972
+2016,"reason_x_vulnerability","h02_x_h02",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",13,"Political persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",14,"Religious persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h02",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",1,"Political persecution","None",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h03_x_h02",2,"Religious persecution","None",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h03_x_h02",3,"Ethnic persecution","None",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h03_x_h02",4,"Economic opportunities","None",0.05,-1.58113883008419
+2016,"reason_x_vulnerability","h03_x_h02",5,"Political persecution","PTSD",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h03_x_h02",6,"Religious persecution","PTSD",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h03_x_h02",7,"Ethnic persecution","PTSD",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h03_x_h02",8,"Economic opportunities","PTSD",0.05,-1.58113883008419
+2016,"reason_x_vulnerability","h03_x_h02",9,"Political persecution","Victim of torture",0.05,-1.05409255338946
+2016,"reason_x_vulnerability","h03_x_h02",10,"Religious persecution","Victim of torture",0.05,-1.05409255338946
+2016,"reason_x_vulnerability","h03_x_h02",11,"Ethnic persecution","Victim of torture",0.05,-1.05409255338946
+2016,"reason_x_vulnerability","h03_x_h02",12,"Economic opportunities","Victim of torture",0.05,3.16227766016838
+2016,"reason_x_vulnerability","h03_x_h02",13,"Political persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",14,"Religious persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h02",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",1,"Political persecution","None",0.05,0.912870929175277
+2016,"reason_x_vulnerability","h01_x_h03",2,"Religious persecution","None",0.05,-0.912870929175277
+2016,"reason_x_vulnerability","h01_x_h03",3,"Ethnic persecution","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",5,"Political persecution","PTSD",0.05,0.912870929175277
+2016,"reason_x_vulnerability","h01_x_h03",6,"Religious persecution","PTSD",0.05,-0.912870929175277
+2016,"reason_x_vulnerability","h01_x_h03",7,"Ethnic persecution","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",9,"Political persecution","Victim of torture",0.05,0.912870929175277
+2016,"reason_x_vulnerability","h01_x_h03",10,"Religious persecution","Victim of torture",0.05,-0.912870929175277
+2016,"reason_x_vulnerability","h01_x_h03",11,"Ethnic persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",13,"Political persecution","No surviving family",0.05,-2.73861278752583
+2016,"reason_x_vulnerability","h01_x_h03",14,"Religious persecution","No surviving family",0.05,2.73861278752583
+2016,"reason_x_vulnerability","h01_x_h03",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h03",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",1,"Political persecution","None",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h02_x_h03",2,"Religious persecution","None",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h02_x_h03",3,"Ethnic persecution","None",0.05,-1.05409255338946
+2016,"reason_x_vulnerability","h02_x_h03",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",5,"Political persecution","PTSD",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h02_x_h03",6,"Religious persecution","PTSD",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h02_x_h03",7,"Ethnic persecution","PTSD",0.05,-1.05409255338946
+2016,"reason_x_vulnerability","h02_x_h03",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",9,"Political persecution","Victim of torture",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h02_x_h03",10,"Religious persecution","Victim of torture",0.05,0.52704627669473
+2016,"reason_x_vulnerability","h02_x_h03",11,"Ethnic persecution","Victim of torture",0.05,-1.05409255338946
+2016,"reason_x_vulnerability","h02_x_h03",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",13,"Political persecution","No surviving family",0.05,-1.58113883008419
+2016,"reason_x_vulnerability","h02_x_h03",14,"Religious persecution","No surviving family",0.05,-1.58113883008419
+2016,"reason_x_vulnerability","h02_x_h03",15,"Ethnic persecution","No surviving family",0.05,3.16227766016838
+2016,"reason_x_vulnerability","h02_x_h03",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h03",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h03",1,"Political persecution","None",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",2,"Religious persecution","None",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",3,"Ethnic persecution","None",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",4,"Economic opportunities","None",0.05,-1.11803398874989
+2016,"reason_x_vulnerability","h03_x_h03",5,"Political persecution","PTSD",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",6,"Religious persecution","PTSD",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",7,"Ethnic persecution","PTSD",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",8,"Economic opportunities","PTSD",0.05,-1.11803398874989
+2016,"reason_x_vulnerability","h03_x_h03",9,"Political persecution","Victim of torture",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",10,"Religious persecution","Victim of torture",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",11,"Ethnic persecution","Victim of torture",0.05,0.372677996249965
+2016,"reason_x_vulnerability","h03_x_h03",12,"Economic opportunities","Victim of torture",0.05,-1.11803398874989
+2016,"reason_x_vulnerability","h03_x_h03",13,"Political persecution","No surviving family",0.05,-1.11803398874989
+2016,"reason_x_vulnerability","h03_x_h03",14,"Religious persecution","No surviving family",0.05,-1.11803398874989
+2016,"reason_x_vulnerability","h03_x_h03",15,"Ethnic persecution","No surviving family",0.05,-1.11803398874989
+2016,"reason_x_vulnerability","h03_x_h03",16,"Economic opportunities","No surviving family",0.05,3.35410196624968
+2016,"reason_x_vulnerability","h03_x_h03",17,"Political persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h03",18,"Religious persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h03",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h03",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",1,"Political persecution","None",0.05,0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",2,"Religious persecution","None",0.05,-0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",3,"Ethnic persecution","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",5,"Political persecution","PTSD",0.05,0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",6,"Religious persecution","PTSD",0.05,-0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",7,"Ethnic persecution","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",9,"Political persecution","Victim of torture",0.05,0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",10,"Religious persecution","Victim of torture",0.05,-0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",11,"Ethnic persecution","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",13,"Political persecution","No surviving family",0.05,0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",14,"Religious persecution","No surviving family",0.05,-0.707106781186547
+2016,"reason_x_vulnerability","h01_x_h04",15,"Ethnic persecution","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",17,"Political persecution","Handicapped",0.05,-2.82842712474619
+2016,"reason_x_vulnerability","h01_x_h04",18,"Religious persecution","Handicapped",0.05,2.82842712474619
+2016,"reason_x_vulnerability","h01_x_h04",19,"Ethnic persecution","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h01_x_h04",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h02_x_h04",1,"Political persecution","None",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",2,"Religious persecution","None",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",3,"Ethnic persecution","None",0.05,-0.816496580927726
+2016,"reason_x_vulnerability","h02_x_h04",4,"Economic opportunities","None",0.05,0
+2016,"reason_x_vulnerability","h02_x_h04",5,"Political persecution","PTSD",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",6,"Religious persecution","PTSD",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",7,"Ethnic persecution","PTSD",0.05,-0.816496580927726
+2016,"reason_x_vulnerability","h02_x_h04",8,"Economic opportunities","PTSD",0.05,0
+2016,"reason_x_vulnerability","h02_x_h04",9,"Political persecution","Victim of torture",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",10,"Religious persecution","Victim of torture",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",11,"Ethnic persecution","Victim of torture",0.05,-0.816496580927726
+2016,"reason_x_vulnerability","h02_x_h04",12,"Economic opportunities","Victim of torture",0.05,0
+2016,"reason_x_vulnerability","h02_x_h04",13,"Political persecution","No surviving family",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",14,"Religious persecution","No surviving family",0.05,0.408248290463863
+2016,"reason_x_vulnerability","h02_x_h04",15,"Ethnic persecution","No surviving family",0.05,-0.816496580927726
+2016,"reason_x_vulnerability","h02_x_h04",16,"Economic opportunities","No surviving family",0.05,0
+2016,"reason_x_vulnerability","h02_x_h04",17,"Political persecution","Handicapped",0.05,-1.63299316185545
+2016,"reason_x_vulnerability","h02_x_h04",18,"Religious persecution","Handicapped",0.05,-1.63299316185545
+2016,"reason_x_vulnerability","h02_x_h04",19,"Ethnic persecution","Handicapped",0.05,3.2659863237109
+2016,"reason_x_vulnerability","h02_x_h04",20,"Economic opportunities","Handicapped",0.05,0
+2016,"reason_x_vulnerability","h03_x_h04",1,"Political persecution","None",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",2,"Religious persecution","None",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",3,"Ethnic persecution","None",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",4,"Economic opportunities","None",0.05,-0.866025403784439
+2016,"reason_x_vulnerability","h03_x_h04",5,"Political persecution","PTSD",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",6,"Religious persecution","PTSD",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",7,"Ethnic persecution","PTSD",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",8,"Economic opportunities","PTSD",0.05,-0.866025403784439
+2016,"reason_x_vulnerability","h03_x_h04",9,"Political persecution","Victim of torture",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",10,"Religious persecution","Victim of torture",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",11,"Ethnic persecution","Victim of torture",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",12,"Economic opportunities","Victim of torture",0.05,-0.866025403784439
+2016,"reason_x_vulnerability","h03_x_h04",13,"Political persecution","No surviving family",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",14,"Religious persecution","No surviving family",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",15,"Ethnic persecution","No surviving family",0.05,0.288675134594813
+2016,"reason_x_vulnerability","h03_x_h04",16,"Economic opportunities","No surviving family",0.05,-0.866025403784439
+2016,"reason_x_vulnerability","h03_x_h04",17,"Political persecution","Handicapped",0.05,-1.15470053837925
+2016,"reason_x_vulnerability","h03_x_h04",18,"Religious persecution","Handicapped",0.05,-1.15470053837925
+2016,"reason_x_vulnerability","h03_x_h04",19,"Ethnic persecution","Handicapped",0.05,-1.15470053837925
+2016,"reason_x_vulnerability","h03_x_h04",20,"Economic opportunities","Handicapped",0.05,3.46410161513775
+2016,"religion_x_origin","h01_x_h01",1,"Christian","Syria",0.0476190476190476,2.29128784747792
+2016,"religion_x_origin","h01_x_h01",2,"Agnostic","Syria",0.0476190476190476,-2.29128784747792
+2016,"religion_x_origin","h01_x_h01",3,"Muslim","Syria",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",4,"Christian","Afghanistan",0.0476190476190476,-2.29128784747792
+2016,"religion_x_origin","h01_x_h01",5,"Agnostic","Afghanistan",0.0476190476190476,2.29128784747792
+2016,"religion_x_origin","h01_x_h01",6,"Muslim","Afghanistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",7,"Christian","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",8,"Agnostic","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",10,"Christian","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",11,"Agnostic","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",13,"Christian","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",14,"Agnostic","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h01",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",1,"Christian","Syria",0.0476190476190476,1.3228756555323
+2016,"religion_x_origin","h02_x_h01",2,"Agnostic","Syria",0.0476190476190476,1.3228756555323
+2016,"religion_x_origin","h02_x_h01",3,"Muslim","Syria",0.0476190476190476,-2.64575131106459
+2016,"religion_x_origin","h02_x_h01",4,"Christian","Afghanistan",0.0476190476190476,-1.3228756555323
+2016,"religion_x_origin","h02_x_h01",5,"Agnostic","Afghanistan",0.0476190476190476,-1.3228756555323
+2016,"religion_x_origin","h02_x_h01",6,"Muslim","Afghanistan",0.0476190476190476,2.64575131106459
+2016,"religion_x_origin","h02_x_h01",7,"Christian","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",8,"Agnostic","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",10,"Christian","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",11,"Agnostic","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",13,"Christian","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",14,"Agnostic","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h01",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",1,"Christian","Syria",0.0476190476190476,1.3228756555323
+2016,"religion_x_origin","h01_x_h02",2,"Agnostic","Syria",0.0476190476190476,-1.3228756555323
+2016,"religion_x_origin","h01_x_h02",3,"Muslim","Syria",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",4,"Christian","Afghanistan",0.0476190476190476,1.3228756555323
+2016,"religion_x_origin","h01_x_h02",5,"Agnostic","Afghanistan",0.0476190476190476,-1.3228756555323
+2016,"religion_x_origin","h01_x_h02",6,"Muslim","Afghanistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",7,"Christian","Kosovo",0.0476190476190476,-2.64575131106459
+2016,"religion_x_origin","h01_x_h02",8,"Agnostic","Kosovo",0.0476190476190476,2.64575131106459
+2016,"religion_x_origin","h01_x_h02",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",10,"Christian","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",11,"Agnostic","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",13,"Christian","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",14,"Agnostic","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h02",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",1,"Christian","Syria",0.0476190476190476,0.763762615825973
+2016,"religion_x_origin","h02_x_h02",2,"Agnostic","Syria",0.0476190476190476,0.763762615825973
+2016,"religion_x_origin","h02_x_h02",3,"Muslim","Syria",0.0476190476190476,-1.52752523165195
+2016,"religion_x_origin","h02_x_h02",4,"Christian","Afghanistan",0.0476190476190476,0.763762615825973
+2016,"religion_x_origin","h02_x_h02",5,"Agnostic","Afghanistan",0.0476190476190476,0.763762615825973
+2016,"religion_x_origin","h02_x_h02",6,"Muslim","Afghanistan",0.0476190476190476,-1.52752523165195
+2016,"religion_x_origin","h02_x_h02",7,"Christian","Kosovo",0.0476190476190476,-1.52752523165195
+2016,"religion_x_origin","h02_x_h02",8,"Agnostic","Kosovo",0.0476190476190476,-1.52752523165195
+2016,"religion_x_origin","h02_x_h02",9,"Muslim","Kosovo",0.0476190476190476,3.05505046330389
+2016,"religion_x_origin","h02_x_h02",10,"Christian","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",11,"Agnostic","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",13,"Christian","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",14,"Agnostic","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h02",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",1,"Christian","Syria",0.0476190476190476,0.935414346693485
+2016,"religion_x_origin","h01_x_h03",2,"Agnostic","Syria",0.0476190476190476,-0.935414346693485
+2016,"religion_x_origin","h01_x_h03",3,"Muslim","Syria",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",4,"Christian","Afghanistan",0.0476190476190476,0.935414346693485
+2016,"religion_x_origin","h01_x_h03",5,"Agnostic","Afghanistan",0.0476190476190476,-0.935414346693485
+2016,"religion_x_origin","h01_x_h03",6,"Muslim","Afghanistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",7,"Christian","Kosovo",0.0476190476190476,0.935414346693485
+2016,"religion_x_origin","h01_x_h03",8,"Agnostic","Kosovo",0.0476190476190476,-0.935414346693485
+2016,"religion_x_origin","h01_x_h03",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",10,"Christian","Eritrea",0.0476190476190476,-2.80624304008046
+2016,"religion_x_origin","h01_x_h03",11,"Agnostic","Eritrea",0.0476190476190476,2.80624304008046
+2016,"religion_x_origin","h01_x_h03",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",13,"Christian","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",14,"Agnostic","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h03",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",1,"Christian","Syria",0.0476190476190476,0.540061724867322
+2016,"religion_x_origin","h02_x_h03",2,"Agnostic","Syria",0.0476190476190476,0.540061724867322
+2016,"religion_x_origin","h02_x_h03",3,"Muslim","Syria",0.0476190476190476,-1.08012344973464
+2016,"religion_x_origin","h02_x_h03",4,"Christian","Afghanistan",0.0476190476190476,0.540061724867322
+2016,"religion_x_origin","h02_x_h03",5,"Agnostic","Afghanistan",0.0476190476190476,0.540061724867322
+2016,"religion_x_origin","h02_x_h03",6,"Muslim","Afghanistan",0.0476190476190476,-1.08012344973464
+2016,"religion_x_origin","h02_x_h03",7,"Christian","Kosovo",0.0476190476190476,0.540061724867322
+2016,"religion_x_origin","h02_x_h03",8,"Agnostic","Kosovo",0.0476190476190476,0.540061724867322
+2016,"religion_x_origin","h02_x_h03",9,"Muslim","Kosovo",0.0476190476190476,-1.08012344973464
+2016,"religion_x_origin","h02_x_h03",10,"Christian","Eritrea",0.0476190476190476,-1.62018517460197
+2016,"religion_x_origin","h02_x_h03",11,"Agnostic","Eritrea",0.0476190476190476,-1.62018517460197
+2016,"religion_x_origin","h02_x_h03",12,"Muslim","Eritrea",0.0476190476190476,3.24037034920393
+2016,"religion_x_origin","h02_x_h03",13,"Christian","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",14,"Agnostic","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h03",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",1,"Christian","Syria",0.0476190476190476,0.724568837309472
+2016,"religion_x_origin","h01_x_h04",2,"Agnostic","Syria",0.0476190476190476,-0.724568837309472
+2016,"religion_x_origin","h01_x_h04",3,"Muslim","Syria",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",4,"Christian","Afghanistan",0.0476190476190476,0.724568837309472
+2016,"religion_x_origin","h01_x_h04",5,"Agnostic","Afghanistan",0.0476190476190476,-0.724568837309472
+2016,"religion_x_origin","h01_x_h04",6,"Muslim","Afghanistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",7,"Christian","Kosovo",0.0476190476190476,0.724568837309472
+2016,"religion_x_origin","h01_x_h04",8,"Agnostic","Kosovo",0.0476190476190476,-0.724568837309472
+2016,"religion_x_origin","h01_x_h04",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",10,"Christian","Eritrea",0.0476190476190476,0.724568837309472
+2016,"religion_x_origin","h01_x_h04",11,"Agnostic","Eritrea",0.0476190476190476,-0.724568837309472
+2016,"religion_x_origin","h01_x_h04",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",13,"Christian","Pakistan",0.0476190476190476,-2.89827534923789
+2016,"religion_x_origin","h01_x_h04",14,"Agnostic","Pakistan",0.0476190476190476,2.89827534923789
+2016,"religion_x_origin","h01_x_h04",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h04",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h04",1,"Christian","Syria",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",2,"Agnostic","Syria",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",3,"Muslim","Syria",0.0476190476190476,-0.836660026534075
+2016,"religion_x_origin","h02_x_h04",4,"Christian","Afghanistan",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",5,"Agnostic","Afghanistan",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",6,"Muslim","Afghanistan",0.0476190476190476,-0.836660026534075
+2016,"religion_x_origin","h02_x_h04",7,"Christian","Kosovo",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",8,"Agnostic","Kosovo",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",9,"Muslim","Kosovo",0.0476190476190476,-0.836660026534075
+2016,"religion_x_origin","h02_x_h04",10,"Christian","Eritrea",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",11,"Agnostic","Eritrea",0.0476190476190476,0.418330013267038
+2016,"religion_x_origin","h02_x_h04",12,"Muslim","Eritrea",0.0476190476190476,-0.836660026534075
+2016,"religion_x_origin","h02_x_h04",13,"Christian","Pakistan",0.0476190476190476,-1.67332005306815
+2016,"religion_x_origin","h02_x_h04",14,"Agnostic","Pakistan",0.0476190476190476,-1.67332005306815
+2016,"religion_x_origin","h02_x_h04",15,"Muslim","Pakistan",0.0476190476190476,3.3466401061363
+2016,"religion_x_origin","h02_x_h04",16,"Christian","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h04",17,"Agnostic","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h04",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h04",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h04",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h04",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",1,"Christian","Syria",0.0476190476190476,0.591607978309962
+2016,"religion_x_origin","h01_x_h05",2,"Agnostic","Syria",0.0476190476190476,-0.591607978309962
+2016,"religion_x_origin","h01_x_h05",3,"Muslim","Syria",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",4,"Christian","Afghanistan",0.0476190476190476,0.591607978309962
+2016,"religion_x_origin","h01_x_h05",5,"Agnostic","Afghanistan",0.0476190476190476,-0.591607978309962
+2016,"religion_x_origin","h01_x_h05",6,"Muslim","Afghanistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",7,"Christian","Kosovo",0.0476190476190476,0.591607978309962
+2016,"religion_x_origin","h01_x_h05",8,"Agnostic","Kosovo",0.0476190476190476,-0.591607978309962
+2016,"religion_x_origin","h01_x_h05",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",10,"Christian","Eritrea",0.0476190476190476,0.591607978309962
+2016,"religion_x_origin","h01_x_h05",11,"Agnostic","Eritrea",0.0476190476190476,-0.591607978309962
+2016,"religion_x_origin","h01_x_h05",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",13,"Christian","Pakistan",0.0476190476190476,0.591607978309962
+2016,"religion_x_origin","h01_x_h05",14,"Agnostic","Pakistan",0.0476190476190476,-0.591607978309962
+2016,"religion_x_origin","h01_x_h05",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",16,"Christian","Ukraine",0.0476190476190476,-2.95803989154981
+2016,"religion_x_origin","h01_x_h05",17,"Agnostic","Ukraine",0.0476190476190476,2.95803989154981
+2016,"religion_x_origin","h01_x_h05",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h05",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h05",1,"Christian","Syria",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",2,"Agnostic","Syria",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",3,"Muslim","Syria",0.0476190476190476,-0.683130051063973
+2016,"religion_x_origin","h02_x_h05",4,"Christian","Afghanistan",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",5,"Agnostic","Afghanistan",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",6,"Muslim","Afghanistan",0.0476190476190476,-0.683130051063973
+2016,"religion_x_origin","h02_x_h05",7,"Christian","Kosovo",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",8,"Agnostic","Kosovo",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",9,"Muslim","Kosovo",0.0476190476190476,-0.683130051063973
+2016,"religion_x_origin","h02_x_h05",10,"Christian","Eritrea",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",11,"Agnostic","Eritrea",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",12,"Muslim","Eritrea",0.0476190476190476,-0.683130051063973
+2016,"religion_x_origin","h02_x_h05",13,"Christian","Pakistan",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",14,"Agnostic","Pakistan",0.0476190476190476,0.341565025531987
+2016,"religion_x_origin","h02_x_h05",15,"Muslim","Pakistan",0.0476190476190476,-0.683130051063973
+2016,"religion_x_origin","h02_x_h05",16,"Christian","Ukraine",0.0476190476190476,-1.70782512765993
+2016,"religion_x_origin","h02_x_h05",17,"Agnostic","Ukraine",0.0476190476190476,-1.70782512765993
+2016,"religion_x_origin","h02_x_h05",18,"Muslim","Ukraine",0.0476190476190476,3.41565025531987
+2016,"religion_x_origin","h02_x_h05",19,"Christian","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h05",20,"Agnostic","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h05",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",1,"Christian","Syria",0.0476190476190476,0.5
+2016,"religion_x_origin","h01_x_h06",2,"Agnostic","Syria",0.0476190476190476,-0.5
+2016,"religion_x_origin","h01_x_h06",3,"Muslim","Syria",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",4,"Christian","Afghanistan",0.0476190476190476,0.5
+2016,"religion_x_origin","h01_x_h06",5,"Agnostic","Afghanistan",0.0476190476190476,-0.5
+2016,"religion_x_origin","h01_x_h06",6,"Muslim","Afghanistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",7,"Christian","Kosovo",0.0476190476190476,0.5
+2016,"religion_x_origin","h01_x_h06",8,"Agnostic","Kosovo",0.0476190476190476,-0.5
+2016,"religion_x_origin","h01_x_h06",9,"Muslim","Kosovo",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",10,"Christian","Eritrea",0.0476190476190476,0.5
+2016,"religion_x_origin","h01_x_h06",11,"Agnostic","Eritrea",0.0476190476190476,-0.5
+2016,"religion_x_origin","h01_x_h06",12,"Muslim","Eritrea",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",13,"Christian","Pakistan",0.0476190476190476,0.5
+2016,"religion_x_origin","h01_x_h06",14,"Agnostic","Pakistan",0.0476190476190476,-0.5
+2016,"religion_x_origin","h01_x_h06",15,"Muslim","Pakistan",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",16,"Christian","Ukraine",0.0476190476190476,0.5
+2016,"religion_x_origin","h01_x_h06",17,"Agnostic","Ukraine",0.0476190476190476,-0.5
+2016,"religion_x_origin","h01_x_h06",18,"Muslim","Ukraine",0.0476190476190476,0
+2016,"religion_x_origin","h01_x_h06",19,"Christian","Iraq",0.0476190476190476,-3
+2016,"religion_x_origin","h01_x_h06",20,"Agnostic","Iraq",0.0476190476190476,3
+2016,"religion_x_origin","h01_x_h06",21,"Muslim","Iraq",0.0476190476190476,0
+2016,"religion_x_origin","h02_x_h06",1,"Christian","Syria",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",2,"Agnostic","Syria",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",3,"Muslim","Syria",0.0476190476190476,-0.577350269189626
+2016,"religion_x_origin","h02_x_h06",4,"Christian","Afghanistan",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",5,"Agnostic","Afghanistan",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",6,"Muslim","Afghanistan",0.0476190476190476,-0.577350269189626
+2016,"religion_x_origin","h02_x_h06",7,"Christian","Kosovo",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",8,"Agnostic","Kosovo",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",9,"Muslim","Kosovo",0.0476190476190476,-0.577350269189626
+2016,"religion_x_origin","h02_x_h06",10,"Christian","Eritrea",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",11,"Agnostic","Eritrea",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",12,"Muslim","Eritrea",0.0476190476190476,-0.577350269189626
+2016,"religion_x_origin","h02_x_h06",13,"Christian","Pakistan",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",14,"Agnostic","Pakistan",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",15,"Muslim","Pakistan",0.0476190476190476,-0.577350269189626
+2016,"religion_x_origin","h02_x_h06",16,"Christian","Ukraine",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",17,"Agnostic","Ukraine",0.0476190476190476,0.288675134594813
+2016,"religion_x_origin","h02_x_h06",18,"Muslim","Ukraine",0.0476190476190476,-0.577350269189626
+2016,"religion_x_origin","h02_x_h06",19,"Christian","Iraq",0.0476190476190476,-1.73205080756888
+2016,"religion_x_origin","h02_x_h06",20,"Agnostic","Iraq",0.0476190476190476,-1.73205080756888
+2016,"religion_x_origin","h02_x_h06",21,"Muslim","Iraq",0.0476190476190476,3.46410161513775
+2016,"occupation_x_language","h01_x_h01",1,"Unemployed","Fluent",0.0555555555555556,2.12132034355964
+2016,"occupation_x_language","h01_x_h01",2,"Cleaner","Fluent",0.0555555555555556,-2.12132034355964
+2016,"occupation_x_language","h01_x_h01",3,"Farmer","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",4,"Accountant","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",5,"Teacher","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",7,"Unemployed","Broken",0.0555555555555556,-2.12132034355964
+2016,"occupation_x_language","h01_x_h01",8,"Cleaner","Broken",0.0555555555555556,2.12132034355964
+2016,"occupation_x_language","h01_x_h01",9,"Farmer","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",10,"Accountant","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",11,"Teacher","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",15,"Farmer","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h01",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",1,"Unemployed","Fluent",0.0555555555555556,1.22474487139159
+2016,"occupation_x_language","h02_x_h01",2,"Cleaner","Fluent",0.0555555555555556,1.22474487139159
+2016,"occupation_x_language","h02_x_h01",3,"Farmer","Fluent",0.0555555555555556,-2.44948974278318
+2016,"occupation_x_language","h02_x_h01",4,"Accountant","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",5,"Teacher","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",7,"Unemployed","Broken",0.0555555555555556,-1.22474487139159
+2016,"occupation_x_language","h02_x_h01",8,"Cleaner","Broken",0.0555555555555556,-1.22474487139159
+2016,"occupation_x_language","h02_x_h01",9,"Farmer","Broken",0.0555555555555556,2.44948974278318
+2016,"occupation_x_language","h02_x_h01",10,"Accountant","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",11,"Teacher","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",15,"Farmer","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h01",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",1,"Unemployed","Fluent",0.0555555555555556,0.866025403784438
+2016,"occupation_x_language","h03_x_h01",2,"Cleaner","Fluent",0.0555555555555556,0.866025403784438
+2016,"occupation_x_language","h03_x_h01",3,"Farmer","Fluent",0.0555555555555556,0.866025403784438
+2016,"occupation_x_language","h03_x_h01",4,"Accountant","Fluent",0.0555555555555556,-2.59807621135332
+2016,"occupation_x_language","h03_x_h01",5,"Teacher","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",7,"Unemployed","Broken",0.0555555555555556,-0.866025403784438
+2016,"occupation_x_language","h03_x_h01",8,"Cleaner","Broken",0.0555555555555556,-0.866025403784438
+2016,"occupation_x_language","h03_x_h01",9,"Farmer","Broken",0.0555555555555556,-0.866025403784438
+2016,"occupation_x_language","h03_x_h01",10,"Accountant","Broken",0.0555555555555556,2.59807621135332
+2016,"occupation_x_language","h03_x_h01",11,"Teacher","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",15,"Farmer","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h01",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",1,"Unemployed","Fluent",0.0555555555555556,0.670820393249937
+2016,"occupation_x_language","h04_x_h01",2,"Cleaner","Fluent",0.0555555555555556,0.670820393249937
+2016,"occupation_x_language","h04_x_h01",3,"Farmer","Fluent",0.0555555555555556,0.670820393249937
+2016,"occupation_x_language","h04_x_h01",4,"Accountant","Fluent",0.0555555555555556,0.670820393249937
+2016,"occupation_x_language","h04_x_h01",5,"Teacher","Fluent",0.0555555555555556,-2.68328157299975
+2016,"occupation_x_language","h04_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",7,"Unemployed","Broken",0.0555555555555556,-0.670820393249937
+2016,"occupation_x_language","h04_x_h01",8,"Cleaner","Broken",0.0555555555555556,-0.670820393249937
+2016,"occupation_x_language","h04_x_h01",9,"Farmer","Broken",0.0555555555555556,-0.670820393249937
+2016,"occupation_x_language","h04_x_h01",10,"Accountant","Broken",0.0555555555555556,-0.670820393249937
+2016,"occupation_x_language","h04_x_h01",11,"Teacher","Broken",0.0555555555555556,2.68328157299975
+2016,"occupation_x_language","h04_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",15,"Farmer","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h01",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h01",1,"Unemployed","Fluent",0.0555555555555556,0.547722557505166
+2016,"occupation_x_language","h05_x_h01",2,"Cleaner","Fluent",0.0555555555555556,0.547722557505166
+2016,"occupation_x_language","h05_x_h01",3,"Farmer","Fluent",0.0555555555555556,0.547722557505166
+2016,"occupation_x_language","h05_x_h01",4,"Accountant","Fluent",0.0555555555555556,0.547722557505166
+2016,"occupation_x_language","h05_x_h01",5,"Teacher","Fluent",0.0555555555555556,0.547722557505166
+2016,"occupation_x_language","h05_x_h01",6,"Doctor","Fluent",0.0555555555555556,-2.73861278752583
+2016,"occupation_x_language","h05_x_h01",7,"Unemployed","Broken",0.0555555555555556,-0.547722557505166
+2016,"occupation_x_language","h05_x_h01",8,"Cleaner","Broken",0.0555555555555556,-0.547722557505166
+2016,"occupation_x_language","h05_x_h01",9,"Farmer","Broken",0.0555555555555556,-0.547722557505166
+2016,"occupation_x_language","h05_x_h01",10,"Accountant","Broken",0.0555555555555556,-0.547722557505166
+2016,"occupation_x_language","h05_x_h01",11,"Teacher","Broken",0.0555555555555556,-0.547722557505166
+2016,"occupation_x_language","h05_x_h01",12,"Doctor","Broken",0.0555555555555556,2.73861278752583
+2016,"occupation_x_language","h05_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h01",15,"Farmer","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h01",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h01",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h01",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",1,"Unemployed","Fluent",0.0555555555555556,1.22474487139159
+2016,"occupation_x_language","h01_x_h02",2,"Cleaner","Fluent",0.0555555555555556,-1.22474487139159
+2016,"occupation_x_language","h01_x_h02",3,"Farmer","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",4,"Accountant","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",5,"Teacher","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",7,"Unemployed","Broken",0.0555555555555556,1.22474487139159
+2016,"occupation_x_language","h01_x_h02",8,"Cleaner","Broken",0.0555555555555556,-1.22474487139159
+2016,"occupation_x_language","h01_x_h02",9,"Farmer","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",10,"Accountant","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",11,"Teacher","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",13,"Unemployed","None",0.0555555555555556,-2.44948974278318
+2016,"occupation_x_language","h01_x_h02",14,"Cleaner","None",0.0555555555555556,2.44948974278318
+2016,"occupation_x_language","h01_x_h02",15,"Farmer","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h01_x_h02",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.707106781186547
+2016,"occupation_x_language","h02_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.707106781186547
+2016,"occupation_x_language","h02_x_h02",3,"Farmer","Fluent",0.0555555555555556,-1.4142135623731
+2016,"occupation_x_language","h02_x_h02",4,"Accountant","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",5,"Teacher","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.707106781186547
+2016,"occupation_x_language","h02_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.707106781186547
+2016,"occupation_x_language","h02_x_h02",9,"Farmer","Broken",0.0555555555555556,-1.4142135623731
+2016,"occupation_x_language","h02_x_h02",10,"Accountant","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",11,"Teacher","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",13,"Unemployed","None",0.0555555555555556,-1.4142135623731
+2016,"occupation_x_language","h02_x_h02",14,"Cleaner","None",0.0555555555555556,-1.4142135623731
+2016,"occupation_x_language","h02_x_h02",15,"Farmer","None",0.0555555555555556,2.82842712474619
+2016,"occupation_x_language","h02_x_h02",16,"Accountant","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h02_x_h02",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.5
+2016,"occupation_x_language","h03_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.5
+2016,"occupation_x_language","h03_x_h02",3,"Farmer","Fluent",0.0555555555555556,0.5
+2016,"occupation_x_language","h03_x_h02",4,"Accountant","Fluent",0.0555555555555556,-1.5
+2016,"occupation_x_language","h03_x_h02",5,"Teacher","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.5
+2016,"occupation_x_language","h03_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.5
+2016,"occupation_x_language","h03_x_h02",9,"Farmer","Broken",0.0555555555555556,0.5
+2016,"occupation_x_language","h03_x_h02",10,"Accountant","Broken",0.0555555555555556,-1.5
+2016,"occupation_x_language","h03_x_h02",11,"Teacher","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h02",13,"Unemployed","None",0.0555555555555556,-1
+2016,"occupation_x_language","h03_x_h02",14,"Cleaner","None",0.0555555555555556,-1
+2016,"occupation_x_language","h03_x_h02",15,"Farmer","None",0.0555555555555556,-1
+2016,"occupation_x_language","h03_x_h02",16,"Accountant","None",0.0555555555555556,3
+2016,"occupation_x_language","h03_x_h02",17,"Teacher","None",0.0555555555555556,0
+2016,"occupation_x_language","h03_x_h02",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",3,"Farmer","Fluent",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",4,"Accountant","Fluent",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",5,"Teacher","Fluent",0.0555555555555556,-1.54919333848297
+2016,"occupation_x_language","h04_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",9,"Farmer","Broken",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",10,"Accountant","Broken",0.0555555555555556,0.387298334620742
+2016,"occupation_x_language","h04_x_h02",11,"Teacher","Broken",0.0555555555555556,-1.54919333848297
+2016,"occupation_x_language","h04_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2016,"occupation_x_language","h04_x_h02",13,"Unemployed","None",0.0555555555555556,-0.774596669241483
+2016,"occupation_x_language","h04_x_h02",14,"Cleaner","None",0.0555555555555556,-0.774596669241483
+2016,"occupation_x_language","h04_x_h02",15,"Farmer","None",0.0555555555555556,-0.774596669241483
+2016,"occupation_x_language","h04_x_h02",16,"Accountant","None",0.0555555555555556,-0.774596669241483
+2016,"occupation_x_language","h04_x_h02",17,"Teacher","None",0.0555555555555556,3.09838667696593
+2016,"occupation_x_language","h04_x_h02",18,"Doctor","None",0.0555555555555556,0
+2016,"occupation_x_language","h05_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",3,"Farmer","Fluent",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",4,"Accountant","Fluent",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",5,"Teacher","Fluent",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",6,"Doctor","Fluent",0.0555555555555556,-1.58113883008419
+2016,"occupation_x_language","h05_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",9,"Farmer","Broken",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",10,"Accountant","Broken",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",11,"Teacher","Broken",0.0555555555555556,0.316227766016838
+2016,"occupation_x_language","h05_x_h02",12,"Doctor","Broken",0.0555555555555556,-1.58113883008419
+2016,"occupation_x_language","h05_x_h02",13,"Unemployed","None",0.0555555555555556,-0.632455532033676
+2016,"occupation_x_language","h05_x_h02",14,"Cleaner","None",0.0555555555555556,-0.632455532033676
+2016,"occupation_x_language","h05_x_h02",15,"Farmer","None",0.0555555555555556,-0.632455532033676
+2016,"occupation_x_language","h05_x_h02",16,"Accountant","None",0.0555555555555556,-0.632455532033676
+2016,"occupation_x_language","h05_x_h02",17,"Teacher","None",0.0555555555555556,-0.632455532033676
+2016,"occupation_x_language","h05_x_h02",18,"Doctor","None",0.0555555555555556,3.16227766016838
+2022,"reason_x_vulnerability","h01_x_h01",1,"Political persecution","None",0.04,2.5
+2022,"reason_x_vulnerability","h01_x_h01",2,"Religious persecution","None",0.04,-2.5
+2022,"reason_x_vulnerability","h01_x_h01",3,"Ethnic persecution","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",6,"Political persecution","PTSD",0.04,-2.5
+2022,"reason_x_vulnerability","h01_x_h01",7,"Religious persecution","PTSD",0.04,2.5
+2022,"reason_x_vulnerability","h01_x_h01",8,"Ethnic persecution","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",11,"Political persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",12,"Religious persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h01",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",1,"Political persecution","None",0.04,1.44337567297406
+2022,"reason_x_vulnerability","h02_x_h01",2,"Religious persecution","None",0.04,1.44337567297406
+2022,"reason_x_vulnerability","h02_x_h01",3,"Ethnic persecution","None",0.04,-2.88675134594813
+2022,"reason_x_vulnerability","h02_x_h01",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",6,"Political persecution","PTSD",0.04,-1.44337567297406
+2022,"reason_x_vulnerability","h02_x_h01",7,"Religious persecution","PTSD",0.04,-1.44337567297406
+2022,"reason_x_vulnerability","h02_x_h01",8,"Ethnic persecution","PTSD",0.04,2.88675134594813
+2022,"reason_x_vulnerability","h02_x_h01",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",11,"Political persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",12,"Religious persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h01",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",1,"Political persecution","None",0.04,1.02062072615966
+2022,"reason_x_vulnerability","h03_x_h01",2,"Religious persecution","None",0.04,1.02062072615966
+2022,"reason_x_vulnerability","h03_x_h01",3,"Ethnic persecution","None",0.04,1.02062072615966
+2022,"reason_x_vulnerability","h03_x_h01",4,"Economic opportunities","None",0.04,-3.06186217847897
+2022,"reason_x_vulnerability","h03_x_h01",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",6,"Political persecution","PTSD",0.04,-1.02062072615966
+2022,"reason_x_vulnerability","h03_x_h01",7,"Religious persecution","PTSD",0.04,-1.02062072615966
+2022,"reason_x_vulnerability","h03_x_h01",8,"Ethnic persecution","PTSD",0.04,-1.02062072615966
+2022,"reason_x_vulnerability","h03_x_h01",9,"Economic opportunities","PTSD",0.04,3.06186217847897
+2022,"reason_x_vulnerability","h03_x_h01",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",11,"Political persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",12,"Religious persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h01",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",1,"Political persecution","None",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",2,"Religious persecution","None",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",3,"Ethnic persecution","None",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",4,"Economic opportunities","None",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",5,"War","None",0.04,-3.16227766016838
+2022,"reason_x_vulnerability","h04_x_h01",6,"Political persecution","PTSD",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",7,"Religious persecution","PTSD",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",8,"Ethnic persecution","PTSD",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",9,"Economic opportunities","PTSD",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h04_x_h01",10,"War","PTSD",0.04,3.16227766016838
+2022,"reason_x_vulnerability","h04_x_h01",11,"Political persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",12,"Religious persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h01",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",1,"Political persecution","None",0.04,1.44337567297406
+2022,"reason_x_vulnerability","h01_x_h02",2,"Religious persecution","None",0.04,-1.44337567297406
+2022,"reason_x_vulnerability","h01_x_h02",3,"Ethnic persecution","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",6,"Political persecution","PTSD",0.04,1.44337567297406
+2022,"reason_x_vulnerability","h01_x_h02",7,"Religious persecution","PTSD",0.04,-1.44337567297406
+2022,"reason_x_vulnerability","h01_x_h02",8,"Ethnic persecution","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",11,"Political persecution","Victim of torture",0.04,-2.88675134594813
+2022,"reason_x_vulnerability","h01_x_h02",12,"Religious persecution","Victim of torture",0.04,2.88675134594813
+2022,"reason_x_vulnerability","h01_x_h02",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h02",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",1,"Political persecution","None",0.04,0.833333333333333
+2022,"reason_x_vulnerability","h02_x_h02",2,"Religious persecution","None",0.04,0.833333333333333
+2022,"reason_x_vulnerability","h02_x_h02",3,"Ethnic persecution","None",0.04,-1.66666666666667
+2022,"reason_x_vulnerability","h02_x_h02",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",6,"Political persecution","PTSD",0.04,0.833333333333333
+2022,"reason_x_vulnerability","h02_x_h02",7,"Religious persecution","PTSD",0.04,0.833333333333333
+2022,"reason_x_vulnerability","h02_x_h02",8,"Ethnic persecution","PTSD",0.04,-1.66666666666667
+2022,"reason_x_vulnerability","h02_x_h02",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",11,"Political persecution","Victim of torture",0.04,-1.66666666666667
+2022,"reason_x_vulnerability","h02_x_h02",12,"Religious persecution","Victim of torture",0.04,-1.66666666666667
+2022,"reason_x_vulnerability","h02_x_h02",13,"Ethnic persecution","Victim of torture",0.04,3.33333333333333
+2022,"reason_x_vulnerability","h02_x_h02",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h02",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",1,"Political persecution","None",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h03_x_h02",2,"Religious persecution","None",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h03_x_h02",3,"Ethnic persecution","None",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h03_x_h02",4,"Economic opportunities","None",0.04,-1.76776695296637
+2022,"reason_x_vulnerability","h03_x_h02",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",6,"Political persecution","PTSD",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h03_x_h02",7,"Religious persecution","PTSD",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h03_x_h02",8,"Ethnic persecution","PTSD",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h03_x_h02",9,"Economic opportunities","PTSD",0.04,-1.76776695296637
+2022,"reason_x_vulnerability","h03_x_h02",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",11,"Political persecution","Victim of torture",0.04,-1.17851130197758
+2022,"reason_x_vulnerability","h03_x_h02",12,"Religious persecution","Victim of torture",0.04,-1.17851130197758
+2022,"reason_x_vulnerability","h03_x_h02",13,"Ethnic persecution","Victim of torture",0.04,-1.17851130197758
+2022,"reason_x_vulnerability","h03_x_h02",14,"Economic opportunities","Victim of torture",0.04,3.53553390593274
+2022,"reason_x_vulnerability","h03_x_h02",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h02",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",1,"Political persecution","None",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",2,"Religious persecution","None",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",3,"Ethnic persecution","None",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",4,"Economic opportunities","None",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",5,"War","None",0.04,-1.82574185835055
+2022,"reason_x_vulnerability","h04_x_h02",6,"Political persecution","PTSD",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",7,"Religious persecution","PTSD",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",8,"Ethnic persecution","PTSD",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",9,"Economic opportunities","PTSD",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h04_x_h02",10,"War","PTSD",0.04,-1.82574185835055
+2022,"reason_x_vulnerability","h04_x_h02",11,"Political persecution","Victim of torture",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h04_x_h02",12,"Religious persecution","Victim of torture",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h04_x_h02",13,"Ethnic persecution","Victim of torture",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h04_x_h02",14,"Economic opportunities","Victim of torture",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h04_x_h02",15,"War","Victim of torture",0.04,3.65148371670111
+2022,"reason_x_vulnerability","h04_x_h02",16,"Political persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",17,"Religious persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h02",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",1,"Political persecution","None",0.04,1.02062072615966
+2022,"reason_x_vulnerability","h01_x_h03",2,"Religious persecution","None",0.04,-1.02062072615966
+2022,"reason_x_vulnerability","h01_x_h03",3,"Ethnic persecution","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",6,"Political persecution","PTSD",0.04,1.02062072615966
+2022,"reason_x_vulnerability","h01_x_h03",7,"Religious persecution","PTSD",0.04,-1.02062072615966
+2022,"reason_x_vulnerability","h01_x_h03",8,"Ethnic persecution","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",11,"Political persecution","Victim of torture",0.04,1.02062072615966
+2022,"reason_x_vulnerability","h01_x_h03",12,"Religious persecution","Victim of torture",0.04,-1.02062072615966
+2022,"reason_x_vulnerability","h01_x_h03",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",16,"Political persecution","No surviving family",0.04,-3.06186217847897
+2022,"reason_x_vulnerability","h01_x_h03",17,"Religious persecution","No surviving family",0.04,3.06186217847897
+2022,"reason_x_vulnerability","h01_x_h03",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h03",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",1,"Political persecution","None",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h02_x_h03",2,"Religious persecution","None",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h02_x_h03",3,"Ethnic persecution","None",0.04,-1.17851130197758
+2022,"reason_x_vulnerability","h02_x_h03",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",6,"Political persecution","PTSD",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h02_x_h03",7,"Religious persecution","PTSD",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h02_x_h03",8,"Ethnic persecution","PTSD",0.04,-1.17851130197758
+2022,"reason_x_vulnerability","h02_x_h03",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",11,"Political persecution","Victim of torture",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h02_x_h03",12,"Religious persecution","Victim of torture",0.04,0.58925565098879
+2022,"reason_x_vulnerability","h02_x_h03",13,"Ethnic persecution","Victim of torture",0.04,-1.17851130197758
+2022,"reason_x_vulnerability","h02_x_h03",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",16,"Political persecution","No surviving family",0.04,-1.76776695296637
+2022,"reason_x_vulnerability","h02_x_h03",17,"Religious persecution","No surviving family",0.04,-1.76776695296637
+2022,"reason_x_vulnerability","h02_x_h03",18,"Ethnic persecution","No surviving family",0.04,3.53553390593274
+2022,"reason_x_vulnerability","h02_x_h03",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h03",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",1,"Political persecution","None",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",2,"Religious persecution","None",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",3,"Ethnic persecution","None",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",4,"Economic opportunities","None",0.04,-1.25
+2022,"reason_x_vulnerability","h03_x_h03",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",6,"Political persecution","PTSD",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",7,"Religious persecution","PTSD",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",8,"Ethnic persecution","PTSD",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",9,"Economic opportunities","PTSD",0.04,-1.25
+2022,"reason_x_vulnerability","h03_x_h03",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",11,"Political persecution","Victim of torture",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",12,"Religious persecution","Victim of torture",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",13,"Ethnic persecution","Victim of torture",0.04,0.416666666666667
+2022,"reason_x_vulnerability","h03_x_h03",14,"Economic opportunities","Victim of torture",0.04,-1.25
+2022,"reason_x_vulnerability","h03_x_h03",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",16,"Political persecution","No surviving family",0.04,-1.25
+2022,"reason_x_vulnerability","h03_x_h03",17,"Religious persecution","No surviving family",0.04,-1.25
+2022,"reason_x_vulnerability","h03_x_h03",18,"Ethnic persecution","No surviving family",0.04,-1.25
+2022,"reason_x_vulnerability","h03_x_h03",19,"Economic opportunities","No surviving family",0.04,3.75
+2022,"reason_x_vulnerability","h03_x_h03",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h03",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h03",1,"Political persecution","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",2,"Religious persecution","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",3,"Ethnic persecution","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",4,"Economic opportunities","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",5,"War","None",0.04,-1.29099444873581
+2022,"reason_x_vulnerability","h04_x_h03",6,"Political persecution","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",7,"Religious persecution","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",8,"Ethnic persecution","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",9,"Economic opportunities","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",10,"War","PTSD",0.04,-1.29099444873581
+2022,"reason_x_vulnerability","h04_x_h03",11,"Political persecution","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",12,"Religious persecution","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",13,"Ethnic persecution","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",14,"Economic opportunities","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h04_x_h03",15,"War","Victim of torture",0.04,-1.29099444873581
+2022,"reason_x_vulnerability","h04_x_h03",16,"Political persecution","No surviving family",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h04_x_h03",17,"Religious persecution","No surviving family",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h04_x_h03",18,"Ethnic persecution","No surviving family",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h04_x_h03",19,"Economic opportunities","No surviving family",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h04_x_h03",20,"War","No surviving family",0.04,3.87298334620742
+2022,"reason_x_vulnerability","h04_x_h03",21,"Political persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h03",22,"Religious persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h03",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h03",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h03",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",1,"Political persecution","None",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",2,"Religious persecution","None",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",3,"Ethnic persecution","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",6,"Political persecution","PTSD",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",7,"Religious persecution","PTSD",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",8,"Ethnic persecution","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",11,"Political persecution","Victim of torture",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",12,"Religious persecution","Victim of torture",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",13,"Ethnic persecution","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",16,"Political persecution","No surviving family",0.04,0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",17,"Religious persecution","No surviving family",0.04,-0.790569415042095
+2022,"reason_x_vulnerability","h01_x_h04",18,"Ethnic persecution","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",21,"Political persecution","Handicapped",0.04,-3.16227766016838
+2022,"reason_x_vulnerability","h01_x_h04",22,"Religious persecution","Handicapped",0.04,3.16227766016838
+2022,"reason_x_vulnerability","h01_x_h04",23,"Ethnic persecution","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h01_x_h04",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",1,"Political persecution","None",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",2,"Religious persecution","None",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",3,"Ethnic persecution","None",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h02_x_h04",4,"Economic opportunities","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",6,"Political persecution","PTSD",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",7,"Religious persecution","PTSD",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",8,"Ethnic persecution","PTSD",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h02_x_h04",9,"Economic opportunities","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",11,"Political persecution","Victim of torture",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",12,"Religious persecution","Victim of torture",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",13,"Ethnic persecution","Victim of torture",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h02_x_h04",14,"Economic opportunities","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",16,"Political persecution","No surviving family",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",17,"Religious persecution","No surviving family",0.04,0.456435464587638
+2022,"reason_x_vulnerability","h02_x_h04",18,"Ethnic persecution","No surviving family",0.04,-0.912870929175277
+2022,"reason_x_vulnerability","h02_x_h04",19,"Economic opportunities","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",21,"Political persecution","Handicapped",0.04,-1.82574185835055
+2022,"reason_x_vulnerability","h02_x_h04",22,"Religious persecution","Handicapped",0.04,-1.82574185835055
+2022,"reason_x_vulnerability","h02_x_h04",23,"Ethnic persecution","Handicapped",0.04,3.65148371670111
+2022,"reason_x_vulnerability","h02_x_h04",24,"Economic opportunities","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h02_x_h04",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h03_x_h04",1,"Political persecution","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",2,"Religious persecution","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",3,"Ethnic persecution","None",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",4,"Economic opportunities","None",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h03_x_h04",5,"War","None",0.04,0
+2022,"reason_x_vulnerability","h03_x_h04",6,"Political persecution","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",7,"Religious persecution","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",8,"Ethnic persecution","PTSD",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",9,"Economic opportunities","PTSD",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h03_x_h04",10,"War","PTSD",0.04,0
+2022,"reason_x_vulnerability","h03_x_h04",11,"Political persecution","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",12,"Religious persecution","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",13,"Ethnic persecution","Victim of torture",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",14,"Economic opportunities","Victim of torture",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h03_x_h04",15,"War","Victim of torture",0.04,0
+2022,"reason_x_vulnerability","h03_x_h04",16,"Political persecution","No surviving family",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",17,"Religious persecution","No surviving family",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",18,"Ethnic persecution","No surviving family",0.04,0.322748612183951
+2022,"reason_x_vulnerability","h03_x_h04",19,"Economic opportunities","No surviving family",0.04,-0.968245836551854
+2022,"reason_x_vulnerability","h03_x_h04",20,"War","No surviving family",0.04,0
+2022,"reason_x_vulnerability","h03_x_h04",21,"Political persecution","Handicapped",0.04,-1.29099444873581
+2022,"reason_x_vulnerability","h03_x_h04",22,"Religious persecution","Handicapped",0.04,-1.29099444873581
+2022,"reason_x_vulnerability","h03_x_h04",23,"Ethnic persecution","Handicapped",0.04,-1.29099444873581
+2022,"reason_x_vulnerability","h03_x_h04",24,"Economic opportunities","Handicapped",0.04,3.87298334620742
+2022,"reason_x_vulnerability","h03_x_h04",25,"War","Handicapped",0.04,0
+2022,"reason_x_vulnerability","h04_x_h04",1,"Political persecution","None",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",2,"Religious persecution","None",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",3,"Ethnic persecution","None",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",4,"Economic opportunities","None",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",5,"War","None",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",6,"Political persecution","PTSD",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",7,"Religious persecution","PTSD",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",8,"Ethnic persecution","PTSD",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",9,"Economic opportunities","PTSD",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",10,"War","PTSD",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",11,"Political persecution","Victim of torture",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",12,"Religious persecution","Victim of torture",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",13,"Ethnic persecution","Victim of torture",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",14,"Economic opportunities","Victim of torture",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",15,"War","Victim of torture",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",16,"Political persecution","No surviving family",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",17,"Religious persecution","No surviving family",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",18,"Ethnic persecution","No surviving family",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",19,"Economic opportunities","No surviving family",0.04,0.25
+2022,"reason_x_vulnerability","h04_x_h04",20,"War","No surviving family",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",21,"Political persecution","Handicapped",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",22,"Religious persecution","Handicapped",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",23,"Ethnic persecution","Handicapped",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",24,"Economic opportunities","Handicapped",0.04,-1
+2022,"reason_x_vulnerability","h04_x_h04",25,"War","Handicapped",0.04,4
+2022,"religion_x_origin","h01_x_h01",1,"Christian","Syria",0.0476190476190476,2.29128784747792
+2022,"religion_x_origin","h01_x_h01",2,"Agnostic","Syria",0.0476190476190476,-2.29128784747792
+2022,"religion_x_origin","h01_x_h01",3,"Muslim","Syria",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",4,"Christian","Afghanistan",0.0476190476190476,-2.29128784747792
+2022,"religion_x_origin","h01_x_h01",5,"Agnostic","Afghanistan",0.0476190476190476,2.29128784747792
+2022,"religion_x_origin","h01_x_h01",6,"Muslim","Afghanistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",7,"Christian","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",8,"Agnostic","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",10,"Christian","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",11,"Agnostic","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",13,"Christian","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",14,"Agnostic","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h01",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",1,"Christian","Syria",0.0476190476190476,1.3228756555323
+2022,"religion_x_origin","h02_x_h01",2,"Agnostic","Syria",0.0476190476190476,1.3228756555323
+2022,"religion_x_origin","h02_x_h01",3,"Muslim","Syria",0.0476190476190476,-2.64575131106459
+2022,"religion_x_origin","h02_x_h01",4,"Christian","Afghanistan",0.0476190476190476,-1.3228756555323
+2022,"religion_x_origin","h02_x_h01",5,"Agnostic","Afghanistan",0.0476190476190476,-1.3228756555323
+2022,"religion_x_origin","h02_x_h01",6,"Muslim","Afghanistan",0.0476190476190476,2.64575131106459
+2022,"religion_x_origin","h02_x_h01",7,"Christian","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",8,"Agnostic","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",10,"Christian","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",11,"Agnostic","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",13,"Christian","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",14,"Agnostic","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h01",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",1,"Christian","Syria",0.0476190476190476,1.3228756555323
+2022,"religion_x_origin","h01_x_h02",2,"Agnostic","Syria",0.0476190476190476,-1.3228756555323
+2022,"religion_x_origin","h01_x_h02",3,"Muslim","Syria",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",4,"Christian","Afghanistan",0.0476190476190476,1.3228756555323
+2022,"religion_x_origin","h01_x_h02",5,"Agnostic","Afghanistan",0.0476190476190476,-1.3228756555323
+2022,"religion_x_origin","h01_x_h02",6,"Muslim","Afghanistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",7,"Christian","Kosovo",0.0476190476190476,-2.64575131106459
+2022,"religion_x_origin","h01_x_h02",8,"Agnostic","Kosovo",0.0476190476190476,2.64575131106459
+2022,"religion_x_origin","h01_x_h02",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",10,"Christian","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",11,"Agnostic","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",13,"Christian","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",14,"Agnostic","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h02",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",1,"Christian","Syria",0.0476190476190476,0.763762615825973
+2022,"religion_x_origin","h02_x_h02",2,"Agnostic","Syria",0.0476190476190476,0.763762615825973
+2022,"religion_x_origin","h02_x_h02",3,"Muslim","Syria",0.0476190476190476,-1.52752523165195
+2022,"religion_x_origin","h02_x_h02",4,"Christian","Afghanistan",0.0476190476190476,0.763762615825973
+2022,"religion_x_origin","h02_x_h02",5,"Agnostic","Afghanistan",0.0476190476190476,0.763762615825973
+2022,"religion_x_origin","h02_x_h02",6,"Muslim","Afghanistan",0.0476190476190476,-1.52752523165195
+2022,"religion_x_origin","h02_x_h02",7,"Christian","Kosovo",0.0476190476190476,-1.52752523165195
+2022,"religion_x_origin","h02_x_h02",8,"Agnostic","Kosovo",0.0476190476190476,-1.52752523165195
+2022,"religion_x_origin","h02_x_h02",9,"Muslim","Kosovo",0.0476190476190476,3.05505046330389
+2022,"religion_x_origin","h02_x_h02",10,"Christian","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",11,"Agnostic","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",13,"Christian","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",14,"Agnostic","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h02",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",1,"Christian","Syria",0.0476190476190476,0.935414346693485
+2022,"religion_x_origin","h01_x_h03",2,"Agnostic","Syria",0.0476190476190476,-0.935414346693485
+2022,"religion_x_origin","h01_x_h03",3,"Muslim","Syria",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",4,"Christian","Afghanistan",0.0476190476190476,0.935414346693485
+2022,"religion_x_origin","h01_x_h03",5,"Agnostic","Afghanistan",0.0476190476190476,-0.935414346693485
+2022,"religion_x_origin","h01_x_h03",6,"Muslim","Afghanistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",7,"Christian","Kosovo",0.0476190476190476,0.935414346693485
+2022,"religion_x_origin","h01_x_h03",8,"Agnostic","Kosovo",0.0476190476190476,-0.935414346693485
+2022,"religion_x_origin","h01_x_h03",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",10,"Christian","Eritrea",0.0476190476190476,-2.80624304008046
+2022,"religion_x_origin","h01_x_h03",11,"Agnostic","Eritrea",0.0476190476190476,2.80624304008046
+2022,"religion_x_origin","h01_x_h03",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",13,"Christian","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",14,"Agnostic","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h03",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",1,"Christian","Syria",0.0476190476190476,0.540061724867322
+2022,"religion_x_origin","h02_x_h03",2,"Agnostic","Syria",0.0476190476190476,0.540061724867322
+2022,"religion_x_origin","h02_x_h03",3,"Muslim","Syria",0.0476190476190476,-1.08012344973464
+2022,"religion_x_origin","h02_x_h03",4,"Christian","Afghanistan",0.0476190476190476,0.540061724867322
+2022,"religion_x_origin","h02_x_h03",5,"Agnostic","Afghanistan",0.0476190476190476,0.540061724867322
+2022,"religion_x_origin","h02_x_h03",6,"Muslim","Afghanistan",0.0476190476190476,-1.08012344973464
+2022,"religion_x_origin","h02_x_h03",7,"Christian","Kosovo",0.0476190476190476,0.540061724867322
+2022,"religion_x_origin","h02_x_h03",8,"Agnostic","Kosovo",0.0476190476190476,0.540061724867322
+2022,"religion_x_origin","h02_x_h03",9,"Muslim","Kosovo",0.0476190476190476,-1.08012344973464
+2022,"religion_x_origin","h02_x_h03",10,"Christian","Eritrea",0.0476190476190476,-1.62018517460197
+2022,"religion_x_origin","h02_x_h03",11,"Agnostic","Eritrea",0.0476190476190476,-1.62018517460197
+2022,"religion_x_origin","h02_x_h03",12,"Muslim","Eritrea",0.0476190476190476,3.24037034920393
+2022,"religion_x_origin","h02_x_h03",13,"Christian","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",14,"Agnostic","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h03",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",1,"Christian","Syria",0.0476190476190476,0.724568837309472
+2022,"religion_x_origin","h01_x_h04",2,"Agnostic","Syria",0.0476190476190476,-0.724568837309472
+2022,"religion_x_origin","h01_x_h04",3,"Muslim","Syria",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",4,"Christian","Afghanistan",0.0476190476190476,0.724568837309472
+2022,"religion_x_origin","h01_x_h04",5,"Agnostic","Afghanistan",0.0476190476190476,-0.724568837309472
+2022,"religion_x_origin","h01_x_h04",6,"Muslim","Afghanistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",7,"Christian","Kosovo",0.0476190476190476,0.724568837309472
+2022,"religion_x_origin","h01_x_h04",8,"Agnostic","Kosovo",0.0476190476190476,-0.724568837309472
+2022,"religion_x_origin","h01_x_h04",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",10,"Christian","Eritrea",0.0476190476190476,0.724568837309472
+2022,"religion_x_origin","h01_x_h04",11,"Agnostic","Eritrea",0.0476190476190476,-0.724568837309472
+2022,"religion_x_origin","h01_x_h04",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",13,"Christian","Pakistan",0.0476190476190476,-2.89827534923789
+2022,"religion_x_origin","h01_x_h04",14,"Agnostic","Pakistan",0.0476190476190476,2.89827534923789
+2022,"religion_x_origin","h01_x_h04",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h04",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h04",1,"Christian","Syria",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",2,"Agnostic","Syria",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",3,"Muslim","Syria",0.0476190476190476,-0.836660026534075
+2022,"religion_x_origin","h02_x_h04",4,"Christian","Afghanistan",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",5,"Agnostic","Afghanistan",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",6,"Muslim","Afghanistan",0.0476190476190476,-0.836660026534075
+2022,"religion_x_origin","h02_x_h04",7,"Christian","Kosovo",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",8,"Agnostic","Kosovo",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",9,"Muslim","Kosovo",0.0476190476190476,-0.836660026534075
+2022,"religion_x_origin","h02_x_h04",10,"Christian","Eritrea",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",11,"Agnostic","Eritrea",0.0476190476190476,0.418330013267038
+2022,"religion_x_origin","h02_x_h04",12,"Muslim","Eritrea",0.0476190476190476,-0.836660026534075
+2022,"religion_x_origin","h02_x_h04",13,"Christian","Pakistan",0.0476190476190476,-1.67332005306815
+2022,"religion_x_origin","h02_x_h04",14,"Agnostic","Pakistan",0.0476190476190476,-1.67332005306815
+2022,"religion_x_origin","h02_x_h04",15,"Muslim","Pakistan",0.0476190476190476,3.3466401061363
+2022,"religion_x_origin","h02_x_h04",16,"Christian","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h04",17,"Agnostic","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h04",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h04",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h04",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h04",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",1,"Christian","Syria",0.0476190476190476,0.591607978309962
+2022,"religion_x_origin","h01_x_h05",2,"Agnostic","Syria",0.0476190476190476,-0.591607978309962
+2022,"religion_x_origin","h01_x_h05",3,"Muslim","Syria",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",4,"Christian","Afghanistan",0.0476190476190476,0.591607978309962
+2022,"religion_x_origin","h01_x_h05",5,"Agnostic","Afghanistan",0.0476190476190476,-0.591607978309962
+2022,"religion_x_origin","h01_x_h05",6,"Muslim","Afghanistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",7,"Christian","Kosovo",0.0476190476190476,0.591607978309962
+2022,"religion_x_origin","h01_x_h05",8,"Agnostic","Kosovo",0.0476190476190476,-0.591607978309962
+2022,"religion_x_origin","h01_x_h05",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",10,"Christian","Eritrea",0.0476190476190476,0.591607978309962
+2022,"religion_x_origin","h01_x_h05",11,"Agnostic","Eritrea",0.0476190476190476,-0.591607978309962
+2022,"religion_x_origin","h01_x_h05",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",13,"Christian","Pakistan",0.0476190476190476,0.591607978309962
+2022,"religion_x_origin","h01_x_h05",14,"Agnostic","Pakistan",0.0476190476190476,-0.591607978309962
+2022,"religion_x_origin","h01_x_h05",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",16,"Christian","Ukraine",0.0476190476190476,-2.95803989154981
+2022,"religion_x_origin","h01_x_h05",17,"Agnostic","Ukraine",0.0476190476190476,2.95803989154981
+2022,"religion_x_origin","h01_x_h05",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h05",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h05",1,"Christian","Syria",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",2,"Agnostic","Syria",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",3,"Muslim","Syria",0.0476190476190476,-0.683130051063973
+2022,"religion_x_origin","h02_x_h05",4,"Christian","Afghanistan",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",5,"Agnostic","Afghanistan",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",6,"Muslim","Afghanistan",0.0476190476190476,-0.683130051063973
+2022,"religion_x_origin","h02_x_h05",7,"Christian","Kosovo",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",8,"Agnostic","Kosovo",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",9,"Muslim","Kosovo",0.0476190476190476,-0.683130051063973
+2022,"religion_x_origin","h02_x_h05",10,"Christian","Eritrea",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",11,"Agnostic","Eritrea",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",12,"Muslim","Eritrea",0.0476190476190476,-0.683130051063973
+2022,"religion_x_origin","h02_x_h05",13,"Christian","Pakistan",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",14,"Agnostic","Pakistan",0.0476190476190476,0.341565025531987
+2022,"religion_x_origin","h02_x_h05",15,"Muslim","Pakistan",0.0476190476190476,-0.683130051063973
+2022,"religion_x_origin","h02_x_h05",16,"Christian","Ukraine",0.0476190476190476,-1.70782512765993
+2022,"religion_x_origin","h02_x_h05",17,"Agnostic","Ukraine",0.0476190476190476,-1.70782512765993
+2022,"religion_x_origin","h02_x_h05",18,"Muslim","Ukraine",0.0476190476190476,3.41565025531987
+2022,"religion_x_origin","h02_x_h05",19,"Christian","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h05",20,"Agnostic","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h05",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",1,"Christian","Syria",0.0476190476190476,0.5
+2022,"religion_x_origin","h01_x_h06",2,"Agnostic","Syria",0.0476190476190476,-0.5
+2022,"religion_x_origin","h01_x_h06",3,"Muslim","Syria",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",4,"Christian","Afghanistan",0.0476190476190476,0.5
+2022,"religion_x_origin","h01_x_h06",5,"Agnostic","Afghanistan",0.0476190476190476,-0.5
+2022,"religion_x_origin","h01_x_h06",6,"Muslim","Afghanistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",7,"Christian","Kosovo",0.0476190476190476,0.5
+2022,"religion_x_origin","h01_x_h06",8,"Agnostic","Kosovo",0.0476190476190476,-0.5
+2022,"religion_x_origin","h01_x_h06",9,"Muslim","Kosovo",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",10,"Christian","Eritrea",0.0476190476190476,0.5
+2022,"religion_x_origin","h01_x_h06",11,"Agnostic","Eritrea",0.0476190476190476,-0.5
+2022,"religion_x_origin","h01_x_h06",12,"Muslim","Eritrea",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",13,"Christian","Pakistan",0.0476190476190476,0.5
+2022,"religion_x_origin","h01_x_h06",14,"Agnostic","Pakistan",0.0476190476190476,-0.5
+2022,"religion_x_origin","h01_x_h06",15,"Muslim","Pakistan",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",16,"Christian","Ukraine",0.0476190476190476,0.5
+2022,"religion_x_origin","h01_x_h06",17,"Agnostic","Ukraine",0.0476190476190476,-0.5
+2022,"religion_x_origin","h01_x_h06",18,"Muslim","Ukraine",0.0476190476190476,0
+2022,"religion_x_origin","h01_x_h06",19,"Christian","Iraq",0.0476190476190476,-3
+2022,"religion_x_origin","h01_x_h06",20,"Agnostic","Iraq",0.0476190476190476,3
+2022,"religion_x_origin","h01_x_h06",21,"Muslim","Iraq",0.0476190476190476,0
+2022,"religion_x_origin","h02_x_h06",1,"Christian","Syria",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",2,"Agnostic","Syria",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",3,"Muslim","Syria",0.0476190476190476,-0.577350269189626
+2022,"religion_x_origin","h02_x_h06",4,"Christian","Afghanistan",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",5,"Agnostic","Afghanistan",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",6,"Muslim","Afghanistan",0.0476190476190476,-0.577350269189626
+2022,"religion_x_origin","h02_x_h06",7,"Christian","Kosovo",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",8,"Agnostic","Kosovo",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",9,"Muslim","Kosovo",0.0476190476190476,-0.577350269189626
+2022,"religion_x_origin","h02_x_h06",10,"Christian","Eritrea",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",11,"Agnostic","Eritrea",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",12,"Muslim","Eritrea",0.0476190476190476,-0.577350269189626
+2022,"religion_x_origin","h02_x_h06",13,"Christian","Pakistan",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",14,"Agnostic","Pakistan",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",15,"Muslim","Pakistan",0.0476190476190476,-0.577350269189626
+2022,"religion_x_origin","h02_x_h06",16,"Christian","Ukraine",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",17,"Agnostic","Ukraine",0.0476190476190476,0.288675134594813
+2022,"religion_x_origin","h02_x_h06",18,"Muslim","Ukraine",0.0476190476190476,-0.577350269189626
+2022,"religion_x_origin","h02_x_h06",19,"Christian","Iraq",0.0476190476190476,-1.73205080756888
+2022,"religion_x_origin","h02_x_h06",20,"Agnostic","Iraq",0.0476190476190476,-1.73205080756888
+2022,"religion_x_origin","h02_x_h06",21,"Muslim","Iraq",0.0476190476190476,3.46410161513775
+2022,"occupation_x_language","h01_x_h01",1,"Unemployed","Fluent",0.0555555555555556,2.12132034355964
+2022,"occupation_x_language","h01_x_h01",2,"Cleaner","Fluent",0.0555555555555556,-2.12132034355964
+2022,"occupation_x_language","h01_x_h01",3,"Farmer","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",4,"Accountant","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",5,"Teacher","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",7,"Unemployed","Broken",0.0555555555555556,-2.12132034355964
+2022,"occupation_x_language","h01_x_h01",8,"Cleaner","Broken",0.0555555555555556,2.12132034355964
+2022,"occupation_x_language","h01_x_h01",9,"Farmer","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",10,"Accountant","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",11,"Teacher","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",15,"Farmer","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h01",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",1,"Unemployed","Fluent",0.0555555555555556,1.22474487139159
+2022,"occupation_x_language","h02_x_h01",2,"Cleaner","Fluent",0.0555555555555556,1.22474487139159
+2022,"occupation_x_language","h02_x_h01",3,"Farmer","Fluent",0.0555555555555556,-2.44948974278318
+2022,"occupation_x_language","h02_x_h01",4,"Accountant","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",5,"Teacher","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",7,"Unemployed","Broken",0.0555555555555556,-1.22474487139159
+2022,"occupation_x_language","h02_x_h01",8,"Cleaner","Broken",0.0555555555555556,-1.22474487139159
+2022,"occupation_x_language","h02_x_h01",9,"Farmer","Broken",0.0555555555555556,2.44948974278318
+2022,"occupation_x_language","h02_x_h01",10,"Accountant","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",11,"Teacher","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",15,"Farmer","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h01",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",1,"Unemployed","Fluent",0.0555555555555556,0.866025403784438
+2022,"occupation_x_language","h03_x_h01",2,"Cleaner","Fluent",0.0555555555555556,0.866025403784438
+2022,"occupation_x_language","h03_x_h01",3,"Farmer","Fluent",0.0555555555555556,0.866025403784438
+2022,"occupation_x_language","h03_x_h01",4,"Accountant","Fluent",0.0555555555555556,-2.59807621135332
+2022,"occupation_x_language","h03_x_h01",5,"Teacher","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",7,"Unemployed","Broken",0.0555555555555556,-0.866025403784438
+2022,"occupation_x_language","h03_x_h01",8,"Cleaner","Broken",0.0555555555555556,-0.866025403784438
+2022,"occupation_x_language","h03_x_h01",9,"Farmer","Broken",0.0555555555555556,-0.866025403784438
+2022,"occupation_x_language","h03_x_h01",10,"Accountant","Broken",0.0555555555555556,2.59807621135332
+2022,"occupation_x_language","h03_x_h01",11,"Teacher","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",15,"Farmer","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h01",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",1,"Unemployed","Fluent",0.0555555555555556,0.670820393249937
+2022,"occupation_x_language","h04_x_h01",2,"Cleaner","Fluent",0.0555555555555556,0.670820393249937
+2022,"occupation_x_language","h04_x_h01",3,"Farmer","Fluent",0.0555555555555556,0.670820393249937
+2022,"occupation_x_language","h04_x_h01",4,"Accountant","Fluent",0.0555555555555556,0.670820393249937
+2022,"occupation_x_language","h04_x_h01",5,"Teacher","Fluent",0.0555555555555556,-2.68328157299975
+2022,"occupation_x_language","h04_x_h01",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",7,"Unemployed","Broken",0.0555555555555556,-0.670820393249937
+2022,"occupation_x_language","h04_x_h01",8,"Cleaner","Broken",0.0555555555555556,-0.670820393249937
+2022,"occupation_x_language","h04_x_h01",9,"Farmer","Broken",0.0555555555555556,-0.670820393249937
+2022,"occupation_x_language","h04_x_h01",10,"Accountant","Broken",0.0555555555555556,-0.670820393249937
+2022,"occupation_x_language","h04_x_h01",11,"Teacher","Broken",0.0555555555555556,2.68328157299975
+2022,"occupation_x_language","h04_x_h01",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",15,"Farmer","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h01",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h01",1,"Unemployed","Fluent",0.0555555555555556,0.547722557505166
+2022,"occupation_x_language","h05_x_h01",2,"Cleaner","Fluent",0.0555555555555556,0.547722557505166
+2022,"occupation_x_language","h05_x_h01",3,"Farmer","Fluent",0.0555555555555556,0.547722557505166
+2022,"occupation_x_language","h05_x_h01",4,"Accountant","Fluent",0.0555555555555556,0.547722557505166
+2022,"occupation_x_language","h05_x_h01",5,"Teacher","Fluent",0.0555555555555556,0.547722557505166
+2022,"occupation_x_language","h05_x_h01",6,"Doctor","Fluent",0.0555555555555556,-2.73861278752583
+2022,"occupation_x_language","h05_x_h01",7,"Unemployed","Broken",0.0555555555555556,-0.547722557505166
+2022,"occupation_x_language","h05_x_h01",8,"Cleaner","Broken",0.0555555555555556,-0.547722557505166
+2022,"occupation_x_language","h05_x_h01",9,"Farmer","Broken",0.0555555555555556,-0.547722557505166
+2022,"occupation_x_language","h05_x_h01",10,"Accountant","Broken",0.0555555555555556,-0.547722557505166
+2022,"occupation_x_language","h05_x_h01",11,"Teacher","Broken",0.0555555555555556,-0.547722557505166
+2022,"occupation_x_language","h05_x_h01",12,"Doctor","Broken",0.0555555555555556,2.73861278752583
+2022,"occupation_x_language","h05_x_h01",13,"Unemployed","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h01",14,"Cleaner","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h01",15,"Farmer","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h01",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h01",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h01",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",1,"Unemployed","Fluent",0.0555555555555556,1.22474487139159
+2022,"occupation_x_language","h01_x_h02",2,"Cleaner","Fluent",0.0555555555555556,-1.22474487139159
+2022,"occupation_x_language","h01_x_h02",3,"Farmer","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",4,"Accountant","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",5,"Teacher","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",7,"Unemployed","Broken",0.0555555555555556,1.22474487139159
+2022,"occupation_x_language","h01_x_h02",8,"Cleaner","Broken",0.0555555555555556,-1.22474487139159
+2022,"occupation_x_language","h01_x_h02",9,"Farmer","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",10,"Accountant","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",11,"Teacher","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",13,"Unemployed","None",0.0555555555555556,-2.44948974278318
+2022,"occupation_x_language","h01_x_h02",14,"Cleaner","None",0.0555555555555556,2.44948974278318
+2022,"occupation_x_language","h01_x_h02",15,"Farmer","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h01_x_h02",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.707106781186547
+2022,"occupation_x_language","h02_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.707106781186547
+2022,"occupation_x_language","h02_x_h02",3,"Farmer","Fluent",0.0555555555555556,-1.4142135623731
+2022,"occupation_x_language","h02_x_h02",4,"Accountant","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",5,"Teacher","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.707106781186547
+2022,"occupation_x_language","h02_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.707106781186547
+2022,"occupation_x_language","h02_x_h02",9,"Farmer","Broken",0.0555555555555556,-1.4142135623731
+2022,"occupation_x_language","h02_x_h02",10,"Accountant","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",11,"Teacher","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",13,"Unemployed","None",0.0555555555555556,-1.4142135623731
+2022,"occupation_x_language","h02_x_h02",14,"Cleaner","None",0.0555555555555556,-1.4142135623731
+2022,"occupation_x_language","h02_x_h02",15,"Farmer","None",0.0555555555555556,2.82842712474619
+2022,"occupation_x_language","h02_x_h02",16,"Accountant","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h02_x_h02",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.5
+2022,"occupation_x_language","h03_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.5
+2022,"occupation_x_language","h03_x_h02",3,"Farmer","Fluent",0.0555555555555556,0.5
+2022,"occupation_x_language","h03_x_h02",4,"Accountant","Fluent",0.0555555555555556,-1.5
+2022,"occupation_x_language","h03_x_h02",5,"Teacher","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.5
+2022,"occupation_x_language","h03_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.5
+2022,"occupation_x_language","h03_x_h02",9,"Farmer","Broken",0.0555555555555556,0.5
+2022,"occupation_x_language","h03_x_h02",10,"Accountant","Broken",0.0555555555555556,-1.5
+2022,"occupation_x_language","h03_x_h02",11,"Teacher","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h02",13,"Unemployed","None",0.0555555555555556,-1
+2022,"occupation_x_language","h03_x_h02",14,"Cleaner","None",0.0555555555555556,-1
+2022,"occupation_x_language","h03_x_h02",15,"Farmer","None",0.0555555555555556,-1
+2022,"occupation_x_language","h03_x_h02",16,"Accountant","None",0.0555555555555556,3
+2022,"occupation_x_language","h03_x_h02",17,"Teacher","None",0.0555555555555556,0
+2022,"occupation_x_language","h03_x_h02",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",3,"Farmer","Fluent",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",4,"Accountant","Fluent",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",5,"Teacher","Fluent",0.0555555555555556,-1.54919333848297
+2022,"occupation_x_language","h04_x_h02",6,"Doctor","Fluent",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",9,"Farmer","Broken",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",10,"Accountant","Broken",0.0555555555555556,0.387298334620742
+2022,"occupation_x_language","h04_x_h02",11,"Teacher","Broken",0.0555555555555556,-1.54919333848297
+2022,"occupation_x_language","h04_x_h02",12,"Doctor","Broken",0.0555555555555556,0
+2022,"occupation_x_language","h04_x_h02",13,"Unemployed","None",0.0555555555555556,-0.774596669241483
+2022,"occupation_x_language","h04_x_h02",14,"Cleaner","None",0.0555555555555556,-0.774596669241483
+2022,"occupation_x_language","h04_x_h02",15,"Farmer","None",0.0555555555555556,-0.774596669241483
+2022,"occupation_x_language","h04_x_h02",16,"Accountant","None",0.0555555555555556,-0.774596669241483
+2022,"occupation_x_language","h04_x_h02",17,"Teacher","None",0.0555555555555556,3.09838667696593
+2022,"occupation_x_language","h04_x_h02",18,"Doctor","None",0.0555555555555556,0
+2022,"occupation_x_language","h05_x_h02",1,"Unemployed","Fluent",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",2,"Cleaner","Fluent",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",3,"Farmer","Fluent",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",4,"Accountant","Fluent",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",5,"Teacher","Fluent",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",6,"Doctor","Fluent",0.0555555555555556,-1.58113883008419
+2022,"occupation_x_language","h05_x_h02",7,"Unemployed","Broken",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",8,"Cleaner","Broken",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",9,"Farmer","Broken",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",10,"Accountant","Broken",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",11,"Teacher","Broken",0.0555555555555556,0.316227766016838
+2022,"occupation_x_language","h05_x_h02",12,"Doctor","Broken",0.0555555555555556,-1.58113883008419
+2022,"occupation_x_language","h05_x_h02",13,"Unemployed","None",0.0555555555555556,-0.632455532033676
+2022,"occupation_x_language","h05_x_h02",14,"Cleaner","None",0.0555555555555556,-0.632455532033676
+2022,"occupation_x_language","h05_x_h02",15,"Farmer","None",0.0555555555555556,-0.632455532033676
+2022,"occupation_x_language","h05_x_h02",16,"Accountant","None",0.0555555555555556,-0.632455532033676
+2022,"occupation_x_language","h05_x_h02",17,"Teacher","None",0.0555555555555556,-0.632455532033676
+2022,"occupation_x_language","h05_x_h02",18,"Doctor","None",0.0555555555555556,3.16227766016838

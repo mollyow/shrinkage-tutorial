@@ -1,0 +1,4 @@
+"family","attribute_a","attribute_b","cells","observed_cells","minimum_cell_count","minimum_country_cell_count","minimum_task_cell_count","additive_rank","expected_interaction_rank","observed_interaction_rank","orthonormality_error","main_effect_orthogonality_error","projector_idempotence_error","identified"
+"cost_x_burden_distribution","household_cost","burden_distribution",20,20,3316,752,795,8,12,12,4.44089209850063e-16,1.88340039068823e-16,3.33066907387547e-16,TRUE
+"sanctions_x_monitoring","sanctions","monitoring",16,16,4155,938,1003,7,9,9,6.66133814775094e-16,9.2360599979134e-17,3.33066907387547e-16,TRUE
+"participation_x_emissions_coverage","participating_countries","emissions_coverage",9,9,7411,1721,1806,5,4,4,5.55111512312578e-16,7.37247516769741e-17,2.77555756156289e-16,TRUE

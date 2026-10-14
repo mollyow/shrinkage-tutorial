@@ -1,0 +1,57 @@
+schema_version: 1.0
+dataset_id: income_tax_plans
+contract_schema_version: 1
+contract_md5: 60f69ac4c082030e92ac1523678b219f
+completed_utc: 2026-09-02 00:54:09 UTC
+status: passed
+gate: B
+gate_result: green_for_narrow_total_schedule_effects
+portfolio_eligible_scope: six_randomized_rate_total_effects_only
+outcome_blind: yes
+outcomes_loaded: no
+outcome_models_fit: no
+read_method: haven::read_dta(col_select=locked_allowlist)
+primary_respondents: 2000
+primary_tasks: 16000
+primary_profile_rows: 32000
+schedule_support: 7680
+registered_family_dimensions:
+  lowest_x_highest: 15
+  upper_middle_x_highest: 15
+  top_adjacent_brackets: 20
+assignment_law:
+  q_times_q_locked: yes
+  source_supported_reconstruction: yes
+  original_generator_released: no
+  observed_identical_pairs: 0
+  expected_identical_pairs_under_q_times_q: 2.0833333
+  probability_zero_under_iid_task_pairs: 0.1244976
+  maximum_absolute_cross_side_cell_residual: 2.8001488
+  across_task_dependence: arbitrary_within_respondent_subject_to_declared_mean_no_carryover
+revenue:
+  causal_role: randomized_downstream_mediator_not_seventh_factor
+  repeated_schedules_with_multiple_revenue_categories: 434
+  rows_in_schedules_with_multiple_revenue_categories: 2102
+  primary_nuisance_action: do_not_condition_on_taxrev
+generated_files_md5:
+  all_pair_support_summary.csv: 686e08ae632315f3d469f73ade5e38f1
+  archive_checksums.csv: 38a4d4c44a88504a52efde07db3d7fc7
+  assignment_diagnostics.csv: adc6889ddfbf7bbbbb3e45af64eef196
+  contrast_coordinates.csv: 7aa17f9120776a1822e11f1729396dbb
+  covariate_audit.csv: 32fdc9047abe7694827b6f66e197ec5e
+  covariate_category_levels.csv: d6e91b8f6364c7cc99ef8b7935b5d132
+  covariate_feature_lock.csv: 4bcc70598aace778874ece14a21d0585
+  design_validation.csv: 46b676f987e9f7e4bf99aee744195d7c
+  family_identification.csv: dce607b6b1a3367b5bbd715a2aa170b2
+  family_projectors.csv: 6743ed3c6469c53adc066dfe062501cb
+  level_lock.csv: bc20b12e27cb0313be956becc5855746
+  loaded_columns.csv: b6fab227507d08bb9ef39e5f0be4b6bd
+  opponent_law_diagnostics.csv: 30d44605f69547ce17d272fa8921ffa8
+  profile_probability_strata.csv: e1e468d39e94ee19f62be5436d6df867
+  profile_uniformity_diagnostics.csv: 885c160bd2df4184e6477108c0c0860d
+  respondent_folds.csv: 124cd3ecca304d9c6b9b39c6f0671e7f
+  revenue_descendant_diagnostics.csv: eb843b4d07f51da6f4a69a596f469beb
+  sample_summary.csv: 0098843b08518a7d4c5f48899279b75e
+  target_weight_diagnostics.csv: 5c36bf79fabd42b04ac59fbaea7a7d0d
+note: No pref_plan_1--pref_plan_8, pref_plan, chose_plan, ideal-rate outcome, post-choice
+  justification, timing, or quality-control value was loaded, summarized, or modeled.

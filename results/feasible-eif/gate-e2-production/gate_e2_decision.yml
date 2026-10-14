@@ -1,0 +1,45 @@
+gate: E2_local_misspecification_computation
+mode: production
+frozen_protocol_applied: yes
+production_gate_evaluated: yes
+hard_passed: no
+practical_evaluated: no
+practical_passed: no
+passed: no
+decision: gate_E2_hard_failed
+strong_aggregate_risk_ratio: 0.4906168
+strong_aggregate_risk_ratio_upper_97_5: 0.4942006
+large_departure_aggregate_risk_ratio: 0.8375263
+half_radius_length_ratio: 0.7155272
+half_radius_length_ratio_upper_97_5: 0.7161694
+unit_radius_length_ratio: 0.9118727
+maximum_bias_prediction_standardized_error: 0.0605268
+maximum_mse_theory_relative_error: 0.1098034
+minimum_bias_aware_coverage_lcb: 0.97
+minimum_protocol_bias_aware_coverage: 0.97
+minimum_family_coverage_lcb: 0.9450785
+maximum_hausman_power_error: 0.0117971
+maximum_assignment_bias_standardized_error: 0.0382632
+maximum_calibration_residual: 1.3877788e-16
+numerical_failure_rate: 0.0
+unavailable_required_components: []
+failed_required_components:
+- local_amse_theory
+- local_scaling_pair
+- feasible_tau_generic_risk
+method_roles:
+  ordinary: ordinary_taskwise
+  restricted: oracle_adaptive
+  selected: selected_adaptive
+  oracle_blend: oracle_tau_mm
+  feasible_blend: feasible_tau_generic
+config_md5: 51050006c2cf8f43facef33f8d6b4dfa
+source_md5:
+  calibration_solver: 3947ded425988fc66d9e7e4860b8f8e1
+  feasible_estimator: b6459334fcd4b78c5ab0e9166ca4ac7d
+  simulation_functions: d1e1f7166e286f1ee166d257201fe31c
+  sensitivity_functions: 68433788e92ba59b7893c35107672bc8
+  e2_simulation_functions: 99ad37b7c65c8096b00edd942cda1f23
+  runner: aadea6854e47cc0f5cc14ac4d25ebe0c
+  summarizer: 2d2345073ff184ceb6d5694d0cc3d1ba
+generated_at_utc: 2026-08-28 01:52:38 UTC

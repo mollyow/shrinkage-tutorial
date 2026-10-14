@@ -1,0 +1,19 @@
+gate: E3_limits_of_automatic_adaptation
+decision: fail_standalone_novelty
+mathematical_feasibility_passed: yes
+novelty_passed: no
+algebra_checks_passed: 32
+algebra_checks_failed: 0
+scalar_gaussian_reduction: exact
+exact_oracle_adaptation: impossible
+approximate_adaptation: established_in_prior_work
+fixed_linear_blend_scope_clarified: yes
+structured_carryover_score_derived: yes
+direct_finite_radius_score_derived: yes
+structured_score_novelty: direct_augmented_mean_model_extension
+primary_estimator: ordinary_taskwise_aipw
+next_viable_theory_targets:
+  - finite_G_nuisance_remainder_correction
+  - factorial_schedule_rank_or_design_theorem
+decision_document: docs/gate-e3-theory.md
+checker: analysis/feasible_eif/check_gate_e3_theory.R

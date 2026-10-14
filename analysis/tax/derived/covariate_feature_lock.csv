@@ -1,0 +1,8 @@
+"variable","semantic_type","primary_encoding","missing_value_rule","scaling_rule"
+"age","continuous","numeric","fold_training_median_plus_indicator","fold_training_robust_center_and_scale"
+"female","binary_categorical","full_one_hot_no_reference_drop","explicit_missing_level","none"
+"race","unordered_categorical","full_one_hot_no_reference_drop","explicit_missing_level","none"
+"educ","ordered_category_treated_as_categorical","full_one_hot_no_reference_drop","explicit_missing_level","none"
+"pid7","unordered_categorical","full_one_hot_no_reference_drop","explicit_missing_level","none"
+"conservative_ideology","ordered_category_treated_as_categorical","full_one_hot_no_reference_drop","explicit_missing_level","none"
+"newsint","ordered_category_treated_as_categorical","full_one_hot_no_reference_drop","explicit_missing_level","none"

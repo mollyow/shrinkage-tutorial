@@ -30,6 +30,13 @@ counts, incomplete target support, rank loss, projector dependence on coding,
 or respondent leakage across folds. It writes a derived audit bundle and a
 checksum manifest to `analysis/graham_svolik/derived/`.
 
+The derived bundle is built from Graham and Svolik's replication archive
+(Harvard Dataverse, version 1.1, <https://doi.org/10.7910/DVN/EEARKA>), which
+is released under CC BY 4.0. The article is Graham and Svolik, "Democracy in
+America? Partisanship, Polarization, and the Robustness of Support for
+Democracy in the United States," *American Political Science Review*
+(<https://doi.org/10.1017/S0003055420000052>).
+
 ## Narrow design
 
 The original experiment CSV contains 1,682 complete respondent IDs, 13 tasks

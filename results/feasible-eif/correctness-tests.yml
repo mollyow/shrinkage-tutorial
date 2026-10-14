@@ -1,0 +1,6 @@
+passed: yes
+calibration_tolerance: 1.0e-10
+invariance_tolerance: 1.0e-10
+completed_at_utc: 2026-08-27 19:56:45 UTC
+solver_md5: 3947ded425988fc66d9e7e4860b8f8e1
+feasible_estimator_md5: b6459334fcd4b78c5ab0e9166ca4ac7d

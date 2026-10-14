@@ -1,0 +1,2 @@
+"profile_rows","profile_support_size","expected_count_per_profile","minimum_profile_count","median_profile_count","maximum_profile_count","pearson_chisq","degrees_of_freedom","iid_reference_p_value","interpretation"
+68000,2880,23.6111111111111,9,23,44,2992.67764705881,2879,0.0684313190057167,"IID-row reference only; compatible diagnostic, not proof of the declared uniform-product reconstruction."

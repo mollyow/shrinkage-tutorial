@@ -1,0 +1,4 @@
+"family","attribute_a","attribute_b","cells","observed_cells","minimum_cell_count","minimum_task_cell_count","minimum_side_cell_count","additive_rank","expected_interaction_rank","observed_interaction_rank","orthonormality_error","main_effect_orthogonality_error","projector_idempotence_error","identified"
+"lowest_x_highest","lowest_bracket_rate","highest_bracket_rate",24,24,1279,132,624,9,15,15,4.44089209850063e-16,9.2360599979134e-17,8.88178419700125e-16,TRUE
+"upper_middle_x_highest","upper_middle_bracket_rate","highest_bracket_rate",24,24,1265,127,623,9,15,15,4.44089209850063e-16,9.2360599979134e-17,8.88178419700125e-16,TRUE
+"top_adjacent_brackets","second_highest_bracket_rate","highest_bracket_rate",30,30,1011,106,485,10,20,20,4.44089209850063e-16,1.25729735996746e-16,9.99200722162641e-16,TRUE

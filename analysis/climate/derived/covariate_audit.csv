@@ -1,0 +1,12 @@
+"variable","classification","respondents","missing_n","missing_fraction","unique_nonmissing","minimum","maximum","respondent_invariant"
+"age","primary_feature",8500,0,0,75,18,99,TRUE
+"support_iec_high_group","primary_feature",8500,1,0.000117647058823529,2,0,1,TRUE
+"female","primary_feature",8500,0,0,2,0,1,TRUE
+"income","audited_excluded",8500,301,0.0354117647058824,16,1,16,TRUE
+"educgr_fr","primary_derivation_source_country_specific",8500,2001,0.235411764705882,3,1,3,TRUE
+"educgr_ge","primary_derivation_source_country_specific",8500,2001,0.235411764705882,3,1,3,TRUE
+"educgr_uk","primary_derivation_source_country_specific",8500,4001,0.470705882352941,4,1,4,TRUE
+"educgr_us","primary_derivation_source_country_specific",8500,4001,0.470705882352941,4,1,4,TRUE
+"country","primary_feature",8500,0,0,4,,,TRUE
+"education_category","primary_feature",8500,1,0.000117647058823529,13,,,TRUE
+"income_category","primary_feature",8500,301,0.0354117647058824,55,,,TRUE

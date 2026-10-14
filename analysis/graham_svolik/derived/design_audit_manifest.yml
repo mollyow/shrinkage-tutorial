@@ -1,0 +1,73 @@
+schema_version: 1.0
+study_id: graham_svolik_candidate_choice
+contract_version: 1
+contract_md5: b47aff6f75dbb691529fa79cabb8632a
+completed_utc: 2026-09-02 03:36:00 UTC
+status: passed
+gate: B
+gate_result: green_for_narrow_coarsened_democracy_families
+complete_profile_result: failed_assignment_law_not_certified
+portfolio_eligible: yes
+outcome_blind_audit_run: yes
+new_outcome_values_loaded_by_audit: no
+outcome_models_fit: no
+pre_audit_protocol_deviation:
+  occurred: yes
+  description: During initial archive inspection, a shell head command inadvertently
+    displayed one complete experiment row, including four binary response values.
+  quarantine: The row was not summarized, used for enrollment or estimand selection,
+    supplied to a learner, or used in an effect calculation. No further response row
+    may be opened during this gate.
+read_method:
+  schema: data.table::fread(nrows=0)
+  values: data.table::fread(select=locked_allowlist)
+  experiment_loaded_columns: 38
+  covariate_loaded_columns: 30
+  forbidden_response_values_loaded: no
+sample:
+  respondents: 1682
+  retained_tasks: 18502
+  tasks_per_respondent: 11
+  excluded_valence_tasks: 3364
+assignment:
+  target_cells: 64
+  minimum_cell_count: 127
+  maximum_mu_over_q: 1.9861111
+  mean_no_carryover_required: yes
+  actual_display_sequence_released: no
+registered_family_dimensions:
+  democracy_x_focal_party: 7
+  democracy_x_contest_relation: 7
+  democracy_x_focal_gender: 7
+folds:
+  cluster: id
+  outer_folds: 5
+  deterministic_seed: 20260901
+  sizes:
+  - 337
+  - 337
+  - 336
+  - 336
+  - 336
+  row_leakage: no
+generated_files_md5:
+  archive_checksums.csv: beb3516986a4291733b6d386b09b48c4
+  assignment_diagnostics.csv: 814f49140422b8551fc28825b987dab7
+  contrast_coordinates.csv: f110cd6c1a3c38e3531b8cffedff6b72
+  covariate_audit.csv: 126f11e5ad23ea0c1c389b739daeb156
+  covariate_category_levels.csv: 9cd1c5215589fcbd1c207a2e8779439c
+  covariate_feature_lock.csv: b1293a099dca44dda9ae4e61cdbc05d4
+  design_validation.csv: dfb40bb663147a0094d6054bbdc377da
+  family_identification.csv: 7a70db044a83057882443bc834b94eae
+  family_projectors.csv: 08f29aa76b3f1969856ca64413161f7a
+  level_lock.csv: 00f1702500e8dff11ad95ee07fb30962
+  loaded_columns.csv: 7199f71ff18c6bc28ef8a0c12e91f18f
+  nuisance_context_audit.csv: d07c972bef3e6666c235a77e253cdd70
+  respondent_folds.csv: 4028b93d35d1b60b9939d8dc36f2b6dd
+  sample_summary.csv: 18be590bcfcff7fbb1a4fce5c9577292
+  target_cells.csv: 0de77024fe547801334a784650a2788a
+  target_weight_diagnostics.csv: 62cbcff97d145d9d77f483a18ac0fba0
+next_step: Freeze the cross-study outcome/learner/equivalence protocol and reporting
+  code before opening this endpoint.
+note: The executable audit loaded no choice/win value. The separately disclosed one-row
+  pre-audit display remains quarantined and was not used.

@@ -1,0 +1,9 @@
+role: supporting_non_gating_application_evidence
+all_supporting_targets_passed: yes
+maximum_calibration_residual: 6.9388939e-17
+maximum_absolute_plugin: 5.4720734e-15
+product_selected_ratio: 0.2358069
+without_replacement_selected_ratio: 0.2354911
+assignment_limitation: The platform transition law is unavailable; product and uniform
+  without-replacement scores are parallel sensitivities, not verified laws.
+generated_at_utc: 2026-08-27 18:58:31 UTC

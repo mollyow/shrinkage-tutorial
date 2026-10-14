@@ -1,0 +1,8 @@
+"file_id","relative_path","expected_bytes","observed_bytes","expected_md5","observed_md5","pass"
+"experiment","Candidate recruitment/data/graham_svolik/data_experiment.csv",75655739,75655739,"90f79baea84d1334c7c2da073ceacd67","90f79baea84d1334c7c2da073ceacd67",TRUE
+"covariates","Candidate recruitment/data/graham_svolik/data_covariates.csv",618033,618033,"77c08ca5fa0782cc87ea87a4da232e71","77c08ca5fa0782cc87ea87a4da232e71",TRUE
+"weights","Candidate recruitment/data/graham_svolik/weights.csv",92369,92369,"044e136b1ca52e08122e9edf409d2930","044e136b1ca52e08122e9edf409d2930",TRUE
+"appendix","Candidate recruitment/data/graham_svolik/final_appendix.pdf",6306444,6306444,"4353be8391c771fba1a9518aba09fa62","4353be8391c771fba1a9518aba09fa62",TRUE
+"codebook","Candidate recruitment/data/graham_svolik/codebook.xlsx",32468,32468,"cad34a0d60d54d537f40fadf3c098f45","cad34a0d60d54d537f40fadf3c098f45",TRUE
+"article_pdf","Candidate recruitment/data/graham_svolik/final_manuscript.pdf",575764,575764,"0dea71a88a5d9411d1b3e4a292930f15","0dea71a88a5d9411d1b3e4a292930f15",TRUE
+"dataverse_metadata","Candidate recruitment/data/graham_svolik/dataverse_v1.1_metadata.json",107651,107651,"69317a485718241cacd42e7748556d19","69317a485718241cacd42e7748556d19",TRUE

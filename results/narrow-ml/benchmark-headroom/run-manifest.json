@@ -1,0 +1,67 @@
+{
+  "created_at_utc": "2026-08-27 15:22:50 UTC",
+  "mode": "headroom",
+  "status": "locked_futility_gate",
+  "config": "/Users/moffer/Documents/Git/shrinkage-tutorial/analysis/narrow_ml/benchmark-headroom.yml",
+  "source_md5": {
+    "benchmark-headroom.yml": "091d79efc0fba2779b8275848d5aec22",
+    "benchmark_functions.R": "0e8a114a25527f5bbc37716f37c26e63",
+    "run_candidate_geometry_benchmark.R": "494ecd40f5d489ad3ebeabe61cda1984"
+  },
+  "input_md5": {
+    "candidate_prepared.rds": "72ed2a4817752f85857fc4d9409be0a2",
+    "CleanedData.csv": "02069b7dac945e6ace2a7d236768bb4f"
+  },
+  "run_fingerprint": "091d79efc0fba2779b8275848d5aec22-0e8a114a25527f5bbc37716f37c26e63-494ecd40f5d489ad3ebeabe61cda1984-72ed2a4817752f85857fc4d9409be0a2-02069b7dac945e6ace2a7d236768bb4f",
+  "git_head": "bb8483ba00d14ec1e0120b1b80205ce8fac0ee97",
+  "git_dirty": true,
+  "git_status": [
+    " M README.md",
+    "?? .Rbuildignore",
+    "?? .github/",
+    "?? .gitignore",
+    "?? DESCRIPTION",
+    "?? LICENSE",
+    "?? NAMESPACE",
+    "?? R/",
+    "?? _targets.R",
+    "?? analysis/",
+    "?? config/",
+    "?? docs/",
+    "?? man/",
+    "?? paper/",
+    "?? renv.lock",
+    "?? simulation/",
+    "?? tests/"
+  ],
+  "renv_lock_md5": "1dd8284c8065baab3e366b7c177da57c",
+  "requested_jobs": 600,
+  "successful_jobs": 600,
+  "failed_jobs": 0,
+  "workers": 6,
+  "r_version": "R version 4.4.2 (2024-10-31)",
+  "package_versions": {
+    "readr": "2.2.0",
+    "yaml": "2.3.12"
+  },
+  "design": {
+    "profiles": 1440,
+    "coordinates": 22,
+    "families": 4,
+    "context_strata": 48,
+    "profile_sampling": "without_replacement_within_respondent",
+    "marginal_assignment_probability": 0.0007,
+    "calibration": [
+      {
+        "scenario": "nonlinear_heterogeneity",
+        "minimum_conditional_mean": 0.0816,
+        "maximum_conditional_mean": 0.6148
+      },
+      {
+        "scenario": "nonlinear_target_shift",
+        "minimum_conditional_mean": 0.0816,
+        "maximum_conditional_mean": 0.6148
+      }
+    ]
+  }
+}

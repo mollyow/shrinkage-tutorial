@@ -1,0 +1,93 @@
+gate: G_finite_sample_nuisance_remainder
+protocol: docs/gate-g-protocol.md
+primary_coordinate: x1_x2
+formal_decision: no
+decision: incomplete_no_gate_decision
+passed: no
+planned_replications_per_scenario: 1000
+effective_replications_per_scenario: 5
+completed_datasets: 25
+planned_datasets: 5000
+numerical_failures: 0
+failure_rate: 0.0
+maximum_calibration_residual: 2.7859659e-15
+outer_respondent_isolation: no
+source_integrity: yes
+config_integrity: yes
+deterministic_theory_checks_passed: yes
+support_diagnostics:
+- diagnostic: outer_training_empty_cells
+  count: 0
+  denominator: 125
+  rate: 0.0
+- diagnostic: auxiliary_covariance_df_fallback_rows
+  count: 0
+  denominator: 125
+  rate: 0.0
+- diagnostic: honest_split_ordinary_fallback_rows
+  count: 0
+  denominator: 100
+  rate: 0.0
+original_scaled_variance_discrepancy: 0.4645241
+corrected_scaled_variance_discrepancy: 0.1371838
+failed_required_components:
+- complete_frozen_screen
+- exact_fixed_operator_variance
+- count_aware_coverage
+- scaled_variance_repair
+- local_amse_repair
+- feasible_score_safety
+- numerics_and_leakage
+components:
+- component: source_and_config_integrity
+  prerequisite: yes
+  passed: yes
+  observed: TRUE/TRUE
+  rule: both source and config hashes match
+- component: deterministic_theory_checks
+  prerequisite: yes
+  passed: yes
+  observed: 'TRUE'
+  rule: all required exact identities pass
+- component: complete_frozen_screen
+  prerequisite: yes
+  passed: no
+  observed: 1500/300000
+  rule: 1000 replications in every planned cell
+- component: exact_fixed_operator_variance
+  prerequisite: no
+  passed: no
+  observed: 0.363370940158161--2.08591433499662
+  rule: ratio in [0.95, 1.05]
+- component: count_aware_coverage
+  prerequisite: no
+  passed: no
+  observed: 0.8--1
+  rule: coverage in [0.93, 0.97]
+- component: scaled_variance_repair
+  prerequisite: no
+  passed: no
+  observed: '0.137183814556957'
+  rule: discrepancy <= 0.1
+- component: local_amse_repair
+  prerequisite: no
+  passed: no
+  observed: 0.572145129348341--1.75589259865182
+  rule: ratio in [0.95, 1.05]
+- component: covariance_count_correction
+  prerequisite: no
+  passed: yes
+  observed: 0.160996471840659--0.181258666429668
+  rule: reduction >= 0.1
+- component: feasible_score_safety
+  prerequisite: no
+  passed: no
+  observed: 1.09326806229991/1.08709264002753
+  rule: each count/raw <= 1.05 and count geometric mean improves
+- component: numerics_and_leakage
+  prerequisite: no
+  passed: no
+  observed: 0/2.78596590241875e-15/FALSE
+  rule: zero failures; isolated outer folds; calibration < 1e-10
+generated_at_utc: 2026-08-28 04:15:33 UTC
+input_bundle: /Users/moffer/Documents/Git/shrinkage-tutorial/results/feasible-eif/gate-g-smoke-support/gate_g_simulation_results.rds

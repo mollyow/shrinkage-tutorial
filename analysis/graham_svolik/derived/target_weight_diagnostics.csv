@@ -1,0 +1,2 @@
+"respondents","raw_survey_weight_sum","normalized_respondent_weight_sum","respondent_weight_effective_sample_size","supported_target_cells","minimum_assignment_probability","maximum_assignment_probability","target_cell_probability","minimum_mu_over_q","median_mu_over_q","maximum_mu_over_q","empirical_row_mean_mu_over_q","survey_weighted_analysis_measure_sum"
+1682,1681.93961376471,0.999999999999987,1357.5906521916,64,0.00786713286713287,0.0611888111888112,0.015625,0.255357142857143,1.19166666666667,1.98611111111111,0.999208000679463,0.998225642731496

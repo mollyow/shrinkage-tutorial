@@ -1,0 +1,6 @@
+"file_id","relative_path","expected_bytes","observed_bytes","expected_md5","observed_md5","pass"
+"data","Candidate recruitment/data/income_tax_plans/us_fullsurvey_taxplan_level.dta",80809564,80809564,"bf4527ea92e7da5acfacbdd3c9848e43","bf4527ea92e7da5acfacbdd3c9848e43",TRUE
+"author_code","Candidate recruitment/data/income_tax_plans/Replication BRMS.do",13728,13728,"bb13e21ef08379c1cd1e0acf0fbfc1a5","bb13e21ef08379c1cd1e0acf0fbfc1a5",TRUE
+"article","Candidate recruitment/data/income_tax_plans/article.pdf",626720,626720,"ff7ed1c04908f165ff059f7471b4c53f","ff7ed1c04908f165ff059f7471b4c53f",TRUE
+"online_appendix","Candidate recruitment/data/income_tax_plans/online_appendix.pdf",343782,343782,"ddbc72233d2c76ede9a232b79510030c","ddbc72233d2c76ede9a232b79510030c",TRUE
+"dataverse_v1_metadata","Candidate recruitment/data/income_tax_plans/dataverse_v1.0_metadata.json",4523,4523,"c93761631cce4e3f61cf6a5a9e7ea9dc","c93761631cce4e3f61cf6a5a9e7ea9dc",TRUE

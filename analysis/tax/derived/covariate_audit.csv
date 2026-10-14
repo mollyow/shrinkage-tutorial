@@ -1,0 +1,8 @@
+"variable","classification","respondents","missing_n","missing_fraction","unique_nonmissing","minimum","maximum","respondent_invariant"
+"age","primary_feature",2000,0,0,71,19,91,TRUE
+"female","primary_feature",2000,0,0,2,0,1,TRUE
+"race","primary_feature",2000,0,0,8,1,8,TRUE
+"educ","primary_feature",2000,0,0,6,1,6,TRUE
+"pid7","primary_feature",2000,0,0,8,1,8,TRUE
+"conservative_ideology","primary_feature",2000,182,0.091,5,1,5,TRUE
+"newsint","primary_feature",2000,46,0.023,4,1,4,TRUE

@@ -1,0 +1,66 @@
+schema_version: 1.0
+created_utc: 2026-09-01 06:24:25 UTC
+study_id: immigrant_admission
+contract_status: conditional_design_lock_outcomes_prohibited
+gate_result: amber
+outcome_values_read: no
+models_fit: no
+design_complete_respondents: 1407
+design_complete_tasks: 7035
+design_complete_profile_rows: 14070
+reconstructed_admissible_profiles: 936960.0
+assignment_reconstruction_status: strongly_supported_not_generator_certified
+family_dimensions:
+  education_x_profession: 44
+  origin_x_application_reason: 12
+  language_x_education: 18
+unresolved_blockers:
+- The article excludes China x persecution, while the released data contain 500 such
+  profiles and the author code explicitly includes China.
+- The within-pair q x q opponent law is a prospective assumption, not generator-certified.
+output_files:
+- file: all_pair_support_summary.csv
+  bytes: 1560.0
+  md5: abcfb51f8cc84039676e1d33f76459d6
+- file: archive_checksums.csv
+  bytes: 735.0
+  md5: a933ab76112ee72fa410f91f4e2702ba
+- file: assignment_diagnostics.csv
+  bytes: 12547.0
+  md5: 1b1d4a5ec8ec728a04f5d153ad634241
+- file: contrast_coordinates.csv
+  bytes: 406856.0
+  md5: fe0f2f9ee014dd2d0a50deeb3a454f4e
+- file: covariate_audit.csv
+  bytes: 1213.0
+  md5: 860a856b91987f280fd284f0bce88698
+- file: covariate_category_levels.csv
+  bytes: 3704.0
+  md5: 0d7af2b04d5d986c04c17a312d07f271
+- file: covariate_feature_lock.csv
+  bytes: 1252.0
+  md5: 2480127ba879b00e242592d0de643576
+- file: design_validation.csv
+  bytes: 1446.0
+  md5: a53f88641fb44e2f629f846b33a93af4
+- file: family_identification.csv
+  bytes: 983.0
+  md5: 557f266ea6c088086b2e0533238c5165
+- file: family_projectors.csv
+  bytes: 268806.0
+  md5: 87992b3dd484b72bd4d9ee84a1f34e98
+- file: level_lock.csv
+  bytes: 5242.0
+  md5: c51b3c92d487fd39a3ef4ed4fe362bc4
+- file: loaded_columns.csv
+  bytes: 1157.0
+  md5: fb338c4a88fb454946a566b358b47062
+- file: profile_probability_strata.csv
+  bytes: 576.0
+  md5: 9114ffc2b54c2d25245f6613c42c9024
+- file: support_cells.csv
+  bytes: 5273.0
+  md5: 03ed1f0e2d1808d7e972d0327135b29b
+- file: support_summary.csv
+  bytes: 250.0
+  md5: 5445d3e91db97b0a6bfe22d396f0ac8b

@@ -1,0 +1,5 @@
+"education_stratum","origin_stratum","education_levels","jobs_per_education","origin_levels","reasons_per_origin","admissible_profiles","q_profile","uniform_mu","uniform_mu_over_q"
+"low_1_4","origin_1_6",4,7,6,2,215040,1.59438775510204e-06,1.06728142076503e-06,0.669398907103825
+"high_5_7","origin_1_6",3,11,6,2,253440,1.01461038961039e-06,1.06728142076503e-06,1.05191256830601
+"low_1_4","origin_7_10",4,7,4,3,215040,1.06292517006803e-06,1.06728142076503e-06,1.00409836065574
+"high_5_7","origin_7_10",3,11,4,3,253440,6.76406926406926e-07,1.06728142076503e-06,1.57786885245902

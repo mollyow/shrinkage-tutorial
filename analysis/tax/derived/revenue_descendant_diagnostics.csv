@@ -1,0 +1,8 @@
+"diagnostic","observed","expected_or_rule","pass","implication"
+"observed_revenue_categories",5,"5",TRUE,"All displayed bins occur."
+"revenue_missing_rows",0,"0",TRUE,"The downstream display is observed for every primary-arm profile."
+"observed_distinct_rate_schedules",7554,"7554",TRUE,"Schedule occupancy matches the design lock."
+"rate_schedules_observed_more_than_once",7080,">0",TRUE,"The same randomized schedule is replicated in the realized design."
+"repeated_rate_schedules_with_multiple_revenue_categories",434,">0",TRUE,"Revenue includes schedule-conditional noise and is not a deterministic seventh factor."
+"rows_in_rate_schedules_with_multiple_revenue_categories",2102,">0",TRUE,"These rows directly expose the noisy descendant mechanism."
+"maximum_revenue_categories_within_one_rate_schedule",2,">1",TRUE,"At least one identical schedule maps to multiple displayed bins."
