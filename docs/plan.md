@@ -231,4 +231,6 @@ estimator novelty; and an archival DOI.
 - **2026-10-15.** C1 fixes: the test that Monte Carlo integration is unbiased
   used a function the integration handles exactly, so it failed on rounding
   noise. It now includes interactions that produce real Monte Carlo error. The
-  C1 record also no longer writes a duplicate `passed` key.
+  C1 record also no longer writes a duplicate `passed` key. Unused engine
+  helpers and the `targets` dependency were removed, and C1 was rerun on the
+  result.

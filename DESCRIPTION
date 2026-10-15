@@ -23,8 +23,5 @@ Suggests:
     yaml,
     jsonlite,
     ranger,
-    readr,
-    ggplot2,
-    knitr,
-    rmarkdown
+    readr
 Config/testthat/edition: 3

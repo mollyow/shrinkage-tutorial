@@ -42,9 +42,6 @@ CMP_SCHEMAS <- list(
                      prediction_log_loss = "double")
 )
 
-CMP_SESSION_MANIFEST_KEYS <- c("created_utc", "git_head", "worktree_dirty", "r_version",
-                               "platform", "blas", "package_versions")
-
 cmp_empty_table <- function(name) {
   spec <- CMP_SCHEMAS[[name]]
   cols <- lapply(spec, function(type) vector(if (type == "double") "numeric" else type, 0L))

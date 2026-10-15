@@ -78,11 +78,6 @@ cmp_family_psi_rows <- function(family, a_codes, b_codes) {
   family$psi[cmp_family_cell(family, a_codes, b_codes), , drop = FALSE]
 }
 
-# Theta for one family from cell means m_bar (cells x 1, or cells x R).
-cmp_family_theta <- function(family, cell_means) {
-  crossprod(family$psi * family$cell_probability, as.matrix(cell_means))
-}
-
 # Projector onto a family's interaction space in the cell coordinate system.
 cmp_family_projector <- function(family) {
   family$psi %*% t(family$psi) %*% diag(family$cell_probability)

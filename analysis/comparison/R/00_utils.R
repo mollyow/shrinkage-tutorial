@@ -11,21 +11,7 @@ cmp_assert <- function(condition, ...) {
   invisible(TRUE)
 }
 
-cmp_repo_root <- function(start = getwd()) {
-  path <- normalizePath(start, mustWork = TRUE)
-  repeat {
-    if (file.exists(file.path(path, "DESCRIPTION")) &&
-        dir.exists(file.path(path, "analysis", "comparison"))) {
-      return(path)
-    }
-    parent <- dirname(path)
-    cmp_assert(!identical(parent, path), "Could not locate the repository root.")
-    path <- parent
-  }
-}
-
 cmp_sha256 <- function(path) digest::digest(file = path, algo = "sha256")
-cmp_md5 <- function(path) digest::digest(file = path, algo = "md5")
 
 # Write an object atomically so an interrupted job never leaves a partial file.
 cmp_save_rds <- function(object, path) {

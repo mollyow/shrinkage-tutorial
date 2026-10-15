@@ -5,13 +5,6 @@
 # Ratios use additive adjustment as the denominator. Intervals come from a paired
 # replication bootstrap on the log ratio.
 
-cmp_family_balanced <- function(family_metrics, value = "normalized_risk") {
-  by_family <- stats::aggregate(family_metrics[[value]],
-                                list(method = family_metrics$method, family = family_metrics$family),
-                                mean)
-  stats::aggregate(by_family$x, list(method = by_family$method), mean)
-}
-
 # Replication x method matrix of family-balanced risk (one row per replication).
 cmp_risk_matrix <- function(family_metrics, methods, value = "normalized_risk") {
   fm <- family_metrics[family_metrics$method %in% methods, , drop = FALSE]
