@@ -8,17 +8,17 @@ Synthetic render for Gate C1. One dataset is not evidence about any method; the 
 
 | method | job_seconds | ok_fraction |
 |---|---|---|
-| additive | 2.0 | 1.00 |
-| common_order_ridge | 14.8 | 1.00 |
-| elastic_net | 61.8 | 1.00 |
-| monotone_order_ridge | 41.0 | 1.00 |
-| oracle | 1.9 | 1.00 |
-| ranger | 4494.0 | 1.00 |
-| task_only | 1.4 | 1.00 |
-| two_way | 38.0 | 1.00 |
-| unadjusted | 0.6 | 1.00 |
-| unrestricted_order_ridge | 40.9 | 1.00 |
-| xgboost | 34.5 | 1.00 |
+| additive | 2.7 | 1.00 |
+| common_order_ridge | 18.0 | 1.00 |
+| elastic_net | 84.2 | 1.00 |
+| monotone_order_ridge | 42.2 | 1.00 |
+| oracle | 1.6 | 1.00 |
+| ranger | 1591.2 | 1.00 |
+| task_only | 2.1 | 1.00 |
+| two_way | 55.8 | 1.00 |
+| unadjusted | 0.9 | 1.00 |
+| unrestricted_order_ridge | 66.9 | 1.00 |
+| xgboost | 32.4 | 1.00 |
 
 ## choice geometry, cell 9 (choice_low_headroom_nonlinear), one test-phase dataset
 
@@ -26,24 +26,24 @@ Synthetic render for Gate C1. One dataset is not evidence about any method; the 
 
 | method | job_seconds | ok_fraction |
 |---|---|---|
-| additive | 15.7 | 1.00 |
+| additive | 20.3 | 1.00 |
 | common_order_ridge | 29.1 | 1.00 |
-| elastic_net | 192.9 | 1.00 |
-| monotone_order_ridge | 55.5 | 1.00 |
-| oracle | 6.6 | 1.00 |
-| ranger | 14760.8 | 1.00 |
-| task_only | 11.9 | 1.00 |
-| two_way | 429.5 | 1.00 |
-| unadjusted | 7.5 | 1.00 |
-| unrestricted_order_ridge | 67.3 | 1.00 |
-| xgboost | 293.0 | 1.00 |
+| elastic_net | 266.2 | 1.00 |
+| monotone_order_ridge | 57.8 | 1.00 |
+| oracle | 7.2 | 1.00 |
+| ranger | 3528.2 | 1.00 |
+| task_only | 18.2 | 1.00 |
+| two_way | 587.6 | 1.00 |
+| unadjusted | 11.1 | 1.00 |
+| unrestricted_order_ridge | 93.6 | 1.00 |
+| xgboost | 321.7 | 1.00 |
 
 ## Session
 
 ```yaml
-created_utc: '2026-10-14T18:05:56Z'
-git_head: bfdedc53bbe0519accc109d2c23d145614b61cc0
-worktree_dirty: yes
+created_utc: '2026-10-15T22:00:44Z'
+git_head: beb0cb0bde8afae1dad279cd51de2c6287fe8feb
+worktree_dirty: no
 r_version: R version 4.4.2 (2024-10-31)
 platform: aarch64-apple-darwin20
 blas: /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib

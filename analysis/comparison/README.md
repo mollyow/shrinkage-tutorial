@@ -58,12 +58,13 @@ commit.
 
 ## Compute
 
-In the C1 synthetic render on one Apple M1 core, the forest took about 75
-minutes for a rating dataset and 4.1 hours for a choice dataset at 128 draws;
-all other methods together took about 4 and 18 minutes. Calibration needs the
-forest only at the selected multipliers (200 datasets, roughly 550
-core-hours). The 11,000-dataset production schedule needs roughly 28,000
-core-hours and should run on a cluster.
+In the passing C1 synthetic render on one Apple M1 core, a full rating dataset
+took 32 minutes and a full choice dataset 83 minutes at 128 draws; the forest
+was 27 and 59 of those (see `results/comparison-v1/gate-c1/synthetic-report.md`).
+An earlier render on the same machine was about three times slower. At the
+faster rate, Gate D calibration needs about 170 core-hours and the
+11,000-dataset production schedule about 10,000, which should run on a
+cluster.
 
 ## Implementation choices
 

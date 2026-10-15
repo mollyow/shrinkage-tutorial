@@ -1,7 +1,95 @@
-created_utc: '2026-10-14T13:33:45Z'
-contracts_unchanged:
-  passed: true
-  message: ''
+created_utc: '2026-10-15T20:30:31Z'
+git_head: bfdedc53bbe0519accc109d2c23d145614b61cc0
+worktree_dirty: true
+files:
+  - path: analysis/comparison/R/00_utils.R
+    sha256: bff47ef917559d2ed31347bba325fe4072b4314a3585953e6dba5857065456e2
+  - path: analysis/comparison/R/bases.R
+    sha256: de4c151dc1636ddef1988845d0009f3791aeafeca0a3043e5a455b6108316868
+  - path: analysis/comparison/R/contracts.R
+    sha256: e9e2f0bc09a1099abde7df972e83041406dc8aa3491367fc74e66aa8923df1b0
+  - path: analysis/comparison/R/draw_count.R
+    sha256: e1d3fc93bae3c1fb773c3034514e99fb3e0b3f7d02ce6490ebd1b4930845180b
+  - path: analysis/comparison/R/features.R
+    sha256: 22eadcefaca626f8cb7b95cf11198796989a5e9e3ecdbf8dfc3e1e6377dc4b81
+  - path: analysis/comparison/R/geometry_choice.R
+    sha256: 7481eb653e7291d2c371d93741dba697b9d0be3631be10eba1c6c7c982b94a0b
+  - path: analysis/comparison/R/geometry_rating.R
+    sha256: af06d9857da56f34d2f16469c4774f2d245045616f615f27c331704f5e77edb6
+  - path: analysis/comparison/R/integration.R
+    sha256: 4668df4bcc8e49fee0070539e02e135206086052ce1edb55b3b099fd00c0ce24
+  - path: analysis/comparison/R/learners.R
+    sha256: b23f89ecb34a7d379ded464bd96053a29e2523889c86882a34a380fc6edd7059
+  - path: analysis/comparison/R/metrics.R
+    sha256: 4b6905f37396fd111c44fce189399f86f57af469e845740ef7b1ac0a380c0285
+  - path: analysis/comparison/R/phase.R
+    sha256: 85cf4fbff9af5754b585f277b488be570965fb85876f06e25fafcdca9f09d54a
+  - path: analysis/comparison/R/registry.R
+    sha256: 9d830157ed35d2cf201f57e0182a7385d1f52a3cc308db6087ba52f46c8d5149
+  - path: analysis/comparison/R/report.R
+    sha256: b323c9f563a0be7d21a286ad6f3e013900aab74dd737844834e165163dcc228b
+  - path: analysis/comparison/R/run_dataset.R
+    sha256: 54ec7dbcc3cbd18ce381d72844e03345828a8b6bea9679eec03fae9c8c6c09ae
+  - path: analysis/comparison/R/schemas.R
+    sha256: 13ab6072685f4c0cd754e11dd5e16f64d5b841e426484af05811c00917c79fee
+  - path: analysis/comparison/R/score.R
+    sha256: 0d2bcde8ca155d8733f858ac1a0c18506311b9888f573b0fc81ea6eea5725101
+  - path: analysis/comparison/evaluate_gate_d.R
+    sha256: ea77a27047d1e9a50cac7f6bc9a9271a08a412d6f4d15737704eaf22c1fa60f8
+  - path: analysis/comparison/load.R
+    sha256: 12ae040f35ecb7011f20d94f76ef1f99c7885dddcff91b9e529a9bccfade75d8
+  - path: analysis/comparison/run_gate_c1.R
+    sha256: c2e20b03975ed4c893b4e1ba55110be5b5d55e50d401668c3c836e83df19a8a3
+  - path: analysis/comparison/run_simulations.R
+    sha256: 7c738701609b9e2ac4b16688bc188064b1317a06f80175bf94293c1c70f6a9dd
+  - path: analysis/comparison/tests/testthat.R
+    sha256: ea1e9a8dfecf87991d370729d398afc3de1a00b6abb378208e918d1e19164a50
+  - path: analysis/comparison/tests/testthat/helper-engine.R
+    sha256: f4cea93bbd9a99a31a92e87c2d710995d98e52f474bc50eedfdfa6e46715aaef
+  - path: analysis/comparison/tests/testthat/test-exact-small-design.R
+    sha256: 551d8180f25d2c00c7049f7025795dd92d167c4cc2e9b9355090c37412b9e490
+  - path: analysis/comparison/tests/testthat/test-invariance.R
+    sha256: 72b35efd234c9de4239968cf795c1177359d15e70315ec3fa82882bacb686ba0
+  - path: analysis/comparison/tests/testthat/test-phase.R
+    sha256: 1c3bfd9ed486ae112bc765425cc3f799f3be3dba8f3c4af6663ab3203e11aa15
+  - path: analysis/comparison/tests/testthat/test-reproducibility-leakage.R
+    sha256: 5e3ab5bee85a81738fd1a25602cd2c7f89620790cbfc8453411970fcf4459e6b
+  - path: analysis/comparison/tests/testthat/test-schemas-failures.R
+    sha256: f71d972093a475027f93c366876bda9aaa6c588f7db2a77353f201a7550b7935
+  - path: analysis/candidate/build_comparison_context_v4.R
+    sha256: dd73859df466e8bec11f9dd9388b4e22447746f4e9a6d2c2844dcc29682d1c0a
+  - path: analysis/candidate/derived/comparison_v1_context_distribution.rds
+    sha256: ee842087206c17c0efe5d04e7232889e94d67ce3f6bb7ef65749ea26dc788e20
+  - path: analysis/candidate/estimands.yml
+    sha256: 95c932a912dbad67e1615608e69a329f93765c17f8b0bb5c30da029c4a5f82cc
+  - path: DESCRIPTION
+    sha256: b0199e94cc5ee0f26b939d290469069d444955a9fdd4fa2c72318f3d2747d87d
+  - path: NAMESPACE
+    sha256: ca199fc15f81ac6f8d01706c7d934b4f3961bca07e50962983a8ef0a92bd0466
+  - path: R/amie.R
+    sha256: 3c89e91d1bf80030009cc7e07f67e0b9c935e3d9cff3578232ce93dd3b6fb053
+  - path: R/cluster_folds.R
+    sha256: 672741c4fc30a6cb8990d7654adbdce56e4ec35b6a1917096077f3697c5e6aee
+  - path: R/factorial_basis.R
+    sha256: bfe9789e3c6705751691d6f13eba155fc14f20b68960ce6e4332b2ef64b6629d
+  - path: R/order_ridge.R
+    sha256: 1456c4bd7d32270e0a323d8f078f3ef65e97f382efcb0a75ecfdd3ac6b0a773a
+  - path: R/sure_pava.R
+    sha256: ced1a42ffefd87604af1dc71c62ecfb68bc206fdc81bf687b3e7eba5921dfd00
+  - path: tests/testthat.R
+    sha256: 8c01638d393bebbd3d22e32d2999bf2c580bbc02937ddb637e9a1ee8a67f50b2
+  - path: tests/testthat/test-amie.R
+    sha256: 66bd2b6c1dc8480a9c5073e5c3d465a14d0677f819a70b2aace6b0f27d6ab95b
+  - path: tests/testthat/test-factorial-basis.R
+    sha256: 4de3b3efda5754aad8d5eb3740326797a2ef18322cba04984944a52378e67223
+  - path: tests/testthat/test-order-ridge.R
+    sha256: c5e665dd71e542de8d26ef8137e019491c799c6106ddfcabe711e2776e0c9261
+  - path: renv.lock
+    sha256: 274a5bf8a0803d2da0eafc4d2f0e37ebdeb49d29d47b30ca9a07e499610e510f
+  - path: config/comparison-v1.yml
+    sha256: 5fbc7f6f9213c04f03de3ddabad7254f7034d54521fa0031d9426b4af83b7459
+  - path: config/comparison-simulations-v1.yml
+    sha256: c69cb05824374b4dd30e292b08ebdd655a04114bd6e97077785606eeac735482
 frozen_learner_versions:
   passed: true
   frozen:
@@ -25,7 +113,6 @@ seed_collision_check:
   passed: true
   seeds: 73500
   distinct: 73500
-  passed: true
   production_datasets: 11000
   production_matches_contract: true
   calibration_common_random_numbers_across_multipliers: true
@@ -184,23 +271,23 @@ generator_validity:
       conditional_mean_range:
         - -0.1760192
         - 0.9399046
-draw_count_selection:
-  passed: false
-  selected: .na.integer
-  worst_ratio_at_selected: NA
+simulation_draw_count:
+  passed: true
+  selected: 128
+  worst_ratio_at_selected: 0.0224378
 draw_count:
-  selected: .na.integer
+  selected: 128
 comparison_test_suite:
-  passed: false
-  tests: 23
-  expectations: 128
-  failed: 2
+  passed: true
+  tests: 27
+  expectations: 150
+  failed: 0
   errors: 0
   skipped: 0
 package_test_suite:
   passed: true
-  tests: 39
-  expectations: 201
+  tests: 26
+  expectations: 116
   failed: 0
   errors: 0
   skipped: 0
@@ -208,8 +295,8 @@ synthetic_full_size_run_and_report:
   passed: true
   errors: []
   runtime_seconds:
-    - 4740.451
-    - 15881.225
+    - 1907.648
+    - 4951.558
   ledger_all_ok: true
-all_passed: false
+all_passed: true
 

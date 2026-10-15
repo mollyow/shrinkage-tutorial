@@ -2,7 +2,7 @@
 
 **Protocol:** `factorial_ml_comparison_v1`  
 **Updated:** 2026-10-15  
-**Where we are:** Gate C1 checks are running. Next is the Gate D calibration.
+**Where we are:** Gate C1 passed on 2026-10-15. Next is the Gate D calibration.
 
 ## The question
 
@@ -125,7 +125,7 @@ for 11,000 production datasets. Seeds for every phase are fixed in
 |---|---|---|
 | A. Scope | The paper can separate fixed-contrast precision from randomization tests, heterogeneity discovery, structural preference models, and generic ML | Judged when the introduction is drafted |
 | B. Data | Four fresh eligible studies, at least three with rich covariates | Passed (September 2026) |
-| C1. Engine and simulations | Exactness (1e-10), coding and rotation invariance, reproducibility, no fold leakage, seed collisions, schemas, frozen learner versions, a full-size synthetic run | Rerunning (2026-10-15) |
+| C1. Engine and simulations | Exactness (1e-10), coding and rotation invariance, reproducibility, no fold leakage, seed collisions, schemas, frozen learner versions, a full-size synthetic run | Passed (2026-10-15) |
 | D. Sensitivity | In both geometries, oracle/additive risk at most 0.75, and elastic net, forest, or boosting recovers at least 50% of the oracle gain | Next |
 | C2. Applications | Strict outcome readers, study-specific integration and draw counts, synthetic endpoint fixtures, application report templates | After D |
 | E. Inference | In the headline simulation cells: coverage 93–97%, absolute standardized bias below 0.10, ratio interval width at most 0.06, failures below 1%, and at most 5% excess risk (10% per cell) under additive truth | After production |
@@ -173,12 +173,13 @@ already run on the old code is rerun with the same seeds.
 
 ## Compute
 
-In the C1 synthetic run on one Apple M1 core, the forest took about 75 minutes
-for a rating dataset and 4.1 hours for a choice dataset. Every other method
-together took 4 and 18 minutes. Gate D needs the forest on 200 datasets,
-roughly 550 core-hours. Production needs it on 11,000, roughly 28,000
-core-hours, so production runs on a cluster. These figures are remeasured in
-the C1 rerun.
+In the passing C1 run on one Apple M1 core, a full rating dataset took 32
+minutes and a full choice dataset 83 minutes; the forest was 27 and 59 of
+those. An earlier run on the same machine was about three times slower, so
+treat these as best-case figures. At these rates Gate D needs about 170
+core-hours (10 for the oracle/additive selection, 160 for the three learners
+at the selected multipliers). Production needs about 10,000 core-hours, and up
+to three times that on a busy machine, so production runs on a cluster.
 
 ## Software
 
