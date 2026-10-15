@@ -28,3 +28,9 @@ analysis/candidate/derived/*
 !analysis/candidate/derived/comparison_v1_context_distribution.rds
 !analysis/candidate/derived/comparison_v1_context_distribution-manifest.yml
 analysis/candidate/results/
+
+# Rendered vignettes.
+vignettes/*.html
+vignettes/*.R
+/doc/
+/Meta/

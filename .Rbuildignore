@@ -6,12 +6,7 @@
 ^\.Rproj\.user$
 ^shrinkage$
 ^Candidate recruitment$
-^tutorial\.Rmd$
 ^tutorial\.md$
-^tutorial\.bib$
-^tutorial_files$
-^plotting\.R$
-^min_.*\.rda$
 ^analysis$
 ^config$
 ^docs$

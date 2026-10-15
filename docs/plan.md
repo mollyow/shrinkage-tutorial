@@ -188,7 +188,8 @@ The `orderridge` package keeps its workflow: `factorial_basis()`,
 adds one public diagnostic, `diagnose_factorial_support()`. It reports
 profile-level support, model rank, and contrast-level estimability, and gives
 null witnesses for contrasts that cannot be estimated. It is not yet
-implemented.
+implemented. The package vignette, `vignettes/orderridge.Rmd`, is the
+tutorial.
 
 Learner definitions and tuning stay in `analysis/comparison/`, not in the
 package. Before release: `R CMD check` on release, old-release, and devel R;

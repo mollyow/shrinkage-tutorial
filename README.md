@@ -23,7 +23,7 @@ The plan, current status, and rules are in [`docs/plan.md`](docs/plan.md).
 | `config/comparison-v1.yml`, `config/comparison-simulations-v1.yml` | The benchmark protocol |
 | `config/datasets/`, `config/application-registry.yml` | Study contracts and the study registry |
 | `results/comparison-v1/` | Gate records; bulk outputs stay local |
-| `tutorial.md` | The original 2019 shrinkage tutorial, kept for reference |
+| `vignettes/orderridge.Rmd` | Tutorial: order-adaptive ridge for factorial experiments |
 
 ## Install and test
 

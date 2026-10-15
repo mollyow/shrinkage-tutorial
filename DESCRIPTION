@@ -23,5 +23,9 @@ Suggests:
     yaml,
     jsonlite,
     ranger,
-    readr
+    readr,
+    ggplot2,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
 Config/testthat/edition: 3
