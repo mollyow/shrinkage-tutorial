@@ -1,9 +1,0 @@
-gate_decision_unchanged: gate_G_screen_failed
-purpose: post-decision Monte Carlo uncertainty and practical-value audit
-bootstrap_draws: 2000
-bootstrap_seed: 2026082812
-every_fixed_operator_interval_contains_one: no
-signed_scaling_interval_contains_zero: no
-formal_gate_may_not_be_overturned: yes
-input: /Users/moffer/Documents/Git/shrinkage-tutorial/results/feasible-eif/gate-g-screen/gate_g_simulation_results.rds
-generated_at_utc: 2026-08-28 04:51:26 UTC

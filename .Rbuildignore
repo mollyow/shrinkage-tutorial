@@ -14,11 +14,7 @@
 ^min_.*\.rda$
 ^analysis$
 ^config$
-^simulation$
-^paper$
 ^docs$
-^_targets\.R$
-^_targets$
 ^renv$
 ^renv\.lock$
 ^results$

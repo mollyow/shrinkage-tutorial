@@ -24,7 +24,6 @@ Suggests:
     jsonlite,
     ranger,
     readr,
-    targets,
     ggplot2,
     knitr,
     rmarkdown

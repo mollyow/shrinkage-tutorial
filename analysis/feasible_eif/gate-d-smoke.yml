@@ -1,9 +1,0 @@
-version: 1
-mode: smoke
-status: implementation_check_only
-frozen_on: "2026-08-27"
-seed: 2026082711
-replications_per_scenario: 40
-monte_carlo_bootstrap_draws: 200
-monte_carlo_bootstrap_seed: 2026082712
-inherits: gate-d-production.yml

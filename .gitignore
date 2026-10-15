@@ -4,7 +4,6 @@
 .Rproj.user/
 *.Rcheck/
 *.tar.gz
-_targets/
 renv/library/
 renv/staging/
 
@@ -14,9 +13,9 @@ Candidate recruitment/
 
 # Local scratch.
 tmp/
+_targets/
 
-# Bulk generated results are archived separately; the small gate decision and
-# status summaries cited by docs/ are versioned.
+# Bulk generated results stay local; the small gate records are versioned.
 results/**
 !results/**/
 !results/**/*.yml
@@ -24,11 +23,9 @@ results/**
 !results/**/*.md
 
 # Candidate derived files can carry outcomes and are rebuilt from the cleaned
-# replication file. The fresh-study design audits are outcome-blind and are
-# versioned because config/comparison-v1-lock.yml hashes them.
-analysis/candidate/derived/
+# replication file, except the outcome-free simulation context artifact. The
+# fresh-study design audits are outcome-blind and are versioned.
+analysis/candidate/derived/*
+!analysis/candidate/derived/comparison_v1_context_distribution.rds
+!analysis/candidate/derived/comparison_v1_context_distribution-manifest.yml
 analysis/candidate/results/
-paper/_freeze/
-paper/*_files/
-paper/*.html
-paper/*.pdf
