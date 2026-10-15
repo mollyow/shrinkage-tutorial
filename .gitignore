@@ -13,7 +13,6 @@ Candidate recruitment/
 
 # Local scratch.
 tmp/
-_targets/
 
 # Bulk generated results stay local; the small gate records are versioned.
 results/**

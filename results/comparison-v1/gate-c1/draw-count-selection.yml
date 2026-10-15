@@ -1,0 +1,660 @@
+rule: Integrate every paired-choice simulation function with 128 draws. Measure the
+  RMS integration error on the v1 grid using the true conditional means and no response
+  data, and record it; no tolerance is applied.
+grid:
+  - 16
+  - 32
+  - 64
+  - 128
+selected: 128
+worst_ratio_at_selected: 0.0224378
+table:
+  '1':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 3.540165e-06
+    exact_score_sd: 0.1524852
+    ratio: 2.3216455e-05
+    below_one_percent: true
+  '2':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 2.0234659e-05
+    exact_score_sd: 0.1542547
+    ratio: 0.0001312
+    below_one_percent: true
+  '3':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 1.9774872e-06
+    exact_score_sd: 0.1524852
+    ratio: 1.2968391e-05
+    below_one_percent: true
+  '4':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 1.1962992e-05
+    exact_score_sd: 0.1542547
+    ratio: 7.7553513e-05
+    below_one_percent: true
+  '5':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 9.713632e-07
+    exact_score_sd: 0.1524852
+    ratio: 6.3702145e-06
+    below_one_percent: true
+  '6':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 5.2668809e-06
+    exact_score_sd: 0.1542547
+    ratio: 3.4144061e-05
+    below_one_percent: true
+  '7':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 6.3041565e-07
+    exact_score_sd: 0.1524852
+    ratio: 4.1342754e-06
+    below_one_percent: true
+  '8':
+    cell_id: 8
+    multiplier: .na.real
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 3.5944442e-06
+    exact_score_sd: 0.1542547
+    ratio: 2.3302012e-05
+    below_one_percent: true
+  '9':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0001206
+    exact_score_sd: 0.151542
+    ratio: 0.0007957
+    below_one_percent: true
+  '10':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0001233
+    exact_score_sd: 0.150213
+    ratio: 0.0008209
+    below_one_percent: true
+  '11':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 8.305879e-05
+    exact_score_sd: 0.151542
+    ratio: 0.0005481
+    below_one_percent: true
+  '12':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 8.7003839e-05
+    exact_score_sd: 0.150213
+    ratio: 0.0005792
+    below_one_percent: true
+  '13':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 5.7590611e-05
+    exact_score_sd: 0.151542
+    ratio: 0.00038
+    below_one_percent: true
+  '14':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 5.9404487e-05
+    exact_score_sd: 0.150213
+    ratio: 0.0003955
+    below_one_percent: true
+  '15':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 4.095826e-05
+    exact_score_sd: 0.151542
+    ratio: 0.0002703
+    below_one_percent: true
+  '16':
+    cell_id: 9
+    multiplier: .na.real
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 4.2147424e-05
+    exact_score_sd: 0.150213
+    ratio: 0.0002806
+    below_one_percent: true
+  '17':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0002297
+    exact_score_sd: 0.1463686
+    ratio: 0.0015696
+    below_one_percent: true
+  '18':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0002067
+    exact_score_sd: 0.1449806
+    ratio: 0.0014255
+    below_one_percent: true
+  '19':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0001564
+    exact_score_sd: 0.1463686
+    ratio: 0.0010687
+    below_one_percent: true
+  '20':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0001398
+    exact_score_sd: 0.1449806
+    ratio: 0.0009643
+    below_one_percent: true
+  '21':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0001084
+    exact_score_sd: 0.1463686
+    ratio: 0.0007408
+    below_one_percent: true
+  '22':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 9.8461393e-05
+    exact_score_sd: 0.1449806
+    ratio: 0.0006791
+    below_one_percent: true
+  '23':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 7.7183211e-05
+    exact_score_sd: 0.1463686
+    ratio: 0.0005273
+    below_one_percent: true
+  '24':
+    cell_id: 10
+    multiplier: 0.5
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 6.9262685e-05
+    exact_score_sd: 0.1449806
+    ratio: 0.0004777
+    below_one_percent: true
+  '25':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0004408
+    exact_score_sd: 0.1407294
+    ratio: 0.003132
+    below_one_percent: true
+  '26':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0003342
+    exact_score_sd: 0.1404386
+    ratio: 0.0023798
+    below_one_percent: true
+  '27':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0003001
+    exact_score_sd: 0.1407294
+    ratio: 0.0021326
+    below_one_percent: true
+  '28':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0002282
+    exact_score_sd: 0.1404386
+    ratio: 0.0016251
+    below_one_percent: true
+  '29':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0002099
+    exact_score_sd: 0.1407294
+    ratio: 0.0014917
+    below_one_percent: true
+  '30':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 0.0001592
+    exact_score_sd: 0.1404386
+    ratio: 0.0011339
+    below_one_percent: true
+  '31':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0001476
+    exact_score_sd: 0.1407294
+    ratio: 0.0010486
+    below_one_percent: true
+  '32':
+    cell_id: 10
+    multiplier: 0.75
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 0.0001124
+    exact_score_sd: 0.1404386
+    ratio: 0.0008004
+    below_one_percent: true
+  '33':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0007495
+    exact_score_sd: 0.1328839
+    ratio: 0.0056404
+    below_one_percent: true
+  '34':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0005249
+    exact_score_sd: 0.1334698
+    ratio: 0.0039331
+    below_one_percent: true
+  '35':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0005131
+    exact_score_sd: 0.1328839
+    ratio: 0.0038612
+    below_one_percent: true
+  '36':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0003582
+    exact_score_sd: 0.1334698
+    ratio: 0.0026836
+    below_one_percent: true
+  '37':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0003681
+    exact_score_sd: 0.1328839
+    ratio: 0.0027702
+    below_one_percent: true
+  '38':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 0.0002474
+    exact_score_sd: 0.1334698
+    ratio: 0.0018535
+    below_one_percent: true
+  '39':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0002544
+    exact_score_sd: 0.1328839
+    ratio: 0.0019144
+    below_one_percent: true
+  '40':
+    cell_id: 10
+    multiplier: 1.0
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 0.0001779
+    exact_score_sd: 0.1334698
+    ratio: 0.0013325
+    below_one_percent: true
+  '41':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0015679
+    exact_score_sd: 0.121508
+    ratio: 0.0129035
+    below_one_percent: false
+  '42':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0010746
+    exact_score_sd: 0.1198918
+    ratio: 0.0089631
+    below_one_percent: true
+  '43':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0010774
+    exact_score_sd: 0.121508
+    ratio: 0.0088665
+    below_one_percent: true
+  '44':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0007353
+    exact_score_sd: 0.1198918
+    ratio: 0.0061333
+    below_one_percent: true
+  '45':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0007848
+    exact_score_sd: 0.121508
+    ratio: 0.0064589
+    below_one_percent: true
+  '46':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 0.0005104
+    exact_score_sd: 0.1198918
+    ratio: 0.004257
+    below_one_percent: true
+  '47':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0005405
+    exact_score_sd: 0.121508
+    ratio: 0.0044482
+    below_one_percent: true
+  '48':
+    cell_id: 10
+    multiplier: 1.5
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 0.0003729
+    exact_score_sd: 0.1198918
+    ratio: 0.0031101
+    below_one_percent: true
+  '49':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0024978
+    exact_score_sd: 0.1110315
+    ratio: 0.0224963
+    below_one_percent: false
+  '50':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0017422
+    exact_score_sd: 0.1101821
+    ratio: 0.0158121
+    below_one_percent: false
+  '51':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0017094
+    exact_score_sd: 0.1110315
+    ratio: 0.0153957
+    below_one_percent: false
+  '52':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0012017
+    exact_score_sd: 0.1101821
+    ratio: 0.0109066
+    below_one_percent: false
+  '53':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.001236
+    exact_score_sd: 0.1110315
+    ratio: 0.011132
+    below_one_percent: false
+  '54':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 0.0008418
+    exact_score_sd: 0.1101821
+    ratio: 0.0076404
+    below_one_percent: true
+  '55':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0008587
+    exact_score_sd: 0.1110315
+    ratio: 0.0077336
+    below_one_percent: true
+  '56':
+    cell_id: 10
+    multiplier: 2.0
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 0.0006154
+    exact_score_sd: 0.1101821
+    ratio: 0.0055856
+    below_one_percent: true
+  '57':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0042307
+    exact_score_sd: 0.0953003
+    ratio: 0.0443935
+    below_one_percent: false
+  '58':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0030819
+    exact_score_sd: 0.0952085
+    ratio: 0.0323699
+    below_one_percent: false
+  '59':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0028821
+    exact_score_sd: 0.0953003
+    ratio: 0.0302424
+    below_one_percent: false
+  '60':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0021568
+    exact_score_sd: 0.0952085
+    ratio: 0.0226532
+    below_one_percent: false
+  '61':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0020464
+    exact_score_sd: 0.0953003
+    ratio: 0.021473
+    below_one_percent: false
+  '62':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 0.0015144
+    exact_score_sd: 0.0952085
+    ratio: 0.0159062
+    below_one_percent: false
+  '63':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0014406
+    exact_score_sd: 0.0953003
+    ratio: 0.0151159
+    below_one_percent: false
+  '64':
+    cell_id: 10
+    multiplier: 3.0
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 0.001105
+    exact_score_sd: 0.0952085
+    ratio: 0.0116066
+    below_one_percent: false
+  '65':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 16
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.005584
+    exact_score_sd: 0.0845433
+    ratio: 0.0660495
+    below_one_percent: false
+  '66':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 16
+    family: religion_x_origin
+    rms_integration_error: 0.0042261
+    exact_score_sd: 0.0839011
+    ratio: 0.0503697
+    below_one_percent: false
+  '67':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 32
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0038112
+    exact_score_sd: 0.0845433
+    ratio: 0.0450802
+    below_one_percent: false
+  '68':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 32
+    family: religion_x_origin
+    rms_integration_error: 0.0029846
+    exact_score_sd: 0.0839011
+    ratio: 0.0355723
+    below_one_percent: false
+  '69':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 64
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.0026794
+    exact_score_sd: 0.0845433
+    ratio: 0.0316922
+    below_one_percent: false
+  '70':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 64
+    family: religion_x_origin
+    rms_integration_error: 0.0020867
+    exact_score_sd: 0.0839011
+    ratio: 0.0248708
+    below_one_percent: false
+  '71':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 128
+    family: migration_reason_x_vulnerability
+    rms_integration_error: 0.001897
+    exact_score_sd: 0.0845433
+    ratio: 0.0224378
+    below_one_percent: false
+  '72':
+    cell_id: 10
+    multiplier: 4.0
+    draws: 128
+    family: religion_x_origin
+    rms_integration_error: 0.0015211
+    exact_score_sd: 0.0839011
+    ratio: 0.0181294
+    below_one_percent: false
+

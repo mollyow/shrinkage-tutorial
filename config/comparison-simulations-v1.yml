@@ -1,7 +1,7 @@
 schema_version: 1
 simulation_protocol_id: factorial_ml_comparison_simulations_v1
 protocol_date: "2026-09-03"
-status: scenario_rules_frozen_implementation_and_positive_control_calibration_pending
+status: protocol_v1_see_docs_plan_md
 parent_protocol: config/comparison-v1.yml
 
 common:
@@ -58,7 +58,7 @@ rating_geometry:
   context_distribution: empirical_joint_six_binary_candidate_covariates_with_survey_weights
   context_variables: [woman, poc, young, dem, rep, workingclass]
   context_artifact:
-    status: pending_gate_c_design_only_rebuild
+    status: built_by_analysis_candidate_build_comparison_context_v4_r
     output: analysis/candidate/derived/comparison_v1_context_distribution.rds
     allowed_source: "Candidate recruitment/replication/PSRM_replication/data/CleanedData.csv"
     selected_columns: [id, weight, woman, poc, young, dem, rep, workingclass]
@@ -69,7 +69,6 @@ rating_geometry:
       weights and binary nonmissing context variables, normalize respondent
       weights to sum to one, and sample complete six-variable rows from that
       locked empirical distribution.
-    must_be_hashed_before_calibration: true
     stale_estimands_v3_artifacts_may_not_be_used: true
   outcome_generator:
     family: correlated_beta_binomial_rating
@@ -153,6 +152,14 @@ choice_geometry:
     pair_coefficients: independent_normal_then_scaled_to_pair_component_rms_0_15
     nonlinear_heterogeneity_coefficients: independent_normal_then_scaled_to_component_rms_one_before_multiplier
   conditional_choice_probability: "plogis(u(profile_1,x)-u(profile_2,x))"
+  target_integration:
+    method: shared_rest_level_balanced_family_cell_stratified_monte_carlo
+    draws: 128
+    rule: >-
+      Integrate every paired-choice simulation function with 128 draws. Measure
+      the RMS integration error on the v1 grid using the true conditional means
+      and no response data, and record it; no tolerance is applied.
+    application_draw_count: chosen_in_gate_c2_by_the_v1_one_percent_rule
   within_respondent_outcome_generator:
     method: gaussian_copula_bernoulli_with_locked_conditional_margins
     latent_correlation: 0.50
@@ -188,7 +195,12 @@ positive_control_calibration:
     multiplier whose ratio is closest to 0.70; break ties toward the smaller
     multiplier. If none passes, Gate D fails and the grid is not extended.
   separate_selection_for_rating_and_choice: true
-  calibration_results_hashed_before_smoke: true
+  calibration_results_recorded_before_smoke: true
+  recovery_learners_fit_only_at_selected_multiplier: true
+  recovery_uses_the_same_calibration_datasets: true
+  gain_recovered_uses: replication_mean_family_balanced_risk
+  both_geometries_must_pass: true
+  recovering_learner_may_differ_between_geometries: true
   production_uses_fresh_seed_stream: true
   feasible_recovery_gate:
     eligible_learners: [elastic_net, ranger, xgboost]
@@ -215,9 +227,3 @@ gates:
     maximum_failure_rate: 0.01
     additive_no_headroom_aggregate_excess_risk_at_most: 0.05
     additive_no_headroom_any_cell_excess_risk_at_most: 0.10
-
-authorized_next_action:
-  action: implement_and_test_against_synthetic_fixtures_only
-  run_calibration: false
-  run_smoke: false
-  run_production: false

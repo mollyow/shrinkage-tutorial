@@ -12,8 +12,7 @@ response, learner result, or effect estimate.
 
 The machine-readable contract is
 [`config/datasets/graham-svolik.yml`](../../config/datasets/graham-svolik.yml).
-The source assessment is recorded separately in
-[`docs/graham-svolik-design-contract-decision.md`](../../docs/graham-svolik-design-contract-decision.md).
+The benchmark plan is [`docs/plan.md`](../../docs/plan.md).
 
 ## Run
 

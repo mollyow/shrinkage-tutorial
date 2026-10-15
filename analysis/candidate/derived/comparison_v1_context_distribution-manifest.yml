@@ -1,0 +1,22 @@
+artifact: analysis/candidate/derived/comparison_v1_context_distribution.rds
+artifact_version: 4
+sha256: ee842087206c17c0efe5d04e7232889e94d67ce3f6bb7ef65749ea26dc788e20
+source: Candidate recruitment/replication/PSRM_replication/data/CleanedData.csv
+source_md5: 02069b7dac945e6ace2a7d236768bb4f
+columns_read:
+- id
+- weight
+- woman
+- poc
+- young
+- dem
+- rep
+- workingclass
+forbidden_columns_never_read: interest
+respondents: 3000
+distinct_contexts: 48
+weight_rule: respondent weights normalized to sum to one
+sampling_rule: simulated respondents are drawn with probability equal to the normalized
+  weight
+stale_estimands_v3_artifacts_used: false
+

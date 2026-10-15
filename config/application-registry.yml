@@ -464,7 +464,6 @@ comparison_protocol:
   scientific_lock_date: "2026-09-03"
   scientific_contract: config/comparison-v1.yml
   simulation_contract: config/comparison-simulations-v1.yml
-  narrative_contract: docs/cross-study-comparison-contract.md
-  status: scientific_choices_frozen_gate_c_implementation_pending_outcomes_prohibited
+  narrative_contract: docs/plan.md
   outcomes_authorized: false
-  reason: "The common endpoints, hierarchy, targets, estimands, folds, learners, tuning budgets, integration rule, metrics, equivalence margins, positive-control rule, and reporting requirements are fixed. Strict readers, shared implementation, synthetic tests, output schemas, dependency lock, and implementation hashes do not yet exist."
+  reason: "Outcomes stay unread until Gates C1, D, and C2 pass and the outcome-access snapshot exists (docs/plan.md)."

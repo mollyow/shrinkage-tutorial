@@ -35,9 +35,8 @@ not logically reject a per-task `q x q` marginal. The audit's conclusion is
 therefore the narrower—and sufficient—one: the exact opponent law is not known.
 
 The machine-readable contract is
-[`config/datasets/climate-agreements.yml`](../../config/datasets/climate-agreements.yml),
-and the decision record is
-[`docs/climate-design-contract-decision.md`](../../docs/climate-design-contract-decision.md).
+[`config/datasets/climate-agreements.yml`](../../config/datasets/climate-agreements.yml).
+The benchmark plan is [`docs/plan.md`](../../docs/plan.md).
 
 ## Run
 

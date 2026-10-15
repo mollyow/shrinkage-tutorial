@@ -1,0 +1,215 @@
+created_utc: '2026-10-14T13:33:45Z'
+contracts_unchanged:
+  passed: true
+  message: ''
+frozen_learner_versions:
+  passed: true
+  frozen:
+    glmnet: 4.1.8
+    ranger: 0.18.0
+    xgboost: 3.2.1.1
+  installed:
+    glmnet: 4.1.8
+    ranger: 0.18.0
+    xgboost: 3.2.1.1
+  renv_lock:
+    glmnet: 4.1.8
+    ranger: 0.18.0
+    xgboost: 3.2.1.1
+  nanoparquet_locked: 0.4.3
+candidate_v4_context_artifact:
+  passed: true
+  sha256: ee842087206c17c0efe5d04e7232889e94d67ce3f6bb7ef65749ea26dc788e20
+  distinct_contexts: 48
+seed_collision_check:
+  passed: true
+  seeds: 73500
+  distinct: 73500
+  passed: true
+  production_datasets: 11000
+  production_matches_contract: true
+  calibration_common_random_numbers_across_multipliers: true
+  test_phase_offset: 90000000
+generator_validity:
+  passed: true
+  candidates:
+    - cell_id: 1
+      cell: rating_additive_no_x
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range:
+        - 0.2004024
+        - 0.4575976
+    - cell_id: 2
+      cell: rating_linear_prognostic
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range:
+        - 0.1310224
+        - 0.5344676
+    - cell_id: 3
+      cell: rating_linear_heterogeneity
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range:
+        - 0.059422
+        - 0.5330082
+    - cell_id: 4
+      cell: rating_nonlinear_prognostic
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range:
+        - 0.0439066
+        - 0.5548638
+    - cell_id: 5
+      cell: rating_nonlinear_heterogeneity
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range:
+        - 0.0815767
+        - 0.6148361
+    - cell_id: 6
+      cell: rating_nonlinear_target_shift
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range:
+        - 0.0815767
+        - 0.6148361
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 0.5
+      valid: true
+      conditional_mean_range:
+        - 0.0925497
+        - 0.560658
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 0.75
+      valid: true
+      conditional_mean_range:
+        - 0.0870632
+        - 0.587747
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 1.0
+      valid: true
+      conditional_mean_range:
+        - 0.0815767
+        - 0.6148361
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 1.5
+      valid: true
+      conditional_mean_range:
+        - 0.0706037
+        - 0.6690142
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 2.0
+      valid: true
+      conditional_mean_range:
+        - 0.0406932
+        - 0.7231923
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 3.0
+      valid: false
+      conditional_mean_range:
+        - -0.067663
+        - 0.8315485
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 4.0
+      valid: false
+      conditional_mean_range:
+        - -0.1760192
+        - 0.9399046
+    - cell_id: 8
+      cell: choice_additive
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 9
+      cell: choice_low_headroom_nonlinear
+      multiplier: .na.real
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 0.5
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 0.75
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 1.0
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 1.5
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 2.0
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 3.0
+      valid: true
+      conditional_mean_range: NA
+    - cell_id: 10
+      cell: choice_high_headroom_control
+      multiplier: 4.0
+      valid: true
+      conditional_mean_range: NA
+  invalid_calibration_candidates:
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 3.0
+      valid: false
+      conditional_mean_range:
+        - -0.067663
+        - 0.8315485
+    - cell_id: 7
+      cell: rating_high_headroom_control
+      multiplier: 4.0
+      valid: false
+      conditional_mean_range:
+        - -0.1760192
+        - 0.9399046
+draw_count_selection:
+  passed: false
+  selected: .na.integer
+  worst_ratio_at_selected: NA
+draw_count:
+  selected: .na.integer
+comparison_test_suite:
+  passed: false
+  tests: 23
+  expectations: 128
+  failed: 2
+  errors: 0
+  skipped: 0
+package_test_suite:
+  passed: true
+  tests: 39
+  expectations: 201
+  failed: 0
+  errors: 0
+  skipped: 0
+synthetic_full_size_run_and_report:
+  passed: true
+  errors: []
+  runtime_seconds:
+    - 4740.451
+    - 15881.225
+  ledger_all_ok: true
+all_passed: false
+

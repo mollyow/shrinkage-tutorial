@@ -1,7 +1,7 @@
 schema_version: 1
 protocol_id: factorial_ml_comparison_v1
 protocol_date: "2026-09-03"
-status: scientific_protocol_frozen_implementation_gate_c_pending_outcomes_prohibited
+status: protocol_v1_see_docs_plan_md_outcomes_prohibited_until_snapshot
 working_title: "Before Machine Learning: A Prospective Benchmark for Causal Conjoint Inference"
 
 purpose:
@@ -25,17 +25,18 @@ freeze:
     - simulation_cells_and_positive_control_rule
     - failure_and_reporting_rules
   outcome_access_barrier: >-
-    No fresh endpoint value may be read until the shared comparison code,
-    endpoint-specific strict readers, synthetic Gate-C tests, report templates,
-    dependency lock, and implementation manifest have been completed and hashed.
+    No fresh endpoint value may be read until Gates C1, D, and C2 have passed
+    and the outcome-access snapshot exists: a tagged commit, pushed to GitHub,
+    with a manifest of SHA-256 hashes for the code, configs, design artifacts,
+    and dependency lock.
   before_outcome_amendment: >-
-    A scientific change requires a new protocol version, a dated changelog, and
-    a new lock manifest. The superseded version remains in the repository.
+    Changes before outcome access are made in place and recorded with a date
+    and reason in the changelog of docs/plan.md. Git history keeps every
+    earlier version.
   after_outcome_amendment: >-
     The v1 primary analysis is immutable. A necessary bug fix must be disclosed,
     applied to every method and dataset it affects, versioned, and reported beside
     the original result. Any other change is exploratory.
-  implementation_freeze_still_required: true
   this_file_does_not_unlock_outcomes: true
 
 source_contracts:
@@ -46,8 +47,7 @@ source_contracts:
   graham_svolik: config/datasets/graham-svolik.yml
   candidate_developmental: analysis/candidate/estimands.yml
   simulation_contract: config/comparison-simulations-v1.yml
-  narrative_protocol: docs/cross-study-comparison-contract.md
-  lock_manifest: config/comparison-v1-lock.yml
+  narrative_protocol: docs/plan.md
 
 contract_precedence:
   rule: >-
@@ -71,8 +71,8 @@ contract_precedence:
     tree learners.
   outcome_access_override: >-
     Any earlier source-contract statement that conditioned outcome access only
-    on freezing the comparison protocol is superseded. Gate C and its
-    implementation checksum manifest must pass first.
+    on freezing the comparison protocol is superseded. Gate C and the
+    outcome-access snapshot must come first.
 
 portfolio:
   confirmatory_studies:
@@ -583,7 +583,7 @@ target_integration:
       smallest grid value whose RMS integration error is below one percent of
       the exact respondent-score standard deviation for every registered family.
     fail_if_128_does_not_pass: true
-    application_draw_count_locked_in_implementation_manifest_before_outcome_access: true
+    application_draw_count_recorded_in_outcome_access_snapshot: true
     monte_carlo_variation_included_in_respondent_score: true
   asylum:
     choice: sample_remaining_focal_attributes_opponent_task_side_and_frame_from_locked_target_conditional_on_each_focal_family_cell
@@ -718,8 +718,8 @@ failures:
   any_fallback_counts_toward_failure_rate: true
   never_drop_family_coordinate_respondent_or_method_silently: true
   hard_fail_conditions:
-    - outcome_read_before_implementation_lock
-    - input_or_contract_checksum_drift
+    - outcome_read_before_outcome_access_snapshot
+    - input_checksum_drift_from_outcome_access_snapshot
     - respondent_fold_leakage
     - target_positive_where_assignment_probability_zero
     - target_integration_gate_failure
@@ -757,11 +757,10 @@ reporting:
     - tuning_history.parquet
     - failures.csv
     - session_manifest.yml
-  result_schema_and_reporting_code_must_be_hashed_before_outcome_access: true
+  result_schema_and_reporting_code_included_in_outcome_access_snapshot: true
 
 gates:
   gate_c:
-    status: pending
     invariance_tolerance: 0.0000000001
     requires:
       - exact_small_design_score_and_target_integration_agreement
@@ -769,14 +768,24 @@ gates:
       - fixed_coding_deterministic_reproducibility_for_representation_sensitive_learners
       - no_outer_or_inner_respondent_leakage
       - complete_expected_jobs_and_estimands
-      - contract_and_code_hash_enforcement
       - synthetic_only_report_render
+    stages:
+      c1_shared_engine_and_simulations: >-
+        Engine, simulation generators and integration, outcome-free candidate
+        context artifact, the tests above, seed-collision check, simulation draw
+        count, output schemas, frozen learner versions in renv.lock, and a
+        full-size synthetic simulation render. Authorizes calibration.
+      c2_applications: >-
+        Strict one-endpoint-at-a-time readers with a missingness-only first
+        access, study-specific target integration, the Graham-Svolik
+        nonproduct enumeration fixture, the application draw count, emitted
+        Graham-Svolik inner folds, synthetic endpoint fixtures, and application
+        report templates. Required with Gate D before production and outcome
+        access.
   gate_d:
-    status: pending
     positive_control_oracle_over_additive_at_most: 0.75
     minimum_feasible_gain_recovered: 0.50
   gate_e:
-    status: pending
     coverage_interval: [0.93, 0.97]
     maximum_absolute_standardized_bias: 0.10
     maximum_headline_ratio_interval_width: 0.06
@@ -784,13 +793,6 @@ gates:
     additive_no_headroom_aggregate_excess_risk_at_most: 0.05
     additive_no_headroom_any_cell_excess_risk_at_most: 0.10
   gate_f:
-    status: pending
     full_paper_if_either:
       - precise_cross_study_result_rules_out_five_percent_incremental_gain
       - prespecified_diagnostic_separates_settings_with_and_without_recovered_headroom
-
-next_authorized_step_after_this_contract:
-  action: implement_shared_comparison_engine_and_gate_c_on_synthetic_and_design_only_inputs
-  outcomes_authorized: false
-  applications_authorized: false
-  simulations_authorized: false

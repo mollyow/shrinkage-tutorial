@@ -6,9 +6,8 @@ and only total effects of the six randomized bracket rates. The noisy revenue
 display is a downstream mediator, not a seventh factor.
 
 The locked contract is
-[`config/datasets/income-tax-plans.yml`](../../config/datasets/income-tax-plans.yml),
-and the substantive decision is
-[`docs/income-tax-design-contract-decision.md`](../../docs/income-tax-design-contract-decision.md).
+[`config/datasets/income-tax-plans.yml`](../../config/datasets/income-tax-plans.yml).
+The benchmark plan is [`docs/plan.md`](../../docs/plan.md).
 
 Run the audit from the repository root with:
 

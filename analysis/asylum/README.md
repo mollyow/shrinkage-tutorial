@@ -25,8 +25,7 @@ The study passes its Gate-B design audit **green**:
 
 The machine-readable contract is
 [`config/datasets/asylum-seekers.yml`](../../config/datasets/asylum-seekers.yml).
-The full decision and caveats are in
-[`docs/asylum-design-contract-decision.md`](../../docs/asylum-design-contract-decision.md).
+The benchmark plan is [`docs/plan.md`](../../docs/plan.md).
 
 ## Run
 

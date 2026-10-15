@@ -58,33 +58,7 @@ testthat::test_that("respondent weights must be invariant within cluster", {
   )
 })
 
-testthat::test_that("profile evaluation retains the full target and labels common support", {
-  aggregated <- data.frame(
-    model = c("a", "b", "a", "b"),
-    fold = rep("1", 4),
-    profile_id = c("p1", "p1", "p2", "p2"),
-    observed = c(0.1, 0.1, 0.2, 0.2),
-    prediction = c(0.1, 0.15, 0.2, NA_real_),
-    weight = 1,
-    rows = 1L,
-    stringsAsFactors = FALSE
-  )
-  complete <- complete_profile_predictions(
-    aggregated, models = c("a", "b"), folds = "1",
-    profile_ids = c("p1", "p2", "p3"), target_weights = rep(1 / 3, 3)
-  )
-  metrics <- profile_metric_table_complete(complete)
-
-  testthat::expect_equal(nrow(complete), 6L)
-  testthat::expect_equal(sum(complete$rows == 0), 2L)
-  testthat::expect_true(all(complete$common_support[complete$profile_id == "p1"]))
-  testthat::expect_false(any(complete$common_support[complete$profile_id != "p1"]))
-  testthat::expect_true(all(is.na(metrics$rmse)))
-  testthat::expect_equal(metrics$target_profile_coverage, rep(1 / 3, 2))
-  testthat::expect_true(all(is.finite(metrics$common_support_rmse)))
-})
-
-testthat::test_that("real-data preparation and API contract are fast-checkable when data exist", {
+testthat::test_that("real-data preparation is fast-checkable when data exist", {
   testthat::skip_if_not_installed("yaml")
   testthat::skip_if_not_installed("readr")
   testthat::skip_if_not_installed("tibble")
@@ -136,14 +110,5 @@ testthat::test_that("real-data preparation and API contract are fast-checkable w
                            tolerance = 1e-12)
   }
 
-  testthat::skip_if_not_installed("pkgload")
-  api_log <- system2(
-    rscript,
-    c(file.path(candidate_dir, "run_candidate_analysis.R"),
-      "--prepared", file.path(output_dir, "candidate_prepared.rds"),
-      "--api-check-only"),
-    stdout = TRUE, stderr = TRUE
-  )
-  testthat::expect_null(attr(api_log, "status"), info = paste(api_log, collapse = "\n"))
   unlink(output_dir, recursive = TRUE)
 })

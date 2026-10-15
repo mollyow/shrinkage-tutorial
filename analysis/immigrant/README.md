@@ -32,8 +32,6 @@ The study is **amber**, not yet a full Gate B pass.
   x reason is identified on the released support, but remains on hold until the
   article/archive discrepancy is resolved prospectively.
 
-The complete decision and resolution rule are in
-[`docs/immigrant-design-contract-decision.md`](../../docs/immigrant-design-contract-decision.md).
 The machine-readable lock is
 [`config/datasets/immigrant-admission.yml`](../../config/datasets/immigrant-admission.yml).
 

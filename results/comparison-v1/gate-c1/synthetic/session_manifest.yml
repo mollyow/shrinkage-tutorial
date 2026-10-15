@@ -1,0 +1,18 @@
+created_utc: '2026-10-14T18:05:56Z'
+git_head: bfdedc53bbe0519accc109d2c23d145614b61cc0
+worktree_dirty: true
+r_version: R version 4.4.2 (2024-10-31)
+platform: aarch64-apple-darwin20
+blas: /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib
+package_versions:
+  glmnet: 4.1.8
+  ranger: 0.18.0
+  xgboost: 3.2.1.1
+  Matrix: 1.7.1
+  nloptr: 2.2.1
+  digest: 0.6.39
+  yaml: 2.3.12
+  nanoparquet: 0.4.3
+  orderridge: 0.0.0.9000
+purpose: gate_c1_synthetic_render
+
