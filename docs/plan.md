@@ -173,12 +173,12 @@ already run on the old code is rerun with the same seeds.
 
 ## Compute
 
-In the passing C1 run on one Apple M1 core, a full rating dataset took 32
-minutes and a full choice dataset 83 minutes; the forest was 27 and 59 of
+In the passing C1 run on one Apple M1 core, a full rating dataset took 27
+minutes and a full choice dataset 81 minutes; the forest was 23 and 62 of
 those. An earlier run on the same machine was about three times slower, so
 treat these as best-case figures. At these rates Gate D needs about 170
 core-hours (10 for the oracle/additive selection, 160 for the three learners
-at the selected multipliers). Production needs about 10,000 core-hours, and up
+at the selected multipliers). Production needs about 9,000 core-hours, and up
 to three times that on a busy machine, so production runs on a cluster.
 
 ## Software

@@ -14,67 +14,48 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.width = 7, fig.height
 
 ## The problem
 
-Suppose we have a factorial experiment, where we want to account for two-way
-and higher-order interactions. We may think that interaction effects will be
-small but not exactly equal to zero, and higher-order interactions will tend to
-be associated with smaller effects relative to lower-order interactions.
+Suppose we have a factorial experiment, where we want to account for two-way and higher-order interactions.
+We may think that interaction effects will be small but not exactly equal to zero, and higher-order interactions will tend to be associated with smaller effects relative to lower-order interactions.
 
-The number of possible interactions grows quickly. With four factors of four
-levels each, there are 12 main-effect terms, 54 two-way interaction terms, and
-108 three-way terms. Accounting for all interactions in a standard linear
-model may be costly in terms of variance, so we want to use some form of
-regularization. Dropping the higher orders instead is precise, but biased if
-the interactions we dropped are real.
+The number of possible interactions grows quickly.
+With four factors of four levels each, there are 12 main-effect terms, 54 two-way interaction terms, and 108 three-way terms.
+Accounting for all interactions in a standard linear model may be costly in terms of variance, so we want to use some form of regularization.
+The alternative is to leave the higher-order interactions out of the model.
+That gives us precise estimates, but if those interactions are real, the fitted surface misses them, so it is biased.
 
-**The approach here:** ridge regression where penalties are increasing with the
-degree of complexity of interactions, implemented in the `orderridge` package.
+**The approach here:** ridge regression where penalties are increasing with the degree of complexity of interactions, implemented in the `orderridge` package.
 
 ## The estimator
 
-We'll consider interactions up to order $K$, and $\omega_k$ will tell us how
-many effects there are at each degree of complexity: for main effects,
-$\omega_1$ is the total number of factor levels beyond the first, and
-$\omega_2$ is the total number of two-way interactions.
+We'll consider interactions up to order $K$, and $\omega_k$ will tell us how many effects there are at each degree of complexity: for main effects, $\omega_1$ is the total number of factor levels beyond the first, and $\omega_2$ is the total number of two-way interactions.
 
-Let $\text{x}_i$ hold the factors and all interactions up to order $K$ for
-observation $i$, $\beta$ be the vector of coefficients excluding the intercept
-term, and $\lambda$ be the penalty vector. The estimator solves
+Let $\text{x}_i$ hold the factors and all interactions up to order $K$ for observation $i$, $\beta$ be the vector of coefficients excluding the intercept term, and $\lambda$ be the penalty vector.
+The estimator solves
 
 $$
 \text{argmin}_{\beta_0, \beta} \bigg\{\frac{1}{n}\sum^{n}_{i=1}\left(y_i - \beta_0 - \beta^T \text{x}_{i}\right)^2 + \beta^T \text{diag}(\lambda)\beta \bigg\}.
 $$
 
-Each order of interactions has a separate penalty, $\lambda_k$, optionally
-constrained so $\lambda_1 \le \lambda_2 \le \dots \le \lambda_K$. To make up
-the full $\lambda$ vector, each $\lambda_k$ is repeated $\omega_k$ times. In
-Bayesian terms, the constraint says the prior variance of an effect shrinks as
-its order rises. The penalties are chosen by cross-validation.
+Each order of interactions has a separate penalty, $\lambda_k$, optionally constrained so $\lambda_1 \le \lambda_2 \le \dots \le \lambda_K$.
+To make up the full $\lambda$ vector, each $\lambda_k$ is repeated $\omega_k$ times.
+In Bayesian terms, the constraint says the prior variance of an effect shrinks as its order rises.
+The penalties are chosen by cross-validation.
 
 ## Two things to get right
 
-A natural way to implement this by hand is to code each factor as dummy
-variables against a baseline level, give each order its own penalty factor in
-a standard ridge solver, and search over the penalties numerically. There are
-two problems with this, and they motivate the package: how we build
-$\text{x}_i$, and how we tune the penalties.
+A natural way to implement this by hand is to code each factor as dummy variables against a baseline level, give each order its own penalty factor in a standard ridge solver, and search over the penalties numerically.
+There are two problems with this, and they motivate the package: how we build $\text{x}_i$, and how we tune the penalties.
 
-**The baseline matters when it shouldn't.** With dummy (treatment) coding,
-interaction coefficients are tangled up with the main effects, and their size
-depends on which level we pick as the baseline. If we penalize those
-coefficients, we get an answer that changes when we change the baseline, and a
-penalty "on two-way interactions" partly penalizes main effects
-[@martini2019coding].
+**The baseline matters when it shouldn't.**
+With dummy (treatment) coding, interaction coefficients are tangled up with the main effects, and their size depends on which level we pick as the baseline.
+If we penalize those coefficients, we get an answer that changes when we change the baseline, and a penalty "on two-way interactions" partly penalizes main effects [@martini2019coding].
 
-Instead, the package builds, for each order, the space of functions that is
-orthogonal to all lower orders under the **target distribution** of profiles
-(here, the uniform distribution the experiment randomizes from). The penalties
-apply to the size of the fitted function in each order's space, so we get the
-same fit however the factors are coded.
+Instead, the package builds, for each order, the space of functions that is orthogonal to all lower orders under the **target distribution** of profiles (here, the uniform distribution the experiment randomizes from).
+The penalties apply to the size of the fitted function in each order's space, so we get the same fit however the factors are coded.
 
-**Tuning several penalties is fiddly.** Searching over several penalties at
-once can be noisy. The package tunes them by cross-validation, with folds that
-keep each respondent's tasks together, and enforces the ordering constraint
-directly.
+**Tuning several penalties is fiddly.**
+Searching over several penalties at once can be noisy.
+The package tunes them by cross-validation, with folds that keep each respondent's tasks together, and enforces the ordering constraint directly.
 
 We'll use `ggplot2` for the figures.
 
@@ -91,14 +72,10 @@ theme_tutorial <- theme_bw() +
 
 ## A simulated experiment
 
-In our simulations here, we'll consider an experiment with four factors, `A`
-through `D`, each with levels `l0` to `l3`, and conduct estimation up to
-third-order interactions. Profiles are drawn uniformly from all 256
-combinations, and each of 100 respondents rates 5 profiles, so we have 500
-ratings.
+In our simulations here, we'll consider an experiment with four factors, `A` through `D`, each with levels `l0` to `l3`, and conduct estimation up to third-order interactions.
+Profiles are drawn uniformly from all 256 combinations, and each of 100 respondents rates 5 profiles, so we have 500 ratings.
 
-We build the basis on the full set of 256 profiles, since that's the target
-distribution our effects average over.
+We build the basis on the full set of 256 profiles, since that's the target distribution our effects average over.
 
 ```{r basis}
 levels <- paste0("l", 0:3)
@@ -110,15 +87,11 @@ basis <- factorial_basis(target, max_order = 3)
 basis
 ```
 
-So $\omega = (12, 54, 108)$; the $\omega_k$ sum to 174, which is the number of
-columns in our design. The columns are orthonormal under the target
-distribution, so each squared coefficient is that term's contribution to the
-variance of the response surface.
+So $\omega = (12, 54, 108)$; the $\omega_k$ sum to 174, which is the number of columns in our design.
+The columns are orthonormal under the target distribution, so each squared coefficient is that term's contribution to the variance of the response surface.
 
-For simulations, we will let coefficient values be drawn from normal
-distributions with mean zero, with standard deviations decreasing with order of
-complexity: 1, 1/2, and 1/8. Ratings also include a respondent effect and
-noise.
+For simulations, we will let coefficient values be drawn from normal distributions with mean zero, with standard deviations decreasing with order of complexity: 1, 1/2, and 1/8.
+Ratings also include a respondent effect and noise.
 
 ```{r simulate}
 X_target <- factorial_design(basis, target)
@@ -139,12 +112,8 @@ d <- simulate_experiment()
 
 ## Fitting
 
-`fit_order_ridge()` has three penalty structures, and we'll fit all three:
-`"common"`, with one penalty for every order (i.e., ordinary ridge);
-`"unrestricted"`, with a separate penalty for each order, each tuned freely;
-and `"monotone"`, with a separate penalty for each order, constrained to be
-nondecreasing. The monotone version is the estimator above, with the
-constraint; it's the package default, and the method we're interested in here.
+`fit_order_ridge()` has three penalty structures, and we'll fit all three: `"common"`, with one penalty for every order (i.e., ordinary ridge); `"unrestricted"`, with a separate penalty for each order, each tuned freely; and `"monotone"`, with a separate penalty for each order, constrained to be nondecreasing.
+The monotone version is the estimator above, with the constraint; it's the package default, and the method we're interested in here.
 
 ```{r fit}
 fits <- lapply(c(common = "common", unrestricted = "unrestricted",
@@ -159,9 +128,9 @@ ridge_labels <- c(common = "Common ridge", unrestricted = "Unrestricted ridge",
 sapply(fits, function(fit) signif(fit$lambda, 3))
 ```
 
-Each row is an order. The common fit uses the same penalty throughout. When
-the unrestricted penalties aren't in increasing order, as here, the monotone
-fit pools the offending orders to a shared value.
+Each row is an order.
+The common fit uses the same penalty throughout.
+When the unrestricted penalties aren't in increasing order, as here, the monotone fit pools the offending orders to a shared value.
 
 `order_energy()` tells us how much of the fitted surface sits in each order.
 Per degree of freedom, we can compare it with the truth:
@@ -172,9 +141,9 @@ energy$true_energy_per_df <- tapply(d$beta^2, basis$order, mean)
 energy
 ```
 
-We can plot this for all three fits. Black points are the fitted energy, and
-red crosses are the truth. The common penalty leaves too much in the three-way
-terms, while the order-specific fits shrink them slightly below the truth.
+We can plot this for all three fits.
+Black points are the fitted energy, and red crosses are the truth.
+The common penalty leaves too much in the three-way terms, while the order-specific fits shrink them slightly below the truth.
 
 ```{r energy-plot, fig.height = 3}
 energy_data <- do.call(rbind, lapply(names(fits), function(name) {
@@ -196,10 +165,8 @@ ggplot(energy_data, aes(order, fitted)) +
 
 ## How close is each fit to the truth?
 
-Since the data are simulated, we can measure how far each fit is from the
-truth over all 256 target profiles, i.e., the mean squared difference between
-the fitted and true surfaces. For comparison, we also fit least squares
-through orders 1, 2, and 3.
+Since the data are simulated, we can measure how far each fit is from the truth over all 256 target profiles, i.e., the mean squared difference between the fitted and true surfaces.
+For comparison, we also fit least squares through orders 1, 2, and 3.
 
 ```{r risk}
 # Least squares through order k; the intercept comes first, omitted orders are 0.
@@ -225,17 +192,13 @@ target_risk <- function(d, fits) {
 round(target_risk(d, fits), 3)
 ```
 
-Main effects alone miss most of the surface, and stopping at order 2 drops
-real three-way terms. Fitting all three orders by least squares is unbiased but
-noisy, since we're estimating 175 coefficients from 500 ratings. A single
-common ridge penalty helps a little. Separate penalties by order help much
-more, because the orders really do differ in size; a single penalty can't
-shrink the three-way terms hard without also shrinking the main effects.
+Main effects alone miss most of the surface, and stopping at order 2 drops real three-way terms.
+Fitting all three orders by least squares is unbiased but noisy, since we're estimating 175 coefficients from 500 ratings.
+A single common ridge penalty helps a little.
+Separate penalties by order help much more, because the orders really do differ in size; a single penalty can't shrink the three-way terms hard without also shrinking the main effects.
 
-We see in the plot below the true coefficient values, followed by those
-estimated under each of the models. Dashed vertical lines divide coefficients
-into groups of main effects, two-way interactions, and three-way interactions;
-within categories, coefficients are not ordered.
+We see in the plot below the true coefficient values, followed by those estimated under each of the models.
+Dashed vertical lines divide coefficients into groups of main effects, two-way interactions, and three-way interactions; within categories, coefficients are not ordered.
 
 ```{r coefficient-plot, fig.height = 5}
 models <- c("True values", ridge_labels, "OLS, order 1", "OLS, order 2",
@@ -262,11 +225,9 @@ ggplot(coefficient_data, aes(index, value)) +
   theme(axis.ticks.x = element_blank())
 ```
 
-Ridge regression shrinks coefficients, but never all the way to zero. The
-order-specific fits impose different amounts of shrinkage for the different
-categories, pulling the three-way terms toward zero. Truncated least squares
-sets whole categories to zero, and full least squares leaves the three-way
-terms noisy.
+Ridge regression shrinks coefficients, but never all the way to zero.
+The order-specific fits impose different amounts of shrinkage for the different categories, pulling the three-way terms toward zero.
+Truncated least squares sets whole categories to zero, and full least squares leaves the three-way terms noisy.
 
 We can put numbers on this with the coefficient errors (estimate minus truth).
 Here is the mean squared error per coefficient, by order:
@@ -278,12 +239,10 @@ errors <- list(`OLS, order 3` = ols_coefficients(d, 3)[-1] - d$beta,
 sapply(errors, function(e) round(tapply(e^2, basis$order, mean), 4))
 ```
 
-Monotone ridge lowers the error in every order. There are 108 three-way
-coefficients, so even though each one improves only a little, that block
-accounts for most of the total improvement.
+Monotone ridge lowers the error in every order.
+There are 108 three-way coefficients, so even though each one improves only a little, that block accounts for most of the total improvement.
 
-One dataset can be misleading, so we can repeat the comparison over 10 new
-datasets and look at the median error:
+One dataset can be misleading, so we can repeat the comparison over 10 new datasets and look at the median error:
 
 ```{r replications}
 replicate_risk <- function() {
@@ -317,13 +276,13 @@ ggplot(risk_data, aes(model, risk)) +
   theme_tutorial
 ```
 
-Separate penalties by order clearly help here. The ordering constraint adds
-little on top of them, which is typical (see the last section).
+Separate penalties by order clearly help here.
+The ordering constraint adds little on top of them, which is typical (see the last section).
 
 ## Changing the baseline
 
-Suppose we reorder factor `A` so that `l2` is its first level, rebuild the
-basis, and refit with the same penalties. The fitted surface doesn't change:
+Suppose we reorder factor `A` so that `l2` is its first level, rebuild the basis, and refit with the same penalties.
+The fitted surface doesn't change:
 
 ```{r invariance}
 releveled <- c("l2", "l0", "l1", "l3")
@@ -339,12 +298,10 @@ fit2 <- fit_order_ridge(x2, d$y, basis2, cluster = d$respondent, lambda = lambda
 max(abs(predict(fit1, newdata = target) - predict(fit2, newdata = target2)))
 ```
 
-The difference is rounding error. (With tuned penalties, the fits agree up to
-the optimizer's tolerance.)
+The difference is rounding error.
+(With tuned penalties, the fits agree up to the optimizer's tolerance.)
 
-If we instead apply the same penalties to treatment-coded dummy variables, with
-one penalty for main-effect dummies, one for two-way products, and one for
-three-way products, the fitted surface moves when the baseline moves:
+If we instead apply the same penalties to treatment-coded dummy variables, with one penalty for main-effect dummies, one for two-way products, and one for three-way products, the fitted surface moves when the baseline moves:
 
 ```{r treatment-coding}
 dummy_ridge <- function(x, newdata, lambda) {
@@ -359,10 +316,9 @@ dummy_ridge <- function(x, newdata, lambda) {
 max(abs(dummy_ridge(d$x, target, lambda) - dummy_ridge(x2, target2, lambda)))
 ```
 
-We can see this in the plot below. Each point is one of the 256 profiles,
-fitted with `l0` as the baseline of `A` (horizontal axis) and with `l2`
-(vertical axis). With the package's basis, every point sits on the line; with
-dummy coding, they scatter around it.
+We can see this in the plot below.
+Each point is one of the 256 profiles, fitted with `l0` as the baseline of `A` (horizontal axis) and with `l2` (vertical axis).
+With the package's basis, every point sits on the line; with dummy coding, they scatter around it.
 
 ```{r invariance-plot, fig.height = 3.5}
 codings <- c("orderridge basis", "Dummy coding, same penalties")
@@ -384,24 +340,17 @@ ggplot(invariance_data, aes(baseline_l0, baseline_l2)) +
 
 ## Interaction effects with honest uncertainty
 
-A fitted surface is useful for description, but a shrunken fit is biased, so
-the effects it implies don't come with valid standard errors. For a fixed set
-of effects chosen in advance, `estimate_amie()` corrects for this. It splits
-respondents into folds, and for each held-out respondent it combines the
-contrast evaluated on a fit that never saw that respondent with a correction:
-the respondent's residuals, weighted by the contrast's weight on the profiles
-they saw and divided by those profiles' known assignment probabilities.
+A fitted surface is useful for description, but a shrunken fit is biased, so the effects it implies don't come with valid standard errors.
+For a fixed set of effects chosen in advance, `estimate_amie()` corrects for this.
+It splits respondents into folds, and for each held-out respondent it combines the contrast evaluated on a fit that never saw that respondent with a correction: the respondent's residuals, weighted by the contrast's weight on the profiles they saw and divided by those profiles' known assignment probabilities.
 
-Because the assignment probabilities are known by design, this estimator is
-unbiased whatever the fitted model is. This is the cross-fitting idea of
-@chernozhukov2018dml, applied to a randomized conjoint
-[@hainmueller2014conjoint]. Shrinkage only affects how precise the estimate
-is, and standard errors come from respondent-level scores.
+Because the assignment probabilities are known by design, this estimator is unbiased whatever the fitted model is.
+This is the cross-fitting idea of @chernozhukov2018dml, applied to a randomized conjoint [@hainmueller2014conjoint].
+Shrinkage only affects how precise the estimate is, and standard errors come from respondent-level scores.
 
-`amie_contrast()` builds the contrasts. Here, we'll take the full `A` by `B`
-interaction surface, i.e., for each pair of levels, the functional-ANOVA
-interaction averaged over `C` and `D` [@egami2019interaction]. We'll also add
-one classic 2 by 2 difference-in-differences.
+`amie_contrast()` builds the contrasts.
+Here, we'll take the full `A` by `B` interaction surface, i.e., for each pair of levels, the functional-ANOVA interaction averaged over `C` and `D` [@egami2019interaction].
+We'll also add one classic 2 by 2 difference-in-differences.
 
 ```{r amie}
 cells <- amie_contrast(basis, c("A", "B"), type = "cell")
@@ -420,13 +369,9 @@ cbind(estimates[, c("estimand", "estimate", "std_error", "conf_low", "conf_high"
       truth = truth)[c(1:3, 17), ]
 ```
 
-The intervals are simultaneous: the critical value,
-`r round(unique(effects$estimates$critical_value), 2)` instead of 1.96, makes
-all `r ncol(contrasts)` intervals cover their targets together with 95%
-probability.
+The intervals are simultaneous: the critical value, `r round(unique(effects$estimates$critical_value), 2)` instead of 1.96, makes all `r ncol(contrasts)` intervals cover their targets together with 95% probability.
 
-In the plot below, black points and lines are the estimates and simultaneous
-intervals, and red crosses are the truth.
+In the plot below, black points and lines are the estimates and simultaneous intervals, and red crosses are the truth.
 
 ```{r amie-plot, fig.height = 3.5}
 amie_data <- data.frame(contrast = seq_len(nrow(estimates)),
@@ -449,9 +394,8 @@ sum(estimates$conf_low <= truth & truth <= estimates$conf_high)
 
 ## When this helps, and when it doesn't
 
-This approach helps when there are many interaction terms relative to the
-data, and higher orders really are smaller. With 1,500 ratings instead of 500,
-least squares through order 3 does as well as the ridge fits:
+This approach helps when there are many interaction terms relative to the data, and higher orders really are smaller.
+With 1,500 ratings instead of 500, least squares through order 3 does as well as the ridge fits:
 
 ```{r large-sample}
 big <- simulate_experiment(n_respondents = 300)
@@ -464,40 +408,26 @@ big_fits <- lapply(c(common = "common", unrestricted = "unrestricted",
 round(target_risk(big, big_fits), 3)
 ```
 
-The ordering constraint is a mild safeguard, not a source of large gains. In
-our own simulation screen of 200 datasets across two designs, monotone
-penalties beat unrestricted order-specific penalties by about 1% on average,
-and not reliably. Most of the gain comes from having a separate penalty for
-each order.
+The ordering constraint is a mild safeguard, not a source of large gains.
+In our own simulation screen of 200 datasets across two designs, monotone penalties beat unrestricted order-specific penalties by about 1% on average, and not reliably.
+Most of the gain comes from having a separate penalty for each order.
 
 For effects fixed in advance, the outcome model affects precision, not bias.
-The estimator above is unbiased with any fit, so a better model only narrows
-the intervals. How much flexible machine-learning models narrow them beyond
-simple additive adjustment is the question of the companion
-[benchmark](https://github.com/mollyow/shrinkage-tutorial/blob/master/docs/plan.md).
+The estimator above is unbiased with any fit, so a better model only narrows the intervals.
+How much flexible machine-learning models narrow them beyond simple additive adjustment is the question of the companion [benchmark](https://github.com/mollyow/shrinkage-tutorial/blob/master/docs/plan.md).
 
-Finally, this approach doesn't search for heterogeneity. Respondent
-characteristics aren't randomized, and we make no claims here about
-moderators.
+Finally, this approach doesn't search for heterogeneity.
+Respondent characteristics aren't randomized, and we make no claims here about moderators.
 
 ## Related work
 
-None of the ingredients here is new. Ridge with separate penalties for groups
-of coefficients goes back to generalized ridge [@hoerl1970ridge], and there are
-fast, well-studied ways to tune multiple penalties [@vandewiel2021multiridge].
-Group-adaptive ridge can already enforce monotone penalties across ranked
-groups [@vandewiel2016grridge]. Monotone shrinkage over an ordered basis, and
-its computation by pooling adjacent violators, are established
-[@ma2014monotone]. Shrinking batches of ANOVA effects by order is standard in
-hierarchical ANOVA [@gelman2005anova], and @egami2019interaction develop
-regularized estimation of causal interactions in conjoint experiments.
+None of the ingredients here is new.
+Ridge with separate penalties for groups of coefficients goes back to generalized ridge [@hoerl1970ridge], and there are fast, well-studied ways to tune multiple penalties [@vandewiel2021multiridge].
+Group-adaptive ridge can already enforce monotone penalties across ranked groups [@vandewiel2016grridge].
+Monotone shrinkage over an ordered basis, and its computation by pooling adjacent violators, are established [@ma2014monotone].
+Shrinking batches of ANOVA effects by order is standard in hierarchical ANOVA [@gelman2005anova], and @egami2019interaction develop regularized estimation of causal interactions in conjoint experiments.
 
-What the package adds is the combination for randomized factorial designs:
-order spaces defined by the design's target distribution, so the fit doesn't
-depend on coding; penalties tuned with respondent-level folds; and a
-cross-fitted estimator for prespecified interaction effects. Note that the
-ordering constraint encodes *effect hierarchy* (higher orders tend to be
-smaller), not *heredity* (interactions only matter when their main effects
-do), which sparse methods such as @bien2013hierarchical encode.
+What the package adds is the combination for randomized factorial designs: order spaces defined by the design's target distribution, so the fit doesn't depend on coding; penalties tuned with respondent-level folds; and a cross-fitted estimator for prespecified interaction effects.
+Note that the ordering constraint encodes *effect hierarchy* (higher orders tend to be smaller), not *heredity* (interactions only matter when their main effects do), which sparse methods such as @bien2013hierarchical encode.
 
 ## References

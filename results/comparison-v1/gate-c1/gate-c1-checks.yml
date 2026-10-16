@@ -1,11 +1,11 @@
-created_utc: '2026-10-15T20:30:31Z'
-git_head: bfdedc53bbe0519accc109d2c23d145614b61cc0
+created_utc: '2026-10-15T22:45:01Z'
+git_head: c81fff41767b8996e7aefde6eaa3d8f0214f8ceb
 worktree_dirty: true
 files:
   - path: analysis/comparison/R/00_utils.R
-    sha256: bff47ef917559d2ed31347bba325fe4072b4314a3585953e6dba5857065456e2
+    sha256: ff7b9eed1894a8d7475b1ba8b090e2c4ef123b573a0bd60cc20e35f790bbcd4a
   - path: analysis/comparison/R/bases.R
-    sha256: de4c151dc1636ddef1988845d0009f3791aeafeca0a3043e5a455b6108316868
+    sha256: 6ab6e331b847949be142564f9459f055ec2adb189e2d5b9b9f0e37a61f57bf2c
   - path: analysis/comparison/R/contracts.R
     sha256: e9e2f0bc09a1099abde7df972e83041406dc8aa3491367fc74e66aa8923df1b0
   - path: analysis/comparison/R/draw_count.R
@@ -21,7 +21,7 @@ files:
   - path: analysis/comparison/R/learners.R
     sha256: b23f89ecb34a7d379ded464bd96053a29e2523889c86882a34a380fc6edd7059
   - path: analysis/comparison/R/metrics.R
-    sha256: 4b6905f37396fd111c44fce189399f86f57af469e845740ef7b1ac0a380c0285
+    sha256: e52ecf83e9bb2e6fe207bd28e72396ae6345d81c292c55526e5953841cc3df28
   - path: analysis/comparison/R/phase.R
     sha256: 85cf4fbff9af5754b585f277b488be570965fb85876f06e25fafcdca9f09d54a
   - path: analysis/comparison/R/registry.R
@@ -31,7 +31,7 @@ files:
   - path: analysis/comparison/R/run_dataset.R
     sha256: 54ec7dbcc3cbd18ce381d72844e03345828a8b6bea9679eec03fae9c8c6c09ae
   - path: analysis/comparison/R/schemas.R
-    sha256: 13ab6072685f4c0cd754e11dd5e16f64d5b841e426484af05811c00917c79fee
+    sha256: 0e0b6a82764d1bee315f369d85f186327c602958b41b0005cb24f669d19a2f95
   - path: analysis/comparison/R/score.R
     sha256: 0d2bcde8ca155d8733f858ac1a0c18506311b9888f573b0fc81ea6eea5725101
   - path: analysis/comparison/evaluate_gate_d.R
@@ -63,7 +63,7 @@ files:
   - path: analysis/candidate/estimands.yml
     sha256: 95c932a912dbad67e1615608e69a329f93765c17f8b0bb5c30da029c4a5f82cc
   - path: DESCRIPTION
-    sha256: b0199e94cc5ee0f26b939d290469069d444955a9fdd4fa2c72318f3d2747d87d
+    sha256: 7fe19fbdcedf6245efe3463c3b8b9cfe7f60b160d03beff370b646e713115bcb
   - path: NAMESPACE
     sha256: ca199fc15f81ac6f8d01706c7d934b4f3961bca07e50962983a8ef0a92bd0466
   - path: R/amie.R
@@ -85,7 +85,7 @@ files:
   - path: tests/testthat/test-order-ridge.R
     sha256: c5e665dd71e542de8d26ef8137e019491c799c6106ddfcabe711e2776e0c9261
   - path: renv.lock
-    sha256: 274a5bf8a0803d2da0eafc4d2f0e37ebdeb49d29d47b30ca9a07e499610e510f
+    sha256: f6100237ccc13a397aa4b9649e3539c64dcbd0465e31e51e8bd02c530d6bb7b4
   - path: config/comparison-v1.yml
     sha256: 5fbc7f6f9213c04f03de3ddabad7254f7034d54521fa0031d9426b4af83b7459
   - path: config/comparison-simulations-v1.yml
@@ -295,8 +295,8 @@ synthetic_full_size_run_and_report:
   passed: true
   errors: []
   runtime_seconds:
-    - 1907.648
-    - 4951.558
+    - 1623.574
+    - 4868.883
   ledger_all_ok: true
 all_passed: true
 
